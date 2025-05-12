@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TreeConnect-Nos services</title>
+    <link rel="stylesheet" href="../build/../assets/css/style.css">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+</head>
+<body class="bg-[#304B68] overflow-x-hidden">
+  <nav class="2xl:px-20 lg:px-10 px-5 2xl:pt-16 lg:pt-9 pt-5 relative z-50">
+    <!-- Navbar Container -->
+  <div class="flex justify-between items-center bg-[#3F6893] px-8 py-5 rounded-[40px] relative z-50">
+    
+    <!-- Logo -->
+    <div>
+      <a href="index.html">
+        <img src="../build/../assets/img/logo3.png" class="md:w-32 md:h-12 w-20 h-8" alt="Logo">
+      </a>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <div class="hidden lg:block">
+      <ul class="flex xl:space-x-14 space-x-10">
+        <li><a href="index.html" class="text-[#D3D3D3] xl:text-lg text-base hover:text-white ">Accueil</a></li>
+        
+        <!-- Dropdown -->
+        <li class="relative group">
+          <a href="services2.html">
+          <button class="text-[#D3D3D3] xl:text-lg text-base hover:text-white flex items-center gap-1 active">
+            Nos services
+            <svg class="w-4 h-4 mt-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+        </a>
+          <ul class="absolute left-0 pt-4 w-52 bg-[#3F6893] text-white rounded-lg shadow-lg hidden group-hover:block z-50">
+            <li><a href="services.html" class="block px-4 py-2 hover:bg-[#35597C] text-base">Création et lancement d’entreprise</a></li>
+            <li><a href="services2.html" class="block px-4 py-2 hover:bg-[#35597C] text-base">Ressources humaines</a></li>
+            <li><a href="services3.html" class="block px-4 py-2 hover:bg-[#35597C] text-base">Gestion administrative</a></li>
+            <li><a href="services4.html" class="block px-4 py-2 hover:bg-[#35597C] text-base">Informatique & Cybersécurité</a></li>
+            <li><a href="services5.html" class="block px-4 py-2 hover:bg-[#35597C] text-base">Comptabilité & finance</a></li>
+            <li><a href="services6.html" class="block px-4 py-2 hover:bg-[#35597C] text-base">Marketing & communication</a></li>
+          </ul>
+        </li>
+
+        <li><a href="story.html" class="text-[#D3D3D3] xl:text-lg text-base hover:text-white">Notre histoire</a></li>
+        <li><a href="contact.html" class="text-[#D3D3D3] xl:text-lg text-base hover:text-white ">Nous Contacter</a></li>
+      </ul>
+    </div>
+
+    <!-- Language + Login -->
+    <div class="items-center hidden lg:block space-x-5">
+      <div class="relative inline-block text-left">
+        <div class="relative inline-block text-left top-1">
+          <button onclick="toggleDropdown()" class="flex items-center">
+            <img id="currentFlag" src="../build/../assets/img/france.png" class="w-6 h-6" alt="flag">
+            <svg class="w-4 h-4 ml-2 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+        
+          <div id="dropdownMenu" class="hidden absolute mt-2 w-24 bg-[#3F6893] border border-[#3F6893] z-10">
+            <ul class="py-1 text-sm text-gray-700 text-center">
+              <li>
+                <a href="../services2.html" onclick="event.preventDefault(); setFlag('../build/../assets/img/united-kingdom.png', this.href)" class="block flex justify-center hover:text-white px-4 py-2 hover:bg-white">
+                  <img src="../build/../assets/img/united-kingdom.png" class="w-7" alt="England Flag">
+                </a>
+              </li>
+              <li>
+                <a href="#" onclick="event.preventDefault(); setFlag('../build/../assets/img/france.png', this.href)" class="block flex justify-center hover:text-white px-4 py-2 hover:bg-white">
+                  <img src="../build/../assets/img/france.png" class="w-7" alt="France Flag">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <script>
+          function toggleDropdown() {
+            document.getElementById("dropdownMenu").classList.toggle("hidden");
+          }
+        
+          function setFlag(flagPath, redirectUrl) {
+            document.getElementById("currentFlag").src = flagPath;
+            document.getElementById("dropdownMenu").classList.add("hidden");
+        
+            // Delay page redirect so flag updates first
+            setTimeout(function () {
+              window.location.href = redirectUrl;
+            }, 100);
+          }
+        </script>
+        
+        
+      
+      </div>
+      <button class="text-[#FFFFFF] xl:text-lg text-base py-2 px-10 border border-white rounded-full font-medium">Login</button>
+    </div>
+
+    <!-- Mobile Toggle Buttons -->
+    <div class="lg:hidden z-50">
+      <!-- Hamburger -->
+      <button id="menu-open" class="text-white focus:outline-none block">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <!-- Close -->
+      <button id="menu-close" class="text-white focus:outline-none hidden">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="absolute left-0 right-0 hidden mt-5 bg-[#3F6893] h-[550px] rounded-3xl px-6 py-5 z-40 transition-all duration-300 ease-in-out">
+    <ul class="flex flex-col space-y-4 text-center">
+      <li><a href="../french/index.html" class="text-[#D3D3D3] text-base hover:text-white">Accueil</a></li>
+
+      <!-- Mobile Dropdown -->
+      <li class="relative group">
+        <button onclick="toggleMobileDropdown()" class="flex items-center justify-center w-full text-[#D3D3D3] text-base hover:text-white active">
+          Nos services
+          <svg class="w-4 h-4 ml-2 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <ul id="mobileDropdown" class="hidden mt-2 space-y-2 absolute left-20 md:left-60 p-4 w-56 bg-[#3F6893] text-white rounded-lg shadow-lg group-hover:block z-50">
+          <li><a href="../french/services.html" class="block px-4 py-2 hover:bg-[#35597C] text-sm">Création et lancement d’entreprise</a></li>
+          <li><a href="../french/services2.html" class="block px-4 py-2 hover:bg-[#35597C] text-sm">Ressources humaines</a></li>
+          <li><a href="../french/services3.html" class="block px-4 py-2 hover:bg-[#35597C] text-sm">Gestion administrative</a></li>
+          <li><a href="../french/services4.html" class="block px-4 py-2 hover:bg-[#35597C] text-sm">Informatique & Cybersécurité</a></li>
+          <li><a href="../french/services5.html" class="block px-4 py-2 hover:bg-[#35597C] text-sm">Comptabilité & finance</a></li>
+          <li><a href="../french/services6.html" class="block px-4 py-2 hover:bg-[#35597C] text-sm">Marketing & communication</a></li>
+        </ul>
+      </li>
+
+      <li><a href="../french/story.html" class="text-[#D3D3D3] text-base hover:text-white">Notre histoire</a></li>
+      <li><a href="../french/contact.html" class="text-[#D3D3D3] text-base hover:text-white ">Nous Contacter</a></li>
+      <li><button class="text-[#D3D3D3]">Login</button></li>
+      <li class="flex justify-center space-x-4 mt-4">
+        <a href="../services2.html" onclick="event.preventDefault(); setFlagMobile('../build/../assets/img/united-kingdom.png', this.href)">
+          <img src="../build/../assets/img/united-kingdom.png" class="w-7 h-7" alt="UK Flag">
+        </a>
+        <a href="#" onclick="event.preventDefault(); setFlagMobile('../build/../assets/img/france.png', this.href)">
+          <img src="../build/../assets/img/france.png" class="w-7 h-7" alt="France Flag">
+        </a>
+      </li>
+      <script>
+        function setFlagMobile(flagPath, redirectUrl) {
+          // Optionally change current flag (if you want to reflect it in desktop as well)
+          const flagImg = document.getElementById("currentFlag");
+          if (flagImg) flagImg.src = flagPath;
+      
+          // Close mobile menu
+          document.getElementById("mobile-menu").classList.add("hidden");
+      
+          // Redirect after slight delay
+          setTimeout(function () {
+            window.location.href = redirectUrl;
+          }, 100);
+        }
+      </script>
+    </ul>
+  </div>
+  
+  </nav>
+  
+<!-- Toggle navbar Scripts -->
+<script>
+  function toggleTranslate() {
+    const ele = document.getElementById('google_translate_element');
+    ele.style.display = ele.style.display === 'none' ? 'block' : 'none';
+  }
+
+  function toggleMobileDropdown() {
+    const menu = document.getElementById('mobileDropdown');
+    menu.classList.toggle('hidden');
+  }
+
+  document.getElementById('menu-open').addEventListener('click', () => {
+    document.getElementById('mobile-menu').classList.remove('hidden');
+    document.getElementById('menu-open').classList.add('hidden');
+    document.getElementById('menu-close').classList.remove('hidden');
+  });
+
+  document.getElementById('menu-close').addEventListener('click', () => {
+    document.getElementById('mobile-menu').classList.add('hidden');
+    document.getElementById('menu-open').classList.remove('hidden');
+    document.getElementById('menu-close').classList.add('hidden');
+  });
+</script>
+
+<section class="2xl:px-28 lg:px-10 px-5 lg:pt-20 pt-10" >
+
+  <!-- 🔥 Black Overlay -->
+  <!-- <div class="absolute inset-0 bg-black bg-opacity-30 z-0"></div> -->
+<div>
+  <img src="../build/../assets/img/humanimg.png" class="rounded-2xl w-full md:block hidden" alt="">
+  <img src="../build/../assets/img/watt22.jpg" class="rounded-2xl w-full block md:hidden" alt="">
+</div>
+  <!-- 🔥 Content Area Above Overlay -->
+  <div class="lg:pt-10 pt-5">
+    
+    <!-- Left Side -->
+    <div class="w-full">
+      <h1 class="2xl:text-[70px] lg:text-5xl text-4xl text-white" >
+        Ressources humaines
+      </h1>
+      <!-- <div class="2xl:pt-16 pt-8" >
+        <button class="hover:bg-[#3F6893] border border-white hover:border-[#3F6893] lg:text-lg text-base xl:px-10 font-medium xl:py-3 px-6 py-2 rounded-full text-white">
+          Try It Now
+        </button>
+      </div> -->
+    </div>
+
+    <!-- Right Side -->
+    <div class="w-full">
+      <p class="2xl:text-[22px] xl:text-lg text-base text-[#D3D3D3] pt-4 2xl:leading-[44px] lg:leading-8 leading-7" >
+        De la gestion des recrutements à la paie, en passant par le suivi du temps de travail, les fins de
+contrat ou les accidents, nous assurons l’ensemble de votre fonction RH avec méthode et
+fiabilité.
+Nos outils digitaux optimisent vos processus, garantissent la conformité légale suisse, et
+favorisent l’engagement de vos équipes.
+Vous gardez la maîtrise, tout en vous libérant des contraintes. Et vos collaborateurs, votre capital
+le plus précieux, sont entre de bonnes mains.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+      <!-- Human resources section  -->
+
+      <section class="2xl:px-28 lg:px-10 px-5 2xl:pt-40 lg:pt-28 pt-14">
+        <!-- <div>
+          <img src="../build/assets/img/humanimg.png" class="w-full" alt="">
+        </div>
+        <div class="pt-10">
+            <h1 class="2xl:text-[70px] lg:text-5xl text-4xl text-white">Human Resources</h1>
+            <p class="2xl:text-[22px] xl:text-lg text-base text-[#D3D3D3] pt-5 2xl:leading-[44px] lg:leading-8 leading-7 " >From recruitment to employee management and everything in between, we provide a comprehensive HR solution that supports your business’s growth. Our digital tools streamline processes, ensure compliance, and enhance team engagement, allowing you to focus on scaling your business while we take care of your most valuable asset—your people.</p>
+        </div> -->
+
+
+        <div class="">
+            <h1 class="2xl:text-[70px] lg:text-5xl text-4xl text-white">Ce que nous faisons pour vous</h1>
+        <div class="flex md:flex-row flex-col 2xl:gap-80 xl:gap-60 lg:gap-40 md:gap-20">
+            <div class="xl:pt-16 pt-8 lg:w-1/2 w-full">
+                <div>
+                    <img src="../build/../assets/img/contract.png"  alt="">
+                    <h1 class="2xl:text-2xl font-bold xl:text-lg text-base text-[#D3D3D3] pt-4 2xl:leading-[44px] lg:leading-8 leading-7 " >Recrutement, intégration et contrats</h1>
+                    <p class="2xl:text-[22px] xl:text-lg text-base text-[#D3D3D3] pt-2 2xl:leading-[40px] lg:leading-8 leading-7 " >Nous vous aidons à constituer l’équipe idéale en attirant les bons talents, en simplifiant les
+                      démarches contractuelles et en assurant une intégration fluide dans votre organisation.
+                    </p>
+                </div>
+                <div class="xl:pt-20 pt-10">
+                    <img src="../build/../assets/img/employ.png"  alt="">
+                    <h1 class="2xl:text-2xl font-bold xl:text-lg text-base text-[#D3D3D3] pt-4 2xl:leading-[44px] lg:leading-8 leading-7 " >Fin de contrat et conformité légale</h1>
+                    <p class="2xl:text-[22px] xl:text-lg text-base text-[#D3D3D3] pt-2 2xl:leading-[40px] lg:leading-8 leading-7 " >Nous gérons les départs avec professionnalisme, dans le respect total des exigences légales
+                      suisses, pour garantir des transitions sereines et sécurisées.
+                    </p>
+                </div>
+            </div>
+                <div class="xl:pt-16 pt-8 lg:w-1/2 w-full">
+                    <div>
+                        <img src="../build/../assets/img/giveme.png"  alt="">
+                        <h1 class="2xl:text-2xl font-bold xl:text-lg text-base text-[#D3D3D3] pt-4 2xl:leading-[44px] lg:leading-8 leading-7 " >Gestion de la paie et des effectifs</h1>
+                        <p class="2xl:text-[22px] xl:text-lg text-base text-[#D3D3D3] pt-2 2xl:leading-[40px] lg:leading-8 leading-7 " >
+                          Nous assurons un traitement rigoureux et ponctuel des salaires, grâce à des outils performants,
+                          tout en vous accompagnant dans le suivi RH de vos équipes.
+                        </p>
+                    </div>
+                    <div class="xl:pt-20 pt-10">
+                        <img src="../build/../assets/img/performance.png"  alt="">
+                        <h1 class="2xl:text-2xl font-bold xl:text-lg text-base text-[#D3D3D3] pt-4 2xl:leading-[44px] lg:leading-8 leading-7 " >Suivi de la performance & feedback 360°</h1>
+                        <p class="2xl:text-[22px] xl:text-lg text-base text-[#D3D3D3] pt-2 2xl:leading-[40px] lg:leading-8 leading-7" >
+                          Nous mettons en place une évaluation structurée de vos collaborateurs et des outils de feedback
+global pour renforcer l’engagement, piloter la performance et accompagner la montée en
+compétences dans la durée.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="2xl:px-28 lg:px-10 px-5 2xl:pt-40 lg:pt-28 pt-14">
+        <div class="lg:pb-10 pb-5">
+          <img src="../build/../assets/img/hr.png" class="rounded-2xl w-full md:block hidden" alt="">
+          <img src="../build/../assets/img/watt2.jpg" class="rounded-2xl w-full md:hidden block" alt="">
+        </div>
+        <div class="bg-[#3F6893] xl:p-10 p-5 rounded-2xl ">
+            <!-- <div class="md:w-2/5 w-full" >
+                <img src="../build/assets/img/durbin.png" alt="">
+            </div> -->
+            <div class="w-full pt-4 md:pt-0">
+                <h1 class="text-white 2xl:text-4xl lg:text-3xl text-2xl" >Pourquoi c’est essentiel</h1>
+                <p class="2xl:text-[22px] xl:text-lg text-base text-[#D3D3D3] pt-2 2xl:leading-[44px] lg:leading-8 leading-7" >La gestion des ressources humaines est à la fois complexe, chronophage et absolument
+                  stratégique.
+                  Nous prenons tout en charge pour vous grâce à des outils digitaux performants et à l’appui
+                  d’experts chevronnés.</p>
+                <!-- <div class="2xl:pt-16 pt-8" >
+                    <button class="border border-white lg:text-lg text-base xl:px-10 xl:py-3 px-6 py-2 rounded-full text-white"> How It Works</button>
+                  </div> -->
+            </div>
+        </div>
+      </section>
+
+      <!-- benefit section  -->
+      <section class="2xl:px-28 lg:px-10 px-5">
+
+      <div class="2xl:pt-36 lg:pt-24 pt-10">
+        <h1 class="2xl:text-[70px] lg:text-5xl text-4xl text-white" >Les bénéfices pour vous</h1>
+    <div class="flex md:flex-row flex-col 2xl:gap-80 xl:gap-60 lg:gap-40 md:gap-20">
+        <div class="xl:pt-16 pt-8 lg:w-1/2 w-full">
+            <div>
+                <img src="../build/../assets/img/zero.png"  alt="">
+                <h1 class="2xl:text-2xl font-bold xl:text-lg text-base text-[#D3D3D3] pt-4 2xl:leading-[44px] lg:leading-8 leading-7 " >Zéro charge administrative, zéro risque de paie</h1>
+                <p class="2xl:text-[22px] xl:text-lg text-base text-[#D3D3D3] pt-2 2xl:leading-[40px] lg:leading-8 leading-7 " >Concentrez-vous sur votre croissance. Nous prenons en main la gestion RH et salariale pour
+                  vous libérer l’esprit.
+                </p>
+            </div>
+            <div class="xl:pt-20 pt-10">
+                <img src="../build/../assets/img/system.png"  alt="">
+                <h1 class="2xl:text-2xl font-bold xl:text-lg text-base text-[#D3D3D3] pt-4 2xl:leading-[44px] lg:leading-8 leading-7 " >Un système évolutif, un vrai soutien humain</h1>
+                <p class="2xl:text-[22px] xl:text-lg text-base text-[#D3D3D3] pt-2 2xl:leading-[40px] lg:leading-8 leading-7 " >Bénéficiez d’un dispositif fiable, adapté à vos besoins et accompagné par des experts
+                  disponibles.
+                </p>
+            </div>
+        </div>
+            <div class="xl:pt-16 pt-8 lg:w-1/2 w-full">
+                
+                <div>
+                    <img src="../build/../assets/img/team.png"  alt="">
+                    <h1 class="2xl:text-2xl font-bold xl:text-lg text-base text-[#D3D3D3] pt-4 2xl:leading-[44px] lg:leading-8 leading-7 " >Vision claire et pilotage de votre équipe</h1>
+                    <p class="2xl:text-[22px] xl:text-lg text-base text-[#D3D3D3] pt-2 2xl:leading-[40px] lg:leading-8 leading-7" >Prenez de meilleures décisions grâce à des données en temps réel sur la performance,
+                      l’engagement et la présence de vos collaborateurs.
+                    </p>
+                </div>
+                <div class="xl:pt-20 pt-10">
+                    <img src="../build/../assets/img/focus.png" alt="">
+                    <h1 class="2xl:text-2xl font-bold xl:text-lg text-base text-[#D3D3D3] pt-4 2xl:leading-[44px] lg:leading-8 leading-7 " >Vous vous concentrez sur votre équipe, nous gérons le reste</h1>
+                    <p class="2xl:text-[22px] xl:text-lg text-base text-[#D3D3D3] pt-2 2xl:leading-[40px] lg:leading-8 leading-7" >Investissez votre énergie là où elle a le plus d’impact : bâtir une équipe solide. Nous prenons en
+                      charge l’administratif.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<!-- launch  -->
+
+    <section class="2xl:px-28 lg:px-10 px-5 2xl:pt-32 lg:pt-20 pt-10">
+        <div class="flex justify-between">
+        <div>
+            <h1 class="2xl:text-[70px] lg:text-5xl text-4xl text-white">Des RH pensées pour grandir avec vous?</h1>
+            <p class="2xl:text-[22px] xl:text-lg text-base text-[#D3D3D3] pt-4 2xl:leading-[44px] lg:leading-8 leading-7 " >Avec TreeConnect, vous gagnez en clarté, en temps et en impact — sans complexité.
+            </p>
+            <div class="2xl:pt-16 pt-10" >
+              <a href="https://calendly.com/treeconnect">
+                <button class="border border-white lg:text-lg text-base xl:px-10 xl:py-3 px-6 py-2 rounded-full text-white"> Parler à un expert</button>
+              </a>
+              </div>
+            </div>
+        <div class="-z-50 absolute right-20">
+            <img src="../build/../assets/img/pic.png" alt="">
+        </div>
+    </div>
+    </section>
+
+<!-- footer  -->
+<footer class="2xl:pt-52 lg:pt-24 pt-10">
+  <div class="bg-[#3F6893] grid md:grid-cols-3 grid-cols-1 xl:gap-64 md:gap-28 2xl:py-20 2xl:px-48 lg:py-10 lg:px-24 py-6 px-10 ">
+    <div class="text-center md:text-start">
+      <div class="flex md:justify-start justify-center">
+      <img src="../build/../assets/img/logo3.png" class="w-36 h-12" alt="">
+    </div>
+      <p class="text-[#D3D3D3] text-sm font-light pt-3">TreeConnect, votre partenaire agile, accompagne votre croissance avec des solutions innovantes
+        et personnalisées, de la gestion RH à l’infrastructure IT, en passant par la stratégie, l’administratif
+        et la finance </p>
+      <a href="https://www.linkedin.com/company/treeconnect/ ">
+      <i class="fa-brands fa-linkedin text-white text-3xl pt-2"></i>
+    </a>
+    </div>
+
+    <div class="text-center md:text-start pt-5 md:pt-0">
+      <!-- <h1 class="xl:text-sm text-xs font-medium text-white">QUICK LINKS</h1> -->
+      <div class="flex flex-col pt-4 space-y-3">
+      <a href="../french/index.html" class="text-[#D3D3D3] text-sm font-light hover:underline">Accueil
+
+      </a>
+      <a href="../french/services.html" class="text-[#D3D3D3] text-sm font-light hover:underline">Nos services
+      </a>
+      <a href="../french/story.html" class="text-[#D3D3D3] text-sm font-light hover:underline">Notre histoire
+      </a>
+      <a href="../french/contact.html" class="text-[#D3D3D3] text-sm font-light hover:underline">Nous Contacter
+
+      </a>
+      <a href="../french/privacy.html" class="text-[#D3D3D3] text-sm font-light hover:underline">Politique de confidentialité et cookies
+      </a>
+      <a href="../french/terms.html" class="text-[#D3D3D3] text-sm font-light hover:underline">Conditions générales
+
+      </a>
+    </div>
+    </div>
+
+    <div class="text-center md:text-start pt-5 md:pt-0"> 
+      <!-- <h1 class="xl:text-sm text-xs font-medium  text-white">CONTACT US</h1> -->
+      <div class="pt-4 space-y-3">
+      <p class="text-[#D3D3D3] text-sm font-light"><i class="fa-solid fa-envelope"></i> &nbsp;<a href="" class="hover:underline">contact@treeconnect.ch </a></p>
+      <p class="text-[#D3D3D3] text-sm  font-light"><i class="fa-solid fa-calendar-days"></i> &nbsp;Lun – Ven</p>
+      <p class="text-[#D3D3D3] text-sm  font-light"><i class="fa-regular fa-clock"></i> &nbsp;08h00 – 18h00</p>
+      <p class="text-[#D3D3D3] text-sm  font-light"> <i class="fa-solid fa-location-dot"></i> &nbsp;Boulevard Georges-Favon 14, 1204 Genève</p>
+    </div>
+    </div>
+  </div>
+</footer>
+
+<!-- dropdown  -->
+
+<script>
+  function toggleMobileLangDropdown() {
+    const dropdown = document.getElementById("mobileLangDropdown");
+    dropdown.classList.toggle("hidden");
+  }
+
+  // Optional: Close if clicked outside
+  document.addEventListener("click", function(event) {
+    const dropdown = document.getElementById("mobileLangDropdown");
+    const button = event.target.closest("button");
+    if (!dropdown.contains(event.target) && !button) {
+      dropdown.classList.add("hidden");
+    }
+  });
+</script>
+<script>
+
+  function toggleDropdown() {
+    document.getElementById("dropdownMenu").classList.toggle("hidden");
+  }
+
+  function setLanguage(lang) {
+    document.getElementById("currentLang").textContent = lang;
+
+    const elements = document.querySelectorAll("[data-i18n]");
+    elements.forEach(el => {
+      const key = el.getAttribute("data-i18n");
+      el.innerHTML = translations[lang][key];
+    });
+
+    toggleDropdown();
+  }
+</script>
+
+<!-- Google Translate Script -->
+<!-- <script type="text/javascript">
+  function toggleTranslate() {
+    const el = document.getElementById("google_translate_element");
+    el.style.display = el.style.display === "none" ? "block" : "none";
+  }
+
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+</script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
+       <!-- Google Translate Script end -->
+        
+        <!-- smooth animation  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://unpkg.com/@studio-freight/lenis@latest"></script>
+<script>
+  const lenis = new Lenis({
+    duration: 1.2, // Adjust smoothness
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Easing function
+    smooth: true,
+    smoothTouch: false
+  });
+
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+  requestAnimationFrame(raf);
+</script>
+
+  <script src="https://kit.fontawesome.com/a2ada4947c.js" crossorigin="anonymous"></script>
+
+  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script> -->
+</body>
+</html>

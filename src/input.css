@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Revolution&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body h1 h2 p button{
+  
+}
+
+body p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+.active{
+    color: white;
+}
+
+/* #dotsCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  pointer-events: none;
+} */
+
+/* scrooll bar  */
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px transparent;
+	background-color: black;
+}
+
+::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: #304B68;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #304B68;
+  border-radius: 30px;
+  
+}
+
+/* slider  */
+
+.shadow-effect {
+    background-color: #3F6893;
+    /* background: linear-gradient(black, gray); */
+    /* padding: 50px; */
+    border-radius: 20px;
+   
+/* border:1px solid #ECECEC; */
+/* box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.4); */
+}
+#customers-testimonials .shadow-effect p {
+    line-height: 1.5;
+    font-weight: 300;
+}
+.testimonial-name {
+    margin: -17px auto 0;
+    display: table;
+    width: auto;
+    background: #3190E7;
+    border-radius: 12px;
+    color: #fff;
+    box-shadow: 0 9px 18px rgba(0,0,0,0.12), 0 5px 7px rgba(0,0,0,0.05);
+}
+#customers-testimonials .item {   
+    opacity: .2;
+    -webkit-transform: scale3d(0.8, 0.8, 1);
+    transform: scale3d(0.8, 0.8, 1);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+#customers-testimonials .owl-item.active.center .item {
+    opacity: 1;
+    -webkit-transform: scale3d(1.0, 1.0, 1);
+    transform: scale3d(1.0, 1.0, 1);
+}
+.owl-carousel .owl-item img {
+    /* transform-style: preserve-3d; */
+   
+}
+
+
+
+/* pop up  */
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    /* margin: 70px auto;
+    padding: 40px; */
+    border-radius: 12px;
+    width: 35%;
+    position: relative;
+    /* transition: all 5s ease-in-out; */
+    text-align: center;
+  }
+  
+  .popup h1 {
+    margin-top: 0;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: #3B3B3B;
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+  
+  @media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+  }
+
+
+
+/* 
+
+  .radar {
+    position: relative;
+    border-radius: 50%;
+    box-shadow: 0 0 25px white;
+    overflow: hidden;
+  }
+
+  .sweep {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(rgba(255, 255, 255, 0.3) 0deg, transparent 60deg);
+    border-radius: 50%;
+    animation: rotate 3s linear infinite;
+    z-index: 1;
+  }
+
+  .radar-circle {
+    position: absolute;
+    border: 1px solid white;
+    border-radius: 50%;
+  }
+
+  .radar-line {
+    position: absolute;
+    background-color: white;
+    z-index: 2;
+  }
+
+  @keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+ */
+
+
+
+  
+  /* Floating WhatsApp Button */
+  .whatsapp-float {
+    background-color: #25D366;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 28px;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+    z-index: 100;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+
+.whatsapp-float img {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+.iti {
+  width: 100%;
+}
+
+.iti__flag-container {
+  background-color: transparent !important;
+  border-right: 1px solid #D3D3D3;
+  padding-right: 10px;
+}
+
+.iti--separate-dial-code .iti__selected-flag {
+  background-color: transparent !important;
+}
+
+.iti__selected-dial-code {
+  color: #D3D3D3 !important;
+  font-size: 16px /* text-lg */
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Chatbot</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+<!-- intl-tel-input CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.19/build/css/intlTelInput.css" />
+
+
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+
+<!-- Phone Input Field -->
+<form class="space-y-6 pt-10 xl:pt-20">
+  <input type="text" placeholder="Your Name" class="w-full py-4 px-6 rounded-full border border-[#D3D3D3] text-[#D3D3D3] bg-transparent text-lg">
+  
+  <!-- Phone with flag + code -->
+  <input type="tel" id="phone" name="phone"
+         class="w-full py-4 pl-[90px] pr-6 rounded-full border border-[#D3D3D3] text-[#D3D3D3] bg-transparent text-lg">
+
+  <input type="text" placeholder="Company Name (optional)" class="w-full py-4 px-6 rounded-full border border-[#D3D3D3] text-[#D3D3D3] bg-transparent text-lg">
+  
+  <textarea rows="6" placeholder="Your Message" class="w-full py-4 px-6 rounded-2xl border border-[#D3D3D3] text-[#D3D3D3] bg-transparent text-lg"></textarea>
+
+  <label class="inline-flex items-center">
+    <input type="checkbox" class="form-checkbox h-4 w-4 text-[#D3D3D3] bg-transparent border-[#D3D3D3]" checked>
+    <span class="ml-5 text-white text-sm">I'm not a robot</span>
+  </label>
+</form>
+
+<!-- intl-tel-input JS -->
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.19/build/js/intlTelInput.min.js"></script>
+
+<!-- Optional geoIpLookup -->
+<script>
+  const input = document.querySelector("#phone");
+  window.intlTelInput(input, {
+    separateDialCode: true,
+    initialCountry: "auto",
+    geoIpLookup: function (callback) {
+      fetch('https://ipinfo.io/json?token=<your_token_here>')
+        .then(res => res.json())
+        .then(data => callback(data.country))
+        .catch(() => callback('us'));
+    },
+    utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.19/build/js/utils.js"
+  });
+</script>
+
+<!-- Custom CSS to make dial code + flag background transparent -->
+<style>
+  .iti {
+    width: 100%;
+  }
+
+  .iti__flag-container {
+    background-color: transparent !important;
+    border-right: 1px solid #D3D3D3;
+    padding-right: 10px;
+  }
+
+  .iti--separate-dial-code .iti__selected-flag {
+    background-color: transparent !important;
+  }
+
+  .iti__selected-dial-code {
+    color: #D3D3D3 !important;
+    font-size: 1.125rem; /* text-lg */
+  }
+</style>
+<!-- Checkbox -->
+<label class="inline-flex items-center">
+  <input type="checkbox" id="robotCheck" class="form-checkbox checked:bg-transparent h-4 w-4 text-[#D3D3D3]">
+  <span class="ml-5 text-white text-sm">I'm not a robot</span>
+</label>
+
+<!-- Captcha Animation Box -->
+<div id="captchaBox" class="mt-5 hidden flex items-center gap-4">
+  <!-- Spinner -->
+  <div class="w-6 h-6 border-4 border-white border-t-transparent rounded-full animate-spin"></div>
+  <p class="text-white text-sm">Verifying...</p>
+</div>
+
+<!-- Success Message -->
+<p id="verifiedMessage" class="hidden text-green-400 mt-4">✔ You are verified!</p>
+
+<!-- Script -->
+<script>
+  const checkbox = document.getElementById("robotCheck");
+  const captchaBox = document.getElementById("captchaBox");
+  const verifiedMsg = document.getElementById("verifiedMessage");
+
+  checkbox.addEventListener("change", function () {
+    if (this.checked) {
+      captchaBox.classList.remove("hidden");
+      verifiedMsg.classList.add("hidden");
+
+      // Simulate captcha loading
+      setTimeout(() => {
+        captchaBox.classList.add("hidden");
+        verifiedMsg.classList.remove("hidden");
+      }, 3000); // 3 seconds
+    } else {
+      captchaBox.classList.add("hidden");
+      verifiedMsg.classList.add("hidden");
+    }
+  });
+</script>
+
+
+</body>
+</html>
