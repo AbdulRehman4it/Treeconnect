@@ -32,21 +32,21 @@
 
 
                     <div class="pt-8">
-                        <input type="text" id="" name="" class=" w-full py-2 px-3 rounded-xl border border-[#D3D3D3] text-[#D3D3D3] bg-[#304B68] text-lg focus:border-[#D3D3D3] focus:outline-none" placeholder="Email Address">
+                        <input type="text" id="" name="" class=" w-full py-2 px-3 rounded-xl border border-[#D3D3D3] text-white bg-[#304B68] text-lg focus:border-[#D3D3D3] focus:outline-none" placeholder="Email Address">
                      <div x-data="{ show: false }" class="relative w-full  mt-4">
   
   <input :type="show ? 'text' : 'password'"
          id="password"
-         class=" w-full py-2 px-3 rounded-xl border border-[#D3D3D3] text-[#D3D3D3] bg-[#304B68] text-lg focus:border-[#D3D3D3] focus:outline-none"
+         class=" w-full py-2 px-3 rounded-xl border border-[#D3D3D3] text-white bg-[#304B68] text-lg focus:border-[#D3D3D3] focus:outline-none"
          placeholder="Enter your password">
 
   <!-- Toggle icon button -->
   <button type="button"
           @click="show = !show"
-          class="absolute inset-y-0 right-3 flex items-center text-gray-500">
+          class="absolute inset-y-0 right-3 flex items-center text-white">
     
     <!-- Eye Icon (visible password) -->
-    <svg x-show="!show" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+    <svg x-show="!show" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none"
          viewBox="0 0 24 24" stroke="currentColor">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -55,7 +55,7 @@
     </svg>
 
     <!-- Eye Slash Icon (hidden password) -->
-    <svg x-show="show" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+    <svg x-show="show" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none"
          viewBox="0 0 24 24" stroke="currentColor">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.269-2.943-9.543-7a10.05 10.05 0 012.143-3.307m3.36-2.38A9.974 9.974 0 0112 5c4.477 0 8.268 2.943 9.542 7a10.05 10.05 0 01-4.043 5.097M15 12a3 3 0 00-3-3m0 0a3 3 0 013 3m-3 0a3 3 0 003 3m-6-3a3 3 0 013-3m9 9L3 3" />
