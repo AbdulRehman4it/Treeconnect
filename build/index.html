@@ -12,6 +12,11 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js"></script>
   
+
+  <script src="//code.tidio.co/vxiqlrt5ipq4shg4h60brissqd8hj15z.js" async></script>
+
+<!-- intl-tel-input CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.19/build/css/intlTelInput.css" />
     
 </head>
 <body class="bg-[#304B68] overflow-x-hidden">
@@ -137,11 +142,11 @@
   <!-- Mobile Menu -->
   <div id="mobile-menu" class="absolute left-0 right-0 hidden mt-5 bg-[#3F6893] h-[550px] rounded-3xl px-6 py-5 z-40 transition-all duration-300 ease-in-out">
     <ul class="flex flex-col space-y-4 text-center">
-      <li><a href="index.html" class="text-[#D3D3D3] text-base hover:text-white active">Home</a></li>
+      <li><a href="index.html" class="text-white text-base hover:text-white active">Home</a></li>
 
       <!-- Mobile Dropdown -->
       <li class="relative group">
-        <button onclick="toggleMobileDropdown()" class="flex items-center justify-center w-full text-[#D3D3D3] text-base hover:text-white">
+        <button onclick="toggleMobileDropdown()" class="flex items-center justify-center w-full text-white text-base hover:text-white">
           Our Services
           <svg class="w-4 h-4 ml-2 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
@@ -157,9 +162,9 @@
         </ul>
       </li>
 
-      <li><a href="story.html" class="text-[#D3D3D3] text-base hover:text-white">Our story</a></li>
-      <li><a href="contact.html" class="text-[#D3D3D3] text-base hover:text-white ">Contact us</a></li>
-      <li><a href="login.html"><button class="text-[#D3D3D3]">Login</button></a></li>
+      <li><a href="story.html" class="text-white text-base hover:text-white">Our story</a></li>
+      <li><a href="contact.html" class="text-white text-base hover:text-white ">Contact us</a></li>
+      <li><a href="login.html"><button class="text-white">Login</button></a></li>
        <li class="flex justify-center space-x-4 mt-4">
         <a href="../build/index.html" onclick="event.preventDefault(); setFlagMobile('../build/assets/img/united-kingdom.png', this.href)">
           <img src="../build/assets/img/united-kingdom.png" class="w-7 h-7" alt="UK Flag">
@@ -537,7 +542,7 @@
   <div class="bg-[#3F6893] grid md:grid-cols-3 grid-cols-1 xl:gap-64 md:gap-28 2xl:py-20 2xl:px-48 lg:py-10 lg:px-24 py-6 px-10 ">
     <div class="text-center md:text-start">
       <div class="flex md:justify-start justify-center">
-        <img src="../build/assets/img/logo3.png" class="w-36 h-12" alt="">
+        <img src="../build/assets/img/logo3.png" class="w-32 h-12" alt="">
       </div>
       <p class="text-white text-sm font-light pt-3">TreeConnect is your agile partner for growth, delivering innovative and tailored solutions from HR to IT, including strategy, administration and finance.</p>
       <h1 class="text-white text-lg pt-2">Stay Connected</h1>
@@ -586,6 +591,31 @@
     </div>
   </div>
 </footer>
+
+
+<!-- Sticky Social Icons with Hover Labels -->
+<div class="fixed bottom-32 lg:right-9 right-5 z-50 flex flex-col items-center space-y-3">
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/+41782335317?text=Hello!%20I%20need%20help" target="_blank"
+     class="group flex items-center bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg overflow-hidden transition-all duration-300 ease-in-out hover:scale-105">
+    <span class="p-3 whatsapp-float">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </span>
+  </a>
+
+  <!-- Clendy -->
+  <a href="https://calendly.com/treeconnect" target="_blank"
+     class="group flex items-center bg-purple-600 hover:bg-purple-700 text-white rounded-full shadow-lg overflow-hidden transition-all duration-300 ease-in-out hover:scale-105">
+    <span class="p-3">
+      <!-- Clendy Icon (Placeholder Square) -->
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 4h16v16H4z" />
+      </svg>
+    </span>
+  </a>
+
+</div>
 
 <!-- JavaScript for Slider Functionality     -->
 <script>
