@@ -3,147 +3,96 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI Chatbot</title>
   <script src="https://cdn.tailwindcss.com"></script>
-<!-- intl-tel-input CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.19/build/css/intlTelInput.css" />
-
-
+  <title>Multi-language Website</title>
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+<body class="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6">
 
-<!-- Include Alpine.js -->
-<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  <!-- Dropdown -->
+  <div class="relative inline-block text-left mb-6">
+    <button onclick="toggleDropdown()" class="flex items-center gap-2 px-4 py-2 bg-white border border-gray-300 rounded shadow">
+      <span id="currentLang">EN</span>
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+      </svg>
+    </button>
+    <div id="dropdownMenu" class="hidden absolute mt-2 w-32 bg-white border border-gray-200 rounded shadow-lg z-10">
+      <ul class="py-1 text-sm text-gray-700">
+        <li><a href="#" onclick="setLanguage('EN')" class="block px-4 py-2 hover:bg-gray-100">EN</a></li>
+        <li><a href="#" onclick="setLanguage('FR')" class="block px-4 py-2 hover:bg-gray-100">FR</a></li>
+        <li><a href="#" onclick="setLanguage('ES')" class="block px-4 py-2 hover:bg-gray-100">ES</a></li>
+        <li><a href="#" onclick="setLanguage('DE')" class="block px-4 py-2 hover:bg-gray-100">DE</a></li>
+      </ul>
+    </div>
+  </div>
 
-<div x-data="{ show: false }" class="relative w-full max-w-sm mx-auto mt-10">
-  <label for="password" class="block text-sm font-medium text-gray-700 mb-1">Password</label>
+  <!-- Page Content -->
+  <h1 data-i18n="heading" class="text-2xl font-bold mb-2">Welcome</h1>
+  <p data-i18n="paragraph" class="text-gray-700 mb-4">This is a simple multi-language site.</p>
+  <button data-i18n="button" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Learn More</button>
   
-  <input :type="show ? 'text' : 'password'"
-         id="password"
-         class="w-full px-4 py-2 pr-10 border rounded-lg shadow-sm focus:outline-none focus:ring focus:border-blue-300"
-         placeholder="Enter your password">
 
-  <!-- Toggle icon button -->
-  <button type="button"
-          @click="show = !show"
-          class="absolute inset-y-0 right-3 top-8 flex items-center text-gray-500">
-    
-    <!-- Eye Icon (visible password) -->
-    <svg x-show="!show" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
-         viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.477 0 8.268 2.943 9.542 7-1.274 4.057-5.065 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-    </svg>
+  <!-- Example of More Sections -->
+  <section class="mt-8">
+    <h2 data-i18n="about" class="text-xl font-semibold mb-2">About Us</h2>
+    <p data-i18n="aboutDesc" class="text-gray-700 mb-4">We provide web development services that cater to your needs.</p>
+  </section>
 
-    <!-- Eye Slash Icon (hidden password) -->
-    <svg x-show="show" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
-         viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.269-2.943-9.543-7a10.05 10.05 0 012.143-3.307m3.36-2.38A9.974 9.974 0 0112 5c4.477 0 8.268 2.943 9.542 7a10.05 10.05 0 01-4.043 5.097M15 12a3 3 0 00-3-3m0 0a3 3 0 013 3m-3 0a3 3 0 003 3m-6-3a3 3 0 013-3m9 9L3 3" />
-    </svg>
-  </button>
-</div>
+  <footer class="mt-8 text-gray-500" data-i18n="footer">
+    <p>&copy; 2025 Lucky Media. All Rights Reserved.</p>
+  </footer>
 
+  <script>
+    const translations = {
+      EN: {
+        heading: "Welcome",
+        paragraph: "This is a simple multi-language site.",
+        button: "Learn More",
+        about: "About Us",
+        aboutDesc: "We provide web development services that cater to your needs.",
+        footer: "&copy; 2025 Lucky Media. All Rights Reserved."
+      },
+      FR: {
+        heading: "Bienvenue",
+        paragraph: "Ceci est un site multilingue simple.",
+        button: "En savoir plus",
+        about: "À propos de nous",
+        aboutDesc: "Nous offrons des services de développement web adaptés à vos besoins.",
+        footer: "&copy; 2025 Lucky Media. Tous droits réservés."
+      },
+      ES: {
+        heading: "Bienvenido",
+        paragraph: "Este es un sitio multilingüe simple.",
+        button: "Aprende más",
+        about: "Sobre nosotros",
+        aboutDesc: "Ofrecemos servicios de desarrollo web que se adaptan a sus necesidades.",
+        footer: "&copy; 2025 Lucky Media. Todos los derechos reservados."
+      },
+      DE: {
+        heading: "Willkommen",
+        paragraph: "Dies ist eine einfache mehrsprachige Website.",
+        button: "Erfahre mehr",
+        about: "Über uns",
+        aboutDesc: "Wir bieten Webentwicklungsdienste, die auf Ihre Bedürfnisse abgestimmt sind.",
+        footer: "&copy; 2025 Lucky Media. Alle Rechte vorbehalten."
+      }
+    };
 
-<!-- Phone Input Field -->
-<form class="space-y-6 pt-10 xl:pt-20">
-  <input type="text" placeholder="Your Name" class="w-full py-4 px-6 rounded-full border border-[#D3D3D3] text-[#D3D3D3] bg-transparent text-lg">
-  
-  <!-- Phone with flag + code -->
-  <input type="tel" id="phone" name="phone"
-         class="w-full py-4 pl-[90px] pr-6 rounded-full border border-[#D3D3D3] text-[#D3D3D3] bg-transparent text-lg">
-
-  <input type="text" placeholder="Company Name (optional)" class="w-full py-4 px-6 rounded-full border border-[#D3D3D3] text-[#D3D3D3] bg-transparent text-lg">
-  
-  <textarea rows="6" placeholder="Your Message" class="w-full py-4 px-6 rounded-2xl border border-[#D3D3D3] text-[#D3D3D3] bg-transparent text-lg"></textarea>
-
-  <label class="inline-flex items-center">
-    <input type="checkbox" class="form-checkbox h-4 w-4 text-[#D3D3D3] bg-transparent border-[#D3D3D3]" checked>
-    <span class="ml-5 text-white text-sm">I'm not a robot</span>
-  </label>
-</form>
-
-<!-- intl-tel-input JS -->
-<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.19/build/js/intlTelInput.min.js"></script>
-
-<!-- Optional geoIpLookup -->
-<script>
-  const input = document.querySelector("#phone");
-  window.intlTelInput(input, {
-    separateDialCode: true,
-    initialCountry: "auto",
-    geoIpLookup: function (callback) {
-      fetch('https://ipinfo.io/json?token=<your_token_here>')
-        .then(res => res.json())
-        .then(data => callback(data.country))
-        .catch(() => callback('us'));
-    },
-    utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.19/build/js/utils.js"
-  });
-</script>
-
-<!-- Custom CSS to make dial code + flag background transparent -->
-<style>
-  .iti {
-    width: 100%;
-  }
-
-  .iti__flag-container {
-    background-color: transparent !important;
-    border-right: 1px solid #D3D3D3;
-    padding-right: 10px;
-  }
-
-  .iti--separate-dial-code .iti__selected-flag {
-    background-color: transparent !important;
-  }
-
-  .iti__selected-dial-code {
-    color: #D3D3D3 !important;
-    font-size: 1.125rem; /* text-lg */
-  }
-</style>
-<!-- Checkbox -->
-<label class="inline-flex items-center">
-  <input type="checkbox" id="robotCheck" class="form-checkbox checked:bg-transparent h-4 w-4 text-[#D3D3D3]">
-  <span class="ml-5 text-white text-sm">I'm not a robot</span>
-</label>
-
-<!-- Captcha Animation Box -->
-<div id="captchaBox" class="mt-5 hidden flex items-center gap-4">
-  <!-- Spinner -->
-  <div class="w-6 h-6 border-4 border-white border-t-transparent rounded-full animate-spin"></div>
-  <p class="text-white text-sm">Verifying...</p>
-</div>
-
-<!-- Success Message -->
-<p id="verifiedMessage" class="hidden text-green-400 mt-4">✔ You are verified!</p>
-
-<!-- Script -->
-<script>
-  const checkbox = document.getElementById("robotCheck");
-  const captchaBox = document.getElementById("captchaBox");
-  const verifiedMsg = document.getElementById("verifiedMessage");
-
-  checkbox.addEventListener("change", function () {
-    if (this.checked) {
-      captchaBox.classList.remove("hidden");
-      verifiedMsg.classList.add("hidden");
-
-      // Simulate captcha loading
-      setTimeout(() => {
-        captchaBox.classList.add("hidden");
-        verifiedMsg.classList.remove("hidden");
-      }, 3000); // 3 seconds
-    } else {
-      captchaBox.classList.add("hidden");
-      verifiedMsg.classList.add("hidden");
+    function toggleDropdown() {
+      document.getElementById("dropdownMenu").classList.toggle("hidden");
     }
-  });
-</script>
 
+    function setLanguage(lang) {
+      document.getElementById("currentLang").textContent = lang;
 
+      const elements = document.querySelectorAll("[data-i18n]");
+      elements.forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        el.innerHTML = translations[lang][key];
+      });
+
+      toggleDropdown();
+    }
+  </script>
 </body>
 </html>

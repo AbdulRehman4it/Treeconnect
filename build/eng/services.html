@@ -3,54 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TreeConnect-Nos services</title>
-    <link rel="stylesheet" href="../build/../assets/css/style.css">
+    <title>TreeConnect-Services</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
 
     <script src="//code.tidio.co/vxiqlrt5ipq4shg4h60brissqd8hj15z.js" async></script>
 
 <!-- intl-tel-input CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.19/build/css/intlTelInput.css" />
+
 </head>
 <body class="bg-[#304B68] overflow-x-hidden">
   <nav class="2xl:px-20 lg:px-10 px-5 2xl:pt-16 lg:pt-9 pt-5 relative z-50">
-    <!-- Navbar Container -->
+   <!-- Navbar Container -->
   <div class="flex justify-between items-center bg-[#3F6893] px-8 py-5 rounded-[40px] relative z-50">
     
     <!-- Logo -->
     <div>
       <a href="index.html">
-        <img src="../build/../assets/img/logo3.png" class="md:w-32 md:h-12 w-20 h-8" alt="Logo">
+        <img src="../assets/img/logo3.png" class="md:w-32 md:h-12 w-20 h-8" alt="Logo">
       </a>
     </div>
 
     <!-- Desktop Navigation -->
     <div class="hidden lg:block">
       <ul class="flex xl:space-x-14 space-x-10">
-        <li><a href="index.html" class="text-[#D3D3D3] xl:text-lg text-base hover:text-white ">Accueil</a></li>
+        <li><a href="index.html" class="text-[#D3D3D3] xl:text-lg text-base hover:text-white ">Home</a></li>
         
         <!-- Dropdown -->
         <li class="relative group">
           <a href="services.html">
           <button class="text-[#D3D3D3] xl:text-lg text-base hover:text-white flex items-center gap-1 active">
-            Nos services
+            Our Services
             <svg class="w-4 h-4 mt-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
             </svg>
           </button>
         </a>
-          <ul class="absolute left-0 pt-4 w-52 bg-[#3F6893] text-white rounded-lg shadow-lg hidden group-hover:block z-50">
-            <li><a href="services.html" class="block px-4 py-2 hover:bg-[#35597C] text-base">Création et lancement d’entreprise</a></li>
-            <li><a href="services2.html" class="block px-4 py-2 hover:bg-[#35597C] text-base">Ressources humaines</a></li>
-            <li><a href="services3.html" class="block px-4 py-2 hover:bg-[#35597C] text-base">Gestion administrative</a></li>
-            <li><a href="services4.html" class="block px-4 py-2 hover:bg-[#35597C] text-base">Informatique & Cybersécurité</a></li>
-            <li><a href="services5.html" class="block px-4 py-2 hover:bg-[#35597C] text-base">Comptabilité & finance</a></li>
-            <li><a href="services6.html" class="block px-4 py-2 hover:bg-[#35597C] text-base">Marketing & communication</a></li>
+          <ul class="absolute left-0 pt-4 w-48 bg-[#3F6893] text-white rounded-lg shadow-lg hidden group-hover:block z-50">
+            <li><a href="services.html" class="block px-4 py-2 hover:bg-[#35597C] text-base">Business Creation & Launch</a></li>
+            <li><a href="services2.html" class="block px-4 py-2 hover:bg-[#35597C] text-base">Human Resources</a></li>
+            <li><a href="services3.html" class="block px-4 py-2 hover:bg-[#35597C] text-base">Admin & Back-Office</a></li>
+            <li><a href="services4.html" class="block px-4 py-2 hover:bg-[#35597C] text-base">IT and Cybersecurity</a></li>
+            <li><a href="services5.html" class="block px-4 py-2 hover:bg-[#35597C] text-base">Accounting & Finance</a></li>
+            <li><a href="services6.html" class="block px-4 py-2 hover:bg-[#35597C] text-base">Marketing & Communication</a></li>
           </ul>
         </li>
 
-        <li><a href="story.html" class="text-[#D3D3D3] xl:text-lg text-base hover:text-white">Notre histoire</a></li>
-        <li><a href="contact.html" class="text-[#D3D3D3] xl:text-lg text-base hover:text-white ">Contactez-nous</a></li>
+        <li><a href="story.html" class="text-[#D3D3D3] xl:text-lg text-base hover:text-white">Our story</a></li>
+        <li><a href="contact.html" class="text-[#D3D3D3] xl:text-lg text-base hover:text-white ">Contact us</a></li>
       </ul>
     </div>
 
@@ -59,7 +60,7 @@
       <div class="relative inline-block text-left">
         <div class="relative inline-block text-left top-1">
           <button onclick="toggleDropdown()" class="flex items-center">
-            <img id="currentFlag" src="../build/../assets/img/france.png" class="w-6 h-6" alt="flag">
+            <img id="currentFlag" src="../assets/img/united-kingdom.png" class="w-6 h-6" alt="flag">
             <svg class="w-4 h-4 ml-2 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
             </svg>
@@ -68,13 +69,13 @@
           <div id="dropdownMenu" class="hidden absolute mt-2 w-24 bg-[#3F6893] border border-[#3F6893] z-10">
             <ul class="py-1 text-sm text-gray-700 text-center">
               <li>
-                <a href="../services.html" onclick="event.preventDefault(); setFlag('../build/../assets/img/united-kingdom.png', this.href)" class="block flex justify-center hover:text-white px-4 py-2 hover:bg-white">
-                  <img src="../build/../assets/img/united-kingdom.png" class="w-7" alt="England Flag">
+                <a href="#" onclick="event.preventDefault(); setFlag('../assets/img/united-kingdom.png', this.href)" class="block flex justify-center hover:text-white px-4 py-2 hover:bg-white">
+                  <img src="../assets/img/united-kingdom.png" class="w-7" alt="England Flag">
                 </a>
               </li>
               <li>
-                <a href="#" onclick="event.preventDefault(); setFlag('../build/../assets/img/france.png', this.href)" class="block flex justify-center hover:text-white px-4 py-2 hover:bg-white">
-                  <img src="../build/../assets/img/france.png" class="w-7" alt="France Flag">
+                <a href="../services.html" onclick="event.preventDefault(); setFlag('../assets/img/france.png', this.href)" class="block flex justify-center hover:text-white px-4 py-2 hover:bg-white">
+                  <img src="../assets/img/france.png" class="w-7" alt="France Flag">
                 </a>
               </li>
             </ul>
@@ -100,7 +101,7 @@
         
       
       </div>
-      <a href="../french/login.html">
+      <a href="login.html">
       <button class="text-[#FFFFFF] xl:text-lg text-base py-2 px-10 border border-white rounded-full font-medium">Login</button>
       </a>
     </div>
@@ -125,35 +126,35 @@
   <!-- Mobile Menu -->
   <div id="mobile-menu" class="absolute left-0 right-0 hidden mt-5 bg-[#3F6893] h-[550px] rounded-3xl px-6 py-5 z-40 transition-all duration-300 ease-in-out">
     <ul class="flex flex-col space-y-4 text-center">
-      <li><a href="../french/index.html" class="text-white text-base hover:text-white">Accueil</a></li>
+      <li><a href="index.html" class="text-white text-base hover:text-white ">Home</a></li>
 
       <!-- Mobile Dropdown -->
       <li class="relative group">
         <button onclick="toggleMobileDropdown()" class="flex items-center justify-center w-full text-white text-base hover:text-white active">
-          Nos services
+          Our Services
           <svg class="w-4 h-4 ml-2 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
         <ul id="mobileDropdown" class="hidden mt-2 space-y-2 absolute left-20 md:left-60 p-4 w-56 bg-[#3F6893] text-white rounded-lg shadow-lg group-hover:block z-50">
-          <li><a href="../french/services.html" class="block px-4 py-2 hover:bg-[#35597C] text-sm">Création et lancement d’entreprise</a></li>
-          <li><a href="../french/services2.html" class="block px-4 py-2 hover:bg-[#35597C] text-sm">Ressources humaines</a></li>
-          <li><a href="../french/services3.html" class="block px-4 py-2 hover:bg-[#35597C] text-sm">Gestion administrative</a></li>
-          <li><a href="../french/services4.html" class="block px-4 py-2 hover:bg-[#35597C] text-sm">Informatique & Cybersécurité</a></li>
-          <li><a href="../french/services5.html" class="block px-4 py-2 hover:bg-[#35597C] text-sm">Comptabilité & finance</a></li>
-          <li><a href="../french/services6.html" class="block px-4 py-2 hover:bg-[#35597C] text-sm">Marketing & communication</a></li>
+          <li><a href="services.html" class="block px-4 py-2 hover:bg-[#35597C] text-sm">Business Creation & Launch</a></li>
+          <li><a href="services2.html" class="block px-4 py-2 hover:bg-[#35597C] text-sm">Human Resources</a></li>
+          <li><a href="services3.html" class="block px-4 py-2 hover:bg-[#35597C] text-sm">Admin & Back-Office</a></li>
+          <li><a href="services4.html" class="block px-4 py-2 hover:bg-[#35597C] text-sm">IT and Cybersecurity</a></li>
+          <li><a href="services5.html" class="block px-4 py-2 hover:bg-[#35597C] text-sm">Accounting & Finance</a></li>
+          <li><a href="services6.html" class="block px-4 py-2 hover:bg-[#35597C] text-sm">Marketing & Communication</a></li>
         </ul>
       </li>
 
-      <li><a href="../french/story.html" class="text-white text-base hover:text-white">Notre histoire</a></li>
-      <li><a href="../french/contact.html" class="text-white text-base hover:text-white ">Contactez-nous</a></li>
-      <li><a href="../french/login.html"><button class="text-white">Login</button></a></li>
-      <li class="flex justify-center space-x-4 mt-4">
-        <a href="../services.html" onclick="event.preventDefault(); setFlagMobile('../build/../assets/img/united-kingdom.png', this.href)">
-          <img src="../build/../assets/img/united-kingdom.png" class="w-7 h-7" alt="UK Flag">
+      <li><a href="story.html" class="text-white text-base hover:text-white">Our story</a></li>
+      <li><a href="contact.html" class="text-white text-base hover:text-white ">Contact us</a></li>
+      <li><a href="login.html"><button class="text-white">Login</button></a></li>
+       <li class="flex justify-center space-x-4 mt-4">
+        <a href="#" onclick="event.preventDefault(); setFlagMobile('../assets/img/united-kingdom.png', this.href)">
+          <img src="../assets/img/united-kingdom.png" class="w-7 h-7" alt="UK Flag">
         </a>
-        <a href="#" onclick="event.preventDefault(); setFlagMobile('../build/../assets/img/france.png', this.href)">
-          <img src="../build/../assets/img/france.png" class="w-7 h-7" alt="France Flag">
+        <a href="../services.html" onclick="event.preventDefault(); setFlagMobile('../assets/img/france.png', this.href)">
+          <img src="../assets/img/france.png" class="w-7 h-7" alt="France Flag">
         </a>
       </li>
       <script>
@@ -171,6 +172,9 @@
           }, 100);
         }
       </script>
+          </ul>
+        </div>
+      </li>
     </ul>
   </div>
   
@@ -201,13 +205,14 @@
   });
 </script>
 
+
 <section class="2xl:px-28 lg:px-10 px-5 lg:pt-20 pt-10">
 
   <!-- 🔥 Black Overlay -->
   <!-- <div class="absolute inset-0 bg-black bg-opacity-30 z-0"></div> -->
 <div>
-  <img src="../build/../assets/img/planimg.png" class="rounded-2xl w-full md:block hidden" alt="">
-  <img src="../build/../assets/img/watt11.jpg" class="rounded-2xl w-full block md:hidden"  alt="">
+  <img src="../assets/img/planimg.png" class="rounded-2xl w-full md:block hidden" alt="">
+  <img src="../assets/img/watt11.jpg" class="rounded-2xl w-full block md:hidden"  alt="">
 </div>
   <!-- 🔥 Content Area Above Overlay -->
   <div class="lg:pt-10 pt-5">
@@ -215,7 +220,7 @@
     <!-- Left Side -->
     <div class=" w-full">
       <h1 class="2xl:text-[70px] lg:text-5xl text-4xl text-white" >
-        Création et lancement d’entreprise
+        Business Creation & Launch
       </h1>
       <!-- <div class="2xl:pt-16 pt-8" >
         <button class="hover:bg-[#3F6893] border border-white hover:border-[#3F6893] lg:text-lg text-base xl:px-10 font-medium xl:py-3 px-6 py-2 rounded-full text-white">
@@ -227,12 +232,7 @@
     <!-- Right Side -->
     <div class="">
       <p class="2xl:text-[22px] xl:text-lg text-base text-white pt-4 2xl:leading-[44px] lg:leading-8 leading-7" >
-        Nous transformons votre idée en une entreprise pleinement opérationnelle, en vous
-accompagnant à chaque étape.
-De la structure juridique à la mise en place des outils essentiels, jusqu’à l’émission de votre
-première facture, nous assurons un accompagnement complet pour poser des bases solides.
-Notre approche clé en main vous apporte les outils, la stratégie et la confiance nécessaires pour
-réussir et vous démarquer dans un marché compétitif.
+        We help transform your idea into a fully operational business, guiding you every step of the way. From establishing the legal framework to setting up essential systems, and all the way to generating your first invoice, we provide comprehensive support to ensure your business is set up for success. Our end-to-end services are designed to give you the tools, strategies, and confidence needed to thrive in today’s competitive market.
       </p>
     </div>
 
@@ -244,7 +244,7 @@ réussir et vous démarquer dans un marché compétitif.
 
       <section class="2xl:px-28 lg:px-10 px-5 2xl:pt-40 lg:pt-28 pt-14">
         <!-- <div>
-          <img src="../build/assets/img/planimg.png" class="w-full" alt="">
+          <img src="../assets/img/planimg.png" class="w-full" alt="">
         </div>
         <div class="pt-10">
             <h1 class="2xl:text-[70px] lg:text-5xl text-4xl text-white">Business Planning Launch</h1>
@@ -253,37 +253,37 @@ réussir et vous démarquer dans un marché compétitif.
 
 
         <div class="">
-            <h1 class="2xl:text-[70px] lg:text-5xl text-4xl text-white">Ce que nous faisons pour vous</h1>
+            <h1 class="2xl:text-[70px] lg:text-5xl text-4xl text-white">What We Do for You</h1>
         <div class="flex md:flex-row flex-col 2xl:gap-80 xl:gap-60 lg:gap-40 md:gap-20">
             <div class="xl:pt-16 pt-8 lg:w-1/2 w-full">
                 <div>
-                    <img src="../build/../assets/img/hand.png"  alt="">
-                    <h1 class="2xl:text-2xl font-bold xl:text-lg text-base text-white pt-4 2xl:leading-[44px] lg:leading-8 leading-7 " >Création d’entreprise & inscription au registre du commerce</h1>
-                    <p class="2xl:text-[22px] xl:text-lg text-base text-white pt-2 2xl:leading-[40px] lg:leading-8 leading-7 " >Nous créons votre société clé en main, en gérant pour vous toutes les démarches juridiques et
-                      l’inscription au registre du commerce.
+                    <img src="../assets/img/hand.png"  alt="">
+                    <h1 class="2xl:text-2xl font-bold xl:text-lg text-base text-white pt-4 2xl:leading-[44px] lg:leading-8 leading-7 " >Company Creation and Legal Registration</h1>
+                    <p class="2xl:text-[22px] xl:text-lg text-base text-white pt-2 2xl:leading-[40px] lg:leading-8 leading-7 " >We register your company for you, handling all legal formalities and ensuring full compliance from day one.
+
                     </p>
                 </div>
                 <div class="xl:pt-20 pt-10">
-                    <img src="../build/../assets/img/house.png"  alt="">
-                    <h1 class="2xl:text-2xl font-bold xl:text-lg text-base text-white pt-4 2xl:leading-[44px] lg:leading-8 leading-7 " >Domiciliation & autorisations d’exploitation</h1>
-                    <p class="2xl:text-[22px] xl:text-lg text-base text-white pt-2 2xl:leading-[40px] lg:leading-8 leading-7 " >Nous vous fournissons une adresse commerciale reconnue et obtenons les autorisations
-                      nécessaires pour démarrer votre activité en toute conformité.
+                    <img src="../assets/img/house.png"  alt="">
+                    <h1 class="2xl:text-2xl font-bold xl:text-lg text-base text-white pt-4 2xl:leading-[44px] lg:leading-8 leading-7 " >Commercial Address & Business Licenses</h1>
+                    <p class="2xl:text-[22px] xl:text-lg text-base text-white pt-2 2xl:leading-[40px] lg:leading-8 leading-7 " >We secure a professional address and obtain all the licenses you need to operate legally and confidently.
+
                     </p>
                 </div>
             </div>
                 <div class="xl:pt-16 pt-8 lg:w-1/2 w-full">
                     <div>
-                        <img src="../build/../assets/img/location.png"  alt="">
-                        <h1 class="2xl:text-2xl font-bold xl:text-lg text-base text-white pt-4 2xl:leading-[44px] lg:leading-8 leading-7 " >Recherche de locaux, aménagement & travaux</h1>
-                        <p class="2xl:text-[22px] xl:text-lg text-base text-white pt-2 2xl:leading-[40px] lg:leading-8 leading-7 " >Nous trouvons l’emplacement idéal, sollicitons nos partenaires architectes et coordonnons les
-                          travaux pour livrer des locaux prêts à l’usage.
+                        <img src="../assets/img/location.png"  alt="">
+                        <h1 class="2xl:text-2xl font-bold xl:text-lg text-base text-white pt-4 2xl:leading-[44px] lg:leading-8 leading-7 " >Location Scouting, Architect Referrals & Renovation Setup
+                        </h1>
+                        <p class="2xl:text-[22px] xl:text-lg text-base text-white pt-2 2xl:leading-[40px] lg:leading-8 leading-7 " >We help you find the right location, connect you with trusted architects, and manage the setup to get your business space ready.
+
                         </p>
                     </div>
                     <div class="xl:pt-20 pt-10">
-                        <img src="../build/../assets/img/financial.png"  alt="">
-                        <h1 class="2xl:text-2xl font-bold xl:text-lg text-base text-white pt-4 2xl:leading-[44px] lg:leading-8 leading-7 " >Business plan & prévisions financières</h1>
-                        <p class="2xl:text-[22px] xl:text-lg text-base text-white pt-2 2xl:leading-[40px] lg:leading-8 leading-7" >Nous élaborons un business plan structuré avec des projections financières rigoureuses, pour
-                          renforcer votre dossier bancaire et sécuriser votre développement.
+                        <img src="../assets/img/financial.png"  alt="">
+                        <h1 class="2xl:text-2xl font-bold xl:text-lg text-base text-white pt-4 2xl:leading-[44px] lg:leading-8 leading-7 " >Business Plan & Financial Forecasts</h1>
+                        <p class="2xl:text-[22px] xl:text-lg text-base text-white pt-2 2xl:leading-[40px] lg:leading-8 leading-7" >We craft a tailored business plan and build reliable financial projections to support your funding efforts and future growth.
                         </p>
                     </div>
                 </div>
@@ -293,19 +293,16 @@ réussir et vous démarquer dans un marché compétitif.
 
       <section class="2xl:px-28 lg:px-10 px-5 2xl:pt-40 lg:pt-28 pt-14">
         <div class="lg:pb-10 pb-5">
-          <img src="../build/../assets/img/key.png" class="rounded-2xl w-full md:block hidden" alt="">
-          <img src="../build/../assets/img/watt1.jpg" class="rounded-2xl w-full md:hidden block" alt="">
+          <img src="../assets/img/key.png" class="rounded-2xl w-full md:block hidden" alt="">
+          <img src="../assets/img/watt1.jpg" class="rounded-2xl w-full md:hidden block" alt="">
         </div>
         <div class="bg-[#3F6893] xl:p-10 p-5 rounded-2xl items-center">
             <!-- <div class="md:w-2/5 w-full" >
-                <img src="../build/../assets/img/busi.png" alt="">
+                <img src="../assets/img/busi.png" alt="">
             </div> -->
             <div class=" w-full pt-4 md:pt-0">
-                <h1 class="text-white 2xl:text-4xl lg:text-3xl text-2xl" >Pourquoi c’est essentiel</h1>
-                <p class="2xl:text-[22px] xl:text-lg text-base text-white pt-2 2xl:leading-[44px] lg:leading-8 leading-7" >Lancer une entreprise demande du temps, de la précision et une parfaite connaissance du
-                  contexte local.
-                  Nous nous occupons des démarches complexes pour vous permettre de rester concentré sur ce
-                  qui compte vraiment : concrétiser votre projet.</p>
+                <h1 class="text-white 2xl:text-4xl lg:text-3xl text-2xl" >Why It Matters</h1>
+                <p class="2xl:text-[22px] xl:text-lg text-base text-white pt-2 2xl:leading-[44px] lg:leading-8 leading-7" >Launching a company takes time, precision, and local knowledge. We handle the complex steps, so you can focus on your project.</p>
                 <!-- <div class="2xl:pt-16 pt-8" >
                     <button class="border border-white lg:text-lg text-base xl:px-10 xl:py-3 px-6 py-2 rounded-full text-white"> How It Works</button>
                   </div> -->
@@ -317,38 +314,34 @@ réussir et vous démarquer dans un marché compétitif.
       <section class="2xl:px-28 lg:px-10 px-5">
 
       <div class="2xl:pt-36 lg:pt-24 pt-10">
-        <h1 class="2xl:text-[70px] lg:text-5xl text-4xl text-white" >Les bénéfices pour vous</h1>
+        <h1 class="2xl:text-[70px] lg:text-5xl text-4xl text-white" >Benefits for You</h1>
     <div class="flex md:flex-row flex-col 2xl:gap-80 xl:gap-60 lg:gap-40 md:gap-20">
         <div class="xl:pt-16 pt-8 lg:w-1/2 w-full">
             <div>
-                <img src="../build/../assets/img/world.png"  alt="">
-                <h1 class="2xl:text-2xl font-bold xl:text-lg text-base text-white pt-4 2xl:leading-[44px] lg:leading-8 leading-7 " >Sécurisez votre lancement, gagnez du temps précieux</h1>
-                <p class="2xl:text-[22px] xl:text-lg text-base text-white pt-2 2xl:leading-[40px] lg:leading-8 leading-7 " >Nous structurons chaque étape avec rigueur pour éviter les erreurs coûteuses et accélérer votre
-                  mise en route. 
+                <img src="../assets/img/world.png"  alt="">
+                <h1 class="2xl:text-2xl font-bold xl:text-lg text-base text-white pt-4 2xl:leading-[44px] lg:leading-8 leading-7 " >Save Time & Avoid Mistakes</h1>
+                <p class="2xl:text-[22px] xl:text-lg text-base text-white pt-2 2xl:leading-[40px] lg:leading-8 leading-7 " >Expert guidance to streamline your launch and prevent costly errors.
                 </p>
             </div>
             <div class="xl:pt-20 pt-10">
-                <img src="../build/../assets/img/partner.png"  alt="">
-                <h1 class="2xl:text-2xl font-bold xl:text-lg text-base text-white pt-4 2xl:leading-[44px] lg:leading-8 leading-7 " >Un seul partenaire, une vision globale</h1>
-                <p class="2xl:text-[22px] xl:text-lg text-base text-white pt-2 2xl:leading-[40px] lg:leading-8 leading-7 " >De l’idée initiale aux premières opérations, nous coordonnons l’ensemble pour vous garantir
-                  cohérence, fiabilité et sérénité.
+                <img src="../assets/img/partner.png"  alt="">
+                <h1 class="2xl:text-2xl font-bold xl:text-lg text-base text-white pt-4 2xl:leading-[44px] lg:leading-8 leading-7 " >One Partner for the Full Journey</h1>
+                <p class="2xl:text-[22px] xl:text-lg text-base text-white pt-2 2xl:leading-[40px] lg:leading-8 leading-7 " >End-to-end support from planning to launch, all in one place.
                 </p>
             </div>
         </div>
             <div class="xl:pt-16 pt-8 lg:w-1/2 w-full">
                 
                 <div>
-                    <img src="../build/../assets/img/lunch.png"  alt="">
-                    <h1 class="2xl:text-2xl font-bold xl:text-lg text-base text-white pt-4 2xl:leading-[44px] lg:leading-8 leading-7 " >Un cap clair, une exécution maîtrisée</h1>
-                    <p class="2xl:text-[22px] xl:text-lg text-base text-white pt-2 2xl:leading-[40px] lg:leading-8 leading-7" >Votre projet s’appuie sur une feuille de route concrète, pensée pour transformer votre vision en
-                      une activité performante et durable.
+                    <img src="../assets/img/lunch.png"  alt="">
+                    <h1 class="2xl:text-2xl font-bold xl:text-lg text-base text-white pt-4 2xl:leading-[44px] lg:leading-8 leading-7 " >Launch with Clarity & Structure</h1>
+                    <p class="2xl:text-[22px] xl:text-lg text-base text-white pt-2 2xl:leading-[40px] lg:leading-8 leading-7" >A clear roadmap to turn your vision into a well-organized reality.
                     </p>
                 </div>
                 <div class="xl:pt-20 pt-10">
-                    <img src="../build/../assets/img/text.png" alt="">
-                    <h1 class="2xl:text-2xl font-bold xl:text-lg text-base text-white pt-4 2xl:leading-[44px] lg:leading-8 leading-7 " >De l’idée à l’opérationnel, à vos côtés à chaque étape</h1>
-                    <p class="2xl:text-[22px] xl:text-lg text-base text-white pt-2 2xl:leading-[40px] lg:leading-8 leading-7" >Nous vous accompagnons avec méthode, exigence et réactivité, pour que chaque décision vous
-                      rapproche de vos objectifs.
+                    <img src="../assets/img/text.png" alt="">
+                    <h1 class="2xl:text-2xl font-bold xl:text-lg text-base text-white pt-4 2xl:leading-[44px] lg:leading-8 leading-7 " >From Idea to Execution, We’re With You</h1>
+                    <p class="2xl:text-[22px] xl:text-lg text-base text-white pt-2 2xl:leading-[40px] lg:leading-8 leading-7" >Your trusted partner at every stage of building your business.
                     </p>
                 </div>
             </div>
@@ -362,81 +355,70 @@ réussir et vous démarquer dans un marché compétitif.
     <section class="2xl:px-28 lg:px-10 px-5 2xl:pt-32 lg:pt-20 pt-10">
         <div class="flex justify-between">
         <div>
-            <h1 class="2xl:text-[70px] lg:text-5xl text-4xl text-white">Prêt à démarrer avec confiance?</h1>
-            <p class="2xl:text-[22px] xl:text-lg text-base text-white pt-4 2xl:leading-[44px] lg:leading-8 leading-7 " >TreeConnect prend en charge la mise en place complète de votre entreprise. Vous restez
-              concentré sur l’essentiel : développer votre vision.</p>
+            <h1 class="2xl:text-[70px] lg:text-5xl text-4xl text-white">Ready to Launch Smarter?</h1>
+            <p class="2xl:text-[22px] xl:text-lg text-base text-white pt-4 2xl:leading-[44px] lg:leading-8 leading-7 " >Let TreeConnect handle the setup while you focus on growing your vision.</p>
             <div class="2xl:pt-16 pt-10" >
               <a href="https://calendly.com/treeconnect">
-                <button class="border border-white lg:text-lg text-base xl:px-10 xl:py-3 px-6 py-2 rounded-full text-white">Échanger avec un expert</button>
+                <button class="border border-white lg:text-lg text-base xl:px-10 xl:py-3 px-6 py-2 rounded-full text-white"> Talk to an Expert</button>
               </a>
               </div>
             </div>
         <div class="-z-50 absolute right-20">
-            <img src="../build/../assets/img/pic.png" alt="">
+            <img src="../assets/img/pic.png" alt="">
         </div>
     </div>
     </section>
 
-
 <!-- footer  -->
 <footer class="2xl:pt-52 lg:pt-24 pt-10">
-  <div class="bg-[#3F6893] grid md:grid-cols-3 grid-cols-1 xl:gap-64 md:gap-24 2xl:py-20 2xl:px-48 lg:py-10 lg:px-20 py-6 px-10 ">
+  <div class="bg-[#3F6893] grid md:grid-cols-3 grid-cols-1 xl:gap-64 md:gap-28 2xl:py-20 2xl:px-48 lg:py-10 lg:px-24 py-6 px-10 ">
     <div class="text-center md:text-start">
       <div class="flex md:justify-start justify-center">
-      <img src="../build/../assets/img/logo3.png" class="w-32 h-12" alt="">
-    </div>
-      <p class="text-white text-sm font-light pt-3">TreeConnect, votre partenaire agile, accompagne votre croissance avec des solutions innovantes
-        et personnalisées, de la gestion RH à l’infrastructure IT, en passant par la stratégie, l’administratif
-        et la finance </p>
-        <h1 class="text-white text-lg pt-2">Stay Connected</h1>
+        <img src="../assets/img/logo3.png" class="w-32 h-12" alt="">
+      </div>
+      <p class="text-white text-sm font-light pt-3">TreeConnect is your agile partner for growth, delivering innovative and tailored solutions from HR to IT, including strategy, administration and finance.</p>
+      <h1 class="text-white text-lg pt-2">Stay Connected</h1>
       <a href="https://www.linkedin.com/company/treeconnect/ ">
-      <i class="fa-brands fa-linkedin text-white text-3xl pt-2"></i>
-    </a>
+        <i class="fa-brands fa-linkedin text-white text-3xl pt-2"></i>
+      </a>
     </div>
 
     <div class="text-center md:text-start pt-5 md:pt-0">
-      <!-- <h1 class="xl:text-sm text-xs font-medium text-white">QUICK LINKS</h1> -->
       <div class="flex flex-col pt-4 space-y-3">
-      <a href="../french/index.html" class="text-white text-sm font-light hover:underline">Accueil
+        <a href="index.html" class="text-white text-sm font-light hover:underline">Home</a>
 
-      </a>
-       <!-- Services Dropdown -->
+        <!-- Services Dropdown -->
         <div class="relative group inline-block text-center md:text-start">
           <button class="text-white text-sm font-light hover:underline focus:outline-none">
-            Nos services
+            Our services
           </button>
-          <ul class="absolute z-10 left-16 md:left-0 hidden group-hover:block bg-[#3F6893] text-left space-y-2 px-4 py-2 rounded shadow-lg">
-            <li><a href="../french/services.html" class="text-white text-sm font-light hover:underline">Création et lancement d’entreprise</a></li>
-            <li><a href="../french/services2.html" class="text-white text-sm font-light hover:underline">Ressources humaines</a></li>
-            <li><a href="../french/services3.html" class="text-white text-sm font-light hover:underline">Gestion administrative</a></li>
-            <li><a href="../french/services4.html" class="text-white text-sm font-light hover:underline">Informatique & Cybersécurité</a></li>
-            <li><a href="../french/services5.html" class="text-white text-sm font-light hover:underline">Comptabilité & finance</a></li>
-            <li><a href="../french/services6.html" class="text-white text-sm font-light hover:underline">Marketing & communication</a></li>
+          <ul class="absolute z-10 left-20 md:left-0 hidden group-hover:block bg-[#3F6893] text-left space-y-2 px-4 py-2 rounded shadow-lg">
+            <li><a href="services.html" class="text-white text-sm font-light hover:underline">Business Creation & Launch</a></li>
+            <li><a href="services2.html" class="text-white text-sm font-light hover:underline">Human Resources</a></li>
+            <li><a href="services3.html" class="text-white text-sm font-light hover:underline">Admin & Back-Office</a></li>
+            <li><a href="services4.html" class="text-white text-sm font-light hover:underline">IT and Cybersecurity</a></li>
+            <li><a href="services5.html" class="text-white text-sm font-light hover:underline">Accounting & Finance</a></li>
+            <li><a href="services6.html" class="text-white text-sm font-light hover:underline">Marketing & Communication</a></li>
           </ul>
         </div>
-      <a href="../french/story.html" class="text-white text-sm font-light hover:underline">Notre histoire
-      </a>
 
-      <a href="../french/contact.html" class="text-white text-sm font-light hover:underline">Contactez-nous
-      </a>
-      <a href="../french/privacy.html" class="text-white text-sm font-light hover:underline">Politique de confidentialité et cookies
-      </a>
-      <a href="../french/terms.html" class="text-white text-sm font-light hover:underline">Conditions générales
-
-      </a>
-    </div>
+        <a href="story.html" class="text-white text-sm font-light hover:underline">Our story</a>
+        <a href="contact.html" class="text-white text-sm font-light hover:underline">Contact Us</a>
+        <a href="privacy.html" class="text-white text-sm font-light hover:underline">Privacy and cookies policy</a>
+        <a href="terms.html" class="text-white text-sm font-light hover:underline">Terms and conditions</a>
+      </div>
     </div>
 
     <div class="text-center md:text-start pt-5 md:pt-0"> 
-      <!-- <h1 class="xl:text-sm text-xs font-medium  text-white">CONTACT US</h1> -->
       <div class="pt-4 space-y-3">
 
-      <p class="text-white text-sm font-light"><i class="fa-solid fa-envelope"></i> &nbsp;<a href="mailto:contact@treeconnect.ch" class="hover:underline">contact@treeconnect.ch </a></p>
-      <p class="text-white text-sm  font-light"><i class="fa-solid fa-calendar-days"></i> &nbsp;Lun – Ven</p>
-      <p class="text-white text-sm  font-light"><i class="fa-regular fa-clock"></i> &nbsp;08h00 – 18h00</p>
-      <p class="text-white text-sm  font-light"> <i class="fa-solid fa-location-dot"></i> &nbsp;Boulevard Georges-Favon 14, 1204 Genève</p>
-
+        <p class="text-white text-sm font-light"><i class="fa-solid fa-envelope"></i> &nbsp;<a href="mailto:contact@treeconnect.ch" class="hover:underline">contact@treeconnect.ch</a></p>
+        <p class="text-white text-sm font-light"><i class="fa-solid fa-calendar-days"></i> &nbsp;Mon - Fri</p>
+        <p class="text-white text-sm font-light"><i class="fa-regular fa-clock"></i> &nbsp;8:00AM -18:00PM</p>
+        <p class="text-white text-sm font-light"><i class="fa-solid fa-location-dot"></i> &nbsp;Boulevard Georges-Favon 14, 1204 Genève</p>
+      </div>
     </div>
+
     </div>
   </div>
 </footer>
@@ -448,8 +430,6 @@ réussir et vous démarquer dans un marché compétitif.
   <a href="https://wa.me/+41798008483?text=Hello!%20I%20need%20help" target="_blank"
      class="group flex items-center bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg overflow-hidden transition-all duration-300 ease-in-out hover:scale-105">
     <span class="p-3 whatsapp-float">
-      <!-- WhatsApp Icon -->
-
       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
     </span>
   </a>
@@ -502,7 +482,6 @@ réussir et vous démarquer dans un marché compétitif.
     toggleDropdown();
   }
 </script>
-
 <!-- Google Translate Script -->
 <!-- <script type="text/javascript">
   function toggleTranslate() {

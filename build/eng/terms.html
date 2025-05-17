@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TreeConnect-Terms And Condition</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="bg-[#304B68] overflow-x-hidden">
+  <nav class="2xl:px-20 lg:px-10 px-5 2xl:pt-16 lg:pt-9 pt-5 relative z-50">
+    <!-- Navbar Container -->
+   <div class="flex justify-between items-center bg-[#3F6893] px-8 py-5 rounded-[40px] relative z-50">
+     
+     <!-- Logo -->
+     <div>
+       <a href="index.html">
+         <img src="../assets/img/logo3.png" class="md:w-32 md:h-12 w-20 h-8" alt="Logo">
+       </a>
+     </div>
+ 
+     <!-- Desktop Navigation -->
+     <div class="hidden lg:block">
+       <ul class="flex xl:space-x-14 space-x-10">
+         <li><a href="index.html" class="text-[#D3D3D3] xl:text-lg text-base hover:text-white">Home</a></li>
+         
+         <!-- Dropdown -->
+         <li class="relative group">
+           <a href="services.html">
+           <button class="text-[#D3D3D3] xl:text-lg text-base hover:text-white flex items-center gap-1">
+             Our Services
+             <svg class="w-4 h-4 mt-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+               <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+             </svg>
+           </button>
+         </a>
+           <ul class="absolute left-0 pt-4 w-48 bg-[#3F6893] text-white rounded-lg shadow-lg hidden group-hover:block z-50">
+             <li><a href="services.html" class="block px-4 py-2 hover:bg-[#35597C] text-base">Business Creation & Launch</a></li>
+             <li><a href="services2.html" class="block px-4 py-2 hover:bg-[#35597C] text-base">Human Resources</a></li>
+             <li><a href="services3.html" class="block px-4 py-2 hover:bg-[#35597C] text-base">Admin & Back-Office</a></li>
+             <li><a href="services4.html" class="block px-4 py-2 hover:bg-[#35597C] text-base">IT and Cybersecurity</a></li>
+             <li><a href="services5.html" class="block px-4 py-2 hover:bg-[#35597C] text-base">Accounting & Finance</a></li>
+             <li><a href="services6.html" class="block px-4 py-2 hover:bg-[#35597C] text-base">Marketing & Communication</a></li>
+           </ul>
+         </li>
+ 
+         <li><a href="story.html" class="text-[#D3D3D3] xl:text-lg text-base hover:text-white">Our story</a></li>
+         <li><a href="contact.html" class="text-[#D3D3D3] xl:text-lg text-base hover:text-white ">Contact us</a></li>
+       </ul>
+     </div>
+ 
+     <!-- Language + Login -->
+     <div class="items-center hidden lg:block space-x-5">
+      <div class="relative inline-block text-left">
+        <div class="relative inline-block text-left top-1">
+          <button onclick="toggleDropdown()" class="flex items-center">
+            <img id="currentFlag" src="../assets/img/united-kingdom.png" class="w-6 h-6" alt="flag">
+            <svg class="w-4 h-4 ml-2 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+        
+          <div id="dropdownMenu" class="hidden absolute mt-2 w-24 bg-[#3F6893] border border-[#3F6893] z-10">
+            <ul class="py-1 text-sm text-gray-700 text-center">
+              <li>
+                <a href="#" onclick="event.preventDefault(); setFlag('../assets/img/united-kingdom.png', this.href)" class="block flex justify-center hover:text-white px-4 py-2 hover:bg-white">
+                  <img src="../assets/img/united-kingdom.png" class="w-7" alt="England Flag">
+                </a>
+              </li>
+              <li>
+                <a href="../terms.html" onclick="event.preventDefault(); setFlag('../assets/img/france.png', this.href)" class="block flex justify-center hover:text-white px-4 py-2 hover:bg-white">
+                  <img src="../assets/img/france.png" class="w-7" alt="France Flag">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <script>
+          function toggleDropdown() {
+            document.getElementById("dropdownMenu").classList.toggle("hidden");
+          }
+        
+          function setFlag(flagPath, redirectUrl) {
+            document.getElementById("currentFlag").src = flagPath;
+            document.getElementById("dropdownMenu").classList.add("hidden");
+        
+            // Delay page redirect so flag updates first
+            setTimeout(function () {
+              window.location.href = redirectUrl;
+            }, 100);
+          }
+        </script>
+        
+        
+      
+      </div>
+       <a href="login.html">
+      <button class="text-[#FFFFFF] xl:text-lg text-base py-2 px-10 border border-white rounded-full font-medium">Login</button>
+      </a>
+     </div>
+ 
+     <!-- Mobile Toggle Buttons -->
+     <div class="lg:hidden z-50">
+       <!-- Hamburger -->
+       <button id="menu-open" class="text-white focus:outline-none block">
+         <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+           <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+         </svg>
+       </button>
+       <!-- Close -->
+       <button id="menu-close" class="text-white focus:outline-none hidden">
+         <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+         </svg>
+       </button>
+     </div>
+   </div>
+ 
+   <!-- Mobile Menu -->
+   <div id="mobile-menu" class="absolute left-0 right-0 hidden mt-5 bg-[#3F6893] h-[550px] rounded-3xl px-6 py-5 z-40 transition-all duration-300 ease-in-out">
+     <ul class="flex flex-col space-y-4 text-center">
+       <li><a href="index.html" class="text-white text-base hover:text-white">Home</a></li>
+ 
+       <!-- Mobile Dropdown -->
+       <li class="relative group">
+         <button onclick="toggleMobileDropdown()" class="flex items-center justify-center w-full text-white text-base hover:text-white">
+           Our Services
+           <svg class="w-4 h-4 ml-2 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+             <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+           </svg>
+         </button>
+         <ul id="mobileDropdown" class="hidden mt-2 space-y-2 absolute left-20 md:left-60 p-4 w-56 bg-[#3F6893] text-white rounded-lg shadow-lg group-hover:block z-50">
+           <li><a href="services.html" class="block px-4 py-2 hover:bg-[#35597C] text-sm">Business Creation & Launch</a></li>
+           <li><a href="services2.html" class="block px-4 py-2 hover:bg-[#35597C] text-sm">Human Resources</a></li>
+           <li><a href="services3.html" class="block px-4 py-2 hover:bg-[#35597C] text-sm">Admin & Back-Office</a></li>
+           <li><a href="services4.html" class="block px-4 py-2 hover:bg-[#35597C] text-sm">IT and Cybersecurity</a></li>
+           <li><a href="services5.html" class="block px-4 py-2 hover:bg-[#35597C] text-sm">Accounting & Finance</a></li>
+           <li><a href="services6.html" class="block px-4 py-2 hover:bg-[#35597C] text-sm">Marketing & Communication</a></li>
+         </ul>
+       </li>
+ 
+       <li><a href="story.html" class="text-white text-base hover:text-white">Our story</a></li>
+       <li><a href="contact.html" class="text-white text-base hover:text-white ">Contact us</a></li>
+       <li><a href="login.html"><button class="text-white">Login</button></a></li>
+       <li class="flex justify-center space-x-4 mt-4">
+        <a href="../terms.html" onclick="event.preventDefault(); setFlagMobile('../assets/img/united-kingdom.png', this.href)">
+          <img src="../assets/img/united-kingdom.png" class="w-7 h-7" alt="UK Flag">
+        </a>
+        <a href="../french/terms.html" onclick="event.preventDefault(); setFlagMobile('../assets/img/france.png', this.href)">
+          <img src="../assets/img/france.png" class="w-7 h-7" alt="France Flag">
+        </a>
+      </li>
+      <script>
+        function setFlagMobile(flagPath, redirectUrl) {
+          // Optionally change current flag (if you want to reflect it in desktop as well)
+          const flagImg = document.getElementById("currentFlag");
+          if (flagImg) flagImg.src = flagPath;
+      
+          // Close mobile menu
+          document.getElementById("mobile-menu").classList.add("hidden");
+      
+          // Redirect after slight delay
+          setTimeout(function () {
+            window.location.href = redirectUrl;
+          }, 100);
+        }
+      </script>
+          </ul>
+        </div>
+      </li>
+     </ul>
+   </div>
+   
+   </nav>
+      
+    <!-- Toggle navbar Scripts -->
+    <script>
+      function toggleTranslate() {
+        const ele = document.getElementById('google_translate_element');
+        ele.style.display = ele.style.display === 'none' ? 'block' : 'none';
+      }
+    
+      function toggleMobileDropdown() {
+        const menu = document.getElementById('mobileDropdown');
+        menu.classList.toggle('hidden');
+      }
+    
+      document.getElementById('menu-open').addEventListener('click', () => {
+        document.getElementById('mobile-menu').classList.remove('hidden');
+        document.getElementById('menu-open').classList.add('hidden');
+        document.getElementById('menu-close').classList.remove('hidden');
+      });
+    
+      document.getElementById('menu-close').addEventListener('click', () => {
+        document.getElementById('mobile-menu').classList.add('hidden');
+        document.getElementById('menu-open').classList.remove('hidden');
+        document.getElementById('menu-close').classList.add('hidden');
+      });
+    </script>
+
+<section class="2xl:px-20 lg:px-10 px-5 2xl:pt-44 lg:pt-28 md:pt-20 pt-14">
+    
+      <div class="w-full">
+        <h1 class="2xl:text-7xl lg:text-6xl text-4xl text-white text-center">Terms And Condition</h1>
+      </div>
+      
+
+    <div class=" pt-10">
+        <div class=" w-full">
+          <h1 class="2xl:text-4xl lg:text-3xl text-2xl text-white">1. Scope of Services</h1>
+        </div>
+        <div class="w-full">
+          <p class="2xl:text-2xl xl:text-lg text-sm text-white pt-4 2xl:leading-10 xl:leading-7 leading-6" >TreeConnect Sàrl is a Swiss-based consulting firm offering customized services to support the operational
+            and strategic needs of small and medium-sized enterprises (SMEs). Our expertise covers a broad range of
+            business functions, including: <br>
+            - Business planning and launch support <br>
+            - Human resources and people operations <br>
+            - Administrative and back-office organization <br>
+            - IT and infrastructure coordination <br>
+            - Accounting and financial process improvement <br>
+            - Marketing and communication advisory <br>
+          </p>
+          <p class="pt-4 2xl:text-2xl xl:text-lg text-sm text-white 2xl:leading-10 xl:leading-7 leading-6">
+            Services may include strategic consulting, operational setup, process design, project support, and
+externalized solutions tailored to each client's goals and stage of growth.
+
+          </p>
+        </div>
+      </div>
+
+      <div class=" pt-10">
+        <div class=" w-full">
+          <h1 class="2xl:text-4xl lg:text-3xl text-2xl text-white">2. Engagement Model</h1>
+        </div>
+        <div class="w-full">
+          <p class="2xl:text-2xl xl:text-lg text-sm text-white pt-4 2xl:leading-10 xl:leading-7 leading-6" >All services provided by TreeConnect are subject to a specific agreement established between TreeConnect
+            and the client. This contract defines the scope of work, timelines, responsibilities, and applicable fees. <br> These general terms serve as a base reference and are complemented or superseded by the terms of the signed agreement.
+          </p>
+        </div>
+      </div>
+
+      <div class=" pt-10">
+        <div class=" w-full">
+          <h1 class="2xl:text-4xl lg:text-3xl text-2xl text-white">3. Availability and Communication</h1>
+        </div>
+        <div class="w-full">
+          <p class="2xl:text-2xl xl:text-lg text-sm text-white pt-4 2xl:leading-10 xl:leading-7 leading-6" >TreeConnect is available to its clients Monday to Friday from 08:00 to 18:00 (CET), excluding Swiss public
+            holidays. The communication methods (e.g., email, phone, secure tools) are defined in the client-specific
+            agreement. We aim to respond to all professional inquiries within one business day.
+          </p>
+         
+        </div>
+      </div>
+
+      <div class=" pt-10">
+        <div class=" w-full">
+          <h1 class="2xl:text-4xl lg:text-3xl text-2xl text-white">4. Confidentiality and Data Protection</h1>
+        </div>
+        <div class="w-full">
+          <p class="2xl:text-2xl xl:text-lg text-sm text-white pt-4 2xl:leading-10 xl:leading-7 leading-6" >All data and information shared by the client is treated as strictly confidential and will not be disclosed to third
+            parties without prior written consent, unless required by law. TreeConnect complies with the Swiss Federal
+            Act on Data Protection (nFADP) and applies professional standards of discretion, protection, and integrity
+            across all mandates.
+            
+          </p>
+         
+        </div>
+      </div>
+
+      <div class=" pt-10">
+        <div class=" w-full">
+          <h1 class="2xl:text-4xl lg:text-3xl text-2xl text-white">5. Intellectual Property</h1>
+        </div>
+        <div class="w-full">
+          <p class="2xl:text-2xl xl:text-lg text-sm text-white pt-4 2xl:leading-10 xl:leading-7 leading-6" >Unless otherwise stated in a written agreement, TreeConnect retains full ownership of any methodology,
+            structure, template, or material developed or used in the course of the project. Clients receive a license to
+            use these materials for internal purposes only and may not share them externally without written consent.
+          </p>
+         
+        </div>
+      </div>
+
+      <div class=" pt-10">
+        <div class=" w-full">
+          <h1 class="2xl:text-4xl lg:text-3xl text-2xl text-white">6. Responsibility</h1>
+        </div>
+        <div class="w-full">
+          <p class="2xl:text-2xl xl:text-lg text-sm text-white pt-4 2xl:leading-10 xl:leading-7 leading-6" >TreeConnect provides consulting services based on professional expertise and the specific context of the
+            client. While TreeConnect offers best practices and strategic recommendations, the client remains
+            responsible for final decisions and implementation. TreeConnect is not liable for business, legal, or financial decisions made based on its input. Liability, if applicable, is limited to the amount invoiced under the relevant service contract.
+            
+          </p>
+         
+        </div>
+      </div>
+
+      <div class=" pt-10">
+        <div class=" w-full">
+          <h1 class="2xl:text-4xl lg:text-3xl text-2xl text-white">7. Governing Law and Jurisdiction</h1>
+        </div>
+        <div class="w-full">
+          <p class="2xl:text-2xl xl:text-lg text-sm text-white pt-4 2xl:leading-10 xl:leading-7 leading-6" >These general terms, and all agreements concluded with TreeConnect, are governed by Swiss law. The
+            courts of Geneva shall have exclusive jurisdiction over any disputes arising from the relationship, subject to
+            appeal to the Swiss Federal Court.
+            
+          </p>
+         
+        </div>
+      </div>
+
+      <div class=" pt-10">
+        <div class=" w-full">
+          <h1 class="2xl:text-4xl lg:text-3xl text-2xl text-white">8. Contact</h1>
+        </div>
+        <div class="w-full">
+          <p class="2xl:text-2xl xl:text-lg text-sm text-white pt-4 2xl:leading-10 xl:leading-7 leading-6" >TreeConnect Sàrl <br>
+            Boulevard Georges-Favon 14, 1204 Genève<br>
+            
+            <i class="fa-solid fa-envelope"></i>&nbsp;  Email: <a href="" class="hover:underline">contact@treeconnect.ch</a><br>
+       
+            <i class="fa-solid fa-clock"></i>&nbsp;   Business Hours: Monday to Friday, 08:00-18:00 (CET)<br>
+          </p>
+         
+        </div>
+      </div>
+  </section>
+
+<!-- footer  -->
+<footer class="2xl:pt-52 lg:pt-24 pt-10">
+  <div class="bg-[#3F6893] grid md:grid-cols-3 grid-cols-1 xl:gap-64 md:gap-28 2xl:py-20 2xl:px-48 lg:py-10 lg:px-24 py-6 px-10 ">
+    <div class="text-center md:text-start">
+      <div class="flex md:justify-start justify-center">
+        <img src="../assets/img/logo3.png" class="w-36 h-12" alt="">
+      </div>
+      <p class="text-white text-sm font-light pt-3">TreeConnect is your agile partner for growth, delivering innovative and tailored solutions from HR to IT, including strategy, administration and finance.</p>
+      <h1 class="text-white text-lg pt-2">Stay Connected</h1>
+      <a href="https://www.linkedin.com/company/treeconnect/ ">
+        <i class="fa-brands fa-linkedin text-white text-3xl pt-2"></i>
+      </a>
+    </div>
+
+    <div class="text-center md:text-start pt-5 md:pt-0">
+      <div class="flex flex-col pt-4 space-y-3">
+        <a href="index.html" class="text-white text-sm font-light hover:underline">Home</a>
+
+        <!-- Services Dropdown -->
+        <div class="relative group inline-block text-center md:text-start">
+          <button class="text-white text-sm font-light hover:underline focus:outline-none">
+            Our services
+          </button>
+          <ul class="absolute z-10 left-20 md:left-0 hidden group-hover:block bg-[#3F6893] text-left space-y-2 px-4 py-2 rounded shadow-lg">
+            <li><a href="services.html" class="text-white text-sm font-light hover:underline">Business Creation & Launch</a></li>
+            <li><a href="services2.html" class="text-white text-sm font-light hover:underline">Human Resources</a></li>
+            <li><a href="services3.html" class="text-white text-sm font-light hover:underline">Admin & Back-Office</a></li>
+            <li><a href="services4.html" class="text-white text-sm font-light hover:underline">IT and Cybersecurity</a></li>
+            <li><a href="services5.html" class="text-white text-sm font-light hover:underline">Accounting & Finance</a></li>
+            <li><a href="services6.html" class="text-white text-sm font-light hover:underline">Marketing & Communication</a></li>
+          </ul>
+        </div>
+
+        <a href="story.html" class="text-white text-sm font-light hover:underline">Our story</a>
+        <a href="contact.html" class="text-white text-sm font-light hover:underline">Contact Us</a>
+        <a href="privacy.html" class="text-white text-sm font-light hover:underline">Privacy and cookies policy</a>
+        <a href="terms.html" class="text-white text-sm font-light hover:underline">Terms and conditions</a>
+      </div>
+    </div>
+
+    <div class="text-center md:text-start pt-5 md:pt-0"> 
+      <div class="pt-4 space-y-3">
+
+        <p class="text-white text-sm font-light"><i class="fa-solid fa-envelope"></i> &nbsp;<a href="mailto:contact@treeconnect.ch" class="hover:underline">contact@treeconnect.ch</a></p>
+        <p class="text-white text-sm font-light"><i class="fa-solid fa-calendar-days"></i> &nbsp;Mon - Fri</p>
+        <p class="text-white text-sm font-light"><i class="fa-regular fa-clock"></i> &nbsp;8:00AM -18:00PM</p>
+        <p class="text-white text-sm font-light"><i class="fa-solid fa-location-dot"></i> &nbsp;Boulevard Georges-Favon 14, 1204 Genève</p>
+      </div>
+
+    </div>
+
+    </div>
+  </div>
+</footer>
+
+<!-- drop down  -->
+
+<script>
+  function toggleMobileLangDropdown() {
+    const dropdown = document.getElementById("mobileLangDropdown");
+    dropdown.classList.toggle("hidden");
+  }
+
+  // Optional: Close if clicked outside
+  document.addEventListener("click", function(event) {
+    const dropdown = document.getElementById("mobileLangDropdown");
+    const button = event.target.closest("button");
+    if (!dropdown.contains(event.target) && !button) {
+      dropdown.classList.add("hidden");
+    }
+  });
+</script>
+
+<script>
+
+  function toggleDropdown() {
+    document.getElementById("dropdownMenu").classList.toggle("hidden");
+  }
+
+  function setLanguage(lang) {
+    document.getElementById("currentLang").textContent = lang;
+
+    const elements = document.querySelectorAll("[data-i18n]");
+    elements.forEach(el => {
+      const key = el.getAttribute("data-i18n");
+      el.innerHTML = translations[lang][key];
+    });
+
+    toggleDropdown();
+  }
+</script>
+
+   <!-- smooth animation  -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+ <script src="https://unpkg.com/@studio-freight/lenis@latest"></script>
+ <script>
+   const lenis = new Lenis({
+     duration: 1.2, // Adjust smoothness
+     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Easing function
+     smooth: true,
+     smoothTouch: false
+   });
+ 
+   function raf(time) {
+     lenis.raf(time);
+     requestAnimationFrame(raf);
+   }
+   requestAnimationFrame(raf);
+ </script>
+  <script src="https://kit.fontawesome.com/a2ada4947c.js" crossorigin="anonymous"></script>
+</body>
+</html>
