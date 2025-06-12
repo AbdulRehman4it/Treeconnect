@@ -19,6 +19,12 @@ body p{
     color: white;
 }
 
+
+select option {
+  background-color: #3F6893;
+  color: white;
+}
+
 /* #dotsCanvas {
   position: absolute;
   top: 0;
