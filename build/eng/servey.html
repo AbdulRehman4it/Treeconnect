@@ -379,14 +379,12 @@
   </div>
 </footer>
 
-
-
 <!-- Popup Overlay -->
 <div id="popup" class="fixed inset-0 bg-black/40 backdrop-blur-sm z-50 flex items-center justify-center hidden">
   <!-- Scrollable Form Container -->
-  <div id="modalStep1" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-  
-      
+
+  <!-- Step 1 Modal -->
+  <div id="modalStep1" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">  
       <div class="relative bg-[#3F6893] text-white w-full  max-h-[90vh] overflow-y-auto xl:mx-48 md:mx-20 rounded-2xl xl:p-20 p-8 shadow-lg">
     <!-- Close Button -->
     <button onclick="closePopup()" class="absolute top-4 right-6 text-white text-2xl font-bold hover:text-gray-300">
@@ -454,9 +452,7 @@
     </form>
     <button onclick="nextStep(1)" class="bg-white w-full px-4 py-2 rounded-2xl text-[#304B68] font-bold text-lg">Next</button> 
   </div>
-    
   </div>
-
 
 
  <!-- Step 2 Modal -->
@@ -825,9 +821,74 @@ hen administration is unclear or scattered, delays, errors, and stress increase.
   </div>
 </div>
 
+ <!-- Step 7 Modal -->
+<div id="modalStep7" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+  <div class="bg-[#3F6893] text-white w-full max-h-[90vh] overflow-y-auto xl:mx-40 lg:mx-14 rounded-2xl lg:px-16 px-4 py-20">
+ <!-- Close Button -->
+    <button onclick="closePopup()" class="absolute top-4 right-6 text-white text-2xl font-bold hover:text-gray-300">
+      &times;
+    </button>
+   <div class="max-w-7xl mx-auto">
+      <h1 class="text-3xl font-bold text-center mb-12">Organizational Maturity Radar - Tree Connect</h1>
 
-  <!-- Step 7 Modal -->
-  <div id="modalStep7" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+
+      <!-- Table Section -->
+      <div class="card">
+        <table class="table-auto w-full text-sm text-left text-white">
+          <thead class="text-xs uppercase border border-white">
+            <tr>
+              <th class="py-4 px-6">Domain</th>
+              <th class="py-4 px-6">Structural Maturity Overview</th>
+              <th class="py-4 px-6">How TreeConnect can support</th>
+              <th class="py-4 px-6">Business Value</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-700">
+            <tr>
+              <td class="py-4 px-6">Human Resources</td>
+              <td class="py-4 px-6">Your HR approach is generally implemented. Harmonization and partial digitalization could enhance efficiency.</td>
+              <td class="py-4 px-6">We guide you in transitioning to integrated tools for tracking time off, evaluations, and contracts.</td>
+              <td class="py-4 px-6">Improves transparency and professionalizes internal processes.</td>
+            </tr>
+            <tr>
+              <td class="py-4 px-6">Administration & Back-Office</td>
+              <td class="py-4 px-6">Basic organization is present but still relies more on habits than written procedures.</td>
+              <td class="py-4 px-6">We assist in translating your routines into simple procedures, with basic digital tooling.</td>
+              <td class="py-4 px-6">Stabilizes administrative activity and eases the onboarding of new team members.</td>
+            </tr>
+            <tr>
+              <td class="py-4 px-6">IT & Cybersecurity</td>
+              <td class="py-4 px-6">A basic IT environment exists but is poorly maintained or inconsistent.</td>
+              <td class="py-4 px-6">We assist in building a coherent and scalable digital environment.</td>
+              <td class="py-4 px-6">Supports a more structured and secure work environment.</td>
+            </tr>
+            <tr>
+              <td class="py-4 px-6">Accounting & Finance</td>
+              <td class="py-4 px-6">Financial documents are available, but their use and interpretation remain partial.</td>
+              <td class="py-4 px-6">We assist in building accessible financial dashboards that support decision-making.</td>
+              <td class="py-4 px-6">Provides a concrete and structured view of available financial resources.</td>
+            </tr>
+            <tr>
+              <td class="py-4 px-6">Marketing & Communication</td>
+              <td class="py-4 px-6">No structured communication strategy is currently in place.</td>
+              <td class="py-4 px-6">TreeConnect can help you lay the foundation of a visibility strategy tailored to your business.</td>
+              <td class="py-4 px-6">Establishes the foundation for coherent and accessible visibility.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Submit Button -->
+    <button onclick="nextStep(7)" class="bg-white w-full px-4 py-2 rounded-2xl text-[#304B68] font-bold text-lg mb-4">
+      Next
+    </button>
+
+  </div>
+</div>
+
+  <!-- Step 8 Modal -->
+  <div id="modalStep8" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
     <div class="bg-gray-800 p-6 rounded-2xl w-96">
       <h2 class="text-xl font-bold mb-4">Step 3</h2>
       <p class="mb-6">Final step of the popup.</p>

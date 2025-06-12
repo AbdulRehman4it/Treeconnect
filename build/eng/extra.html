@@ -1,35 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Question Card</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Radar Chart (Styled Like Image)</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <style>
+    /* .card {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 1rem;
+        padding: 2rem;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      } */
+  </style>
+ 
 </head>
-<body class="bg-[#3F6893] min-h-screen flex items-center justify-center text-white">
-  <div class="w-full max-w-2xl px-4 py-8">
-    
-    <!-- Single Question Card -->
-    <div class="bg-[#2F5980] p-6 rounded-2xl shadow-lg">
-      <p class="text-lg font-medium mb-5">
-        5. Is your communication regular and planned, helping build long-term visibility and brand strength?
-      </p>
-      
-      <div class="flex gap-10 items-center">
-        <label class="flex items-center gap-2">
-          <input type="radio" name="q5" class="w-5 h-5 accent-[#3F6893]">
-          <span class="text-white text-base">Yes</span>
-        </label>
-        <label class="flex items-center gap-2">
-          <input type="radio" name="q5" class="w-5 h-5 accent-[#3F6893]">
-          <span class="text-white text-base">Partially</span>
-        </label>
-        <label class="flex items-center gap-2">
-          <input type="radio" name="q5" class="w-5 h-5 accent-[#3F6893]">
-          <span class="text-white text-base">No</span>
-        </label>
+<body class="bg-[#304B68]">
+
+ <div class="max-w-7xl mx-auto">
+      <h1 class="text-3xl font-bold text-center mb-12">Organizational Maturity Radar - Tree Connect</h1>
+
+
+      <!-- Table Section -->
+      <div class="card">
+        <table class="table-auto w-full text-sm text-left text-white border border-white rounded-xl">
+          <thead class="text-xs uppercase rounded-xl">
+            <tr class="border border-white rounded-2xl">
+              <th class="py-4 px-6">Domain</th>
+              <th class="py-4 px-6">Structural Maturity Overview</th>
+              <th class="py-4 px-6">How TreeConnect can support</th>
+              <th class="py-4 px-6">Business Value</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-x divide-white rounded-xl">
+            <tr>
+              <td class="py-4 px-6">Human Resources</td>
+              <td class="py-4 px-6">Your HR approach is generally implemented. Harmonization and partial digitalization could enhance efficiency.</td>
+              <td class="py-4 px-6">We guide you in transitioning to integrated tools for tracking time off, evaluations, and contracts.</td>
+              <td class="py-4 px-6">Improves transparency and professionalizes internal processes.</td>
+            </tr>
+            <tr>
+              <td class="py-4 px-6">Administration & Back-Office</td>
+              <td class="py-4 px-6">Basic organization is present but still relies more on habits than written procedures.</td>
+              <td class="py-4 px-6">We assist in translating your routines into simple procedures, with basic digital tooling.</td>
+              <td class="py-4 px-6">Stabilizes administrative activity and eases the onboarding of new team members.</td>
+            </tr>
+            <tr>
+              <td class="py-4 px-6">IT & Cybersecurity</td>
+              <td class="py-4 px-6">A basic IT environment exists but is poorly maintained or inconsistent.</td>
+              <td class="py-4 px-6">We assist in building a coherent and scalable digital environment.</td>
+              <td class="py-4 px-6">Supports a more structured and secure work environment.</td>
+            </tr>
+            <tr>
+              <td class="py-4 px-6">Accounting & Finance</td>
+              <td class="py-4 px-6">Financial documents are available, but their use and interpretation remain partial.</td>
+              <td class="py-4 px-6">We assist in building accessible financial dashboards that support decision-making.</td>
+              <td class="py-4 px-6">Provides a concrete and structured view of available financial resources.</td>
+            </tr>
+            <tr>
+              <td class="py-4 px-6">Marketing & Communication</td>
+              <td class="py-4 px-6">No structured communication strategy is currently in place.</td>
+              <td class="py-4 px-6">TreeConnect can help you lay the foundation of a visibility strategy tailored to your business.</td>
+              <td class="py-4 px-6">Establishes the foundation for coherent and accessible visibility.</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
-
-  </div>
 </body>
 </html>
