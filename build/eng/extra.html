@@ -4,27 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Organizational Maturity Radar</title>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/vue@2"></script> -->
-  <link rel="stylesheet" href="../assets/css/style.css">
-    <style>
 
- .chart-container {
-    /* background-color: white; */
-    padding: 20px;
-    border-radius: 10px;
-  }
-    </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+
   </head>
   <body class="bg-[#406285]  font-sans text-white">
     <div class="">
       <h1 class="xl:text-4xl text-2xl font-semibold text-center mb-6">Organizational Maturity Radar - Tree Connect</h1>
 
-<div id="app">
+<!-- chart -->
+<div id="app" class="xl:pt-20 pt-10">
   <div class="chart-container">
     <canvas id="chart"></canvas>
   </div>
@@ -36,20 +28,31 @@
   const c = '30';
   const d = '15';
 
+  // Custom plugin to wrap labels
+  Chart.plugins.register({
+    beforeInit: function (chart) {
+      if (chart.config.type === 'radar') {
+        chart.config.data.labels = chart.config.data.labels.map(function (label) {
+          return label.split(' ');
+        });
+      }
+    }
+  });
+
   const planetChartData = {
     type: 'radar',
     data: {
       labels: [
-        'Adaptability',
-        'Competencies',
-        'Pay-back',
-        'Security',
-        'Innovation' // ✅ Only real headings kept
+        'Human Resources',
+        'Admin & Back-Office',
+        'IT & Cybersecurity',
+        'Accounting & Finance',
+        'Marketing & Communication'
       ],
       datasets: [
         {
           label: 'A',
-          data: [a, b, 20, 20, d], // ✅ Data count matches label count
+          data: [a, b, 20, 20, d],
           backgroundColor: 'rgba(255, 255, 255, 0.7)',
           borderColor: 'rgba(255, 255, 255, 1)',
           borderWidth: 2,
@@ -81,7 +84,7 @@
           lineWidth: 1
         },
         pointLabels: {
-          fontSize: 20,
+          fontSize: 14,
           fontColor: 'white'
         },
         ticks: {
@@ -116,6 +119,9 @@
 
   Chart.defaults.global.defaultFontFamily = "Calibri";
 </script>
+
+
+
 
 
 
