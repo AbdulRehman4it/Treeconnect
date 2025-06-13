@@ -8,6 +8,9 @@
      <link rel="stylesheet" href="../assets/css/style.css">
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
 
+     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+
       <script src="//code.tidio.co/vxiqlrt5ipq4shg4h60brissqd8hj15z.js" async></script>
 </head>
 <body class="bg-[#304B68] overflow-x-hidden">
@@ -341,7 +344,7 @@
 
     <div class="text-center md:text-start pt-5 md:pt-0">
       <div class="flex flex-col pt-4 space-y-3">
-        <a href="index.html" class="text-white text-sm font-light hover:underline">Home</a>
+        <a href="./index.html" class="text-white text-sm font-light hover:underline">Home</a>
 
         <!-- Services Dropdown -->
         <div class="relative group inline-block text-center md:text-start">
@@ -349,19 +352,19 @@
             Our services
           </button>
           <ul class="absolute z-10 left-20 md:left-0 hidden group-hover:block bg-[#3F6893] text-left space-y-2 px-4 py-2 rounded shadow-lg">
-            <li><a href="services.html" class="text-white text-sm font-light hover:underline">Business Creation & Launch</a></li>
-            <li><a href="services2.html" class="text-white text-sm font-light hover:underline">Human Resources</a></li>
-            <li><a href="services3.html" class="text-white text-sm font-light hover:underline">Admin & Back-Office</a></li>
-            <li><a href="services4.html" class="text-white text-sm font-light hover:underline">IT and Cybersecurity</a></li>
-            <li><a href="services5.html" class="text-white text-sm font-light hover:underline">Accounting & Finance</a></li>
-            <li><a href="services6.html" class="text-white text-sm font-light hover:underline">Marketing & Communication</a></li>
+            <li><a href="./services.html" class="text-white text-sm font-light hover:underline">Business Creation & Launch</a></li>
+            <li><a href="./services2.html" class="text-white text-sm font-light hover:underline">Human Resources</a></li>
+            <li><a href="./services3.html" class="text-white text-sm font-light hover:underline">Admin & Back-Office</a></li>
+            <li><a href="./services4.html" class="text-white text-sm font-light hover:underline">IT and Cybersecurity</a></li>
+            <li><a href="./services5.html" class="text-white text-sm font-light hover:underline">Accounting & Finance</a></li>
+            <li><a href="./services6.html" class="text-white text-sm font-light hover:underline">Marketing & Communication</a></li>
           </ul>
         </div>
 
-        <a href="story.html" class="text-white text-sm font-light hover:underline">Our story</a>
-        <a href="contact.html" class="text-white text-sm font-light hover:underline">Contact Us</a>
-        <a href="privacy.html" class="text-white text-sm font-light hover:underline">Privacy and cookies policy</a>
-        <a href="terms.html" class="text-white text-sm font-light hover:underline">Terms and conditions</a>
+        <a href="./story.html" class="text-white text-sm font-light hover:underline">Our story</a>
+        <a href="./contact.html" class="text-white text-sm font-light hover:underline">Contact Us</a>
+        <a href="./privacy.html" class="text-white text-sm font-light hover:underline">Privacy and cookies policy</a>
+        <a href="./terms.html" class="text-white text-sm font-light hover:underline">Terms and conditions</a>
       </div>
     </div>
 
@@ -828,60 +831,157 @@ hen administration is unclear or scattered, delays, errors, and stress increase.
     <button onclick="closePopup()" class="absolute top-4 right-6 text-white text-2xl font-bold hover:text-gray-300">
       &times;
     </button>
-   <div class="max-w-7xl mx-auto">
-      <h1 class="text-3xl font-bold text-center mb-12">Organizational Maturity Radar - Tree Connect</h1>
 
-
-      <!-- Table Section -->
-      <div class="card">
-        <table class="table-auto w-full text-sm text-left text-white">
-          <thead class="text-xs uppercase border border-white">
-            <tr>
-              <th class="py-4 px-6">Domain</th>
-              <th class="py-4 px-6">Structural Maturity Overview</th>
-              <th class="py-4 px-6">How TreeConnect can support</th>
-              <th class="py-4 px-6">Business Value</th>
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-gray-700">
-            <tr>
-              <td class="py-4 px-6">Human Resources</td>
-              <td class="py-4 px-6">Your HR approach is generally implemented. Harmonization and partial digitalization could enhance efficiency.</td>
-              <td class="py-4 px-6">We guide you in transitioning to integrated tools for tracking time off, evaluations, and contracts.</td>
-              <td class="py-4 px-6">Improves transparency and professionalizes internal processes.</td>
-            </tr>
-            <tr>
-              <td class="py-4 px-6">Administration & Back-Office</td>
-              <td class="py-4 px-6">Basic organization is present but still relies more on habits than written procedures.</td>
-              <td class="py-4 px-6">We assist in translating your routines into simple procedures, with basic digital tooling.</td>
-              <td class="py-4 px-6">Stabilizes administrative activity and eases the onboarding of new team members.</td>
-            </tr>
-            <tr>
-              <td class="py-4 px-6">IT & Cybersecurity</td>
-              <td class="py-4 px-6">A basic IT environment exists but is poorly maintained or inconsistent.</td>
-              <td class="py-4 px-6">We assist in building a coherent and scalable digital environment.</td>
-              <td class="py-4 px-6">Supports a more structured and secure work environment.</td>
-            </tr>
-            <tr>
-              <td class="py-4 px-6">Accounting & Finance</td>
-              <td class="py-4 px-6">Financial documents are available, but their use and interpretation remain partial.</td>
-              <td class="py-4 px-6">We assist in building accessible financial dashboards that support decision-making.</td>
-              <td class="py-4 px-6">Provides a concrete and structured view of available financial resources.</td>
-            </tr>
-            <tr>
-              <td class="py-4 px-6">Marketing & Communication</td>
-              <td class="py-4 px-6">No structured communication strategy is currently in place.</td>
-              <td class="py-4 px-6">TreeConnect can help you lay the foundation of a visibility strategy tailored to your business.</td>
-              <td class="py-4 px-6">Establishes the foundation for coherent and accessible visibility.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+    <!-- heading  -->
+    <div>
+       <h1 class="xl:text-4xl text-2xl font-semibold text-center mb-6">Organizational Maturity Radar - Tree Connect</h1>
     </div>
 
+    <!-- chart  -->
+     <div id="app" class="xl:pt-20 pt-10">
+  <div class="chart-container">
+    <canvas id="chart"></canvas>
+  </div>
+      </div>
+
+    <script>
+  const a = '20';
+  const b = '10';
+  const c = '30';
+  const d = '15';
+
+  const planetChartData = {
+    type: 'radar',
+    data: {
+      labels: [
+        'Human Resources',
+        'Admin & Back-Office',
+        'IT & Cybersecurity',
+        'Accounting & Finance',
+        'Marketing & Communication' // ✅ Only real headings kept
+      ],
+      datasets: [
+        {
+          label: 'A',
+          data: [a, b, 20, 20, d], // ✅ Data count matches label count
+          backgroundColor: 'rgba(255, 255, 255, 0.7)',
+          borderColor: 'rgba(255, 255, 255, 1)',
+          borderWidth: 2,
+          fill: true
+        }
+      ]
+    },
+    options: {
+      elements: {
+        point: {
+          radius: 0
+        },
+        line: {
+          tension: 0
+        }
+      },
+      responsive: true,
+      legend: {
+        display: false
+      },
+      scale: {
+        angleLines: {
+          display: true,
+          color: 'white'
+        },
+        gridLines: {
+          circular: true,
+          color: 'white',
+          lineWidth: 1
+        },
+        pointLabels: {
+          fontSize: 16,
+          fontColor: 'white'
+        },
+        ticks: {
+          display: false,
+          beginAtZero: true
+        }
+      }
+    }
+  };
+
+  var app = new Vue({
+    el: "#app",
+    data() {
+      return {
+        planetChartData: planetChartData
+      };
+    },
+    mounted() {
+      this.createChart('chart', this.planetChartData);
+    },
+    methods: {
+      createChart(chartId, chartData) {
+        const ctx = document.getElementById(chartId);
+        new Chart(ctx, {
+          type: chartData.type,
+          data: chartData.data,
+          options: chartData.options
+        });
+      }
+    }
+  });
+
+  Chart.defaults.global.defaultFontFamily = "Calibri";
+      </script>
+
+    <!-- Table  -->
+    <div class="overflow-x-auto lg:pt-20 pt-10">
+  <div class="rounded-2xl overflow-auto border-[1px] border-white">
+    <table class="table-auto w-full text-left 2xl:text-lg text-sm">
+      <thead class="text-white">
+        <tr>
+          <th class="border-t-0 border-white px-10 py-10">Domain</th>
+          <th class="border-l border-white px-10 py-2">Structural Maturity Overview</th>
+          <th class="border-l border-white px-10 py-2">How TreeConnect can support</th>
+          <th class="border-l border-white px-10 py-2">Business Value</th>
+        </tr>
+      </thead>
+      <tbody class="bg-[#3F6893] text-white">
+        <tr>
+          <td class="border-t border-white px-6 py-16 font-semibold">Human Resources</td>
+          <td class="border border-white lg:px-8 px-4 py-2">Your HR approach is generally implemented. Harmonization and partial digitalization could enhance efficiency.</td>
+          <td class="border border-white lg:px-8 px-4 py-2">We guide you in transitioning to integrated tools for tracking time off, evaluations, and contracts.</td>
+          <td class="border-r-0 border border-white lg:px-8 px-4 py-2">Improves transparency and professionalizes internal processes.</td>
+        </tr>
+        <tr>
+          <td class="border-t border-white px-6 py-16 font-semibold">Administration & Back-Office</td>
+          <td class="border border-white lg:px-8 px-4 py-2">Basic organization is present but still relies more on habits than written procedures.</td>
+          <td class="border border-white lg:px-8 px-4 py-2">We assist in translating your routines into simple procedures, with basic digital tooling.</td>
+          <td class="border-b border-white lg:px-8 px-4 py-2">Stabilizes administrative activity and eases the onboarding of new team members.</td>
+        </tr>
+        <tr>
+          <td class="border-t border-white px-6 py-16 font-semibold">IT & Cybersecurity</td>
+          <td class="border border-white lg:px-8 px-4 py-2">A basic IT environment exists but is poorly maintained or inconsistent.</td>
+          <td class="border border-white lg:px-8 px-4 py-2">We assist in building a coherent and scalable digital environment.</td>
+          <td class="border-b border-white lg:px-8 px-4 py-2">Supports a more structured and secure work environment.</td>
+        </tr>
+        <tr>
+          <td class="border-t border-white px-6 py-16 font-semibold">Accounting & Finance</td>
+          <td class="border border-white lg:px-8 px-4 py-2">Financial documents are available, but their use and interpretation remain partial.</td>
+          <td class="border border-white lg:px-8 px-4 py-2">We assist in building accessible financial dashboards that support decision-making.</td>
+          <td class="border-b border-white lg:px-8 px-4 py-2">Provides a concrete and structured view of available financial resources.</td>
+        </tr>
+        <tr>
+          <td class="border-t border-white px-6 py-16 font-semibold">Marketing & Communication</td>
+          <td class="border-b-0 border border-white lg:px-8 px-4 py-2">No structured communication strategy is currently in place.</td>
+          <td class="border-b-0 border border-white lg:px-8 px-4 py-2">TreeConnect can help you lay the foundation of a visibility strategy tailored to your business.</td>
+          <td class="border-0 border-white lg:px-8 px-4 py-2">Establishes the foundation for coherent and accessible visibility.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
     <!-- Submit Button -->
-    <button onclick="nextStep(7)" class="bg-white w-full px-4 py-2 rounded-2xl text-[#304B68] font-bold text-lg mb-4">
-      Next
+    <button onclick="nextStep(7)" class="bg-white w-full px-4 py-2 rounded-2xl text-[#304B68] font-bold text-lg mt-10">
+      Download
     </button>
 
   </div>
@@ -889,10 +989,9 @@ hen administration is unclear or scattered, delays, errors, and stress increase.
 
   <!-- Step 8 Modal -->
   <div id="modalStep8" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
-    <div class="bg-gray-800 p-6 rounded-2xl w-96">
-      <h2 class="text-xl font-bold mb-4">Step 3</h2>
-      <p class="mb-6">Final step of the popup.</p>
-      <button onclick="closeAllModals()" class="bg-green-500 px-4 py-2 rounded hover:bg-green-600">Finish</button>
+    <div class="bg-[#3F6893] p-6 rounded-2xl w-96 text-center">
+      <h2 class="text-xl font-semibold mb-4 text-white">Download successfully!</h2>
+      <button onclick="closeAllModals()" class="bg-[#3F6893] text-white font-semibold border border-white px-8 py-2 rounded-3xl hover:bg-white hover:text-[#304B68]">Close</button>
     </div>
   </div>
 
