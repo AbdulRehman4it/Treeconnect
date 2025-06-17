@@ -8,8 +8,12 @@
      <link rel="stylesheet" href="../assets/css/style.css">
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
 
-     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+     <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script> -->
+
+    <!--Chart CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
       <script src="//code.tidio.co/vxiqlrt5ipq4shg4h60brissqd8hj15z.js" async></script>
 </head>
@@ -837,14 +841,27 @@ hen administration is unclear or scattered, delays, errors, and stress increase.
        <h1 class="xl:text-4xl text-2xl font-semibold text-center mb-6">Organizational Maturity Radar - Tree Connect</h1>
     </div>
 
-    <!-- chart  -->
-     <div id="app" class="xl:pt-20 pt-10">
+   <!-- chart -->
+<div id="app" class="xl:pt-20 pt-10 lg:w-2/3 w-full flex justify-center">
   <div class="chart-container">
     <canvas id="chart"></canvas>
   </div>
-      </div>
+</div>
 
     <script>
+  // Responsive labels setup
+  const isMobile = window.innerWidth <= 768;
+
+  // Original labels (without \n)
+  const originalLabels = [
+    'Human Resources',
+    'Admin & Back-Office',
+    'IT & Cybersecurity',
+    'Accounting & Finance',
+    'Marketing & Communication'
+  ];
+
+  // Data values
   const a = '20';
   const b = '10';
   const c = '30';
@@ -853,17 +870,11 @@ hen administration is unclear or scattered, delays, errors, and stress increase.
   const planetChartData = {
     type: 'radar',
     data: {
-      labels: [
-        'Human Resources',
-        'Admin & Back-Office',
-        'IT & Cybersecurity',
-        'Accounting & Finance',
-        'Marketing & Communication' // ✅ Only real headings kept
-      ],
+      labels: originalLabels,
       datasets: [
         {
           label: 'A',
-          data: [a, b, 20, 20, d], // ✅ Data count matches label count
+          data: [a, b, 20, 20, d],
           backgroundColor: 'rgba(255, 255, 255, 0.7)',
           borderColor: 'rgba(255, 255, 255, 1)',
           borderWidth: 2,
@@ -872,41 +883,48 @@ hen administration is unclear or scattered, delays, errors, and stress increase.
       ]
     },
     options: {
-      elements: {
-        point: {
-          radius: 0
-        },
-        line: {
-          tension: 0
+      responsive: true,
+      plugins: {
+        legend: {
+          display: false
         }
       },
-      responsive: true,
-      legend: {
-        display: false
-      },
-      scale: {
-        angleLines: {
-          display: true,
-          color: 'white'
-        },
-        gridLines: {
-          circular: true,
-          color: 'white',
-          lineWidth: 1
-        },
-        pointLabels: {
-          fontSize: 16,
-          fontColor: 'white'
-        },
-        ticks: {
-          display: false,
-          beginAtZero: true
+      scales: {
+        r: {
+          angleLines: {
+            display: true,
+            color: 'white'
+          },
+          grid: {
+            circular: true,
+            color: 'white',
+            lineWidth: 1
+          },
+          pointLabels: {
+            color: 'white',
+            font: {
+              size: 16
+            },
+            callback: function(label) {
+              // Mobile → split by word
+              if (isMobile) {
+                return label.split(' ');
+              }
+              // Desktop → return as is
+              return label;
+            }
+          },
+          ticks: {
+            display: false,
+            beginAtZero: true
+          }
         }
       }
     }
   };
 
-  var app = new Vue({
+  // Vue App
+  new Vue({
     el: "#app",
     data() {
       return {
@@ -928,8 +946,9 @@ hen administration is unclear or scattered, delays, errors, and stress increase.
     }
   });
 
-  Chart.defaults.global.defaultFontFamily = "Calibri";
-      </script>
+  // Set global font
+  Chart.defaults.font.family = "Calibri";
+</script>
 
     <!-- Table  -->
     <div class="overflow-x-auto lg:pt-20 pt-10">
