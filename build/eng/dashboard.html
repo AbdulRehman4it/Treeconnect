@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+    .chart-container {
+      background-color: #3B6A9D;
+      border-radius: 20px;
+      padding: 20px;
+      /* width: 350px;
+      height: 520px; */
+    }
+
+  </style>
+</head>
+<body class="bg-[#304B68] overflow-x-hidden">
+     <section class="">
+  <div class="flex">
+    <!-- Vertical Sidebar (Left Side) -->
+  <div class="left-0 top-0 xl:w-72 w-60 h-screen flex flex-col justify-between p-7 sticky bg-[#3F6893]">
+    <div class="flex flex-col">
+    <!-- Top logo -->
+    <div class="text-3xl font-bold">
+        <a href="./index.html">
+      <img src="../assets/img/dashboardlogo.png" alt="">
+      </a>
+    </div>
+
+    <!-- Middle Icons -->
+    <div class="flex flex-col pt-16">
+      <div>
+        <a href="">
+            <button class="text-white hover:bg-[#304B68] font-medium text-base py-4 pr-20 pl-4 rounded-2xl flex items-center gap-4"><img src="../assets/img/icon1.png" alt="">Dashboard</button>
+    </a>
+</div>
+     <div>
+        <a href="">
+            <button class="text-white hover:bg-[#304B68] font-medium text-base py-4 pr-20 pl-4 rounded-2xl flex items-center gap-4"><img src="../assets/img/icon2.png" alt="">Surveys</button>
+    </a>
+</div>
+    </div>
+    <div>
+        <a href="">
+            <button class="text-white hover:bg-[#304B68] font-medium text-base py-4 pr-20 pl-4 rounded-2xl flex items-center gap-4"><img src="../assets/img/icon3.png" alt="">Users</button>
+    </a>
+</div>
+<div>
+        <a href="">
+           <button class="text-white hover:bg-[#304B68] font-medium text-base py-4 pr-20 pl-4 rounded-2xl flex items-center gap-4"><img src="../assets/img/icon4.png" alt="">Reports</button>
+    </a>
+</div>
+<div>
+        <a href="">
+            <button class="text-white hover:bg-[#304B68] font-medium text-base py-4 pr-20 pl-4 rounded-2xl flex items-center gap-4"><img src="../assets/img/icon5.png" alt="">Settings</button>
+    </a>
+</div>
+    </div>
+
+    <!-- Bottom Settings/Profile -->
+    <div class="w-full flex flex-col gap-5 mb-5">
+    <a href="" class="text-white font-medium">
+        <i class="fa-solid fa-power-off font-light"></i>&nbsp; Logout</a>
+    
+    </div>
+  </div>
+
+  <!-- Main App Layout -->
+  <div class="flex-1 flex flex-col">
+    <!-- navbar search  -->
+    <div class="flex justify-between py-7 px-7 shadow-2xl">
+
+        <div class="relative w-full">
+  <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+    <svg class="w-5 h-5 text-[#D3D3D3]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M16 10a6 6 0 11-12 0 6 6 0 0112 0z" />
+    </svg>
+  </span>
+  <input
+    type="text"
+    placeholder="Search..."
+    class="w-1/2 pl-10 pr-4 py-2 rounded-full bg-transparent border bordet-white text-white placeholder-[#D3D3D3] focus:outline-none focus:white"
+  />
+</div>
+
+    <!-- 🔝 Top Navbar (Right Corner Icons) -->
+     <div class="flex items-center gap-5">
+        <div>
+            <a href="">
+                <i class="fa-regular fa-bell text-white text-2xl"></i>
+            </a>
+        </div>
+    <div class="relative inline-block text-left">
+    <button id="dropdownButton" class="flex items-center gap-5 focus:outline-none">
+       
+      <img src="../assets/img/profileimg.png" alt="Profile" class="w-10 h-10 rounded-full object-cover">
+      <div class="text-left">
+        <div class="font-medium text-white">Ali Raza</div>
+        <div class="text-sm text-[#D3D3D3]">aliraza4521@gmail.com</div>
+      </div>
+      <svg class="w-5 h-5 text-[#D3D3D3] ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+      </svg>
+    </button>
+
+    <div id="dropdownMenu" class="hidden absolute right-0 mt-2 w-40 bg-white text-black rounded-lg shadow-lg z-50">
+      <button class="block w-full px-4 py-2 text-left hover:bg-gray-100">Logout</button>
+    </div>
+  </div>
+  </div>
+  </div>
+  
+  <script>
+    const dropdownButton = document.getElementById('dropdownButton');
+    const dropdownMenu = document.getElementById('dropdownMenu');
+
+    dropdownButton.addEventListener('click', () => {
+      dropdownMenu.classList.toggle('hidden');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!dropdownButton.contains(e.target)) {
+        dropdownMenu.classList.add('hidden');
+      }
+    });
+  </script>
+  <!-- 🔝 Top Navbar (Right Corner Icons) end -->
+
+    <!-- 👇 Main Content (placeholder for chat, etc.) -->
+    <div class="flex-1 flex">
+      <main class="flex-1 mx-7">
+           <!-- Chat Body -->
+  <div class="space-y-6 pt-7">
+    <!-- Creator Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+
+          <div class="chart-box h-[260px] bg-[#3F6893] rounded-2xl p-4 space-y-2">
+    <h2 class="text-white text-sm font-semibold mb-2" style="color: white; font-size: 14px;">Total Surveys</h2>
+    <canvas id="totalSurveysChart" class="pb-4"></canvas>
+  </div>
+
+      <div class="bg-[#3F6893] rounded-2xl p-4 space-y-2">
+        <img src="../assets/img/blockicon1.png" class="" />
+        <h1 class="text-white xl:text-7xl text-5xl font-thin pt-14">8.7k</h1>
+        <h2 class="text-white text-base font-semibold pt-4">Active Users</h2>
+      </div>
+
+     <div class="bg-[#3F6893] p-4 rounded-2xl">
+  <h3 class="text-base font-semibold mb-4 text-white">Service Ratings</h3>
+
+  <div id="rating-bars" class="space-y-3 text-white"></div>
+
+  <div class="flex justify-between text-sm text-white mt-6">
+    <span>10</span><span>20</span><span>30</span><span>40</span><span>60</span><span>80</span>
+  </div>
+</div>
+
+<div class="bg-[#3F6893] rounded-2xl p-4 space-y-2">
+        <img src="../assets/img/average.png" class="" />
+        <h1 class="text-white xl:text-7xl text-5xl font-thin pt-14">4.5</h1>
+        <h2 class="text-white text-base font-semibold pt-4">Average Satisfaction</h2>
+      </div>
+  
+    </div>
+  </div>
+
+  <!-- table  -->
+    <div class="flex gap-7 justify-between py-7">
+        <div class="h-auto w-full">
+ <div class="overflow-x-auto w-full rounded-2xl shadow-lg">
+    <table class="w-full text-sm text-left text-white bg-[#3B6A9D] rounded-t-3xl overflow-hidden">
+      <thead class="uppercase text-white text-sm">
+        <!-- <tr class="border-b border-white/30">
+          <th scope="col" class="px-6 py-4 flex items-center gap-2">
+            <span>👤</span> Name
+          </th>
+          <th scope="col" class="px-6 py-4 flex items-center gap-2">
+            <span>💼</span> Service Used
+          </th>
+          <th scope="col" class="px-6 py-4 flex items-center gap-2">
+            <span>🛡️</span> Satisfaction
+          </th>
+          <th scope="col" class="px-6 py-4 flex items-center gap-2">
+            <span>💬</span> Feedback
+          </th>
+          <th scope="col" class="px-6 py-4 flex items-center gap-2">
+            <span>📅</span> Date
+          </th>
+          <th scope="col" class="px-6 py-4">
+            Action
+          </th>
+        </tr> -->
+      </thead>
+      <tbody class="text-white">
+        <!-- Row -->
+        <tr class="border-b border-white/20">
+          <td class="px-6 py-4 flex items-center gap-3">
+            <img class="w-8 h-8 rounded-full" src="https://i.pravatar.cc/32?img=1" alt="">
+            Ali Raza
+          </td>
+          <td class="px-6 py-4">Business Launch</td>
+          <td class="px-6 py-4">Absolutely satisfied</td>
+          <td class="px-6 py-4">Excellent support!</td>
+          <td class="px-6 py-4">May 9, 2025</td>
+          <td class="px-6 py-4">
+            <button class="bg-red-200 text-red-700 px-4 py-1 rounded-full text-xs">Delete</button>
+          </td>
+        </tr>
+        <!-- Repeat rows below -->
+        <tr class="border-b border-white/20">
+          <td class="px-6 py-4 flex items-center gap-3">
+            <img class="w-8 h-8 rounded-full" src="https://i.pravatar.cc/32?img=2" alt="">
+            Safyan
+          </td>
+          <td class="px-6 py-4">Human Resources</td>
+          <td class="px-6 py-4">Dissatisfied</td>
+          <td class="px-6 py-4">Very helpful team</td>
+          <td class="px-6 py-4">April 28, 2025</td>
+          <td class="px-6 py-4">
+            <button class="bg-green-200 text-green-700 px-4 py-1 rounded-full text-xs">View</button>
+          </td>
+        </tr>
+        <tr class="border-b border-white/20">
+          <td class="px-6 py-4 flex items-center gap-3">
+            <img class="w-8 h-8 rounded-full" src="https://i.pravatar.cc/32?img=3" alt="">
+            James
+          </td>
+          <td class="px-6 py-4 font-bold">Business Launch</td>
+          <td class="px-6 py-4">Absolutely satisfied</td>
+          <td class="px-6 py-4">Excellent support!</td>
+          <td class="px-6 py-4">May 7, 2025</td>
+          <td class="px-6 py-4">
+            <button class="bg-red-200 text-red-700 px-4 py-1 rounded-full text-xs">Delete</button>
+          </td>
+        </tr>
+        <tr class="border-b border-white/20">
+          <td class="px-6 py-4 flex items-center gap-3">
+            <img class="w-8 h-8 rounded-full" src="https://i.pravatar.cc/32?img=4" alt="">
+            Ayesha
+          </td>
+          <td class="px-6 py-4">IT & Infrastructure</td>
+          <td class="px-6 py-4">Extremely Impressed</td>
+          <td class="px-6 py-4">Super impressed!</td>
+          <td class="px-6 py-4">April 22, 2025</td>
+          <td class="px-6 py-4">
+            <button class="bg-green-200 text-green-700 px-4 py-1 rounded-full text-xs">View</button>
+          </td>
+        </tr>
+        <tr class="border-b border-white/20">
+          <td class="px-6 py-4 flex items-center gap-3">
+            <img class="w-8 h-8 rounded-full" src="https://i.pravatar.cc/32?img=5" alt="">
+            Daniel Wu
+          </td>
+          <td class="px-6 py-4">Business Launch</td>
+          <td class="px-6 py-4">Dissatisfied</td>
+          <td class="px-6 py-4">Excellent support!</td>
+          <td class="px-6 py-4">May 5, 2025</td>
+          <td class="px-6 py-4">
+            <button class="bg-red-200 text-red-700 px-4 py-1 rounded-full text-xs">Delete</button>
+          </td>
+        </tr>
+        <tr class="border-b border-white/20">
+          <td class="px-6 py-4 flex items-center gap-3">
+            <img class="w-8 h-8 rounded-full" src="https://i.pravatar.cc/32?img=6" alt="">
+            Sarah
+          </td>
+          <td class="px-6 py-4">Legal & Compliance</td>
+          <td class="px-6 py-4">Extremely Impressed</td>
+          <td class="px-6 py-4">Super impressed!</td>
+          <td class="px-6 py-4">April 7, 2025</td>
+          <td class="px-6 py-4">
+            <button class="bg-green-200 text-green-700 px-4 py-1 rounded-full text-xs">View</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="px-6 py-4 flex items-center gap-3">
+            <img class="w-8 h-8 rounded-full" src="https://i.pravatar.cc/32?img=7" alt="">
+            Rodriguez
+          </td>
+          <td class="px-6 py-4">Business Launch</td>
+          <td class="px-6 py-4">Absolutely satisfied</td>
+          <td class="px-6 py-4">Excellent support!</td>
+          <td class="px-6 py-4">May 8, 2025</td>
+          <td class="px-6 py-4">
+            <button class="bg-red-200 text-red-700 px-4 py-1 rounded-full text-xs">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+        </div>
+
+         <div class="chart-container">
+    <canvas id="satisfactionChart"></canvas>
+  </div>
+
+    </div>
+
+      </main>
+    </div>
+
+
+  </div>
+  </div>
+</section>
+
+
+<!-- table graph  -->
+<script>
+    const ctx = document.getElementById('satisfactionChart').getContext('2d');
+
+    const gradient = ctx.createLinearGradient(0, 0, 0, 400);
+    gradient.addColorStop(0, 'rgba(255, 255, 255, 0.8)');
+    gradient.addColorStop(1, 'rgba(255, 255, 255, 0.1)');
+
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+        datasets: [{
+          label: 'Satisfaction',
+          data: [3.4, 3.6, 3.7, 3.7, 3.6, 3.9],
+          backgroundColor: gradient,
+          borderColor: '#ffffff',
+          borderWidth: 2,
+          pointBackgroundColor: '#ffffff',
+          pointBorderColor: '#3B6A9D',
+          pointRadius: 6,
+          pointHoverRadius: 8,
+          fill: true,
+          tension: 0.4,
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          title: {
+            display: true,
+            text: 'Satisfaction Trends (Last 6 Days)',
+            color: '#ffffff',
+            font: {
+              size: 16,
+              weight: 'bold',
+              family: 'sans-serif'
+            },
+            padding: {
+              top: 10,
+              bottom: 20
+            }
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            max: 4.5,
+            ticks: {
+              color: '#ffffff'
+            },
+            grid: {
+              color: 'rgba(255, 255, 255, 0.2)'
+            }
+          },
+          x: {
+            ticks: {
+              color: '#ffffff'
+            },
+            grid: {
+              color: 'rgba(255, 255, 255, 0.1)'
+            }
+          }
+        }
+      }
+    });
+  </script>
+
+
+<!-- line chart graph js  -->
+ <script>
+    const totalSurveysCtx = document.getElementById('totalSurveysChart').getContext('2d');
+
+    const totalSurveysGradient = totalSurveysCtx.createLinearGradient(0, 0, 0, 250);
+    totalSurveysGradient.addColorStop(0, 'rgba(255, 255, 255, 0.5)');
+    totalSurveysGradient.addColorStop(1, 'rgba(255, 255, 255, 0.1)');
+
+    new Chart(totalSurveysCtx, {
+      type: 'line',
+      data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+        datasets: [{
+          data: [40, 70, 100, 130, 150, 200],
+          fill: true,
+          backgroundColor: totalSurveysGradient,
+          borderColor: '#ffffff',
+          tension: 0.4,
+          pointBackgroundColor: '#3B6A9D',
+          pointBorderColor: '#ffffff',
+          pointBorderWidth: 3,
+          pointRadius: 6,
+          pointHoverRadius: 6,
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+        },
+        scales: {
+          x: {
+            grid: { color: 'rgba(255,255,255,0.15)' },
+            ticks: { color: '#ffffff' }
+          },
+          y: {
+            grid: { color: 'rgba(255,255,255,0.15)' },
+            ticks: { color: '#ffffff', stepSize: 50 }
+          }
+        }
+      }
+    });
+  </script>
+<!-- progress bar js  -->
+<script>
+  const ratings = [
+    { level: '05', value: 70 },
+    { level: '04', value: 65 },
+    { level: '03', value: 55 },
+    { level: '02', value: 45 },
+    { level: '01', value: 35 }
+  ];
+
+  const container = document.getElementById('rating-bars');
+
+  ratings.forEach(rating => {
+    const bar = document.createElement('div');
+    bar.className = 'flex items-center space-x-2';
+
+    bar.innerHTML = `
+      <div class="w-6 text-sm">${rating.level}</div>
+      <div class="flex-1 h-3 rounded-full bg-[#D9D9D9] overflow-hidden">
+        <div class="h-full bg-[#304B68] transition-all duration-500" style="width: ${rating.value}%"></div>
+      </div>
+    `;
+
+    container.appendChild(bar);
+  });
+</script>
+
+    <script src="https://kit.fontawesome.com/a2ada4947c.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
