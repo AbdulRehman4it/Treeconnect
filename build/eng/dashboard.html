@@ -97,11 +97,37 @@
 
     <!-- 🔝 Top Navbar (Right Corner Icons) -->
      <div class="flex items-center gap-5 ">
-        <div>
-            <a href="">
-                <i class="fa-regular fa-bell text-white text-2xl"></i>
-            </a>
-        </div>
+        <!-- Include Font Awesome (if not already) -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+<!-- Notification Bell + Dropdown -->
+<div class="relative" x-data="{ open: false }">
+  <a href="javascript:void(0)" @click="open = !open">
+    <i class="fa-regular fa-bell text-white text-2xl"></i>
+  </a>
+
+  <!-- Dropdown -->
+  <div
+    x-show="open"
+    @click.outside="open = false"
+    class="absolute right-0 mt-2 w-64 bg-white rounded-lg shadow-xl text-sm text-black z-50"
+  >
+    <div class="px-4 py-3 border-b font-semibold">Notifications</div>
+    <ul class="max-h-60 overflow-y-auto">
+      <li class="px-4 py-2 hover:bg-gray-100">📢 New message from admin</li>
+      <li class="px-4 py-2 hover:bg-gray-100">✅ Task completed successfully</li>
+      <li class="px-4 py-2 hover:bg-gray-100">⚠️ Password will expire in 3 days</li>
+      <li class="px-4 py-2 hover:bg-gray-100">📝 New feedback submitted</li>
+      <li class="px-4 py-2 hover:bg-gray-100">🔔 Alert: System update at 2 AM</li>
+    </ul>
+    <div class="px-4 py-2 border-t text-right">
+      <a href="#" class="text-blue-600 text-xs hover:underline">View All</a>
+    </div>
+  </div>
+</div>
+
+
+
     <div class="relative inline-block text-left">
     <button id="dropdownButton" class="flex items-center gap-5 focus:outline-none">
        
@@ -465,6 +491,10 @@
   }, 100); // Short delay for transition effect
 </script>
 
+
+
+<!-- Alpine.js (for notification dropdown toggle) -->
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 
     <script src="https://kit.fontawesome.com/a2ada4947c.js" crossorigin="anonymous"></script>
 
