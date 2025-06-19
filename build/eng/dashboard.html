@@ -32,7 +32,7 @@
 </div>
 
 <!-- Sidebar -->
-<div id="sidebar" class="left-0 top-0 xl:w-72 w-60 h-screen flex flex-col lg:justify-between justify-start p-7 bg-[#3F6893] transition-transform duration-300 lg:translate-x-0 -translate-x-full lg:sticky fixed z-50">
+<div id="sidebar" class="left-0 top-0 xl:w-72 w-60 h-screen flex flex-col justify-between  p-7 bg-[#3F6893] transition-transform duration-300 lg:translate-x-0 -translate-x-full lg:sticky fixed z-50">
   <div class="flex flex-col ">
     <!-- Top logo -->
     <div class="text-3xl font-bold">
@@ -50,41 +50,14 @@
           </button>
         </a>
       </div>
-      <div>
-        <a href="./dashboardsurvay.html">
-          <button class="text-white w-full hover:bg-[#304B68] font-medium text-base py-4 pr-20 pl-4 rounded-2xl flex items-center gap-4">
-            <img src="../assets/img/icon2.png" alt="">Surveys
-          </button>
-        </a>
-      </div>
     </div>
 
-    <div>
-      <a href="">
-        <button class="text-white w-full hover:bg-[#304B68] font-medium text-base py-4 pr-20 pl-4 rounded-2xl flex items-center gap-4">
-          <img src="../assets/img/icon3.png" alt="">Users
-        </button>
-      </a>
-    </div>
-    <div>
-      <a href="">
-        <button class="text-white w-full hover:bg-[#304B68] font-medium text-base py-4 pr-20 pl-4 rounded-2xl flex items-center gap-4">
-          <img src="../assets/img/icon4.png" alt="">Reports
-        </button>
-      </a>
-    </div>
-    <div>
-      <a href="">
-        <button class="text-white w-full hover:bg-[#304B68] font-medium text-base py-4 pr-20 pl-4 rounded-2xl flex items-center gap-4">
-          <img src="../assets/img/icon5.png" alt="">Settings
-        </button>
-      </a>
-    </div>
+   
   </div>
 
   <!-- Bottom Settings/Profile -->
-  <div class="w-full flex flex-col pt-6 lg:pt-0">
-    <a href="" class="text-white font-medium">
+  <div class="w-full flex flex-col">
+    <a href="./index.html" class="text-white font-medium">
       <i class="fa-solid fa-power-off font-light"></i>&nbsp; Logout
     </a>
   </div>
@@ -134,16 +107,18 @@
        
       <img src="../assets/img/profileimg.png" alt="Profile" class="w-10 h-10 rounded-full object-cover">
       <div class="text-left">
-        <div class="font-medium text-white">Ali Raza</div>
-        <div class="text-sm text-[#D3D3D3]">aliraza4521@gmail.com</div>
+        <div class="font-medium text-white xl:text-lg text-sm">Ali Raza</div>
+        <div class="text-xs text-[#D3D3D3]">aliraza4521@gmail.com</div>
       </div>
-      <svg class="w-5 h-5 text-[#D3D3D3] ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <!-- <svg class="w-5 h-5 text-[#D3D3D3] ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-      </svg>
+      </svg> -->
     </button>
 
     <div id="dropdownMenu" class="hidden absolute right-0 mt-2 w-40 bg-white text-black rounded-lg shadow-lg z-50">
-      <button class="block w-full px-4 py-2 text-left hover:bg-gray-100">Logout</button>
+      <a href="./index.html">
+      <button class="block w-full px-4 py-2 text-left">Logout</button>
+      </a>
     </div>
   </div>
   </div>
@@ -169,7 +144,7 @@
     <div class="flex-1 flex">
       <main class="flex-1 xl:mx-7 mx-5">
            <!-- Chat Body -->
-  <div class="space-y-6 pt-7">
+   <div class="space-y-6 pt-7">
     <!-- Creator Cards -->
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
 
@@ -206,8 +181,8 @@
   <!-- table  -->
     <div class="flex flex-col xl:flex-row gap-7 justify-between py-7">
         <div class="h-auto w-full">
- <div class="overflow-x-auto w-full rounded-2xl shadow-lg">
-    <table class="w-full text-sm text-left text-white bg-[#3F6893] rounded-t-3xl overflow-hidden">
+<div class="overflow-x-auto w-full rounded-2xl shadow-lg">
+  <table class="w-full text-sm text-left text-white bg-[#3F6893] rounded-t-3xl">
       <thead class="text-white">
   <tr>
     <th class="border-b border-white px-5 py-7"><i class="fa-regular fa-user"></i> Name</th>
@@ -244,7 +219,9 @@
           <td class="px-6 py-4">Very helpful team</td>
           <td class="px-6 py-4">April 28, 2025</td>
           <td class="px-6 py-4">
+            <a href="./singlepagedashboard.html">
             <button class="bg-green-200 text-green-700 px-4 py-1 rounded-full text-xs">View</button>
+            </a>
           </td>
         </tr>
         <tr class="border-b border-[#E5E5E5]">
@@ -252,7 +229,7 @@
             <img class="w-8 h-8 rounded-full" src="https://i.pravatar.cc/32?img=3" alt="">
             James
           </td>
-          <td class="px-6 py-4 font-bold">Business Launch</td>
+          <td class="px-6 py-4">Business Launch</td>
           <td class="px-6 py-4">Absolutely satisfied</td>
           <td class="px-6 py-4">Excellent support!</td>
           <td class="px-6 py-4">May 7, 2025</td>
@@ -270,7 +247,9 @@
           <td class="px-6 py-4">Super impressed!</td>
           <td class="px-6 py-4">April 22, 2025</td>
           <td class="px-6 py-4">
+            <a href="./singlepagedashboard.html">
             <button class="bg-green-200 text-green-700 px-4 py-1 rounded-full text-xs">View</button>
+            </a>
           </td>
         </tr>
         <tr class="border-b border-[#E5E5E5]">
@@ -296,7 +275,9 @@
           <td class="px-6 py-4">Super impressed!</td>
           <td class="px-6 py-4">April 7, 2025</td>
           <td class="px-6 py-4">
+            <a href="./singlepagedashboard.html">
             <button class="bg-green-200 text-green-700 px-4 py-1 rounded-full text-xs">View</button>
+            </a>
           </td>
         </tr>
         <tr>
@@ -448,9 +429,9 @@
   </script>
 
 <!-- progress bar js  -->
-<script>
+<script> 
   const ratings = [
-    { level: '05', value: 70 },
+    { level: '05', value: 90 },
     { level: '04', value: 65 },
     { level: '03', value: 55 },
     { level: '02', value: 45 },

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+      <!-- chart css  -->
+ <style>
+    .rounded-chart {
+      border-radius: 20px;
+      overflow: hidden;
+    }
+  </style>
+
+
+</head>
+<body class="bg-[#304B68] overflow-x-hidden">
+    <header>
+         <div class="flex justify-between 2xl:py-10 py-5 lg:px-10 px-5 shadow-2xl ">
+
+        <div class="flex items-center md:gap-10 gap-4">
+            <a href="./dashboard.html">
+             <img src="../assets/img/Arrow.svg" class="w-4 h-4" alt="">
+             </a>
+            <img src="../assets/img/logodashboard.png" alt="">
+        </div>
+
+    <!-- 🔝 Top Navbar (Right Corner Icons) -->
+     <div class="flex items-center md:gap-5 gap-2">
+        <div>
+            <a href="">
+                <i class="fa-regular fa-bell text-white md:text-2xl text-xl"></i>
+            </a>
+        </div>
+    <div class="relative inline-block text-left">
+    <button id="dropdownButton" class="flex items-center md:gap-5 gap-2 focus:outline-none">
+       
+      <img src="../assets/img/profileimg.png" alt="Profile" class="w-10 h-10 rounded-full object-cover">
+      <div class="text-left">
+        <div class="font-medium text-white xl:text-lg text-sm">Ali Raza</div>
+        <div class="text-xs text-[#D3D3D3]">aliraza4521@gmail.com</div>
+      </div>
+      <!-- <svg class="w-5 h-5 text-[#D3D3D3] ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+      </svg> -->
+    </button>
+
+    <div id="dropdownMenu" class="hidden absolute right-0 mt-2 w-40 bg-white text-black rounded-lg shadow-lg z-50">
+        <a href="./index.html">
+      <button class="block w-full px-4 py-2 text-left">Logout</button>
+      </a>
+    </div>
+  </div>
+  </div>
+  </div>
+  
+  <script>
+    const dropdownButton = document.getElementById('dropdownButton');
+    const dropdownMenu = document.getElementById('dropdownMenu');
+
+    dropdownButton.addEventListener('click', () => {
+      dropdownMenu.classList.toggle('hidden');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!dropdownButton.contains(e.target)) {
+        dropdownMenu.classList.add('hidden');
+      }
+    });
+  </script>
+    </header>
+
+    <div class="flex md:flex-row flex-col justify-between items-center md:py-12 py-6 lg:px-10 px-5">
+        <div>
+            <h1 class="text-white 2xl:text-2xl text-xl">Survey Results</h1>
+        </div>
+        <div class="2xl:space-x-7 md:space-x-4 space-y-4 md:space-y-0 text-start ">
+            <button class="bg-transparent border hover:bg-[#3F6893] hover:border-[#3F6893]  border-white py-2 px-10 text-white rounded-2xl">View Survey</button>
+             <button class="bg-transparent border hover:bg-[#3F6893] hover:border-[#3F6893] border-white py-2 px-10 text-white rounded-2xl">Download</button>
+              <button class="bg-transparent border hover:bg-[#3F6893] hover:border-[#3F6893] border-white py-2 px-10 text-white rounded-2xl m-0">Email Client</button>
+        </div>
+    </div>
+
+<div class="lg:px-10 px-5">
+    <div class="sm:bg-[#3F6893] rounded-3xl">
+  <!-- Wrapper for all 4 columns -->
+  <div class="flex flex-col sm:flex-row sm:justify-between w-full sm:items-center md:space-y-0 space-y-2 py-4 md:px-7 rounde text-white">
+
+    <!-- Client -->
+    <div class="">
+      <span class="font-medium xl:text-base text-sm">Client:</span>
+      <span class="text-[#D3D3D3] font-medium xl:text-sm text-xs">Ali Raza</span>
+    </div>
+
+    <!-- Divider -->
+    <div class="hidden sm:block h-8 w-px bg-white"></div>
+
+    <!-- Business -->
+    <div class="flex items-center gap-1">
+      <span class="font-medium xl:text-base text-sm">Business:</span>
+      <span class="font-medium text-[#D3D3D3] xl:text-sm text-xs">Malik & Co. Traders</span>
+    </div>
+
+    <!-- Divider -->
+    <div class="hidden sm:block h-7 w-px bg-white"></div>
+
+    <!-- Submitted -->
+    <div class="flex items-center gap-1">
+      <span class="font-medium xl:text-base text-sm">Submitted:</span>
+      <span class="font-medium text-[#D3D3D3] xl:text-sm text-xs">June 12, 2025</span>
+    </div>
+
+    <!-- Divider -->
+    <div class="hidden sm:block h-7 w-px bg-white"></div>
+
+    <!-- Status -->
+    <div class="flex items-center gap-1">
+      <span class="font-medium xl:text-base text-sm">Status:</span>
+      <span class="font-medium text-[#D3D3D3] xl:text-sm text-xs">Healthy – 78%</span>
+    </div>
+  </div>
+</div>
+</div>
+
+<section class="lg:px-10 px-5 md:py-10 py-5">
+  <div class="flex lg:flex-row flex-col xl:gap-10 gap-5 lg:items-stretch">
+    
+    <!-- Section Scores (Left Side) -->
+    <div class="lg:w-1/2 w-full flex flex-col">
+      <h2 class="text-white 2xl:text-2xl text-lg font-normal mb-4">Section Scores</h2>
+
+      <div class="bg-[#3F6893] rounded-3xl overflow-hidden shadow-lg text-white text-sm font-normal flex-1 flex flex-col">
+        <!-- Table Header -->
+        <div class="grid grid-cols-3 py-3 px-4 bg-[#304B68] border border-white rounded-t-3xl">
+          <div class="flex items-center gap-2">
+            <span><img src="../assets/img/section.png" alt=""></span>
+            <span>Section</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span><img src="../assets/img/score.png" alt=""></span>
+            <span>Score</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span><img src="../assets/img/status.png" alt=""></span>
+            <span>Status</span>
+          </div>
+        </div>
+
+        <!-- Table Body -->
+        <div class="divide-y divide-white px-4 flex-1">
+          <div class="grid grid-cols-3 py-4">
+            <div>Business Setup</div>
+            <div>85% percent</div>
+            <div>Strong</div>
+        </div>
+          <div class="grid grid-cols-3 py-4">
+            <div>HR & Staffing</div>
+            <div>60% percent</div>
+            <div>Needs Work</div>
+        </div>
+          <div class="grid grid-cols-3 py-4">
+            <div>Marketing</div>
+            <div>65% percent</div>
+            <div>Moderate</div>
+        </div>
+          <div class="grid grid-cols-3 py-4">
+            <div>Legal & Compliance</div>
+            <div>60% percent</div>
+            <div>At Risk</div>
+        </div>
+          <div class="grid grid-cols-3 py-4">
+            <div>Technology & IT</div>
+            <div>75% percent</div>
+            <div>Progressing</div>
+        </div>
+          <div class="grid grid-cols-3 py-4">
+            <div>Operations Management</div>
+            <div>68% percent</div>
+            <div>Fair</div>
+        </div>
+          <div class="grid grid-cols-3 py-4">
+            <div>Customer Support</div>
+            <div>58% percent</div>
+            <div>Needs Attention</div>
+        </div>
+          <div class="grid grid-cols-3 py-4">
+            <div>Admin & Back-Office</div>
+            <div>78% percent</div>
+            <div>Solid</div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Graph  Score Overview (Right Side) -->
+    <div class="lg:w-1/2 w-full flex flex-col">
+      <h2 class="text-white 2xl:text-2xl text-lg font-normal mb-4">Score Overview</h2>
+
+      <div class="bg-[#3F6893] rounded-3xl md:p-6 p-4 shadow-lg flex-1 flex flex-col">
+        <div class="relative w-full h-full min-h-[400px]">
+          <canvas id="scoreChart" class="absolute top-0 left-0 w-full h-full"></canvas>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- chart js  -->
+ <script>
+    const ctx = document.getElementById('scoreChart').getContext('2d');
+
+    const gradient = ctx.createLinearGradient(0, 0, 0, 400);
+    gradient.addColorStop(0, 'rgba(255,255,255,0.5)');
+    gradient.addColorStop(1, 'rgba(255,255,255,0)');
+
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['Business', 'HR', 'Marketing', 'Legal', 'Finance', 'IT', 'Ops', 'Support', 'Admin'],
+        datasets: [{
+          label: 'Score',
+          data: [0, 10, 20, 30, 40, 60, 55, 85, 100],
+          backgroundColor: gradient,
+          borderColor: '#ffffff',
+          borderWidth: 2,
+          fill: true,
+          pointBackgroundColor: '#456D97',
+          pointBorderColor: '#ffffff',
+          pointBorderWidth: 2,
+          pointRadius: 6,
+          tension: 0.3,
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            min: 0,
+            max: 100,
+            ticks: {
+              color: '#ffffff',
+              stepSize: 10,
+              font: {
+                weight: 'normal',
+              }
+            },
+            grid: {
+              color: 'rgba(255,255,255,0.3)',
+              drawTicks: false
+            }
+          },
+          x: {
+            ticks: {
+              color: '#ffffff',
+              font: {
+                weight: 'normal',
+              }
+            },
+            grid: {
+              display: false
+            }
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          }
+        },
+        responsive: true,
+        maintainAspectRatio: false
+      }
+    });
+  </script>
+
+
+ <script src="https://kit.fontawesome.com/a2ada4947c.js" crossorigin="anonymous"></script>
+</body>
+</html>
