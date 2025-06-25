@@ -31,9 +31,9 @@ if (isset($_POST["submit"])) {
 
           // Recipients
           // Recipients
-          $mail->setFrom("contact@treeconnect.ch", "Tree Connect"); // Set your preferred "from" email and name
-          $mail->addAddress("contact@treeconnect.ch", "Tree Connect"); // Recipient's email and name (You can change this)
-          $mail->addReplyTo("contact@treeconnect.ch", "Tree Connect");
+          $mail->setFrom("contact@treeconnect.ch", "$fullname"); // Set your preferred "from" email and name
+          $mail->addAddress("contact@treeconnect.ch", "$fullname"); // Recipient's email and name (You can change this)
+          $mail->addReplyTo("contact@treeconnect.ch", "$fullname");
     $mail->Subject = $subject;
           //Content
           $mail->isHTML(true);
