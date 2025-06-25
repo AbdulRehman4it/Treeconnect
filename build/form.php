@@ -38,7 +38,7 @@ if (isset($_POST["submit"])) {
           //Content
           $mail->isHTML(true);
           // Update the message to include the user's email
-                    $message = "<b>Name:</b>  $fullname <br> <b>Email:</b>  $ma <br> <b>Coompany Name:</b>  $company\n\n <br> <b>Phone Number:</b>  $phone\n\n <br> <b>Message:</b>  $msg  <br> "; //Set email format 
+                    $message = "<b>Name:</b>  $fullname <br> <b>Email:</b>  $ma <br> <b>Company Name:</b>  $company\n\n <br> <b>Phone Number:</b>  $phone\n\n <br> <b>Message:</b>  $msg  <br> "; //Set email format 
           $mail->Body = $message;
           // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
