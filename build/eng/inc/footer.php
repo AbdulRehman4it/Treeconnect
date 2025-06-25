@@ -56,7 +56,7 @@
 <div class="fixed bottom-32 lg:right-9 right-5 z-50 flex flex-col items-center space-y-3">
 
   <!-- WhatsApp -->
-  <a href="https://wa.me/+41782335317?text=Hello!%20I%20need%20help" target="_blank"
+  <a href="https://api.whatsapp.com/send/?phone=%2B41782335317&text=Hello%2C+I+just+visited+the+TreeConnect+website+and+I%E2%80%99d+like+to+know+more.&type=phone_number&app_absent=0" target="_blank"
      class="group flex items-center bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg overflow-hidden transition-all duration-300 ease-in-out hover:scale-105">
     <span class="p-3 whatsapp-float">
       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
