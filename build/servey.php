@@ -3,7 +3,7 @@
     <?php include_once './inc/nav.php';?>
     <!-- Heading  -->
   <div class="text-center 2xl:pt-24 lg:pt-16 pt-10">
-        <h1 class="2xl:text-[90px] lg:text-6xl text-4xl text-white">Audit de maturité - Français</h1>
+        <h1 class="2xl:text-[90px] lg:text-6xl text-4xl text-white">Audit de maturité</h1>
     </div>
 
 
