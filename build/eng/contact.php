@@ -35,9 +35,11 @@
 
                 <form action="./form/php" method="POST" class="xl:pt-20 pt-10 space-y-10">
                     <input type="text" id="name" name="name" class=" w-full py-4 px-6 rounded-full border border-[#D3D3D3] text-[#D3D3D3] bg-transparent text-lg focus:border-[#D3D3D3] focus:outline-none" placeholder="Your Name">
-                      <!-- Phone with flag + code -->
+                    <input type="text" id="email" name="email" class=" w-full py-4 px-6 rounded-full border border-[#D3D3D3] text-[#D3D3D3] bg-transparent text-lg focus:border-[#D3D3D3] focus:outline-none" placeholder="e-mail">  
+                    <!-- Phone with flag + code -->
                       <input type="tel" id="ph" name="phone"class="w-full py-4 pl-40 pr-6 rounded-full border border-[#D3D3D3] text-[#D3D3D3] bg-transparent text-lg focus:border-[#D3D3D3] focus:outline-none" placeholder="Phone Number">
                     <input type="text" id="company" name="company" class=" w-full py-4 px-6 rounded-full border border-[#D3D3D3] text-[#D3D3D3] bg-transparent text-lg focus:border-[#D3D3D3] focus:outline-none" placeholder="Company Name (optional)">
+                     <input type="text" id="subject" name="subject" class=" w-full py-4 px-6 rounded-full border border-[#D3D3D3] text-[#D3D3D3] bg-transparent text-lg focus:border-[#D3D3D3] focus:outline-none" placeholder="Subject">
                     <textarea name="message" id="message" rows="6" class=" w-full py-4 px-6 rounded-2xl border border-[#D3D3D3] text-[#D3D3D3] bg-transparent text-lg focus:border-[#D3D3D3] focus:outline-none" placeholder="Your Message"></textarea>
                     <!-- Checkbox -->
 <label class="inline-flex items-center">

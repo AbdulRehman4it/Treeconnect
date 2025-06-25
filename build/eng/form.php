@@ -14,7 +14,8 @@ if (isset($_POST["submit"])) {
       $company = $_POST["company"];
       $phone = $_POST["phone"];
       $msg = $_POST["message"];
-     
+      $subject = $_POST["subject"];
+      $ma = $_POST["email"];
       $mail = new PHPMailer(true);
 
       try {
@@ -29,15 +30,15 @@ if (isset($_POST["submit"])) {
           $mail->Port = 465; //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
           // Recipients
+          // Recipients
           $mail->setFrom("contact@treeconnect.ch", "Tree Connect"); // Set your preferred "from" email and name
           $mail->addAddress("contact@treeconnect.ch", "Tree Connect"); // Recipient's email and name (You can change this)
           $mail->addReplyTo("contact@treeconnect.ch", "Tree Connect");
-
+    $mail->Subject = $subject;
           //Content
           $mail->isHTML(true);
           // Update the message to include the user's email
-          $message = "<b>Name:</b>  $name<br> <b>Coompany Name:</b>  $company\n\n <b>Phone Number:</b>  $phone\n\n <br> <b>Message:</b>  $msg  <br> "; //Set email format to HTML
-          $mail->Subject = $project;
+                    $message = "<b>Name:</b>  $fullname <br> <b>Email:</b>  $ma <br> <b>Coompany Name:</b>  $company\n\n <br> <b>Phone Number:</b>  $phone\n\n <br> <b>Message:</b>  $msg  <br> "; //Set email format 
           $mail->Body = $message;
           // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
