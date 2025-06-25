@@ -172,21 +172,7 @@ experts, qui vous contactera prochainement pour faire le point.
 <!-- intl-tel-input JS -->
 <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.19/build/js/intlTelInput.min.js"></script>
 
-<!-- Optional geoIpLookup -->
-<script>
-  const input = document.querySelector("#phone");
-  window.intlTelInput(input, {
-    separateDialCode: true,
-    initialCountry: "auto",
-    geoIpLookup: function (callback) {
-      fetch('https://ipinfo.io/json?token=<your_token_here>')
-        .then(res => res.json())
-        .then(data => callback(data.country))
-        .catch(() => callback('us'));
-    },
-    utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.19/build/js/utils.js"
-  });
-</script>
+
 
     <script src="https://kit.fontawesome.com/a2ada4947c.js" crossorigin="anonymous"></script>
   
