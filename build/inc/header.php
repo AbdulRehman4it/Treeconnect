@@ -26,20 +26,22 @@
 
     if (phoneInput) {
       const iti = window.intlTelInput(phoneInput, {
-        initialCountry: "ch", // default to Switzerland
-        onlyCountries: ["ch", "fr", "de", "it"], // CH, FR, DE, IT only
+        initialCountry: "ch",
+        onlyCountries: ["ch", "fr", "de", "it"],
         utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.19/build/js/utils.js"
       });
 
       const form = document.querySelector("form");
       if (form) {
         form.addEventListener("submit", function () {
-          phoneInput.value = iti.getNumber(); // sets full international number before submission
+          // Set full international number into input before submit
+          phoneInput.value = iti.getNumber(); // e.g., +41 79 123 45 67
         });
       }
     }
   });
 </script>
+
 <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
     
 </head>
