@@ -121,45 +121,54 @@
     </button>
 
     <!-- Form Content -->
-    <h2 class="2xl:text-6xl lg:text-4xl text-3xl font-semibold text-center ">Company Information</h2>
-    <p class="text-sm text-center pt-5 text-white">Please take a few moments to provide context. This allows us to better understand your company’s profile and tailor the analysis.</p>
+    <h2 class="2xl:text-6xl lg:text-4xl text-3xl font-semibold text-center ">Informations générales sur l’entreprise</h2>
+    <p class="text-sm text-center pt-5 text-white">Merci de prendre quelques instants pour nous fournir des informations contextuelles. Cela permet de mieux comprendre la situation de votre entreprise et d’ajuster la lecture des résultats.</p>
 
     <form id="companyForm" class="space-y-4 pb-6 xl:pt-20 pt-10">
         <div class="pb-2">
-        <label for="" class="text-sm xl:text-base font-Nonrmal">Full Company Name</label>
-      <input type="text" id="companyName" placeholder="e.g. Cabinet SLV Sàrl" class="w-full border border-white p-3 mt-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3] outline-Nonne focus:outline-Nonne" />
+        <label for="" class="text-sm xl:text-base font-Nonrmal">Nom de l’entreprise</label>
+      <input type="text" id="companyName" placeholder="Exemple : Cabinet SLV Sàrl" class="w-full border border-white p-3 mt-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3] outline-Nonne focus:outline-Nonne" />
       </div>
 
       <div class="pb-2">
-<label for="" class="text-sm xl:text-base font-Nonrmal">Full Company Name</label>
+<label for="" class="text-sm xl:text-base font-Nonrmal">2.	Secteur d’activité principal</label>
       <select id="industry" class="w-full border border-white p-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3] mt-3 outline-Nonne focus:outline-Nonne">
-        <option value="" >Main Industry Sector</option>
-        <option>Commerce</option>
-        <option>Distribution</option>
-        <option>TechNonlogy</option>
+        <option value="" >Commerce ou distribution</option>
+        <option>Services (ressources humaines, conseil, juridique, etc.)</option>
+        <option>Santé ou bien-être</option>
+        <option>Technologies de l’information ou activités numériques</option>
+        <option>Construction ou immobilier</option>
+        <option>Hôtellerie ou restauration</option>
+        <option>Industrie ou production</option>
+        <option>Éducation ou formation</option>
+        <option>Administration publique ou organisation à but non lucratif</option>
+        <option>Autre</option>
       </select>
       </div>
 
       <div class="pb-2">
-      <label for="" class="text-sm xl:text-base font-Nonrmal">Number of Active Employees</label>
+      <label for="" class="text-sm xl:text-base font-Nonrmal">Nombre de collaborateurs actifs (effectif total)</label>
       <select id="employees" class="w-full  border border-white p-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3] mt-3 outline-Nonne focus:outline-Nonne">
         <option value="">Number of Employees</option>
-        <option>1 to 5</option>
-        <option>6 to 20</option>
-        <option>21 to 50</option>
-        <option>51+</option>
+        <option>o	1 à 5</option>
+        <option>o	6 à 10</option>
+        <option>o	11 à 20</option>
+        <option>o	21 à 50</option>
+        <option>o	Plus de 50</option>
       </select>
       </div>
 
       <div class="pb-2">
 
-      <label for="" class="text-sm xl:text-base font-Nonrmal">Year the Company Was Founded</label>
-      <select id="founded" class="w-full  border border-white p-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3] mt-3 outline-Nonne focus:outline-Nonne">
-        <option value="">Year Founded</option>
-        <option>Before 2000</option>
-        <option>2000 - 2015</option>
-        <option>After 2015</option>
-      </select>
+      <label for="founded" class="text-sm xl:text-base font-Nonrmal">Année de création</label>
+<select id="founded" name="founded" class="w-full border border-white p-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3] mt-3 outline-none focus:outline-none">
+  <option value="">Champ numérique (entre 1980 et 2025)</option>
+  <?php
+    for ($year = 1980; $year <= 2025; $year++) {
+      echo "<option value=\"$year\">$year</option>";
+    }
+  ?>
+</select>
       </div>
 
       <div class="pb-2">
