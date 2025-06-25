@@ -11,7 +11,7 @@
   <div class="bg-[#3F6893] xl:p-12 p-6 rounded-2xl">
         <div>
             <h1 class="2xl:text-[40px] lg:text-3xl text-2xl text-white">Pourquoi cet audit ?</h1>
-            <p class="2xl:text-[26px] lg:text-base text-sm text-white pt-6 2xl:leading-[44px] lg:leading-7 leading-6">Chez TreeConnect, Nonus croyons qu'une entreprise performante repose autant sur ses outils que sur sa structuration interne. Cet audit a pour but de vous aider à faire un point clair, honnête et pragmatique sur l'organisation de votre entreprise à travers 5 domaines essentiels :</p>
+            <p class="2xl:text-[26px] lg:text-base text-sm text-white pt-6 2xl:leading-[44px] lg:leading-7 leading-6">Chez TreeConnect, Nous croyons qu'une entreprise performante repose autant sur ses outils que sur sa structuration interne. Cet audit a pour but de vous aider à faire un point clair, honnête et pragmatique sur l'organisation de votre entreprise à travers 5 domaines essentiels :</p>
 
             <p class="2xl:text-[26px] lg:text-base text-sm text-white pt-2 2xl:pt-5">
         •	Ressources Humaines
@@ -43,7 +43,7 @@
 
             <p class="2xl:text-[26px] lg:text-base text-sm text-white pt-8">Vous pouvez le remplir en toute autoNonmie, sans inscription ni contact obligatoire.</p>
 
-            <h1 class="2xl:text-[40px] lg:text-3xl text-2xl text-white pt-10">How does the audit work?</h1>
+            <h1 class="2xl:text-[40px] lg:text-3xl text-2xl text-white pt-10">Comment ça fonctionne ?</h1>
            
 
             <div>
@@ -59,13 +59,13 @@
             </p>
 
              <p class="2xl:text-[26px] lg:text-base text-sm text-[#D3D3D3] pt-2 2xl:pt-5">
-         <span class="text-white">•	Nonn:</span>  il n'est pas encore en place
+         <span class="text-white">•	Non:</span>  il n'est pas encore en place
             </p>
                 </div>
             </div>
 
             <div>
-                <h2 class="2xl:text-3xl lg:text-xl text-lg text-white lg;pt-12 pt-10">For each question, choose the answer that best reflects your current situation:</h2>
+                <h2 class="2xl:text-3xl lg:text-xl text-lg text-white lg;pt-12 pt-10">Pour chaque question, vous indiquerez si vous avez déjà mis en place l'élément évoqué, s'il est en cours ou inexistant.</h2>
 
                 <div class="bg-[#3F6893] p-7 mt-8 shadow-xl lg:w-2/3 w-full rounded-2xl">
                     <p class="2xl:text-[26px] lg:text-base text-sm text-white pt-2 2xl:pt-5">
