@@ -83,18 +83,18 @@
             </div>
 
             <div>
-                <h1 class="2xl:text-3xl lg:text-xl text-lg text-white lg;pt-12 pt-8">Nonte:</h1>
+                <h1 class="2xl:text-3xl lg:text-xl text-lg text-white lg;pt-12 pt-8">Note:</h1>
                  <p class="2xl:text-[26px] lg:text-base text-sm text-white pt-2 2xl:pt-5">
-       Your results will be visualized as a radar chart, instantly visible at the end of the questionnaire. Non data is saved.
+       Vos réponses génèrent automatiquement un diagramme radar qui synthétise vos niveaux de maturité et l'analyse est visible immédiatement à l'écran.
             </p>
             </div>
 
-            <div>
+            <!-- <div>
                 <h1 class="2xl:text-3xl lg:text-xl text-lg text-white lg;pt-12 pt-8">Final Line:</h1>
                  <p class="2xl:text-[26px] lg:text-base text-sm text-white pt-2 2xl:pt-5">
        This audit is a clear and constructive starting point to identify strengths and development opportunities.
             </p>
-            </div>
+            </div> -->
         </div>
 
         <div class="text-center xl:pt-20 pt-10">
