@@ -140,61 +140,77 @@
     <h2 class="2xl:text-6xl lg:text-4xl text-3xl font-semibold text-center ">Company Information</h2>
     <p class="text-sm text-center pt-5 text-white">Please take a few moments to provide context. This allows us to better understand your company’s profile and tailor the analysis.</p>
 
-    <form id="companyForm" class="space-y-4 pb-6 xl:pt-20 pt-10">
-        <div class="pb-2">
-        <label for="" class="text-sm xl:text-base font-normal">Full Company Name</label>
-      <input type="text" id="companyName" placeholder="e.g. Cabinet SLV Sàrl" class="w-full border border-white p-3 mt-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3] outline-none focus:outline-none" />
-      </div>
+   <form id="companyForm" class="space-y-4 pb-6 xl:pt-20 pt-10">
 
-      <div class="pb-2">
-<label for="" class="text-sm xl:text-base font-normal">Full Company Name</label>
-      <select id="industry" class="w-full border border-white p-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3] mt-3 outline-none focus:outline-none">
-        <option value="" >Main Industry Sector</option>
-        <option>Commerce</option>
-        <option>Distribution</option>
-        <option>Technology</option>
-      </select>
-      </div>
+  <!-- Company Name -->
+  <div class="pb-2">
+    <label for="companyName" class="text-sm xl:text-base font-Nonrmal">Full company name</label>
+    <input type="text" id="companyName" placeholder="Example: Cabinet SLV Sàrl" class="w-full border border-white p-3 mt-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3] outline-none focus:outline-none" />
+  </div>
 
-      <div class="pb-2">
-      <label for="" class="text-sm xl:text-base font-normal">Number of Active Employees</label>
-      <select id="employees" class="w-full  border border-white p-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3] mt-3 outline-none focus:outline-none">
-        <option value="">Number of Employees</option>
-        <option>1 to 5</option>
-        <option>6 to 20</option>
-        <option>21 to 50</option>
-        <option>51+</option>
-      </select>
-      </div>
+  <!-- Industry Sector (multi-select) -->
+  <div class="pb-2">
+    <label for="industry" class="text-sm xl:text-base font-Nonrmal">Main industry sector</label>
+    <select id="industry" multiple class="w-full border border-white p-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3] mt-3 outline-none focus:outline-none">
+      <option value="Commerce or Distribution">Commerce or Distribution</option>
+      <option value="Services">Services (HR, consulting, legal, etc.)</option>
+      <option value="Health or Well-being">Health or Well-being</option>
+      <option value="IT or Digital activities">IT or Digital activities</option>
+      <option value="Construction or Real Estate">Construction or Real Estate</option>
+      <option value="Hospitality or Catering">Hospitality or Catering</option>
+      <option value="Manufacturing or Production">Manufacturing or Production</option>
+      <option value="Education or Training">Education or Training</option>
+      <option value="Public sector or Non-profit organization">Public sector or Non-profit organization</option>
+      <option value="Other">Other (please specify)</option>
+    </select>
+  </div>
 
-      <div class="pb-2">
+  <!-- Employee Count -->
+  <div class="pb-2">
+    <label for="employees" class="text-sm xl:text-base font-Nonrmal">Number of active employees</label>
+    <select id="employees" class="w-full border border-white p-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3] mt-3 outline-none focus:outline-none">
+      <option value="">Select range</option>
+      <option>1 to 5</option>
+      <option>6 to 10</option>
+      <option>11 to 20</option>
+      <option>21 to 50</option>
+      <option>More than 50</option>
+    </select>
+  </div>
 
-      <label for="" class="text-sm xl:text-base font-normal">Year the Company Was Founded</label>
-      <select id="founded" class="w-full  border border-white p-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3] mt-3 outline-none focus:outline-none">
-        <option value="">Year Founded</option>
-        <option>Before 2000</option>
-        <option>2000 - 2015</option>
-        <option>After 2015</option>
-      </select>
-      </div>
+  <!-- Year Founded -->
+  <div class="pb-2">
+    <label for="founded" class="text-sm xl:text-base font-Nonrmal">Year the company was founded</label>
+    <select id="founded" name="founded" class="w-full border border-white p-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3] mt-3 outline-none focus:outline-none">
+      <option value="">Select year (1980 - 2025)</option>
+      <?php
+        for ($year = 1980; $year <= 2025; $year++) {
+          echo "<option value=\"$year\">$year</option>";
+        }
+      ?>
+    </select>
+  </div>
 
-      <div class="pb-2">
-       <label for="" class="text-sm xl:text-base font-normal">Location</label>
-      <input type="text" id="location" placeholder="e.g. Geneva" class="w-full  border border-white p-3 rounded-2xl  mt-3 outline-none focus:outline-none text-white bg-transparent placeholder-[#D3D3D3]" />
-      </div>
-      
-      <div class="pb-2">
-       <label for="" class="text-sm xl:text-base font-normal">Year the Company Was Founded</label>
-      <input type="text" id="contact" placeholder="e.g. Peter Martin – Director" class="w-full  border border-white p-3 mt-3 outline-none focus:outline-none rounded-2xl text-white bg-transparent placeholder-[#D3D3D3]" />
-       </div>
+  <!-- Location -->
+  <div class="pb-2">
+    <label for="location" class="text-sm xl:text-base font-Nonrmal">Location</label>
+    <input type="text" id="location" placeholder="Example: Geneva" class="w-full border border-white p-3 rounded-2xl mt-3 outline-none focus:outline-none text-white bg-transparent placeholder-[#D3D3D3]" />
+  </div>
 
-      <div class="pb-2">
-       <label for="" class="text-sm xl:text-base font-normal">Year the Company Was Founded</label>
-      <input type="text" id="challenge" placeholder="e.g. Talent retention, process structuring..." class="w-full  border mt-3 outline-none focus:outline-none border-white p-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3]" />
-      </div>
+  <!-- Contact Person -->
+  <div class="pb-2">
+    <label for="contact" class="text-sm xl:text-base font-Nonrmal">Name and role of the person completing the audit</label>
+    <input type="text" id="contact" placeholder="Example: Peter Martin – Director" class="w-full border border-white p-3 mt-3 outline-none focus:outline-none rounded-2xl text-white bg-transparent placeholder-[#D3D3D3]" />
+  </div>
 
-      
-    </form>
+  <!-- Organizational Challenge -->
+  <div class="pb-2">
+    <label for="challenge" class="text-sm xl:text-base font-Nonrmal">What is currently your biggest organizational challenge?</label>
+    <input type="text" id="challenge" placeholder="Optional: Talent retention, process structuring, online visibility, managing growth" class="w-full border mt-3 outline-none focus:outline-none border-white p-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3]" />
+  </div>
+
+</form>
+
     <button onclick="nextStep(1)" class="bg-white w-full px-4 py-2 rounded-2xl text-[#304B68] font-bold text-lg">Next</button> 
   </div>
   </div>

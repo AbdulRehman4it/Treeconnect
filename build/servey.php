@@ -149,7 +149,7 @@
       <div class="pb-2">
       <label for="" class="text-sm xl:text-base font-Nonrmal">Nombre de collaborateurs actifs (effectif total)</label>
       <select id="employees" class="w-full  border border-white p-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3] mt-3 outline-Nonne focus:outline-Nonne">
-        <option value="">Number of Employees</option>
+        <option value="">Liste déroulante</option>
         <option>o	1 à 5</option>
         <option>o	6 à 10</option>
         <option>o	11 à 20</option>
@@ -172,18 +172,18 @@
       </div>
 
       <div class="pb-2">
-       <label for="" class="text-sm xl:text-base font-Nonrmal">Location</label>
-      <input type="text" id="location" placeholder="e.g. Geneva" class="w-full  border border-white p-3 rounded-2xl  mt-3 outline-Nonne focus:outline-Nonne text-white bg-transparent placeholder-[#D3D3D3]" />
+       <label for="" class="text-sm xl:text-base font-Nonrmal">Localisation</label>
+      <input type="text" id="location" placeholder="Exemple : Genève" class="w-full  border border-white p-3 rounded-2xl  mt-3 outline-Nonne focus:outline-Nonne text-white bg-transparent placeholder-[#D3D3D3]" />
       </div>
       
       <div class="pb-2">
-       <label for="" class="text-sm xl:text-base font-Nonrmal">Year the Company Was Founded</label>
-      <input type="text" id="contact" placeholder="e.g. Peter Martin – Director" class="w-full  border border-white p-3 mt-3 outline-Nonne focus:outline-Nonne rounded-2xl text-white bg-transparent placeholder-[#D3D3D3]" />
+       <label for="" class="text-sm xl:text-base font-Nonrmal">Nom et fonction de la personne répondant à l’audit</label>
+      <input type="text" id="contact" placeholder="Exemple : Julie Martin – Directrice générale" class="w-full  border border-white p-3 mt-3 outline-Nonne focus:outline-Nonne rounded-2xl text-white bg-transparent placeholder-[#D3D3D3]" />
        </div>
 
       <div class="pb-2">
-       <label for="" class="text-sm xl:text-base font-Nonrmal">Year the Company Was Founded</label>
-      <input type="text" id="challenge" placeholder="e.g. Talent retention, process structuring..." class="w-full  border mt-3 outline-Nonne focus:outline-Nonne border-white p-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3]" />
+       <label for="" class="text-sm xl:text-base font-Nonrmal">Quel est aujourd’hui votre principal défi organisationnel ?</label>
+      <input type="text" id="challenge" placeholder="Champ libre (facultatif)" class="w-full  border mt-3 outline-Nonne focus:outline-Nonne border-white p-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3]" />
       </div>
 
       
