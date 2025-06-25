@@ -30,9 +30,9 @@ if (isset($_POST["submit"])) {
           $mail->Port = 465; //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
           // Recipients
-          $mail->setFrom("abdulrehman226721skp@gail.com", "Tree Connect"); // Set your preferred "from" email and name
-          $mail->addAddress("abdulrehman226721skp@gail.com", "Tree Connect"); // Recipient's email and name (You can change this)
-          $mail->addReplyTo("abdulrehman226721skp@gail.com", "Tree Connect");
+          $mail->setFrom("abdulrehman226721skp@gmail.com", "Tree Connect"); // Set your preferred "from" email and name
+          $mail->addAddress("abdulrehman226721skp@gmail.com", "Tree Connect"); // Recipient's email and name (You can change this)
+          $mail->addReplyTo("abdulrehman226721skp@gmail.com", "Tree Connect");
     $mail->Subject = $subject;
           //Content
           $mail->isHTML(true);
