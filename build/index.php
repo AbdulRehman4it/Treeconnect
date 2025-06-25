@@ -27,7 +27,7 @@
         <a href="contact.html" >
         <button class="text-white hover:text-[#304B68] hover:bg-white font-medium bg-[#3F6893] hover:border-white  xl:text-lg text-base py-3 px-10 border border-[#3F6893] rounded-full">Contactez nos experts</button>
       </a>
-      <a href="">
+      <a href="./servey.php">
         <button class="hover:text-white text-[#304B68] font-medium hover:bg-[#3F6893] hover:border-[#3F6893] xl:text-lg text-base py-3 px-10 border bg-white border-white rounded-full">Obtenez un audit gratuit en ligne</button>
       </a>
       </div>
