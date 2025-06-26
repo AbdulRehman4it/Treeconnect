@@ -251,9 +251,9 @@
     <div class="bg-[#3F6893] p-6 rounded-2xl shadow-2xl xl:mb-12 mb-6">
       <h2 class="2xl:text-xl text-lg mb-6 text-white">1. Have you defined a clear recruitment and onboarding process (job descriptions, structured interviews, employee integration)?</h2>
       <div class="flex gap-10 items-center text-white">
-        <label class="flex items-center gap-2"><input type="radio" name="q1" class="w-5 h-5 accent-[#3F6893]"> <span>Yes</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q1" class="w-5 h-5 accent-[#3F6893]"> <span>Partially</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q1" class="w-5 h-5 accent-[#3F6893]"> <span>No</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q1" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Yes</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q1" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Partially</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q1" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>No</span></label>
       </div>
     </div>
 
@@ -261,9 +261,9 @@
     <div class="bg-[#3F6893] p-6 rounded-2xl shadow-2xl xl:mb-12 mb-6">
       <h2 class="2xl:text-xl text-lg mb-6 text-white">2. Do you conduct regular performance and feedback meetings with your team members?</h2>
       <div class="flex gap-10 items-center text-white">
-        <label class="flex items-center gap-2"><input type="radio" name="q2" class="w-5 h-5 accent-[#3F6893]"> <span>Yes</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q2" class="w-5 h-5 accent-[#3F6893]"> <span>Partially</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q2" class="w-5 h-5 accent-[#3F6893]"> <span>No</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q2" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Yes</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q2" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Partially</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q2" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>No</span></label>
       </div>
     </div>
 
@@ -271,9 +271,9 @@
     <div class="bg-[#3F6893] p-6 rounded-2xl shadow-2xl xl:mb-12 mb-6">
       <h2 class="2xl:text-xl text-lg mb-6 text-white">3. Do you use any system or tool to manage contracts, payroll, absences, and time tracking?</h2>
       <div class="flex gap-10 items-center text-white">
-        <label class="flex items-center gap-2"><input type="radio" name="q3" class="w-5 h-5 accent-[#3F6893]"> <span>Yes</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q3" class="w-5 h-5 accent-[#3F6893]"> <span>Partially</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q3" class="w-5 h-5 accent-[#3F6893]"> <span>No</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q3" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Yes</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q3" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Partially</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q3" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>No</span></label>
       </div>
     </div>
 
@@ -281,9 +281,9 @@
     <div class="bg-[#3F6893] p-6 rounded-2xl shadow-2xl xl:mb-12 mb-6">
       <h2 class="2xl:text-xl text-lg mb-6 text-white">4. Are compensation, bonuses, and benefits defined transparently and applied consistently?</h2>
       <div class="flex gap-10 items-center text-white">
-        <label class="flex items-center gap-2"><input type="radio" name="q4" class="w-5 h-5 accent-[#3F6893]"> <span>Yes</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q4" class="w-5 h-5 accent-[#3F6893]"> <span>Partially</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q4" class="w-5 h-5 accent-[#3F6893]"> <span>No</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q4" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Yes</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q4" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Partially</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q4" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>No</span></label>
       </div>
     </div>
 
@@ -291,9 +291,9 @@
     <div class="bg-[#3F6893] p-6 rounded-2xl shadow-2xl xl:mb-12 mb-6">
       <h2 class="2xl:text-xl text-lg mb-6 text-white">5. Have you implemented an internal guide or document that clearly explains company policies, processes, and employee rights and duties?</h2>
       <div class="flex gap-10 items-center text-white">
-        <label class="flex items-center gap-2"><input type="radio" name="q5" class="w-5 h-5 accent-[#3F6893]"> <span>Yes</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q5" class="w-5 h-5 accent-[#3F6893]"> <span>Partially</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q5" class="w-5 h-5 accent-[#3F6893]"> <span>No</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q5" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Yes</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q5" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Partially</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q5" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>No</span></label>
       </div>
     </div>
 
@@ -325,9 +325,9 @@ hen administration is unclear or scattered, delays, errors, and stress increase.
     <div class="bg-[#3F6893] p-6 rounded-2xl shadow-2xl xl:mb-12 mb-6">
       <h2 class="2xl:text-xl text-lg mb-6 text-white">1. Have you documented your key internal processes (e.g. client setup, contract follow-up, supplier management)?</h2>
       <div class="flex gap-10 items-center text-white">
-        <label class="flex items-center gap-2"><input type="radio" name="q1" class="w-5 h-5 accent-[#3F6893]"> <span>Yes</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q1" class="w-5 h-5 accent-[#3F6893]"> <span>Partially</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q1" class="w-5 h-5 accent-[#3F6893]"> <span>No</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q1" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Yes</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q1" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Partially</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q1" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>No</span></label>
       </div>
     </div>
 
@@ -335,9 +335,9 @@ hen administration is unclear or scattered, delays, errors, and stress increase.
     <div class="bg-[#3F6893] p-6 rounded-2xl shadow-2xl xl:mb-12 mb-6">
       <h2 class="2xl:text-xl text-lg mb-6 text-white">2. Do you use digital tools to automate recurring tasks (reminders, document sending, archiving)?</h2>
       <div class="flex gap-10 items-center text-white">
-        <label class="flex items-center gap-2"><input type="radio" name="q2" class="w-5 h-5 accent-[#3F6893]"> <span>Yes</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q2" class="w-5 h-5 accent-[#3F6893]"> <span>Partially</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q2" class="w-5 h-5 accent-[#3F6893]"> <span>No</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q2" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Yes</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q2" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Partially</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q2" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>No</span></label>
       </div>
     </div>
 
@@ -345,9 +345,9 @@ hen administration is unclear or scattered, delays, errors, and stress increase.
     <div class="bg-[#3F6893] p-6 rounded-2xl shadow-2xl xl:mb-12 mb-6">
       <h2 class="2xl:text-xl text-lg mb-6 text-white">3. Do you have a centralized and secure system for organizing and retrieving your essential documents?</h2>
       <div class="flex gap-10 items-center text-white">
-        <label class="flex items-center gap-2"><input type="radio" name="q3" class="w-5 h-5 accent-[#3F6893]"> <span>Yes</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q3" class="w-5 h-5 accent-[#3F6893]"> <span>Partially</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q3" class="w-5 h-5 accent-[#3F6893]"> <span>No</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q3" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Yes</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q3" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Partially</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q3" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>No</span></label>
       </div>
     </div>
 
@@ -355,9 +355,9 @@ hen administration is unclear or scattered, delays, errors, and stress increase.
     <div class="bg-[#3F6893] p-6 rounded-2xl shadow-2xl xl:mb-12 mb-6">
       <h2 class="2xl:text-xl text-lg mb-6 text-white">4. Have you identified and addressed internal friction points (validation delays, miscommunication, follow-ups)?</h2>
       <div class="flex gap-10 items-center text-white">
-        <label class="flex items-center gap-2"><input type="radio" name="q4" class="w-5 h-5 accent-[#3F6893]"> <span>Yes</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q4" class="w-5 h-5 accent-[#3F6893]"> <span>Partially</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q4" class="w-5 h-5 accent-[#3F6893]"> <span>No</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q4" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Yes</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q4" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Partially</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q4" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>No</span></label>
       </div>
     </div>
 
@@ -365,9 +365,9 @@ hen administration is unclear or scattered, delays, errors, and stress increase.
     <div class="bg-[#3F6893] p-6 rounded-2xl shadow-2xl xl:mb-12 mb-6">
       <h2 class="2xl:text-xl text-lg mb-6 text-white">5. Do you use a dashboard or system to monitor administrative tasks and key deadlines (contracts, taxes, renewals, etc.)?</h2>
       <div class="flex gap-10 items-center text-white">
-        <label class="flex items-center gap-2"><input type="radio" name="q5" class="w-5 h-5 accent-[#3F6893]"> <span>Yes</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q5" class="w-5 h-5 accent-[#3F6893]"> <span>Partially</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q5" class="w-5 h-5 accent-[#3F6893]"> <span>No</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q5" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Yes</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q5" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Partially</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q5" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>No</span></label>
       </div>
     </div>
 
@@ -398,9 +398,9 @@ hen administration is unclear or scattered, delays, errors, and stress increase.
     <div class="bg-[#3F6893] p-6 rounded-2xl shadow-2xl xl:mb-12 mb-6">
       <h2 class="2xl:text-xl text-lg mb-6 text-white">1. Do you have a reliable setup for maintaining your IT infrastructure (hardware, software, updates, support)?</h2>
       <div class="flex gap-10 items-center text-white">
-        <label class="flex items-center gap-2"><input type="radio" name="q1" class="w-5 h-5 accent-[#3F6893]"> <span>Yes</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q1" class="w-5 h-5 accent-[#3F6893]"> <span>Partially</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q1" class="w-5 h-5 accent-[#3F6893]"> <span>No</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q1" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Yes</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q1" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Partially</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q1" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>No</span></label>
       </div>
     </div>
 
@@ -408,9 +408,9 @@ hen administration is unclear or scattered, delays, errors, and stress increase.
     <div class="bg-[#3F6893] p-6 rounded-2xl shadow-2xl xl:mb-12 mb-6">
       <h2 class="2xl:text-xl text-lg mb-6 text-white">2. Are your company’s data securely and automatically backed up on an external cloud, with a recovery plan?</h2>
       <div class="flex gap-10 items-center text-white">
-        <label class="flex items-center gap-2"><input type="radio" name="q2" class="w-5 h-5 accent-[#3F6893]"> <span>Yes</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q2" class="w-5 h-5 accent-[#3F6893]"> <span>Partially</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q2" class="w-5 h-5 accent-[#3F6893]"> <span>No</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q2" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Yes</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q2" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Partially</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q2" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>No</span></label>
       </div>
     </div>
 
@@ -418,9 +418,9 @@ hen administration is unclear or scattered, delays, errors, and stress increase.
     <div class="bg-[#3F6893] p-6 rounded-2xl shadow-2xl xl:mb-12 mb-6">
       <h2 class="2xl:text-xl text-lg mb-6 text-white">3. Do your main digital tools (email, file sharing, project tracking, collaboration) enhance team efficiency and client interaction?</h2>
       <div class="flex gap-10 items-center text-white">
-        <label class="flex items-center gap-2"><input type="radio" name="q3" class="w-5 h-5 accent-[#3F6893]"> <span>Yes</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q3" class="w-5 h-5 accent-[#3F6893]"> <span>Partially</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q3" class="w-5 h-5 accent-[#3F6893]"> <span>No</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q3" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Yes</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q3" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Partially</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q3" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>No</span></label>
       </div>
     </div>
 
@@ -428,9 +428,9 @@ hen administration is unclear or scattered, delays, errors, and stress increase.
     <div class="bg-[#3F6893] p-6 rounded-2xl shadow-2xl xl:mb-12 mb-6">
       <h2 class="2xl:text-xl text-lg mb-6 text-white">4. Are you supported in selecting and deploying digital solutions (ERP, CRM, automation, AI tools, collaborative platforms)?</h2>
       <div class="flex gap-10 items-center text-white">
-        <label class="flex items-center gap-2"><input type="radio" name="q4" class="w-5 h-5 accent-[#3F6893]"> <span>Yes</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q4" class="w-5 h-5 accent-[#3F6893]"> <span>Partially</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q4" class="w-5 h-5 accent-[#3F6893]"> <span>No</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q4" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Yes</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q4" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Partially</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q4" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>No</span></label>
       </div>
     </div>
 
@@ -438,9 +438,9 @@ hen administration is unclear or scattered, delays, errors, and stress increase.
     <div class="bg-[#3F6893] p-6 rounded-2xl shadow-2xl xl:mb-12 mb-6">
       <h2 class="2xl:text-xl text-lg mb-6 text-white">5. Are basic cybersecurity practices (passwords, access rights, confidentiality) understood and applied within your team?</h2>
       <div class="flex gap-10 items-center text-white">
-        <label class="flex items-center gap-2"><input type="radio" name="q5" class="w-5 h-5 accent-[#3F6893]"> <span>Yes</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q5" class="w-5 h-5 accent-[#3F6893]"> <span>Partially</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q5" class="w-5 h-5 accent-[#3F6893]"> <span>No</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q5" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Yes</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q5" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Partially</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q5" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>No</span></label>
       </div>
     </div>
 
@@ -471,9 +471,9 @@ hen administration is unclear or scattered, delays, errors, and stress increase.
     <div class="bg-[#3F6893] p-6 rounded-2xl shadow-2xl xl:mb-12 mb-6">
       <h2 class="2xl:text-xl text-lg mb-6 text-white">1. Do you have a clear financial dashboard updated regularly with your key indicators (cash flow, margins, expenses, forecasts)?</h2>
       <div class="flex gap-10 items-center text-white">
-        <label class="flex items-center gap-2"><input type="radio" name="q1" class="w-5 h-5 accent-[#3F6893]"> <span>Yes</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q1" class="w-5 h-5 accent-[#3F6893]"> <span>Partially</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q1" class="w-5 h-5 accent-[#3F6893]"> <span>No</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q1" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Yes</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q1" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Partially</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q1" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>No</span></label>
       </div>
     </div>
 
@@ -481,9 +481,9 @@ hen administration is unclear or scattered, delays, errors, and stress increase.
     <div class="bg-[#3F6893] p-6 rounded-2xl shadow-2xl xl:mb-12 mb-6">
       <h2 class="2xl:text-xl text-lg mb-6 text-white">2. Are your invoicing, payment, and collection processes well-structured to avoid errors or delays?</h2>
       <div class="flex gap-10 items-center text-white">
-        <label class="flex items-center gap-2"><input type="radio" name="q2" class="w-5 h-5 accent-[#3F6893]"> <span>Yes</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q2" class="w-5 h-5 accent-[#3F6893]"> <span>Partially</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q2" class="w-5 h-5 accent-[#3F6893]"> <span>No</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q2" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Yes</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q2" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Partially</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q2" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>No</span></label>
       </div>
     </div>
 
@@ -491,9 +491,9 @@ hen administration is unclear or scattered, delays, errors, and stress increase.
     <div class="bg-[#3F6893] p-6 rounded-2xl shadow-2xl xl:mb-12 mb-6">
       <h2 class="2xl:text-xl text-lg mb-6 text-white">3. Do you regularly analyze your expenses to identify areas for optimization or savings?</h2>
       <div class="flex gap-10 items-center text-white">
-        <label class="flex items-center gap-2"><input type="radio" name="q3" class="w-5 h-5 accent-[#3F6893]"> <span>Yes</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q3" class="w-5 h-5 accent-[#3F6893]"> <span>Partially</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q3" class="w-5 h-5 accent-[#3F6893]"> <span>No</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q3" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Yes</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q3" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Partially</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q3" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>No</span></label>
       </div>
     </div>
 
@@ -501,9 +501,9 @@ hen administration is unclear or scattered, delays, errors, and stress increase.
     <div class="bg-[#3F6893] p-6 rounded-2xl shadow-2xl xl:mb-12 mb-6">
       <h2 class="2xl:text-xl text-lg mb-6 text-white">4. Do you anticipate sensitive periods (seasonality, investments) using adapted forecasting tools?</h2>
       <div class="flex gap-10 items-center text-white">
-        <label class="flex items-center gap-2"><input type="radio" name="q4" class="w-5 h-5 accent-[#3F6893]"> <span>Yes</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q4" class="w-5 h-5 accent-[#3F6893]"> <span>Partially</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q4" class="w-5 h-5 accent-[#3F6893]"> <span>No</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q4" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Yes</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q4" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Partially</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q4" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>No</span></label>
       </div>
     </div>
 
@@ -511,9 +511,9 @@ hen administration is unclear or scattered, delays, errors, and stress increase.
     <div class="bg-[#3F6893] p-6 rounded-2xl shadow-2xl xl:mb-12 mb-6">
       <h2 class="2xl:text-xl text-lg mb-6 text-white">5. Do you use digital tools to simplify financial management (invoicing, bank syncing, accounting exports, automation)?</h2>
       <div class="flex gap-10 items-center text-white">
-        <label class="flex items-center gap-2"><input type="radio" name="q5" class="w-5 h-5 accent-[#3F6893]"> <span>Yes</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q5" class="w-5 h-5 accent-[#3F6893]"> <span>Partially</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q5" class="w-5 h-5 accent-[#3F6893]"> <span>No</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q5" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Yes</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q5" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Partially</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q5" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>No</span></label>
       </div>
     </div>
 
@@ -544,9 +544,9 @@ hen administration is unclear or scattered, delays, errors, and stress increase.
     <div class="bg-[#3F6893] p-6 rounded-2xl shadow-2xl xl:mb-12 mb-6">
       <h2 class="2xl:text-xl text-lg mb-6 text-white">1. Have you defined a clear communication strategy with goals, target audiences, messages, and an editorial calendar?</h2>
       <div class="flex gap-10 items-center text-white">
-        <label class="flex items-center gap-2"><input type="radio" name="q1" class="w-5 h-5 accent-[#3F6893]"> <span>Yes</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q1" class="w-5 h-5 accent-[#3F6893]"> <span>Partially</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q1" class="w-5 h-5 accent-[#3F6893]"> <span>No</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q1" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Yes</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q1" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Partially</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q1" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>No</span></label>
       </div>
     </div>
 
@@ -554,9 +554,9 @@ hen administration is unclear or scattered, delays, errors, and stress increase.
     <div class="bg-[#3F6893] p-6 rounded-2xl shadow-2xl xl:mb-12 mb-6">
       <h2 class="2xl:text-xl text-lg mb-6 text-white">2. Is your visual identity (logo, website, materials) professional and consistent with your positioning?</h2>
       <div class="flex gap-10 items-center text-white">
-        <label class="flex items-center gap-2"><input type="radio" name="q2" class="w-5 h-5 accent-[#3F6893]"> <span>Yes</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q2" class="w-5 h-5 accent-[#3F6893]"> <span>Partially</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q2" class="w-5 h-5 accent-[#3F6893]"> <span>No</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q2" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Yes</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q2" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Partially</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q2" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>No</span></label>
       </div>
     </div>
 
@@ -564,9 +564,9 @@ hen administration is unclear or scattered, delays, errors, and stress increase.
     <div class="bg-[#3F6893] p-6 rounded-2xl shadow-2xl xl:mb-12 mb-6">
       <h2 class="2xl:text-xl text-lg mb-6 text-white">3. Do you use the right communication channels (social media, email, SEO, events, referrals) to reach your ideal clients?</h2>
       <div class="flex gap-10 items-center text-white">
-        <label class="flex items-center gap-2"><input type="radio" name="q3" class="w-5 h-5 accent-[#3F6893]"> <span>Yes</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q3" class="w-5 h-5 accent-[#3F6893]"> <span>Partially</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q3" class="w-5 h-5 accent-[#3F6893]"> <span>No</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q3" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Yes</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q3" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Partially</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q3" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>No</span></label>
       </div>
     </div>
 
@@ -574,9 +574,9 @@ hen administration is unclear or scattered, delays, errors, and stress increase.
     <div class="bg-[#3F6893] p-6 rounded-2xl shadow-2xl xl:mb-12 mb-6">
       <h2 class="2xl:text-xl text-lg mb-6 text-white">4. Do you measure the results of your marketing actions (traffic, leads, conversions, awareness)?</h2>
       <div class="flex gap-10 items-center text-white">
-        <label class="flex items-center gap-2"><input type="radio" name="q4" class="w-5 h-5 accent-[#3F6893]"> <span>Yes</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q4" class="w-5 h-5 accent-[#3F6893]"> <span>Partially</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q4" class="w-5 h-5 accent-[#3F6893]"> <span>No</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q4" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Yes</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q4" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Partially</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q4" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>No</span></label>
       </div>
     </div>
 
@@ -584,9 +584,9 @@ hen administration is unclear or scattered, delays, errors, and stress increase.
     <div class="bg-[#3F6893] p-6 rounded-2xl shadow-2xl xl:mb-12 mb-6">
       <h2 class="2xl:text-xl text-lg mb-6 text-white">5. Is your communication regular and planned, helping build long-term visibility and brand strength?</h2>
       <div class="flex gap-10 items-center text-white">
-        <label class="flex items-center gap-2"><input type="radio" name="q5" class="w-5 h-5 accent-[#3F6893]"> <span>Yes</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q5" class="w-5 h-5 accent-[#3F6893]"> <span>Partially</span></label>
-        <label class="flex items-center gap-2"><input type="radio" name="q5" class="w-5 h-5 accent-[#3F6893]"> <span>No</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q5" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Yes</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q5" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Partially</span></label>
+        <label class="flex items-center gap-2"><input type="radio" name="q5" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>No</span></label>
       </div>
     </div>
 
