@@ -4,36 +4,12 @@
 
       <section class="2xl:px-28 lg:px-10 px-5 2xl:pt-36 lg:pt-24 pt-10">
         <div class="flex md:flex-row flex-col justify-center xl:gap-28 md:gap-12">
-            <!-- <div class="md:w-1/2 w-full flex justify-center md:justify-start">
-              <div class="radar xl:w-[550px] xl:h-[550px] lg:w-[400px] lg:h-[400px] md:w-[360px] md:h-[360px] w-[300px] h-[300px] bg-black">
-
           
-                <div class="sweep"></div>
-            
-                
-                <div class="radar-circle" style="top: 0; left: 0; width: 100%; height: 100%;"></div>
-                <div class="radar-circle" style="top: 12.5%; left: 12.5%; width: 75%; height: 75%;"></div>
-                <div class="radar-circle" style="top: 25%; left: 25%; width: 50%; height: 50%;"></div>
-                <div class="radar-circle" style="top: 37.5%; left: 37.5%; width: 25%; height: 25%;"></div>
-            
-                
-                <div class="radar-line" style="top: 50%; left: 0; width: 100%; height: 1px;"></div> 
-                <div class="radar-line" style="left: 50%; top: 0; width: 1px; height: 100%;"></div> 
-            
-              
-                <div class="absolute top-4 left-1/2 text-white text-lg font-bold" style="transform: translate(-50%, -50%); z-index: 3;">N</div>
-                <div class="absolute bottom-4 left-1/2 text-white text-lg font-bold" style="transform: translate(-50%, 50%); z-index: 3;">S</div>
-                <div class="absolute top-1/2 left-4 text-white text-lg font-bold" style="transform: translate(-50%, -50%); z-index: 3;">W</div>
-                <div class="absolute top-1/2 right-4 text-white text-lg font-bold" style="transform: translate(50%, -50%); z-index: 3;">E</div>
-            
-                <div class="absolute top-1/2 left-1/2 w-2 h-2 bg-white rounded-full z-10" style="transform: translate(-50%, -50%);"></div>
-              </div>
-            </div> -->
             <div class="md:w-1/2 w-full pt-10 md:pt-0">
                 <h1 class="2xl:text-[70px] lg:text-5xl text-4xl text-white">Get in Touch</h1>
                 <p class="2xl:text-[22px] xl:text-lg text-base text-white pt-4 2xl:leading-[44px] lg:leading-8 leading-7 " >We're here to help you connect the dots and grow your business smarter.</p>
 
-                <form action="./form/php" method="POST" class="xl:pt-20 pt-10 space-y-10">
+                <form action="./form.php" method="POST" class="xl:pt-20 pt-10 space-y-10">
                     <input type="text" id="name" name="name" class=" w-full py-4 px-6 rounded-full border border-[#D3D3D3] text-[#D3D3D3] bg-transparent text-lg focus:border-[#D3D3D3] focus:outline-none" placeholder="Your Name">
                     <input type="text" id="email" name="email" class=" w-full py-4 px-6 rounded-full border border-[#D3D3D3] text-[#D3D3D3] bg-transparent text-lg focus:border-[#D3D3D3] focus:outline-none" placeholder="e-mail">  
                     <!-- Phone with flag + code -->
@@ -56,7 +32,7 @@
 
 <!-- Success Message -->
 <p id="verifiedMessage" class="hidden text-green-400 mt-4">✔ You are verified!</p>
-
+<br>
 <!-- Script -->
 <script>
   const checkbox = document.getElementById("robotCheck");
@@ -79,46 +55,15 @@
     }
   });
 </script>
-<input type="submit" name="submit" id="submit">
+<input type="submit" name="submit" id="submit" class="mt-10 text-white py-3 px-10 border border-white hover:bg-white hover:text-[#304B68] rounded-full xl:text-lg text-base font-medium">
+
                   
                 </form>
-                <a href="#popup1">
+                <!-- <a href="#popup1">
                 <button class="mt-10 text-white py-3 px-10 border hover:bg-white hover:text-[#304B68] border-white rounded-full xl:text-lg text-base font-medium">Send Message</button>
-              </a>
+              </a> -->
 
-                <!-- <div class="xl:pt-24 pt-12">
-                <h1 class="2xl:text-[70px] lg:text-5xl text-4xl text-white">Book a Call</h1>
-                <p class="2xl:text-[22px] xl:text-lg text-base text-[#D3D3D3] pt-4 2xl:leading-[44px] lg:leading-8 leading-7 " >Let’s talk about your business goals — and how TreeConnect can help you achieve them</p>
-            </div>
-
-            <a href="https://wa.me/+41798008483?text=Hello!%20I%20need%20help"  target="_blank">
-            <div class="flex justify-between items-center xl:pt-12 pt-8">
-                <div class="flex items-center gap-4">
-                    <img src="../build/assets/img/watsapp.png"  alt="">
-                    <p class="2xl:text-[22px] lg:text-lg text-base font-light text-white" >Chat with us on WhatsApp</p>
-                </div>
-                <img src="../build/assets/img/nexterrow.png" alt="">
-            </div>
-          </a>
-
-            <div class="flex justify-between items-center pt-8">
-                <div class="flex items-center gap-4">
-                    <img src="../build/assets/img/aichat.png"  alt="">
-                    <p class="2xl:text-[22px] lg:text-lg text-base font-light text-white" >AI Chat Support</p>
-                </div>
-                <img src="../build/assets/img/nexterrow.png"  alt="">
-            </div>
-            <a href="https://calendly.com/treeconnect">
-            <div class="flex justify-between items-center pt-8">
-              
-                <div class="flex items-center gap-4">
-                    <img src="../build/assets/img/meeting.png"  alt="">
-                    <p class="2xl:text-[22px] lg:text-lg text-base font-light text-white">Schedule a Meeting</p>
-                </div>
-                <img src="../build/assets/img/nexterrow.png"  alt="">
-            </div>
-          </a>
-            <p class="2xl:text-[22px] lg:text-lg text-base font-light text-[#D3D3D3] xl:pt-14 pt-8">Ready to scale smarter? Book your strategy call now.</p> -->
+                
             </div>
         </div>
       </section>

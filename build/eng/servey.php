@@ -44,7 +44,7 @@
             <p class="2xl:text-[26px] lg:text-base text-sm text-white pt-8">You can complete it independently, without registration or any required contact.</p>
 
             <h1 class="2xl:text-[40px] lg:text-3xl text-2xl text-white pt-10">How does the audit work?</h1>
-            <p class="2xl:text-[26px] lg:text-base text-sm text-white pt-4 2xl:leading-[44px] lg:leading-7 leading-6">This audit allows you to assess your company’s maturity across five core areas:</p>
+            <!-- <p class="2xl:text-[26px] lg:text-base text-sm text-white pt-4 2xl:leading-[44px] lg:leading-7 leading-6">This audit allows you to assess your company’s maturity across five core areas:</p>
 
             <p class="2xl:text-[26px] lg:text-base text-sm text-white pt-2 2xl:pt-5">
        1. Human Resources
@@ -60,7 +60,7 @@
             </p>
             <p class="2xl:text-[26px] lg:text-base text-sm text-white pt-2 2xl:pt-5">
        5.  Marketing & Communication
-            </p>
+            </p> -->
 
             <div>
                 <h2 class="2xl:text-3xl lg:text-xl text-lg text-white lg;pt-12 pt-8">For each question, choose the answer that best reflects your current situation:</h2>
@@ -81,7 +81,7 @@
             </div>
 
             <div>
-                <h2 class="2xl:text-3xl lg:text-xl text-lg text-white lg;pt-12 pt-10">For each question, choose the answer that best reflects your current situation:</h2>
+                <h2 class="2xl:text-3xl lg:text-xl text-lg text-white lg;pt-12 pt-10">Each area is scored out of 10. Points are allocated as follows:</h2>
 
                 <div class="bg-[#3F6893] p-7 mt-8 shadow-xl lg:w-2/3 w-full rounded-2xl">
                     <p class="2xl:text-[26px] lg:text-base text-sm text-white pt-2 2xl:pt-5">
@@ -149,7 +149,23 @@
   </div>
 
   <!-- Industry Sector (multi-select) -->
-  <div class="pb-2">
+
+    <div class="pb-2">
+<label for="" class="text-sm xl:text-base font-Nonrmal">Main industry sector</label>
+      <select id="industry" class="w-full border border-white p-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3] mt-3 outline-Nonne focus:outline-Nonne">
+        <option value="" >Commerce or Distribution</option>
+        <option>Services (HR, consulting, legal, etc.)</option>
+        <option>Health or Well-being</option>
+        <option>IT or Digital activities</option>
+        <option>Construction or Real Estate</option>
+        <option>Hospitality or Catering</option>
+        <option>Manufacturing or Production</option>
+        <option>Education or Training</option>
+        <option>Public sector or Non-profit organization</option>
+        <option>Other</option>
+      </select>
+      </div>
+  <!-- <div class="pb-2">
     <label for="industry" class="text-sm xl:text-base font-Nonrmal">Main industry sector</label>
     <select id="industry" multiple class="w-full border border-white p-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3] mt-3 outline-none focus:outline-none">
       <option value="Commerce or Distribution">Commerce or Distribution</option>
@@ -163,7 +179,7 @@
       <option value="Public sector or Non-profit organization">Public sector or Non-profit organization</option>
       <option value="Other">Other (please specify)</option>
     </select>
-  </div>
+  </div> -->
 
   <!-- Employee Count -->
   <div class="pb-2">
@@ -206,7 +222,7 @@
   <!-- Organizational Challenge -->
   <div class="pb-2">
     <label for="challenge" class="text-sm xl:text-base font-Nonrmal">What is currently your biggest organizational challenge?</label>
-    <input type="text" id="challenge" placeholder="Optional: Talent retention, process structuring, online visibility, managing growth" class="w-full border mt-3 outline-none focus:outline-none border-white p-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3]" />
+    <input type="text" id="challenge" placeholder="Example: Talent retention, process structuring, online visibility, managing growth" class="w-full border mt-3 outline-none focus:outline-none border-white p-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3]" />
   </div>
 
 </form>
@@ -375,7 +391,7 @@ hen administration is unclear or scattered, delays, errors, and stress increase.
 
     <!-- Description -->
     <p class="text-center 2xl:text-xl lg:text-base text-sm pt-4 text-white xl:mb-20 mb-10 2xl:leading-10 lg:leading-8 leading-6">
-      This section evaluates whether your IT environment is structured, maintained, and aligned with your business needs. It includes your devices, shared folders, messaging tools, website, backups, and digital security.A well-managed digital setup supports daily operations, prevents downtime, protects data, and strengthens client confidence. It also enables innovation and scalability when supported by the right tools and guidance.
+      This section evaluates whether your IT environment is structured, maintained, and aligned with your business needs. It includes your devices, shared folders, messaging tools, website, backups, and digital security. <br> A well-managed digital setup supports daily operations, prevents downtime, protects data, and strengthens client confidence. It also enables innovation and scalability when supported by the right tools and guidance.
     </p>
 
     <!-- Question 1 -->
