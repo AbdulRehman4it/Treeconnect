@@ -64,7 +64,7 @@
     </div>
 
     <!-- Submit Button -->
-     <a href="./administrationsurvey.php">
+     <a href="./Administrationsurvey.php">
     <button class="bg-white w-full px-4 py-2 rounded-2xl text-[#304B68] font-bold text-lg mb-4">
       Suivant
     </button>
