@@ -23,7 +23,7 @@
         </p>
       </div>
       <div class="xl:pt-16 pt-8 md:space-x-5 space-y-4 md:space-y-0 items-center flex md:flex-row flex-col justify-center">
-        <a href="./contact.html" >
+        <a href="./contact.php" >
         <button class="text-white hover:text-[#304B68] hover:bg-white font-medium bg-[#3F6893] hover:border-white  xl:text-lg text-base py-3 px-10 border border-[#3F6893] rounded-full">Meet our experts</button>
       </a>
       <a href="./servey.php">

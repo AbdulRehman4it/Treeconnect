@@ -191,7 +191,9 @@
 
       
     </form>
+    <a href="./humansurvey.php">
     <button onclick="nextStep(1)" class="bg-white w-full px-4 py-2 rounded-2xl text-[#304B68] font-bold text-lg">Suivant</button> 
+    </a>
   </div>
   </div>
 
