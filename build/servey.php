@@ -127,15 +127,15 @@
     <h2 class="2xl:text-6xl lg:text-4xl text-3xl font-semibold text-center ">Informations générales</h2>
     <p class="text-sm text-center pt-5 text-white">Merci de prendre quelques instants pour nous fournir des informations contextuelles. Cela permet de mieux comprendre la situation de votre entreprise et d’ajuster la lecture des résultats.</p>
 
-    <form id="companyForm" class="space-y-4 pb-6 xl:pt-20 pt-10">
+    <form id="companyForm" method="POST" action="./humansurvey.php" class="space-y-4 pb-6 xl:pt-20 pt-10">
         <div class="pb-2">
         <label for="" class="text-sm xl:text-base font-Nonrmal">Nom de l’entreprise</label>
-      <input type="text" id="companyName" placeholder="Exemple : Cabinet SLV Sàrl" class="w-full border border-white p-3 mt-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3] outline-Nonne focus:outline-Nonne" />
+      <input type="text" id="companyName" name="companyName" placeholder="Exemple : Cabinet SLV Sàrl" class="w-full border border-white p-3 mt-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3] outline-Nonne focus:outline-Nonne" />
       </div>
 
       <div class="pb-2">
 <label for="" class="text-sm xl:text-base font-Nonrmal">Secteur d’activité principal</label>
-      <select id="industry" class="w-full border border-white p-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3] mt-3 outline-Nonne focus:outline-Nonne">
+      <select id="industry" name="industry" class="w-full border border-white p-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3] mt-3 outline-Nonne focus:outline-Nonne">
         <option value="" >Commerce ou distribution</option>
         <option>Services (ressources humaines, conseil, juridique, etc.)</option>
         <option>Santé ou bien-être</option>
@@ -151,7 +151,7 @@
 
       <div class="pb-2">
       <label for="" class="text-sm xl:text-base font-Nonrmal">Nombre de collaborateurs actifs (effectif total)</label>
-      <select id="employees" class="w-full  border border-white p-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3] mt-3 outline-Nonne focus:outline-Nonne">
+      <select id="employees" name="employees" class="w-full  border border-white p-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3] mt-3 outline-Nonne focus:outline-Nonne">
         <option value="">Liste déroulante</option>
         <option>o	1 à 5</option>
         <option>o	6 à 10</option>
@@ -176,24 +176,27 @@
 
       <div class="pb-2">
        <label for="" class="text-sm xl:text-base font-Nonrmal">Localisation</label>
-      <input type="text" id="location" placeholder="Exemple : Genève" class="w-full  border border-white p-3 rounded-2xl  mt-3 outline-Nonne focus:outline-Nonne text-white bg-transparent placeholder-[#D3D3D3] placeholder-italic" />
+      <input type="text" id="location" name="location" placeholder="Exemple : Genève" class="w-full  border border-white p-3 rounded-2xl  mt-3 outline-Nonne focus:outline-Nonne text-white bg-transparent placeholder-[#D3D3D3] placeholder-italic" />
       </div>
       
       <div class="pb-2">
        <label for="" class="text-sm xl:text-base font-Nonrmal">Nom et fonction de la personne répondant à l’audit</label>
-      <input type="text" id="contact" placeholder="Exemple : Julie Martin – Directrice générale" class="w-full  border border-white p-3 mt-3 outline-Nonne focus:outline-Nonne rounded-2xl text-white bg-transparent placeholder-[#D3D3D3]" />
+      <input type="text" id="contact" name="contact" placeholder="Exemple : Julie Martin – Directrice générale" class="w-full  border border-white p-3 mt-3 outline-Nonne focus:outline-Nonne rounded-2xl text-white bg-transparent placeholder-[#D3D3D3]" />
        </div>
 
       <div class="pb-2">
        <label for="" class="text-sm xl:text-base font-Nonrmal">Quel est aujourd’hui votre principal défi organisationnel ?</label>
-      <input type="text" id="challenge" placeholder="Exemples : Fidélisation des collaborateurs, structuration des processus, visibilité en ligne, gestion de la croissance" class="w-full  border mt-3 outline-Nonne focus:outline-Nonne border-white p-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3]" />
+      <input type="text" id="challenge" name="challenge" placeholder="Exemples : Fidélisation des collaborateurs, structuration des processus, visibilité en ligne, gestion de la croissance" class="w-full  border mt-3 outline-Nonne focus:outline-Nonne border-white p-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3]" />
       </div>
-
+ <div class="pb-2">
+      
+      <input type="submit" id="submit" value="Suivant" class="bg-white w-full px-4 py-2 rounded-2xl text-[#304B68] font-bold text-lg" />
+      </div>
       
     </form>
-    <a href="./humansurvey.php">
+    <!-- <a href="./humansurvey.php">
     <button onclick="nextStep(1)" class="bg-white w-full px-4 py-2 rounded-2xl text-[#304B68] font-bold text-lg">Suivant</button> 
-    </a>
+    </a> -->
   </div>
   </div>
 
@@ -774,25 +777,25 @@
     document.body.classList.remove('overflow-hidden'); // Re-enable background scroll
   }
 
-  document.getElementById('companyForm').addEventListener('submit', function (e) {
-    e.preventDefault();
+  // document.getElementById('companyForm').addEventListener('submit', function (e) {
+  //   e.preventDefault();
 
-    const companyName = document.getElementById('companyName').value;
-    const industry = document.getElementById('industry').value;
-    const employees = document.getElementById('employees').value;
-    const founded = document.getElementById('founded').value;
-    const location = document.getElementById('location').value;
-    const contact = document.getElementById('contact').value;
+  //   const companyName = document.getElementById('companyName').value;
+  //   const industry = document.getElementById('industry').value;
+  //   const employees = document.getElementById('employees').value;
+  //   const founded = document.getElementById('founded').value;
+  //   const location = document.getElementById('location').value;
+  //   const contact = document.getElementById('contact').value;
 
-    if (!companyName || !industry || !employees || !founded || !location || !contact) {
-      alert("Please fill in all required fields.");
-      return;
-    }
+  //   if (!companyName || !industry || !employees || !founded || !location || !contact) {
+  //     alert("Please fill in all required fields.");
+  //     return;
+  //   }
 
-    alert("Form submitted successfully!");
-    closePopup();
-    document.getElementById('companyForm').reset();
-  });
+  //   alert("Form submitted successfully!");
+  //   closePopup();
+  //   document.getElementById('companyForm').reset();
+  // });
 </script>
 
 
