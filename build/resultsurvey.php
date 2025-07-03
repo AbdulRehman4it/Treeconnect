@@ -409,6 +409,7 @@ echo '</div>';
     </div>
 
    <!-- chart -->
+<!-- chart -->
 <div id="app" class="">
   <div class="chart-container">
     <canvas id="chart"></canvas>
@@ -556,7 +557,7 @@ echo '</div>';
         </tr>
         <tr>
           <td class="border-t border-white px-6 py-16 font-semibold">Marketing & Communication</td>
-          <td class="border-b-0 border border-white lg:px-8 px-4 py-2">Non structured communication strategy is currently in place.</td>
+          <td class="border-b-0 border border-white lg:px-8 px-4 py-2">No structured communication strategy is currently in place.</td>
           <td class="border-b-0 border border-white lg:px-8 px-4 py-2">TreeConnect can help you lay the foundation of a visibility strategy tailored to your business.</td>
           <td class="border-0 border-white lg:px-8 px-4 py-2">Establishes the foundation for coherent and accessible visibility.</td>
         </tr>
@@ -569,6 +570,7 @@ echo '</div>';
     <button onclick="nextStep(7)" class="bg-white w-full px-4 py-2 rounded-2xl text-[#304B68] font-bold text-lg mt-10">
       Download
     </button>
+
 
   </div>
 </div>
