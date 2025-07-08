@@ -68,7 +68,7 @@
 
     <!-- Description -->
     <p class="text-center 2xl:text-xl lg:text-base text-sm pt-4 text-white xl:mb-20 mb-10 2xl:leading-10 lg:leading-8 leading-6">
-      This section assesses how your company communicates its value, defines its image, and reaches its target audience. It covers strategy, brand identity, tools, and content planning.Strong marketing increases visibility, credibility, and client acquisition. It requires consistent messaging, professional assets, and smart use of communication channels.</p>
+      This section assesses how your company communicates its value, defines its image, and reaches its target audience. It covers strategy, brand identity, tools, and content planning. Strong marketing increases visibility, credibility, and client acquisition. It requires consistent messaging, professional assets, and smart use of communication channels.</p>
  <form method="POST" action="./resultsurvey.php">
     <!-- Question 1 -->
     <div class="bg-[#3F6893] p-6 rounded-2xl shadow-2xl xl:mb-12 mb-6">

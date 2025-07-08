@@ -333,7 +333,7 @@ if (session_status() === PHP_SESSION_NONE) {
 </div> -->
 
 
-<div  class=" flex items-center justify-center">
+<div  class=" flex items-center justify-center xl:py-20 py-10">
   <div class="bg-[#3F6893] text-white w-full overflow-y-auto xl:mx-40 lg:mx-14 rounded-2xl lg:px-16 px-4 py-20">
  <!-- Close Button -->
     <!-- <button onclick="closePopup()" class="absolute top-4 right-6 text-white text-2xl font-bold hover:text-gray-300">
@@ -362,8 +362,7 @@ $scores = [
   </div>
 </div>
 
- <script>
-  
+<script>
   const chartScores = <?= json_encode($scores) ?>;
   console.log("Chart Scores:", chartScores); // Should log: [10, 5, 5, 5, 5] or similar
 
@@ -413,7 +412,11 @@ $scores = [
           },
           pointLabels: {
             color: 'white',
-            font: { size: 16 },
+            font: {
+              size: function(context) {
+                return window.innerWidth <= 768 ? 12 : 16;
+              }
+            },
             callback: function(label) {
               return window.innerWidth <= 768 ? label.split(' ') : label;
             }
@@ -423,26 +426,33 @@ $scores = [
     }
   };
 
-
   // Vue App
   new Vue({
     el: "#app",
     data() {
       return {
-        planetChartData: planetChartData
+        planetChartData: planetChartData,
+        chart: null
       };
     },
     mounted() {
       this.createChart('chart', this.planetChartData);
+      window.addEventListener('resize', this.redrawChart);
     },
     methods: {
       createChart(chartId, chartData) {
         const ctx = document.getElementById(chartId);
-        new Chart(ctx, {
+        this.chart = new Chart(ctx, {
           type: chartData.type,
           data: chartData.data,
           options: chartData.options
         });
+      },
+      redrawChart() {
+        if (this.chart) {
+          this.chart.destroy();
+          this.createChart('chart', this.planetChartData);
+        }
       }
     }
   });
@@ -470,67 +480,67 @@ $scores = [
     echo "<tr>";
     switch ($_SESSION['hr_score']) {
         case 0:
-          echo "<td class='border border-white lg:px-8 px-4 py-2'>Ressources Humaines</td>";
+          echo "<td class='border border-white lg:px-8 px-4 py-2'>Human Resources</td>";
             echo "<td class='border border-white lg:px-8 px-4 py-2'>Les démarches RH ne sont pas encore formalisées à ce jour. Ce pilier représente une belle opportunité de structuration.</td>";
             echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect peut vous aider à poser les premières briques d’un socle RH simple et adapté à votre structure.</td>";
             echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Clarifie les rôles, sécurise la conformité, et pose les bases pour une équipe stable.</td>";
             break;
         case 1:
-           echo "<td class='border border-white lg:px-8 px-4 py-2'>Ressources Humaines</td>";
-              echo "<td class='border border-white lg:px-8 px-4 py-2'>Les démarches RH ne sont pas encore formalisées à ce jour. Ce pilier représente une belle opportunité de structuration.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect peut vous aider à poser les premières briques d’un socle RH simple et adapté à votre structure.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Clarifie les rôles, sécurise la conformité, et pose les bases pour une équipe stable.</td>";
+           echo "<td class='border border-white lg:px-8 px-4 py-2'>Human Resources</td>";
+              echo "<td class='border border-white lg:px-8 px-4 py-2'>HR processes are not yet formalized. This pillar represents a good opportunity for structuring.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect can help you lay the groundwork for a simple, tailored HR foundation.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Clarifies roles, ensures compliance, and builds the foundation for a stable team.</td>";
             break;
         case 2:
-           echo "<td class='border border-white lg:px-8 px-4 py-2'>Ressources Humaines</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Un ou deux aspects RH sont présents de façon ponctuelle, mais l’ensemble reste informel ou dispersé.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Nous pouvons identifier ensemble les priorités RH à structurer rapidement, avec des outils adaptés aux petites équipes.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Gagne en sérénité sur les obligations de base et prépare l’arrivée de nouveaux collaborateurs.</td>";
+           echo "<td class='border border-white lg:px-8 px-4 py-2'>Human Resources</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>One or two HR elements are present on a case-by-case basis, but overall the approach remains informal or fragmented.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>We can work with you to identify and prioritize key HR areas and select tools adapted to small teams.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Increases peace of mind on legal obligations and supports future team growth.</td>";
             break;
         case 3:
-           echo "<td class='border border-white lg:px-8 px-4 py-2'>Ressources Humaines</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Des éléments RH existent (par exemple, contrats ou entretiens), mais sans logique globale.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect vous accompagne pour articuler vos pratiques RH autour d’un processus cohérent et duplicable.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Favorise une gestion fluide, même en cas de turnover ou de croissance.</td>";
+           echo "<td class='border border-white lg:px-8 px-4 py-2'>Human Resources</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Some HR components exist (e.g., contracts or reviews), but there is no overall logic behind them yet.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect supports you in aligning your existing practices into a coherent, replicable HR process.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Supports smooth HR management, even during transitions or rapid growth.</td>";
             break;
         case 4:
-           echo "<td class='border border-white lg:px-8 px-4 py-2'>Ressources Humaines</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Des démarches structurantes sont engagées, mais certains points clés comme l’intégration ou le suivi manquent de régularité.</td>";
+           echo "<td class='border border-white lg:px-8 px-4 py-2'>Human Resources</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Structuring efforts have begun, but key aspects such as onboarding or performance reviews lack consistency.</td>";
             echo "<td class='border border-white lg:px-8 px-4 py-2'>Nous vous aidons à formaliser des processus simples et reproductibles (fiche de poste, suivi collaborateur, trame d’entretien).</td>";
             echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Améliore la cohésion d’équipe et soutient l’engagement au quotidien.</td>";
             break;
         case 5:
-           echo "<td class='border border-white lg:px-8 px-4 py-2'>Ressources Humaines</td>";
+           echo "<td class='border border-white lg:px-8 px-4 py-2'>Human Resources</td>";
             echo "<td class='border border-white lg:px-8 px-4 py-2'>Les fondations RH sont bien présentes, avec plusieurs éléments fonctionnels. Quelques optimisations sont envisageables.</td>";
             echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect peut vous proposer des outils RH légers et automatisés pour centraliser et gagner du temps.</td>";
             echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Rend la gestion RH plus fluide et limite les erreurs administratives.</td>";
             break;
         case 6:
-          echo "<td class='border border-white lg:px-8 px-4 py-2'>Ressources Humaines</td>";
+          echo "<td class='border border-white lg:px-8 px-4 py-2'>Human Resources</td>";
             echo "<td class='border border-white lg:px-8 px-4 py-2'>Votre approche RH est globalement en place. Une harmonisation et une digitalisation partielle pourraient en renforcer l’efficacité.</td>";
             echo "<td class='border border-white lg:px-8 px-4 py-2'>Nous accompagnons la transition vers des outils intégrés pour le suivi, les absences ou les entretiens.</td>";
             echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Renforce la transparence et professionnalise la gestion interne.</td>";
             break;
         case 7:
-          echo "<td class='border border-white lg:px-8 px-4 py-2'>Ressources Humaines</td>";
+          echo "<td class='border border-white lg:px-8 px-4 py-2'>Human Resources</td>";
             echo "<td class='border border-white lg:px-8 px-4 py-2'>Les pratiques RH sont bien posées, avec une organisation visible. Quelques rituels peuvent encore être systématisés.</td>";
             echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect peut vous aider à structurer les feedbacks réguliers ou à définir des grilles de rémunération plus lisibles.</td>";
             echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Favorise la fidélisation et la responsabilisation des équipes.</td>";
             break;
         case 8:
-           echo "<td class='border border-white lg:px-8 px-4 py-2'>Ressources Humaines</td>";
+           echo "<td class='border border-white lg:px-8 px-4 py-2'>Human Resources</td>";
             echo "<td class='border border-white lg:px-8 px-4 py-2'>La gestion RH est maîtrisée et adaptée à vos besoins. Des points d’amélioration mineurs peuvent renforcer l’agilité.</td>";
             echo "<td class='border border-white lg:px-8 px-4 py-2'>Nous vous proposons des outils de pilotage RH plus stratégiques (anticipation des besoins, suivi des talents).</td>";
             echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Accroît la capacité de projection et soutient le développement à long terme.</td>";
             break;
         case 9:
-           echo "<td class='border border-white lg:px-8 px-4 py-2'>Ressources Humaines</td>";
+           echo "<td class='border border-white lg:px-8 px-4 py-2'>Human Resources</td>";
             echo "<td class='border border-white lg:px-8 px-4 py-2'>Vous disposez d’un système RH solide, clair et bien intégré. Il reste peu d’ajustements pour aller vers l’excellence.</td>";
             echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect peut compléter votre démarche avec des conseils sur la marque employeur ou la culture d’entreprise.</td>";
             echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Valorise votre attractivité et soutient votre positionnement RH.</td>";
             break;
         case 10:
-           echo "<td class='border border-white lg:px-8 px-4 py-2'>Ressources Humaines</td>";
+           echo "<td class='border border-white lg:px-8 px-4 py-2'>Human Resources</td>";
             echo "<td class='border border-white lg:px-8 px-4 py-2'>Votre gestion RH est structurée, fluide et exemplaire. C’est un socle fort pour la stabilité et la croissance.</td>";
             echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect peut nourrir votre réflexion stratégique RH à travers des benchmarks ou des outils avancés.</td>";
             echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Vous êtes en position d’attirer, engager et faire évoluer les bons profils.</td>";
@@ -868,7 +878,7 @@ if (isset($_SESSION['marketing_score'])) {
     <!-- <button d="sendButton" onclick="nextStep(7)" class="bg-white w-full px-4 py-2 rounded-2xl text-[#304B68] font-bold text-lg mt-10">
       Mail me
     </button> -->
-<button id="sendButton" onclick="nextStep(7)" class="bg-white w-full px-4 py-2 rounded-2xl text-[#304B68] font-bold text-lg mt-10" >Envoyer</button>
+<button id="sendButton" onclick="nextStep(7)" class="bg-white w-full px-4 py-2 rounded-2xl text-[#304B68] font-bold text-lg mt-10" >Send</button>
 
   </div>
 </div>

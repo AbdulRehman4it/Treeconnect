@@ -45,7 +45,7 @@
   
       <p class="text-center 2xl:text-xl lg:text-base text-sm pt-4 text-white xl:mb-20 mb-10 2xl:leading-10 lg:leading-8 leading-6">
       This section evaluates how your company handles administrative processes, documentation, tools, and internal coordination. A well-structured back office avoids bottlenecks and frees up time for core activities.
-hen administration is unclear or scattered, delays, errors, and stress increase. Clear processes, on the other hand, support team autonomy, client satisfaction, and business continuity.</p>
+When administration is unclear or scattered, delays, errors, and stress increase. Clear processes, on the other hand, support team autonomy, client satisfaction, and business continuity.</p>
 
       <form method="POST" action="./itsurvey.php">
     <!-- Question 1 -->

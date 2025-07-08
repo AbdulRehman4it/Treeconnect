@@ -130,15 +130,15 @@
     <form id="companyForm" method="POST" action="./humansurvey.php" class="space-y-4 pb-6 xl:pt-20 pt-10">
         <div class="pb-2">
         <label for="" class="text-sm xl:text-base font-Nonrmal">Nom de l’entreprise</label>
-      <input type="text" id="companyName" name="companyName" placeholder="Ex. : Cabinet SLV Sàrl" class="w-full border border-white p-3 mt-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3] outline-Nonne focus:outline-Nonne" />
+      <input type="text" id="companyName" name="companyName" placeholder=" Ex. : Cabinet SLV Sàrl
+" class="w-full border border-white p-3 mt-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3] outline-Nonne focus:outline-Nonne" />
       </div>
 
       <div class="pb-2">
 <label for="" class="text-sm xl:text-base font-Nonrmal">Secteur d’activité
 </label>
       <select id="industry" name="industry" class="w-full border border-white p-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3] mt-3 outline-Nonne focus:outline-Nonne">
-        <option value="" >Choisissez dans la liste
-</option>
+        <option value="" >Choisissez dans la liste</option>
         <option value="" >Commerce ou distribution</option>
         <option>Services (ressources humaines, conseil, juridique, etc.)</option>
         <option>Santé ou bien-être</option>
@@ -153,9 +153,9 @@
       </div>
 
       <div class="pb-2">
-      <label for="" class="text-sm xl:text-base font-Nonrmal">Nombre de collaborateurs actifs (effectif total)</label>
+      <label for="" class="text-sm xl:text-base font-Nonrmal">Nombre de collaborateurs</label>
       <select id="employees" name="employees" class="w-full  border border-white p-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3] mt-3 outline-Nonne focus:outline-Nonne">
-        <option value="">Liste déroulante</option>
+        <option value="">Inclure tout le personnel actif</option>
         <option>o	1 à 5</option>
         <option>o	6 à 10</option>
         <option>o	11 à 20</option>
@@ -168,7 +168,7 @@
 
       <label for="founded" class="text-sm xl:text-base font-Nonrmal">Année de création</label>
 <select id="founded" name="founded" class="w-full border border-white p-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3] mt-3 outline-none focus:outline-none">
-  <option value="">Champ numérique (entre 1980 et 2025)</option>
+  <option value="">Format : AAAA (entre 1980 et 2025)</option>
   <?php
     for ($year = 1980; $year <= 2025; $year++) {
       echo "<option value=\"$year\">$year</option>";
@@ -179,19 +179,19 @@
 
       <div class="pb-2">
        <label for="" class="text-sm xl:text-base font-Nonrmal">Localisation</label>
-      <input type="text" id="location" name="location" placeholder="Exemple : Genève" class="w-full  border border-white p-3 rounded-2xl  mt-3 outline-Nonne focus:outline-Nonne text-white bg-transparent placeholder-[#D3D3D3] placeholder-italic" />
+      <input type="text" id="location" name="location" placeholder="Ex. : Genève" class="w-full  border border-white p-3 rounded-2xl  mt-3 outline-Nonne focus:outline-Nonne text-white bg-transparent placeholder-[#D3D3D3] placeholder-italic" />
       </div>
       
       <div class="pb-2">
-       <label for="" class="text-sm xl:text-base font-Nonrmal">Nom et fonction de la personne répondant à l’audit</label>
-      <input type="text" id="contact" name="contact" placeholder="Exemple : Julie Martin – Directrice générale" class="w-full  border border-white p-3 mt-3 outline-Nonne focus:outline-Nonne rounded-2xl text-white bg-transparent placeholder-[#D3D3D3]" />
+       <label for="" class="text-sm xl:text-base font-Nonrmal">Nom + fonction du répondant</label>
+      <input type="text" id="contact" name="contact" placeholder="Ex. : Julie Martin – Directrice" class="w-full  border border-white p-3 mt-3 outline-Nonne focus:outline-Nonne rounded-2xl text-white bg-transparent placeholder-[#D3D3D3]" />
        </div>
 
       <div class="pb-2">
-       <label for="" class="text-sm xl:text-base font-Nonrmal">Quel est aujourd’hui votre principal défi organisationnel ?</label>
-      <input type="text" id="challenge" name="challenge" placeholder="Exemples : Fidélisation des collaborateurs, structuration des processus, visibilité en ligne, gestion de la croissance" class="w-full  border mt-3 outline-Nonne focus:outline-Nonne border-white p-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3]" />
+       <label for="" class="text-sm xl:text-base font-Nonrmal">Votre principal défi actuel</label>
+      <input type="text" id="challenge" name="challenge" placeholder="Ex. : Fidélisation, gestion des plannings," class="w-full  border mt-3 outline-Nonne focus:outline-Nonne border-white p-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3]" />
       </div>
- <div class="pb-2">
+ <div class="pt-6">
       
       <input type="submit" id="submit" value="Suivant" class="bg-white w-full px-4 py-2 rounded-2xl text-[#304B68] font-bold text-lg" />
       </div>

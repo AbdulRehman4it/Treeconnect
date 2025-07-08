@@ -333,7 +333,7 @@ if (session_status() === PHP_SESSION_NONE) {
 </div> -->
 
 
-<div  class=" flex items-center justify-center">
+<div  class=" flex items-center justify-center xl:py-20 py-10">
   <div class="bg-[#3F6893] text-white w-full overflow-y-auto xl:mx-40 lg:mx-14 rounded-2xl lg:px-16 px-4 py-20">
  <!-- Close Button -->
     <!-- <button onclick="closePopup()" class="absolute top-4 right-6 text-white text-2xl font-bold hover:text-gray-300">
@@ -342,7 +342,7 @@ if (session_status() === PHP_SESSION_NONE) {
 
     <!-- heading  -->
     <div>
-       <h1 class="xl:text-4xl text-2xl font-semibold text-center mb-6">Organizational Maturity Radar - Tree Connect</h1>
+       <h1 class="xl:text-4xl text-2xl font-semibold text-center mb-6">Radar de maturité organisationnelle - TreeConnect<h1>
     </div>
 <?php
 
@@ -362,8 +362,7 @@ $scores = [
   </div>
 </div>
 
- <script>
-  
+<script>
   const chartScores = <?= json_encode($scores) ?>;
   console.log("Chart Scores:", chartScores); // Should log: [10, 5, 5, 5, 5] or similar
 
@@ -371,10 +370,10 @@ $scores = [
     type: 'radar',
     data: {
       labels: [
-        'Human Resources',
-        'Admin & Back-Office',
-        'IT & Cybersecurity',
-        'Accounting & Finance',
+        'Ressources Humaines',
+        'Administration & Back-Office',
+        'Informatique & Cybersécurité',
+        'Comptabilité & Finance',
         'Marketing & Communication'
       ],
       datasets: [
@@ -413,7 +412,11 @@ $scores = [
           },
           pointLabels: {
             color: 'white',
-            font: { size: 16 },
+            font: {
+              size: function(context) {
+                return window.innerWidth <= 768 ? 12 : 16;
+              }
+            },
             callback: function(label) {
               return window.innerWidth <= 768 ? label.split(' ') : label;
             }
@@ -423,26 +426,33 @@ $scores = [
     }
   };
 
-
   // Vue App
   new Vue({
     el: "#app",
     data() {
       return {
-        planetChartData: planetChartData
+        planetChartData: planetChartData,
+        chart: null
       };
     },
     mounted() {
       this.createChart('chart', this.planetChartData);
+      window.addEventListener('resize', this.redrawChart);
     },
     methods: {
       createChart(chartId, chartData) {
         const ctx = document.getElementById(chartId);
-        new Chart(ctx, {
+        this.chart = new Chart(ctx, {
           type: chartData.type,
           data: chartData.data,
           options: chartData.options
         });
+      },
+      redrawChart() {
+        if (this.chart) {
+          this.chart.destroy();
+          this.createChart('chart', this.planetChartData);
+        }
       }
     }
   });
@@ -450,6 +460,7 @@ $scores = [
   // Set global font
   Chart.defaults.font.family = "Calibri";
 </script>
+  
 
     <!-- Table  -->
     <div class="overflow-x-auto">

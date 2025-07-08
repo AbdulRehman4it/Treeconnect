@@ -35,7 +35,7 @@
 
 
 
-<div class=" flex items-center justify-center">
+<div class=" flex items-center justify-center xl:py-20 py-10">
   <div class="bg-[#3F6893] text-white w-full overflow-y-auto xl:mx-48 md:mx-20 rounded-2xl lg:px-16 px-4 py-20">
  
     <!-- Title -->
@@ -49,7 +49,7 @@
       <form method="POST" action="./itsurvey.php">
     <!-- Question 1 -->
     <div class="bg-[#3F6893] p-6 rounded-2xl shadow-2xl xl:mb-12 mb-6">
-      <h2 class="2xl:text-xl text-lg mb-6 text-white">1.	Avez-vous formalisé les principales procédures administratives de votre entreprise (création client, suivi des contrats, gestion fournisseurs, etc.) ?</h2>
+      <h2 class="2xl:text-xl md:text-lg text-sm mb-6 text-white">1.	Avez-vous formalisé les principales procédures administratives de votre entreprise (création client, suivi des contrats, gestion fournisseurs, etc.) ?</h2>
       <div class="flex gap-10 items-center text-white">
         <label class="flex items-center gap-2"><input type="radio" name="bq1"  value="Oui"class="md:w-5 md:h-5 w-4 h-4 accent-[#2d4e72]"> <span>Oui</span></label>
         <label class="flex items-center gap-2"><input type="radio" name="bq1" value="Partiellement" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Partiellement</span></label>
@@ -59,7 +59,7 @@
 <input type="hidden" name="admin_form_submitted" value="1">
     <!-- Question 2 -->
     <div class="bg-[#3F6893] p-6 rounded-2xl shadow-2xl xl:mb-12 mb-6">
-      <h2 class="2xl:text-xl text-lg mb-6 text-white">2.	Utilisez-vous des outils numériques pour automatiser certaines tâches répétitives (relances, envois de documents, archivage, etc.) ?</h2>
+      <h2 class="2xl:text-xl md:text-lg text-sm mb-6 text-white">2.	Utilisez-vous des outils numériques pour automatiser certaines tâches répétitives (relances, envois de documents, archivage, etc.) ?</h2>
       <div class="flex gap-10 items-center text-white">
         <label class="flex items-center gap-2"><input type="radio" name="bq2" value="Oui" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Oui</span></label>
         <label class="flex items-center gap-2"><input type="radio" name="bq2" value="Partiellement" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Partiellement</span></label>
@@ -69,7 +69,7 @@
 
     <!-- Question 3 -->
     <div class="bg-[#3F6893] p-6 rounded-2xl shadow-2xl xl:mb-12 mb-6">
-      <h2 class="2xl:text-xl text-lg mb-6 text-white">3.	Avez-vous un système clair et centralisé pour organiser et retrouver facilement tous vos documents importants ?</h2>
+      <h2 class="2xl:text-xl md:text-lg text-sm mb-6 text-white">3.	Avez-vous un système clair et centralisé pour organiser et retrouver facilement tous vos documents importants ?</h2>
       <div class="flex gap-10 items-center text-white">
         <label class="flex items-center gap-2"><input type="radio" name="bq3" value="Oui" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Oui</span></label>
         <label class="flex items-center gap-2"><input type="radio" name="bq3" value="Partiellement" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Partiellement</span></label>
@@ -79,7 +79,7 @@
 
     <!-- Question 4 -->
     <div class="bg-[#3F6893] p-6 rounded-2xl shadow-2xl xl:mb-12 mb-6">
-      <h2 class="2xl:text-xl text-lg mb-6 text-white">4.	Disposez-vous d’un tableau de suivi ou d’un système permettant de visualiser en temps réel l’avancement de vos tâches administratives et échéances clés (contrats, assurances, factures, échéances fiscales) ?</h2>
+      <h2 class="2xl:text-xl md:text-lg text-sm mb-6 text-white">4.	Disposez-vous d’un tableau de suivi ou d’un système permettant de visualiser en temps réel l’avancement de vos tâches administratives et échéances clés (contrats, assurances, factures, échéances fiscales) ?</h2>
       <div class="flex gap-10 items-center text-white">
         <label class="flex items-center gap-2"><input type="radio" name="bq4" value="Oui" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Oui</span></label>
         <label class="flex items-center gap-2"><input type="radio" name="bq4" value="Partiellement" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Partiellement</span></label>
@@ -89,7 +89,7 @@
 
     <!-- Question 5 -->
     <div class="bg-[#3F6893] p-6 rounded-2xl shadow-2xl xl:mb-12 mb-6">
-      <h2 class="2xl:text-xl text-lg mb-6 text-white">5.	En cas d’absence ou de départ, une autre personne peut-elle reprendre facilement les tâches administratives sans blocage ?</h2>
+      <h2 class="2xl:text-xl md:text-lg text-sm mb-6 text-white">5.	En cas d’absence ou de départ, une autre personne peut-elle reprendre facilement les tâches administratives sans blocage ?</h2>
       <div class="flex gap-10 items-center text-white">
         <label class="flex items-center gap-2"><input type="radio" name="bq5" value="Oui" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Oui</span></label>
         <label class="flex items-center gap-2"><input type="radio" name="bq5" value="Partiellement" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Partiellement</span></label>
