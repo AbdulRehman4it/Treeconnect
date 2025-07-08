@@ -940,12 +940,12 @@ function nextStep(step) {
   window.location.href = 'servey.php'; // Change to your desired page
 });
             } else {
-              throw new Error(data.message || 'Erreur côté serveur');
+              throw new Error(data.message || 'Server error');
             }
           } catch (e) {
             Swal.fire({
               icon: 'error',
-              title: 'Erreur',
+              title: 'Error',
               text: e.message,
               confirmButtonColor: '#d33'
             }).then(() => {
@@ -956,22 +956,22 @@ function nextStep(step) {
             // Re-enable the button on error
             if (sendBtn) {
               sendBtn.disabled = false;
-              sendBtn.textContent = "Envoyer";
+              sendBtn.textContent = "Send";
             }
           }
         })
         .catch(() => {
           Swal.fire({
             icon: 'error',
-            title: 'Échec du réseau',
-            text: 'Impossible de contacter le serveur.',
+            title: 'Network failure',
+            text: 'Unable to contact the server.',
             confirmButtonColor: '#d33'
           });
 
           // Re-enable the button on failure
           if (sendBtn) {
             sendBtn.disabled = false;
-            sendBtn.textContent = "Envoyer";
+            sendBtn.textContent = "Send";
           }
         });
       }
