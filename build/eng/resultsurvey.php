@@ -894,17 +894,17 @@ if (isset($_SESSION['marketing_score'])) {
 function nextStep(step) {
   if (step === 7) {
     Swal.fire({
-      title: 'Entrez votre adresse e-mail',
+      title: 'Enter your email address',
       input: 'email',
-      inputLabel: 'Nous vous enverrons les résultats à cette adresse',
+      inputLabel: 'We will send the results to this address',
       inputPlaceholder: 'example@email.com',
       inputAttributes: {
         autocapitalize: 'off',
         autocorrect: 'off'
       },
       showCancelButton: true,
-      confirmButtonText: 'Envoyer',
-      cancelButtonText: 'Annuler',
+      confirmButtonText: 'Send',
+      cancelButtonText: 'Cancel',
       confirmButtonColor: '#003366'
     }).then((result) => {
       if (result.isConfirmed && result.value) {
@@ -914,7 +914,7 @@ function nextStep(step) {
         const sendBtn = document.querySelector('#sendButton');
         if (sendBtn) {
           sendBtn.disabled = true;
-          sendBtn.textContent = "Envoi...";
+          sendBtn.textContent = "Sending...";
         }
 
         fetch('sendmail.php', {
@@ -932,8 +932,8 @@ function nextStep(step) {
             if (data.status === 'success' || data.success === true) {
               Swal.fire({
   icon: 'success',
-  title: 'Email envoyé!',
-  text: 'Résultats envoyés avec succès.',
+  title: 'Email sent!',
+  text: 'Results sent successfully.',
   confirmButtonColor: '#003366'
 }).then(() => {
   // Redirect after OK is clicked
