@@ -506,44 +506,44 @@ $scores = [
         case 4:
            echo "<td class='border border-white lg:px-8 px-4 py-2'>Human Resources</td>";
             echo "<td class='border border-white lg:px-8 px-4 py-2'>Structuring efforts have begun, but key aspects such as onboarding or performance reviews lack consistency.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Nous vous aidons à formaliser des processus simples et reproductibles (fiche de poste, suivi collaborateur, trame d’entretien).</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Améliore la cohésion d’équipe et soutient l’engagement au quotidien.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>We assist you in formalizing easy-to-use, reproducible HR processes (job descriptions, feedback templates, onboarding flows).</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Enhances team cohesion and promotes daily engagement.</td>";
             break;
         case 5:
            echo "<td class='border border-white lg:px-8 px-4 py-2'>Human Resources</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Les fondations RH sont bien présentes, avec plusieurs éléments fonctionnels. Quelques optimisations sont envisageables.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect peut vous proposer des outils RH légers et automatisés pour centraliser et gagner du temps.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Rend la gestion RH plus fluide et limite les erreurs administratives.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>The HR foundation is in place with several working elements. Some areas can be optimized.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect offers lightweight, automated HR tools to help you centralize and save time.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Streamlines HR operations and minimizes administrative errors.</td>";
             break;
         case 6:
           echo "<td class='border border-white lg:px-8 px-4 py-2'>Human Resources</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Votre approche RH est globalement en place. Une harmonisation et une digitalisation partielle pourraient en renforcer l’efficacité.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Nous accompagnons la transition vers des outils intégrés pour le suivi, les absences ou les entretiens.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Renforce la transparence et professionnalise la gestion interne.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Your HR approach is generally implemented. Harmonization and partial digitalization could enhance efficiency.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>We guide you in transitioning to integrated tools for tracking time off, evaluations, and contracts.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Improves transparency and professionalizes internal processes.</td>";
             break;
         case 7:
           echo "<td class='border border-white lg:px-8 px-4 py-2'>Human Resources</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Les pratiques RH sont bien posées, avec une organisation visible. Quelques rituels peuvent encore être systématisés.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect peut vous aider à structurer les feedbacks réguliers ou à définir des grilles de rémunération plus lisibles.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Favorise la fidélisation et la responsabilisation des équipes.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>HR practices are clearly defined and visible. A few rituals can still be systematized.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect helps you structure regular feedback and define transparent compensation guidelines.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Encourages employee retention and accountability.</td>";
             break;
         case 8:
            echo "<td class='border border-white lg:px-8 px-4 py-2'>Human Resources</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>La gestion RH est maîtrisée et adaptée à vos besoins. Des points d’amélioration mineurs peuvent renforcer l’agilité.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Nous vous proposons des outils de pilotage RH plus stratégiques (anticipation des besoins, suivi des talents).</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Accroît la capacité de projection et soutient le développement à long terme.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>HR management is well under control and aligned with your needs. Minor improvements can enhance agility.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>We offer strategic HR management tools (talent tracking, workforce forecasting, etc.).</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Boosts foresight and supports long-term development.</td>";
             break;
         case 9:
            echo "<td class='border border-white lg:px-8 px-4 py-2'>Human Resources</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Vous disposez d’un système RH solide, clair et bien intégré. Il reste peu d’ajustements pour aller vers l’excellence.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect peut compléter votre démarche avec des conseils sur la marque employeur ou la culture d’entreprise.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Valorise votre attractivité et soutient votre positionnement RH.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>You have a solid, well-integrated HR system. Only minor adjustments are needed to reach excellence.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect complements your existing setup with employer branding or culture development support.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Strengthens your HR positioning and employer appeal.</td>";
             break;
         case 10:
            echo "<td class='border border-white lg:px-8 px-4 py-2'>Human Resources</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Votre gestion RH est structurée, fluide et exemplaire. C’est un socle fort pour la stabilité et la croissance.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect peut nourrir votre réflexion stratégique RH à travers des benchmarks ou des outils avancés.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Vous êtes en position d’attirer, engager et faire évoluer les bons profils.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Your HR system is structured, smooth, and exemplary. It provides a strong foundation for stability and growth.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect can support your strategic HR reflection through benchmarks and advanced tools.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Positions you to attract, engage, and grow the right talent.</td>";
             break;
         default:
             echo "<td colspan='3' class='border border-white lg:px-8 px-4 py-2'>Score non reconnu.</td>";
@@ -567,63 +567,63 @@ if (isset($_SESSION['admin_score'])) {
             break;
         case 1:
             echo "<td class='border border-white lg:px-8 px-4 py-2'>Administration & Back-Office</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Un ou deux outils administratifs sont utilisés de façon ponctuelle, mais l’ensemble reste informel ou dispersé.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Nous pouvons identifier ensemble les priorités de structuration avec des outils adaptés aux petites équipes.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Gagne en sérénité sur les obligations de base et prépare l’arrivée de nouveaux collaborateurs.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Administrative processes are not yet formalized. This is an area that can be gradually structured.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect can help you map out key functions and establish the foundation for simple procedures.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Establishes a clear foundation and avoids critical oversights.</td>";
             break;
         case 2:
             echo "<td class='border border-white lg:px-8 px-4 py-2'>Administration & Back-Office</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Des éléments existent (par exemple, devis ou factures), mais sans logique globale ou centralisée.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect vous accompagne pour articuler vos pratiques de gestion autour d’un processus cohérent et duplicable.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Favorise une gestion fluide, même en cas de turnover ou de croissance.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Some documents or tasks are tracked occasionally, but without a clear or shared method.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>We can offer templates tailored to your business to gradually structure your administrative flows.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Helps structure daily operations to save time and distribute responsibilities more effectively.</td>";
             break;
         case 3:
             echo "<td class='border border-white lg:px-8 px-4 py-2'>Administration & Back-Office</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Des démarches structurantes sont engagées, mais certains points clés comme la gestion documentaire ou le suivi manquent de régularité.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Nous vous aidons à formaliser des processus simples et reproductibles (tableau de bord, procédures internes, modèles).</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Améliore la cohésion d’équipe et soutient l’efficacité au quotidien.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Certain processes exist, but they are handled in isolation, often by a single person.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect supports you in formalizing practices and ensuring task continuity even during staff absences.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Strengthens organizational resilience and reduces key-person dependencies.</td>";
             break;
         case 4:
             echo "<td class='border border-white lg:px-8 px-4 py-2'>Administration & Back-Office</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Les bases du back-office sont bien présentes, avec plusieurs éléments fonctionnels. Quelques optimisations sont envisageables.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect peut vous proposer des outils simples et automatisés pour centraliser et gagner du temps.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Rend la gestion plus fluide et limite les erreurs administratives.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Basic organization is present but still relies more on habits than written procedures.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>We assist in translating your routines into simple procedures, with basic digital tooling.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Stabilizes administrative activity and eases the onboarding of new team members.</td>";
             break;
         case 5:
             echo "<td class='border border-white lg:px-8 px-4 py-2'>Administration & Back-Office</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Votre back-office est globalement en place. Une harmonisation et une digitalisation partielle pourraient en renforcer l’efficacité.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Nous accompagnons la transition vers des outils intégrés pour la gestion des documents, du temps ou des contrats.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Renforce la transparence et professionnalise la gestion interne.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Structuring efforts have begun, but their application remains inconsistent.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect provides accessible tools to reinforce your practices and make them more consistent.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Improves consistency in tracking and ensures better traceability of information.</td>";
             break;
         case 6:
             echo "<td class='border border-white lg:px-8 px-4 py-2'>Administration & Back-Office</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Les pratiques de gestion sont bien posées, avec une organisation visible. Quelques rituels peuvent encore être systématisés.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect peut vous aider à structurer les outils de suivi régulier ou à définir un plan d’amélioration continue.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Favorise la responsabilisation et fluidifie la gestion collective.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Several procedures are in place and followed, with some digital tools supporting them.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>We support the integration of simple tools to visualize, track, and automate certain tasks.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Saves time and reduces repetitive or manual tasks.</td>";
             break;
         case 7:
             echo "<td class='border border-white lg:px-8 px-4 py-2'>Administration & Back-Office</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Votre back-office est structuré et adapté à vos besoins. Des points d’amélioration mineurs peuvent renforcer l’agilité.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Nous vous proposons des outils de pilotage plus stratégiques (anticipation, évaluation des charges, indicateurs).</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Accroît la capacité d’anticipation et soutient le développement.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Administrative organization is well defined but could benefit from better centralization or automation.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect helps centralize your information and create shared, up-to-date references.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Facilitates information sharing and minimizes internal friction.</td>";
             break;
         case 8:
             echo "<td class='border border-white lg:px-8 px-4 py-2'>Administration & Back-Office</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Vous disposez d’un système de gestion solide, clair et bien intégré. Il reste peu d’ajustements pour aller vers l’excellence.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect peut compléter votre démarche avec des conseils sur l’optimisation ou la culture de gestion.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Valorise la maturité de votre gestion et améliore votre positionnement.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Procedures are documented, tools are in place, and information is well shared.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>We assist in consolidating your digital tools and streamlining validation and archiving processes.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Streamlines collaboration and provides visibility over administrative progress.</td>";
             break;
         case 9:
             echo "<td class='border border-white lg:px-8 px-4 py-2'>Administration & Back-Office</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Votre gestion est structurée, fluide et efficace. C’est un socle fort pour la stabilité et la croissance.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect peut nourrir votre réflexion stratégique à travers des benchmarks ou des outils avancés.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Vous êtes en position d’anticiper, ajuster et faire évoluer votre organisation.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Administration is smooth, proactive, and not overly dependent on a single individual.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect helps you maintain this level of efficiency through team changes or growth.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Frees up the team to focus on higher value tasks.</td>";
             break;
         case 10:
             echo "<td class='border border-white lg:px-8 px-4 py-2'>Administration & Back-Office</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Votre back-office est exemplaire. Il incarne une référence pour votre secteur ou vos partenaires.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Nous pouvons vous accompagner sur des outils d’excellence ou de transmission de vos bonnes pratiques.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Renforce votre attractivité et crédibilise vos ambitions externes.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Administrative organization is complete, clear, and secure. It directly supports overall performance.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>We enhance your current system and can suggest additions to automate low-value tasks.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Supports operational continuity and efficient business management.</td>";
             break;
         default:
             echo "<td colspan='4' class='border border-white lg:px-8 px-4 py-2'>Score non reconnu.</td>";
@@ -639,70 +639,70 @@ if (isset($_SESSION['it_score'])) {
     echo "<tr>";
     switch ($_SESSION['it_score']) {
         case 0:
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Informatique & Cybersécurité</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>IT & Cybersecurity</td>";
             echo "<td class='border border-white lg:px-8 px-4 py-2'>Un ou deux outils informatiques sont utilisés de façon ponctuelle, mais l’ensemble reste informel ou dispersé.</td>";
             echo "<td class='border border-white lg:px-8 px-4 py-2'>Nous pouvons identifier ensemble les priorités numériques à structurer rapidement, avec des outils adaptés aux petites équipes.</td>";
             echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Gagne en sérénité sur les usages de base et prépare l’arrivée de nouveaux collaborateurs.</td>";
             break;
         case 1:
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Informatique & Cybersécurité</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Un ou deux outils informatiques sont utilisés de façon ponctuelle, mais l’ensemble reste informel ou dispersé.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Nous pouvons identifier ensemble les priorités numériques à structurer rapidement, avec des outils adaptés aux petites équipes.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Gagne en sérénité sur les usages de base et prépare l’arrivée de nouveaux collaborateurs.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>IT & Cybersecurity</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Digital tools are used occasionally, without real structure or security measures.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect can help you assess your IT setup and digital tools.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Lays a clear and reliable foundation for everyday digital usage.</td>";
             break;
         case 2:
-           echo "<td class='border border-white lg:px-8 px-4 py-2'>Informatique & Cybersécurité</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Des outils ou logiciels sont en place, mais sans logique globale ni plan de sécurisation.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect vous accompagne pour organiser vos pratiques numériques et identifier les principaux risques à couvrir.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Favorise une gestion fluide, même en cas de turnover ou de croissance.</td>";
+           echo "<td class='border border-white lg:px-8 px-4 py-2'>IT & Cybersecurity</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>A basic IT environment exists but is poorly maintained or inconsistent.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>We assist in building a coherent and scalable digital environment.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Supports a more structured and secure work environment.</td>";
             break;
         case 3:
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Informatique & Cybersécurité</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Des pratiques numériques sont engagées, mais certains points clés comme les accès ou les sauvegardes manquent de régularité.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Nous vous aidons à formaliser des pratiques simples et reproductibles (niveaux d’accès, règles internes, mots de passe).</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Améliore la cohésion d’équipe et limite les interruptions de service.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>IT & Cybersecurity</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Digital practices are in place, but their reliability and coherence need improvement.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect offers simple solutions to secure, centralize, and evolve your digital system.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Reduces errors, information loss, and IT-related interruptions.</td>";
             break;
         case 4:
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Informatique & Cybersécurité</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>L’environnement informatique est bien présent, avec plusieurs éléments fonctionnels. Quelques optimisations sont envisageables.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect peut vous proposer des outils simples et automatisés pour centraliser les données et fluidifier les usages.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Rend la gestion informatique plus fluide et limite les erreurs ou les pertes de données.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>IT & Cybersecurity</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>The IT infrastructure is functional but relies on habits or unintegrated tools.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>We help implement collaborative tools and shared usage policies.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Improves team efficiency and operational continuity.</td>";
             break;
         case 5:
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Informatique & Cybersécurité</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Votre environnement numérique est globalement en place. Une harmonisation ou des rappels peuvent renforcer la sécurité.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Nous accompagnons la formalisation de bonnes pratiques (chartes internes, rappels, référent numérique).</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Renforce la transparence et réduit les risques au quotidien.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>IT & Cybersecurity</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Digital tools and security practices are present, but their usage is inconsistent.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect can support you in selecting and deploying tools suited to your operations.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Limits cybersecurity risks and facilitates internal operations.</td>";
             break;
         case 6:
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Informatique & Cybersécurité</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Les usages numériques sont bien posés, avec une organisation visible. Quelques pratiques peuvent encore être systématisées.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect peut vous aider à structurer les alertes, les sauvegardes ou les procédures d’urgence.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Favorise la résilience et la sécurisation des données.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>IT & Cybersecurity</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>The IT environment is generally stable with some early consolidation and documentation.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>We strengthen your cybersecurity practices and internal technical documentation.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Enhances system stability and team proficiency with digital tools.</td>";
             break;
         case 7:
-           echo "<td class='border border-white lg:px-8 px-4 py-2'>Informatique & Cybersécurité</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Votre environnement numérique est structuré et adapté à vos besoins. Des points d’amélioration mineurs peuvent renforcer l’agilité.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Nous vous proposons des outils de pilotage plus stratégiques (anticipation, supervision, plan de reprise).</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Accroît la capacité d’anticipation et limite les impacts d’un incident.</td>";
+           echo "<td class='border border-white lg:px-8 px-4 py-2'>IT & Cybersecurity</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>The IT setup is well structured and meets most daily needs.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect provides robust solutions to maintain a smooth and secure IT system.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Improves overall productivity and organizational security.</td>";
             break;
         case 8:
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Informatique & Cybersécurité</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Vous disposez d’un environnement numérique solide, clair et bien intégré. Il reste peu d’ajustements pour aller vers l’excellence.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect peut compléter votre démarche avec des conseils sur les enjeux de cybersécurité ou de conformité.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Valorise votre professionnalisme et rassure vos partenaires.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>IT & Cybersecurity</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Digital tools are coherent, secure, and suited to internal and client uses.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>We optimize your digital infrastructure to ensure scalability and resilience.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Enables growth and evolution without technical disruption.</td>";
             break;
         case 9:
-           echo "<td class='border border-white lg:px-8 px-4 py-2'>Informatique & Cybersécurité</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Votre gestion numérique est fluide et efficace. C’est un socle fort pour la stabilité et la croissance.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect peut nourrir votre réflexion stratégique à travers des benchmarks ou des outils avancés.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Vous êtes en position d’anticiper, ajuster et sécuriser vos évolutions numériques.</td>";
+           echo "<td class='border border-white lg:px-8 px-4 py-2'>IT & Cybersecurity</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Your IT environment is secure and efficient, with regular monitoring practices.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect helps implement regular audits and advanced security policies.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Protects company data and reputation over the long term.</td>";
             break;
         case 10:
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Informatique & Cybersécurité</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Votre environnement numérique est exemplaire. Il incarne une référence pour votre secteur ou vos partenaires.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Nous pouvons vous accompagner sur des outils d’excellence ou de sensibilisation à la cybersécurité.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Renforce votre image et sécurise votre impact externe.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>IT & Cybersecurity</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Your IT system is reliable, forward-thinking, and supports both efficiency and innovation.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>We position your IT system as a driver of performance, reputation, and sustainable innovation.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Turns your digital system into a strategic advantage for the future.</td>";
             break;
         default:
             echo "<td colspan='4' class='border border-white lg:px-8 px-4 py-2'>Score non reconnu.</td>";
@@ -717,70 +717,70 @@ if (isset($_SESSION['accounting_score'])) {
     echo "<tr>";
     switch ($_SESSION['accounting_score']) {
         case 0:
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Comptabilité & Finance</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Accounting & Finance</td>";
             echo "<td class='border border-white lg:px-8 px-4 py-2'>Le suivi financier est très limité voire inexistant. Il constitue un axe stratégique à renforcer.</td>";
             echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect peut vous accompagner pour mettre en place les premiers indicateurs de pilotage financier adaptés à votre activité.</td>";
             echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Permet de poser un socle clair pour sécuriser la trésorerie et anticiper les échéances.</td>";
             break;
         case 1:
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Comptabilité & Finance</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Le suivi financier est très limité voire inexistant. Il constitue un axe stratégique à renforcer.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect peut vous accompagner pour mettre en place les premiers indicateurs de pilotage financier adaptés à votre activité.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Permet de poser un socle clair pour sécuriser la trésorerie et anticiper les échéances.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Accounting & Finance</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Financial monitoring is very limited or non-existent. It represents a key area for strategic development.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect can support you in setting up initial financial indicators tailored to your business.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Establishes a solid foundation to secure cash flow and anticipate deadlines.</td>";
             break;
         case 2:
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Comptabilité & Finance</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Quelques éléments de suivi sont présents (factures, tableaux), mais sans lisibilité sur la santé financière globale.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Nous vous aidons à clarifier la structure financière et à poser les bases d’un pilotage simple.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Favorise une gestion plus anticipée et une meilleure communication interne.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Accounting & Finance</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Financial data is tracked occasionally, without a regular framework or defined indicators.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>We help structure your financial flows (invoicing, payments, reminders) and identify relevant KPIs.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Makes financial flows clearer and reduces late or missed payments.</td>";
             break;
         case 3:
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Comptabilité & Finance</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Une comptabilité existe (souvent déléguée), mais sans lien avec le pilotage quotidien.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect peut construire avec vous un tableau de bord adapté aux spécificités de votre activité.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Aide à mieux piloter l’activité et à prendre des décisions éclairées.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Accounting & Finance</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Basic financial management exists but relies on manual tools or informal routines.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect offers simple and automated tools to ensure reliable tracking of cash flow and margins.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Ensures reliable financial data and improves decision-making.</td>";
             break;
         case 4:
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Comptabilité & Finance</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Des outils de suivi sont présents, mais sans analyse ou mise à jour régulière.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Nous vous accompagnons pour automatiser le suivi (trésorerie, charges) et interpréter les données clés.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Renforce la réactivité et la visibilité financière.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Accounting & Finance</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Financial documents are available, but their use and interpretation remain partial.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>We assist in building accessible financial dashboards that support decision-making.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Provides a concrete and structured view of available financial resources.</td>";
             break;
         case 5:
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Comptabilité & Finance</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Les bases financières sont posées. Quelques arbitrages restent complexes ou flous.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect peut vous aider à objectiver vos choix via des projections simples et lisibles.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Facilite les arbitrages budgétaires et les demandes de financement.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Accounting & Finance</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Key indicators are tracked but not always updated or used for decision-making.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect can enhance your tracking practices with templates adapted to your industry.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Encourages regular and useful reading of economic performance.</td>";
             break;
         case 6:
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Comptabilité & Finance</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>La gestion financière est plutôt fluide, mais peu partagée ou modélisée.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Nous vous aidons à structurer les données (graphiques, ratios) pour mieux les diffuser auprès des parties prenantes.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Renforce l’adhésion de l’équipe et la posture vis-à-vis des partenaires.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Accounting & Finance</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Financial tracking is regular and based on simple dashboards or tools.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>We support the partial automation of financial processes using interconnected tools.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Saves time in the day-to-day financial management.</td>";
             break;
         case 7:
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Comptabilité & Finance</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Un pilotage structuré existe, avec plusieurs documents d’analyse ou de projection.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect peut fiabiliser les outils (formats, formules) ou soutenir un changement d’échelle.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Sécurise l’activité et prépare une éventuelle levée de fonds.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Accounting & Finance</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Cash flow and data are well organized and used to support decisions.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect helps connect your financial data to operational decision-making.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Improves projection capabilities and control over costs and revenue.</td>";
             break;
         case 8:
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Comptabilité & Finance</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Le pilotage est clair et régulier. Des axes de simplification ou de modélisation existent.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Nous vous aidons à renforcer l’autonomie sur les outils, ou à gagner du temps via l’automatisation.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Libère du temps stratégique et améliore la qualité de gestion.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Accounting & Finance</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Your financial management is structured, with a clear and updated overview of company finances.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>We facilitate the setup of forecasting and analysis tools to support your growth.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Helps anticipate critical periods or investment needs.</td>";
             break;
         case 9:
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Comptabilité & Finance</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Votre pilotage est structuré, lisible et utile à la décision. Quelques ajustements de présentation sont possibles.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect peut relire vos outils pour en renforcer la lisibilité ou l’alignement avec vos objectifs.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Appuie la stratégie et valorise la rigueur interne.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Accounting & Finance</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>You proactively manage margins, cash flow, and investments with anticipation of financial challenges.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect offers strategic support to manage margins, investments, and financial risks.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Strengthens financial resilience and overall business strategy.</td>";
             break;
         case 10:
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Comptabilité & Finance</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Votre gestion financière est fluide, autonome et partagée. Elle contribue pleinement à la stratégie globale.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Nous vous proposons un benchmark ou un outil de valorisation de votre approche.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Donne de la hauteur et valorise la vision entrepreneuriale.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Accounting & Finance</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Your financial steering is precise, strategic, and integrated into overall business governance.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>We help enhance your current financial steering system and contribute to its strategic evolution.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Turns financial management into a driver for control, optimization, and growth.</td>";
             break;
         default:
             echo "<td colspan='3' class='border border-white lg:px-8 px-4 py-2'>Score non reconnu.</td>";
@@ -802,63 +802,63 @@ if (isset($_SESSION['marketing_score'])) {
             break;
         case 1:
             echo "<td class='border border-white lg:px-8 px-4 py-2'>Marketing & Communication</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Le sujet est peu traité, avec peu d’actions lisibles ou visibles à ce jour.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Nous aidons à identifier les actions prioritaires pour clarifier le positionnement et structurer les premières communications.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Pose les bases d’une communication utile et accessible.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>No structured communication strategy is currently in place.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect can help you lay the foundation of a visibility strategy tailored to your business.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Establishes the foundation for coherent and accessible visibility.</td>";
             break;
         case 2:
             echo "<td class='border border-white lg:px-8 px-4 py-2'>Marketing & Communication</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Quelques supports sont présents mais l’image est disparate ou peu alignée au projet.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect vous aide à définir un socle commun de messages et d’éléments visuels, en lien avec vos parties prenantes.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Favorise une meilleure compréhension du projet et l’adhésion.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Some actions are taken occasionally, without a clear direction.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>We work with you to identify the right channels and key messages to structure.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Clarifies positioning and offer to target audiences.</td>";
             break;
         case 3:
             echo "<td class='border border-white lg:px-8 px-4 py-2'>Marketing & Communication</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Des messages sont structurés, mais l’image ou les canaux ne sont pas encore bien définis.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Nous accompagnons la formalisation d’une charte de communication et d’une stratégie de diffusion adaptée.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Renforce la cohérence et la portée des actions.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Some channels or materials are used, but without consistency or defined strategy.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect supports you in building a coherent identity and a basic communication routine.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Increases consistency in online and offline presence.</td>";
             break;
         case 4:
             echo "<td class='border border-white lg:px-8 px-4 py-2'>Marketing & Communication</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Des supports cohérents existent, mais la stratégie de diffusion ou les canaux restent limités.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect peut vous proposer des outils et un appui ponctuel pour élargir ou optimiser la stratégie en place.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Améliore la visibilité et la capacité d’influence.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Basic elements are in place (logo, website, social media), but they are underutilized.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>We help enhance your existing assets and align them with a strategic approach.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Structures the brand image and improves company readability.</td>";
             break;
         case 5:
             echo "<td class='border border-white lg:px-8 px-4 py-2'>Marketing & Communication</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Votre communication est claire, avec une identité stable et reconnue.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Nous vous aidons à structurer une ligne éditoriale et à capitaliser les bonnes pratiques dans un kit ou une documentation.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Facilite la transmission et l’appropriation en interne comme en externe.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>A strategy exists in the background, but it is not formalized or consistently followed.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect offers clear formalization of your marketing strategy and target audiences.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Helps focus communication efforts and measure returns.</td>";
             break;
         case 6:
             echo "<td class='border border-white lg:px-8 px-4 py-2'>Marketing & Communication</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Les actions de communication sont organisées et suivies. Quelques contenus peuvent être optimisés.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Nous pouvons enrichir vos outils avec des canevas, des modèles, ou un accompagnement rédactionnel.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Favorise le gain de temps et la pertinence des messages.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Communication is partially planned, with coherence still in development.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>We assist with implementing an editorial calendar and basic performance indicators.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Saves time and builds communication routines.</td>";
             break;
         case 7:
             echo "<td class='border border-white lg:px-8 px-4 py-2'>Marketing & Communication</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Votre stratégie est en place et bien déployée. L’équipe gagne en autonomie.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect peut enrichir la démarche avec des conseils sur les formats ou l’articulation entre les supports.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Renforce la lisibilité, le dynamisme et l’impact.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>The brand identity is clear and channels are used in an organized way.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect strengthens your content strategy and channel activation.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Improves message reach and brand consistency.</td>";
             break;
         case 8:
             echo "<td class='border border-white lg:px-8 px-4 py-2'>Marketing & Communication</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>La stratégie de communication est structurée, dynamique, avec des messages bien portés.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Nous pouvons appuyer des temps forts spécifiques (lancement, campagne, événement), ou aider à transmettre les méthodes à l’équipe.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Accroît la portée et l’autonomie de vos actions.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>The communication strategy is clear and aligned with your goals and positioning.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>We refine your positioning and optimize your materials to increase impact.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Enhances the company’s credibility and appeal.</td>";
             break;
         case 9:
             echo "<td class='border border-white lg:px-8 px-4 py-2'>Marketing & Communication</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Votre communication est impactante et bien relayée. Elle s’inscrit dans une logique de développement.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect peut vous aider à valoriser les retombées et à amplifier la dynamique.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Fait rayonner votre projet auprès de vos cibles et partenaires.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Actions are consistent, tracked, and adjusted based on measured results.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>TreeConnect helps you manage your visibility with dashboards aligned to your objectives.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Aligns communication with commercial and HR priorities.</td>";
             break;
         case 10:
             echo "<td class='border border-white lg:px-8 px-4 py-2'>Marketing & Communication</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Votre communication est inspirante et constitue une référence dans votre domaine.</td>";
-            echo "<td class='border border-white lg:px-8 px-4 py-2'>Nous pouvons contribuer à capitaliser vos pratiques ou à structurer des temps de sensibilisation.</td>";
-            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Donne de la visibilité à votre excellence et inspire vos pairs.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>Your communication is professional, structured, and actively contributes to business growth.</td>";
+            echo "<td class='border border-white lg:px-8 px-4 py-2'>We turn your communication into a regular, measurable driver of performance and brand awareness.</td>";
+            echo "<td class='border-r-0 border border-white lg:px-8 px-4 py-2'>Turns communication into a growth and differentiation engine.</td>";
             break;
         default:
             echo "<td colspan='4' class='border border-white lg:px-8 px-4 py-2'>Score non reconnu.</td>";
