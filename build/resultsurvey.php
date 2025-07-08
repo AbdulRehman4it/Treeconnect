@@ -904,8 +904,8 @@ function nextStep(step) {
         autocorrect: 'off'
       },
       showCancelButton: true,
-      confirmButtonText: 'Send',
-      cancelButtonText: 'Cancel',
+      confirmButtonText: 'Envoyer',
+      cancelButtonText: 'Annuler',
       confirmButtonColor: '#ffffff',
       cancelButtonColor: '#cccccc',
       background: '#3F6893',
@@ -942,8 +942,8 @@ function nextStep(step) {
             if (data.status === 'success' || data.success === true) {
                        Swal.fire({
                 icon: 'success',
-                title: 'Email sent!',
-                text: 'Results sent successfully.',
+                title: 'Email envoyé!',
+                text: 'Résultats envoyés avec succès.',
                 confirmButtonColor: 'white',
                 background: '#3F6893',
                 color: '#ffffff',
@@ -961,7 +961,7 @@ function nextStep(step) {
           } catch (e) {
             Swal.fire({
               icon: 'error',
-              title: 'Error',
+              title: 'Erreur',
               text: e.message,
               confirmButtonColor: '#d33',
               background: '#003366',
@@ -986,8 +986,8 @@ function nextStep(step) {
         .catch(() => {
           Swal.fire({
             icon: 'error',
-            title: 'Network failure',
-            text: 'Unable to contact the server.',
+            title: 'Échec du réseau',
+            text: 'Impossible de contacter le serveur.',
             confirmButtonColor: '#d33',
             background: '#3F6893',
             color: '#ffffff',
