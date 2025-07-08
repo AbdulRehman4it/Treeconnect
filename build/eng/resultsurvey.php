@@ -179,28 +179,5 @@
   </div>
 </div>
 
-
-<div id="modalStep8" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
-    <div class="bg-[#3F6893] p-6 rounded-2xl w-96 text-center">
-      <h2 class="text-xl font-semibold mb-4 text-white">Download successfully!</h2>
-      <button onclick="closeAllModals()" class="bg-[#3F6893] text-white font-semibold border border-white px-8 py-2 rounded-3xl hover:bg-white hover:text-[#304B68]">Close</button>
-    </div>
-  </div>
-
-  <script>
-    function nextStep(currentStep) {
-      document.getElementById(`modalStep${currentStep}`).classList.add("hidden");
-      const next = currentStep + 1;
-      const nextModal = document.getElementById(`modalStep${next}`);
-      if (nextModal) {
-        nextModal.classList.remove("hidden");
-      }
-    }
-
-    function closeAllModals() {
-      document.querySelectorAll('[id^="modalStep"]').forEach(modal => modal.classList.add("hidden"));
-    }
-  </script>
-
   
 </body>

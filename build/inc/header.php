@@ -6,6 +6,7 @@
   <title>TreeConnect-Accueil</title>
   <link rel="stylesheet" href="./assets/css/style.css">
 
+  
   <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
@@ -43,6 +44,9 @@
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <!--Chart CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <?php
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
