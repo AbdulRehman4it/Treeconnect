@@ -130,12 +130,15 @@
     <form id="companyForm" method="POST" action="./humansurvey.php" class="space-y-4 pb-6 xl:pt-20 pt-10">
         <div class="pb-2">
         <label for="" class="text-sm xl:text-base font-Nonrmal">Nom de l’entreprise</label>
-      <input type="text" id="companyName" name="companyName" placeholder="Exemple : Cabinet SLV Sàrl" class="w-full border border-white p-3 mt-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3] outline-Nonne focus:outline-Nonne" />
+      <input type="text" id="companyName" name="companyName" placeholder="Ex. : Cabinet SLV Sàrl" class="w-full border border-white p-3 mt-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3] outline-Nonne focus:outline-Nonne" />
       </div>
 
       <div class="pb-2">
-<label for="" class="text-sm xl:text-base font-Nonrmal">Secteur d’activité principal</label>
+<label for="" class="text-sm xl:text-base font-Nonrmal">Secteur d’activité
+</label>
       <select id="industry" name="industry" class="w-full border border-white p-3 rounded-2xl text-white bg-transparent placeholder-[#D3D3D3] mt-3 outline-Nonne focus:outline-Nonne">
+        <option value="" >Choisissez dans la liste
+</option>
         <option value="" >Commerce ou distribution</option>
         <option>Services (ressources humaines, conseil, juridique, etc.)</option>
         <option>Santé ou bien-être</option>

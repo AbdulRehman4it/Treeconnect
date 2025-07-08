@@ -457,10 +457,10 @@ $scores = [
     <table class="table-auto w-full text-left 2xl:text-lg text-sm">
       <thead class="text-white">
         <tr>
-          <th class="border-t-0 border-white px-10 py-10">Domaine évalué</th>
-          <th class="border-l border-white px-10 py-2">Analyse du niveau de maturité</th>
-          <th class="border-l border-white px-10 py-2">Accompagnement possible par TreeConnect</th>
-          <th class="border-l border-white px-10 py-2">Impact pour votre organisation</th>
+          <th class="border-t-0 border-white px-10 py-10">Domain</th>
+          <th class="border-l border-white px-10 py-2">Structural Maturity Overview</th>
+          <th class="border-l border-white px-10 py-2">How TreeConnect can support</th>
+          <th class="border-l border-white px-10 py-2">Business Value</th>
         </tr>
       </thead>
       <tbody class="bg-[#3F6893] text-white">
