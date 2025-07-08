@@ -904,9 +904,18 @@ function nextStep(step) {
         autocorrect: 'off'
       },
       showCancelButton: true,
-      confirmButtonText: 'Envoyer',
-      cancelButtonText: 'Annuler',
-      confirmButtonColor: '#003366'
+      confirmButtonText: 'Send',
+      cancelButtonText: 'Cancel',
+      confirmButtonColor: '#ffffff',
+      cancelButtonColor: '#cccccc',
+      background: '#3F6893',
+      color: '#ffffff',
+      customClass: {
+        popup: 'bg-[#3F6893] text-white rounded-lg shadow-lg',
+        confirmButton: 'bg-white text-[#304B68] px-4 py-2 rounded',
+        cancelButton: 'bg-white text-[#304B68] px-4 py-2 rounded',
+        input: 'bg-[#3F6893] text-white rounded px-2 py-1'
+      }
     }).then((result) => {
       if (result.isConfirmed && result.value) {
         const userEmail = result.value;
@@ -932,10 +941,16 @@ function nextStep(step) {
 
             if (data.status === 'success' || data.success === true) {
                        Swal.fire({
-  icon: 'success',
-  title: 'Email envoyé!',
-  text: 'Résultats envoyés avec succès.',
-  confirmButtonColor: '#003366'
+                icon: 'success',
+                title: 'Email sent!',
+                text: 'Results sent successfully.',
+                confirmButtonColor: 'white',
+                background: '#3F6893',
+                color: '#ffffff',
+                customClass: {
+                  popup: 'bg-[#3F6893] text-white rounded-lg shadow-lg',
+                  confirmButton: 'bg-white text-[#304B68] px-4 py-2 rounded'
+                }
 }).then(() => {
   // Redirect after OK is clicked
   window.location.href = 'servey.php'; // Change to your desired page
@@ -946,9 +961,15 @@ function nextStep(step) {
           } catch (e) {
             Swal.fire({
               icon: 'error',
-              title: 'Erreur',
+              title: 'Error',
               text: e.message,
-              confirmButtonColor: '#d33'
+              confirmButtonColor: '#d33',
+              background: '#003366',
+              color: '#ffffff',
+              customClass: {
+                popup: 'bg-[#003366] text-white rounded-lg shadow-lg',
+                confirmButton: 'bg-white text-[#304B68] px-4 py-2 rounded'
+              }
             }).then(() => {
   // Redirect after OK is clicked
   window.location.href = 'servey.php'; // Change to your desired page
@@ -965,9 +986,15 @@ function nextStep(step) {
         .catch(() => {
           Swal.fire({
             icon: 'error',
-            title: 'Échec du réseau',
-            text: 'Impossible de contacter le serveur.',
-            confirmButtonColor: '#d33'
+            title: 'Network failure',
+            text: 'Unable to contact the server.',
+            confirmButtonColor: '#d33',
+            background: '#3F6893',
+            color: '#ffffff',
+            customClass: {
+              popup: 'bg-[#3F6893] text-white rounded-lg shadow-lg',
+              confirmButton: 'bg-white text-[#304B68] px-4 py-2 rounded'
+            }
           });
 
           // Re-enable the button on failure

@@ -905,7 +905,16 @@ function nextStep(step) {
       showCancelButton: true,
       confirmButtonText: 'Send',
       cancelButtonText: 'Cancel',
-      confirmButtonColor: '#003366'
+      confirmButtonColor: '#ffffff',
+      cancelButtonColor: '#cccccc',
+      background: '#3F6893',
+      color: '#ffffff',
+      customClass: {
+        popup: 'bg-[#3F6893] text-white rounded-lg shadow-lg',
+        confirmButton: 'bg-white text-[#304B68] px-4 py-2 rounded',
+        cancelButton: 'bg-white text-[#304B68] px-4 py-2 rounded',
+        input: 'bg-[#3F6893] text-white rounded px-2 py-1'
+      }
     }).then((result) => {
       if (result.isConfirmed && result.value) {
         const userEmail = result.value;
@@ -931,14 +940,19 @@ function nextStep(step) {
 
             if (data.status === 'success' || data.success === true) {
               Swal.fire({
-  icon: 'success',
-  title: 'Email sent!',
-  text: 'Results sent successfully.',
-  confirmButtonColor: '#003366'
-}).then(() => {
-  // Redirect after OK is clicked
-  window.location.href = 'servey.php'; // Change to your desired page
-});
+                icon: 'success',
+                title: 'Email sent!',
+                text: 'Results sent successfully.',
+                confirmButtonColor: 'white',
+                background: '#3F6893',
+                color: '#ffffff',
+                customClass: {
+                  popup: 'bg-[#3F6893] text-white rounded-lg shadow-lg',
+                  confirmButton: 'bg-white text-[#304B68] px-4 py-2 rounded'
+                }
+              }).then(() => {
+                window.location.href = 'servey.php';
+              });
             } else {
               throw new Error(data.message || 'Server error');
             }
@@ -947,13 +961,17 @@ function nextStep(step) {
               icon: 'error',
               title: 'Error',
               text: e.message,
-              confirmButtonColor: '#d33'
+              confirmButtonColor: '#d33',
+              background: '#003366',
+              color: '#ffffff',
+              customClass: {
+                popup: 'bg-[#003366] text-white rounded-lg shadow-lg',
+                confirmButton: 'bg-white text-[#304B68] px-4 py-2 rounded'
+              }
             }).then(() => {
-  // Redirect after OK is clicked
-  window.location.href = 'servey.php'; // Change to your desired page
-});
+              window.location.href = 'servey.php';
+            });
 
-            // Re-enable the button on error
             if (sendBtn) {
               sendBtn.disabled = false;
               sendBtn.textContent = "Send";
@@ -965,10 +983,15 @@ function nextStep(step) {
             icon: 'error',
             title: 'Network failure',
             text: 'Unable to contact the server.',
-            confirmButtonColor: '#d33'
+            confirmButtonColor: '#d33',
+            background: '#3F6893',
+            color: '#ffffff',
+            customClass: {
+              popup: 'bg-[#3F6893] text-white rounded-lg shadow-lg',
+              confirmButton: 'bg-white text-[#304B68] px-4 py-2 rounded'
+            }
           });
 
-          // Re-enable the button on failure
           if (sendBtn) {
             sendBtn.disabled = false;
             sendBtn.textContent = "Send";
@@ -979,3 +1002,4 @@ function nextStep(step) {
   }
 }
 </script>
+
