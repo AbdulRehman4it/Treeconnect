@@ -462,8 +462,410 @@ $scores = [
 </script>
   
 
+
+<!-- Mobile-only card layout -->
+<?php if (isset($_SESSION['hr_score'])): ?>
+  <div class="md:hidden block space-y-4 text-white">
+    <?php
+    $score = $_SESSION['hr_score'];
+    $title = "Ressources Humaines";
+
+    $entries = [
+      0 => [
+        "Les démarches RH ne sont pas encore formalisées à ce jour. Ce pilier représente une belle opportunité de structuration.",
+        "TreeConnect peut vous aider à poser les premières briques d’un socle RH simple et adapté à votre structure.",
+        "Clarifie les rôles, sécurise la conformité, et pose les bases pour une équipe stable."
+      ],
+      1 => [
+        "Les démarches RH ne sont pas encore formalisées à ce jour. Ce pilier représente une belle opportunité de structuration.",
+        "TreeConnect peut vous aider à poser les premières briques d’un socle RH simple et adapté à votre structure.",
+        "Clarifie les rôles, sécurise la conformité, et pose les bases pour une équipe stable."
+      ],
+      2 => [
+        "Un ou deux aspects RH sont présents de façon ponctuelle, mais l’ensemble reste informel ou dispersé.",
+        "Nous pouvons identifier ensemble les priorités RH à structurer rapidement, avec des outils adaptés aux petites équipes.",
+        "Gagne en sérénité sur les obligations de base et prépare l’arrivée de nouveaux collaborateurs."
+      ],
+      3 => [
+        "Des éléments RH existent (par exemple, contrats ou entretiens), mais sans logique globale.",
+        "TreeConnect vous accompagne pour articuler vos pratiques RH autour d’un processus cohérent et duplicable.",
+        "Favorise une gestion fluide, même en cas de turnover ou de croissance."
+      ],
+      4 => [
+        "Des démarches structurantes sont engagées, mais certains points clés comme l’intégration ou le suivi manquent de régularité.",
+        "Nous vous aidons à formaliser des processus simples et reproductibles (fiche de poste, suivi collaborateur, trame d’entretien).",
+        "Améliore la cohésion d’équipe et soutient l’engagement au quotidien."
+      ],
+      5 => [
+        "Les fondations RH sont bien présentes, avec plusieurs éléments fonctionnels. Quelques optimisations sont envisageables.",
+        "TreeConnect peut vous proposer des outils RH légers et automatisés pour centraliser et gagner du temps.",
+        "Rend la gestion RH plus fluide et limite les erreurs administratives."
+      ],
+      6 => [
+        "Votre approche RH est globalement en place. Une harmonisation et une digitalisation partielle pourraient en renforcer l’efficacité.",
+        "Nous accompagnons la transition vers des outils intégrés pour le suivi, les absences ou les entretiens.",
+        "Renforce la transparence et professionnalise la gestion interne."
+      ],
+      7 => [
+        "Les pratiques RH sont bien posées, avec une organisation visible. Quelques rituels peuvent encore être systématisés.",
+        "TreeConnect peut vous aider à structurer les feedbacks réguliers ou à définir des grilles de rémunération plus lisibles.",
+        "Favorise la fidélisation et la responsabilisation des équipes."
+      ],
+      8 => [
+        "La gestion RH est maîtrisée et adaptée à vos besoins. Des points d’amélioration mineurs peuvent renforcer l’agilité.",
+        "Nous vous proposons des outils de pilotage RH plus stratégiques (anticipation des besoins, suivi des talents).",
+        "Accroît la capacité de projection et soutient le développement à long terme."
+      ],
+      9 => [
+        "Vous disposez d’un système RH solide, clair et bien intégré. Il reste peu d’ajustements pour aller vers l’excellence.",
+        "TreeConnect peut compléter votre démarche avec des conseils sur la marque employeur ou la culture d’entreprise.",
+        "Valorise votre attractivité et soutient votre positionnement RH."
+      ],
+      10 => [
+        "Votre gestion RH est structurée, fluide et exemplaire. C’est un socle fort pour la stabilité et la croissance.",
+        "TreeConnect peut nourrir votre réflexion stratégique RH à travers des benchmarks ou des outils avancés.",
+        "Vous êtes en position d’attirer, engager et faire évoluer les bons profils."
+      ]
+    ];
+
+    if (array_key_exists($score, $entries)):
+      $content = $entries[$score];
+    ?>
+    <div class="bg-[#3F6893] border border-white rounded-xl p-6 space-y-4">
+      <h3 class="text-xl font-semibold text-white"><?= $title ?></h3>
+      <p><strong>Analyse :</strong> <?= $content[0] ?></p>
+      <p><strong>Accompagnement :</strong> <?= $content[1] ?></p>
+      <p><strong>Impact :</strong> <?= $content[2] ?></p>
+    </div>
+    <?php else: ?>
+    <div class="bg-red-500 text-white p-4 rounded">Score non reconnu.</div>
+    <?php endif; ?>
+  </div>
+<?php endif; ?>
+
+<br>
+
+<?php if (isset($_SESSION['admin_score'])): ?>
+  <div class="md:hidden block space-y-4 text-white">
+    <?php
+    $score = $_SESSION['admin_score'];
+    $title = "Administration & Back-Office";
+
+    $entries = [
+      0 => [
+        "Un ou deux outils administratifs sont utilisés de façon ponctuelle, mais l’ensemble reste informel ou dispersé.",
+        "Nous pouvons identifier ensemble les priorités de structuration avec des outils adaptés aux petites équipes.",
+        "Gagne en sérénité sur les obligations de base et prépare l’arrivée de nouveaux collaborateurs."
+      ],
+      1 => [
+        "Un ou deux outils administratifs sont utilisés de façon ponctuelle, mais l’ensemble reste informel ou dispersé.",
+        "Nous pouvons identifier ensemble les priorités de structuration avec des outils adaptés aux petites équipes.",
+        "Gagne en sérénité sur les obligations de base et prépare l’arrivée de nouveaux collaborateurs."
+      ],
+      2 => [
+        "Des éléments existent (par exemple, devis ou factures), mais sans logique globale ou centralisée.",
+        "TreeConnect vous accompagne pour articuler vos pratiques de gestion autour d’un processus cohérent et duplicable.",
+        "Favorise une gestion fluide, même en cas de turnover ou de croissance."
+      ],
+      3 => [
+        "Des démarches structurantes sont engagées, mais certains points clés comme la gestion documentaire ou le suivi manquent de régularité.",
+        "Nous vous aidons à formaliser des processus simples et reproductibles (tableau de bord, procédures internes, modèles).",
+        "Améliore la cohésion d’équipe et soutient l’efficacité au quotidien."
+      ],
+      4 => [
+        "Les bases du back-office sont bien présentes, avec plusieurs éléments fonctionnels. Quelques optimisations sont envisageables.",
+        "TreeConnect peut vous proposer des outils simples et automatisés pour centraliser et gagner du temps.",
+        "Rend la gestion plus fluide et limite les erreurs administratives."
+      ],
+      5 => [
+        "Votre back-office est globalement en place. Une harmonisation et une digitalisation partielle pourraient en renforcer l’efficacité.",
+        "Nous accompagnons la transition vers des outils intégrés pour la gestion des documents, du temps ou des contrats.",
+        "Renforce la transparence et professionnalise la gestion interne."
+      ],
+      6 => [
+        "Les pratiques de gestion sont bien posées, avec une organisation visible. Quelques rituels peuvent encore être systématisés.",
+        "TreeConnect peut vous aider à structurer les outils de suivi régulier ou à définir un plan d’amélioration continue.",
+        "Favorise la responsabilisation et fluidifie la gestion collective."
+      ],
+      7 => [
+        "Votre back-office est structuré et adapté à vos besoins. Des points d’amélioration mineurs peuvent renforcer l’agilité.",
+        "Nous vous proposons des outils de pilotage plus stratégiques (anticipation, évaluation des charges, indicateurs).",
+        "Accroît la capacité d’anticipation et soutient le développement."
+      ],
+      8 => [
+        "Vous disposez d’un système de gestion solide, clair et bien intégré. Il reste peu d’ajustements pour aller vers l’excellence.",
+        "TreeConnect peut compléter votre démarche avec des conseils sur l’optimisation ou la culture de gestion.",
+        "Valorise la maturité de votre gestion et améliore votre positionnement."
+      ],
+      9 => [
+        "Votre gestion est structurée, fluide et efficace. C’est un socle fort pour la stabilité et la croissance.",
+        "TreeConnect peut nourrir votre réflexion stratégique à travers des benchmarks ou des outils avancés.",
+        "Vous êtes en position d’anticiper, ajuster et faire évoluer votre organisation."
+      ],
+      10 => [
+        "Votre back-office est exemplaire. Il incarne une référence pour votre secteur ou vos partenaires.",
+        "Nous pouvons vous accompagner sur des outils d’excellence ou de transmission de vos bonnes pratiques.",
+        "Renforce votre attractivité et crédibilise vos ambitions externes."
+      ]
+    ];
+
+    if (array_key_exists($score, $entries)):
+      $content = $entries[$score];
+    ?>
+    <div class="bg-[#3F6893] border border-white rounded-xl p-6 space-y-4">
+      <h3 class="text-xl font-semibold text-white"><?= $title ?></h3>
+      <p><strong>Analyse :</strong> <?= $content[0] ?></p>
+      <p><strong>Accompagnement :</strong> <?= $content[1] ?></p>
+      <p><strong>Impact :</strong> <?= $content[2] ?></p>
+    </div>
+    <?php else: ?>
+    <div class="bg-red-500 text-white p-4 rounded">Score non reconnu.</div>
+    <?php endif; ?>
+  </div>
+<?php endif; ?>
+<br>
+<?php if (isset($_SESSION['it_score'])): ?>
+  <div class="md:hidden block space-y-4 text-white">
+    <?php
+    $score = $_SESSION['it_score'];
+    $title = "Informatique & Cybersécurité";
+
+    $entries = [
+      0 => [
+        "Un ou deux outils informatiques sont utilisés de façon ponctuelle, mais l’ensemble reste informel ou dispersé.",
+        "Nous pouvons identifier ensemble les priorités numériques à structurer rapidement, avec des outils adaptés aux petites équipes.",
+        "Gagne en sérénité sur les usages de base et prépare l’arrivée de nouveaux collaborateurs."
+      ],
+      1 => [
+        "Un ou deux outils informatiques sont utilisés de façon ponctuelle, mais l’ensemble reste informel ou dispersé.",
+        "Nous pouvons identifier ensemble les priorités numériques à structurer rapidement, avec des outils adaptés aux petites équipes.",
+        "Gagne en sérénité sur les usages de base et prépare l’arrivée de nouveaux collaborateurs."
+      ],
+      2 => [
+        "Des outils ou logiciels sont en place, mais sans logique globale ni plan de sécurisation.",
+        "TreeConnect vous accompagne pour organiser vos pratiques numériques et identifier les principaux risques à couvrir.",
+        "Favorise une gestion fluide, même en cas de turnover ou de croissance."
+      ],
+      3 => [
+        "Des pratiques numériques sont engagées, mais certains points clés comme les accès ou les sauvegardes manquent de régularité.",
+        "Nous vous aidons à formaliser des pratiques simples et reproductibles (niveaux d’accès, règles internes, mots de passe).",
+        "Améliore la cohésion d’équipe et limite les interruptions de service."
+      ],
+      4 => [
+        "L’environnement informatique est bien présent, avec plusieurs éléments fonctionnels. Quelques optimisations sont envisageables.",
+        "TreeConnect peut vous proposer des outils simples et automatisés pour centraliser les données et fluidifier les usages.",
+        "Rend la gestion informatique plus fluide et limite les erreurs ou les pertes de données."
+      ],
+      5 => [
+        "Votre environnement numérique est globalement en place. Une harmonisation ou des rappels peuvent renforcer la sécurité.",
+        "Nous accompagnons la formalisation de bonnes pratiques (chartes internes, rappels, référent numérique).",
+        "Renforce la transparence et réduit les risques au quotidien."
+      ],
+      6 => [
+        "Les usages numériques sont bien posés, avec une organisation visible. Quelques pratiques peuvent encore être systématisées.",
+        "TreeConnect peut vous aider à structurer les alertes, les sauvegardes ou les procédures d’urgence.",
+        "Favorise la résilience et la sécurisation des données."
+      ],
+      7 => [
+        "Votre environnement numérique est structuré et adapté à vos besoins. Des points d’amélioration mineurs peuvent renforcer l’agilité.",
+        "Nous vous proposons des outils de pilotage plus stratégiques (anticipation, supervision, plan de reprise).",
+        "Accroît la capacité d’anticipation et limite les impacts d’un incident."
+      ],
+      8 => [
+        "Vous disposez d’un environnement numérique solide, clair et bien intégré. Il reste peu d’ajustements pour aller vers l’excellence.",
+        "TreeConnect peut compléter votre démarche avec des conseils sur les enjeux de cybersécurité ou de conformité.",
+        "Valorise votre professionnalisme et rassure vos partenaires."
+      ],
+      9 => [
+        "Votre gestion numérique est fluide et efficace. C’est un socle fort pour la stabilité et la croissance.",
+        "TreeConnect peut nourrir votre réflexion stratégique à travers des benchmarks ou des outils avancés.",
+        "Vous êtes en position d’anticiper, ajuster et sécuriser vos évolutions numériques."
+      ],
+      10 => [
+        "Votre environnement numérique est exemplaire. Il incarne une référence pour votre secteur ou vos partenaires.",
+        "Nous pouvons vous accompagner sur des outils d’excellence ou de sensibilisation à la cybersécurité.",
+        "Renforce votre image et sécurise votre impact externe."
+      ]
+    ];
+
+    if (array_key_exists($score, $entries)):
+      $content = $entries[$score];
+    ?>
+    <div class="bg-[#3F6893] border border-white rounded-xl p-6 space-y-4">
+      <h3 class="text-xl font-semibold text-white"><?= $title ?></h3>
+      <p><strong>Analyse :</strong> <?= $content[0] ?></p>
+      <p><strong>Accompagnement :</strong> <?= $content[1] ?></p>
+      <p><strong>Impact :</strong> <?= $content[2] ?></p>
+    </div>
+    <?php else: ?>
+    <div class="bg-red-500 text-white p-4 rounded">Score non reconnu.</div>
+    <?php endif; ?>
+  </div>
+<?php endif; ?>
+<br>
+<?php if (isset($_SESSION['accounting_score'])): ?>
+  <div class="md:hidden block space-y-4 text-white">
+    <?php
+    $score = $_SESSION['accounting_score'];
+    $title = "Comptabilité & Finance";
+
+    $entries = [
+      0 => [
+        "Le suivi financier est très limité voire inexistant. Il constitue un axe stratégique à renforcer.",
+        "TreeConnect peut vous accompagner pour mettre en place les premiers indicateurs de pilotage financier adaptés à votre activité.",
+        "Permet de poser un socle clair pour sécuriser la trésorerie et anticiper les échéances."
+      ],
+      1 => [
+        "Le suivi financier est très limité voire inexistant. Il constitue un axe stratégique à renforcer.",
+        "TreeConnect peut vous accompagner pour mettre en place les premiers indicateurs de pilotage financier adaptés à votre activité.",
+        "Permet de poser un socle clair pour sécuriser la trésorerie et anticiper les échéances."
+      ],
+      2 => [
+        "Quelques éléments de suivi sont présents (factures, tableaux), mais sans lisibilité sur la santé financière globale.",
+        "Nous vous aidons à clarifier la structure financière et à poser les bases d’un pilotage simple.",
+        "Favorise une gestion plus anticipée et une meilleure communication interne."
+      ],
+      3 => [
+        "Une comptabilité existe (souvent déléguée), mais sans lien avec le pilotage quotidien.",
+        "TreeConnect peut construire avec vous un tableau de bord adapté aux spécificités de votre activité.",
+        "Aide à mieux piloter l’activité et à prendre des décisions éclairées."
+      ],
+      4 => [
+        "Des outils de suivi sont présents, mais sans analyse ou mise à jour régulière.",
+        "Nous vous accompagnons pour automatiser le suivi (trésorerie, charges) et interpréter les données clés.",
+        "Renforce la réactivité et la visibilité financière."
+      ],
+      5 => [
+        "Les bases financières sont posées. Quelques arbitrages restent complexes ou flous.",
+        "TreeConnect peut vous aider à objectiver vos choix via des projections simples et lisibles.",
+        "Facilite les arbitrages budgétaires et les demandes de financement."
+      ],
+      6 => [
+        "La gestion financière est plutôt fluide, mais peu partagée ou modélisée.",
+        "Nous vous aidons à structurer les données (graphiques, ratios) pour mieux les diffuser auprès des parties prenantes.",
+        "Renforce l’adhésion de l’équipe et la posture vis-à-vis des partenaires."
+      ],
+      7 => [
+        "Un pilotage structuré existe, avec plusieurs documents d’analyse ou de projection.",
+        "TreeConnect peut fiabiliser les outils (formats, formules) ou soutenir un changement d’échelle.",
+        "Sécurise l’activité et prépare une éventuelle levée de fonds."
+      ],
+      8 => [
+        "Le pilotage est clair et régulier. Des axes de simplification ou de modélisation existent.",
+        "Nous vous aidons à renforcer l’autonomie sur les outils, ou à gagner du temps via l’automatisation.",
+        "Libère du temps stratégique et améliore la qualité de gestion."
+      ],
+      9 => [
+        "Votre pilotage est structuré, lisible et utile à la décision. Quelques ajustements de présentation sont possibles.",
+        "TreeConnect peut relire vos outils pour en renforcer la lisibilité ou l’alignement avec vos objectifs.",
+        "Appuie la stratégie et valorise la rigueur interne."
+      ],
+      10 => [
+        "Votre gestion financière est fluide, autonome et partagée. Elle contribue pleinement à la stratégie globale.",
+        "Nous vous proposons un benchmark ou un outil de valorisation de votre approche.",
+        "Donne de la hauteur et valorise la vision entrepreneuriale."
+      ]
+    ];
+
+    if (array_key_exists($score, $entries)):
+      $content = $entries[$score];
+    ?>
+    <div class="bg-[#3F6893] border border-white rounded-xl p-6 space-y-4">
+      <h3 class="text-xl font-semibold"><?= $title ?></h3>
+      <p><strong>Analyse :</strong> <?= $content[0] ?></p>
+      <p><strong>Accompagnement :</strong> <?= $content[1] ?></p>
+      <p><strong>Impact :</strong> <?= $content[2] ?></p>
+    </div>
+    <?php else: ?>
+    <div class="bg-red-500 text-white p-4 rounded">Score non reconnu.</div>
+    <?php endif; ?>
+  </div>
+
+<?php endif; ?>
+<br>
+<?php if (isset($_SESSION['marketing_score'])): ?>
+  <div class="md:hidden block space-y-4 text-white">
+    <?php
+    $score = $_SESSION['marketing_score'];
+    $title = "Marketing & Communication";
+
+    $entries = [
+      0 => [
+        "Le sujet est peu traité, avec peu d’actions lisibles ou visibles à ce jour.",
+        "Nous aidons à identifier les actions prioritaires pour clarifier le positionnement et structurer les premières communications.",
+        "Pose les bases d’une communication utile et accessible."
+      ],
+      1 => [
+        "Le sujet est peu traité, avec peu d’actions lisibles ou visibles à ce jour.",
+        "Nous aidons à identifier les actions prioritaires pour clarifier le positionnement et structurer les premières communications.",
+        "Pose les bases d’une communication utile et accessible."
+      ],
+      2 => [
+        "Quelques supports sont présents mais l’image est disparate ou peu alignée au projet.",
+        "TreeConnect vous aide à définir un socle commun de messages et d’éléments visuels, en lien avec vos parties prenantes.",
+        "Favorise une meilleure compréhension du projet et l’adhésion."
+      ],
+      3 => [
+        "Des messages sont structurés, mais l’image ou les canaux ne sont pas encore bien définis.",
+        "Nous accompagnons la formalisation d’une charte de communication et d’une stratégie de diffusion adaptée.",
+        "Renforce la cohérence et la portée des actions."
+      ],
+      4 => [
+        "Des supports cohérents existent, mais la stratégie de diffusion ou les canaux restent limités.",
+        "TreeConnect peut vous proposer des outils et un appui ponctuel pour élargir ou optimiser la stratégie en place.",
+        "Améliore la visibilité et la capacité d’influence."
+      ],
+      5 => [
+        "Votre communication est claire, avec une identité stable et reconnue.",
+        "Nous vous aidons à structurer une ligne éditoriale et à capitaliser les bonnes pratiques dans un kit ou une documentation.",
+        "Facilite la transmission et l’appropriation en interne comme en externe."
+      ],
+      6 => [
+        "Les actions de communication sont organisées et suivies. Quelques contenus peuvent être optimisés.",
+        "Nous pouvons enrichir vos outils avec des canevas, des modèles, ou un accompagnement rédactionnel.",
+        "Favorise le gain de temps et la pertinence des messages."
+      ],
+      7 => [
+        "Votre stratégie est en place et bien déployée. L’équipe gagne en autonomie.",
+        "TreeConnect peut enrichir la démarche avec des conseils sur les formats ou l’articulation entre les supports.",
+        "Renforce la lisibilité, le dynamisme et l’impact."
+      ],
+      8 => [
+        "La stratégie de communication est structurée, dynamique, avec des messages bien portés.",
+        "Nous pouvons appuyer des temps forts spécifiques (lancement, campagne, événement), ou aider à transmettre les méthodes à l’équipe.",
+        "Accroît la portée et l’autonomie de vos actions."
+      ],
+      9 => [
+        "Votre communication est impactante et bien relayée. Elle s’inscrit dans une logique de développement.",
+        "TreeConnect peut vous aider à valoriser les retombées et à amplifier la dynamique.",
+        "Fait rayonner votre projet auprès de vos cibles et partenaires."
+      ],
+      10 => [
+        "Votre communication est inspirante et constitue une référence dans votre domaine.",
+        "Nous pouvons contribuer à capitaliser vos pratiques ou à structurer des temps de sensibilisation.",
+        "Donne de la visibilité à votre excellence et inspire vos pairs."
+      ]
+    ];
+
+    if (array_key_exists($score, $entries)):
+      $content = $entries[$score];
+    ?>
+    <div class="bg-[#3F6893] border border-white rounded-xl p-6 space-y-4">
+      <h3 class="text-xl font-semibold"><?= $title ?></h3>
+      <p><strong>Analyse :</strong> <?= $content[0] ?></p>
+      <p><strong>Accompagnement :</strong> <?= $content[1] ?></p>
+      <p><strong>Impact :</strong> <?= $content[2] ?></p>
+    </div>
+    <?php else: ?>
+    <div class="bg-red-500 text-white p-4 rounded">Score non reconnu.</div>
+    <?php endif; ?>
+  </div>
+<?php endif; ?>
+
+
+
     <!-- Table  -->
-    <div class="overflow-x-auto">
+    <div class="overflow-x-auto md:block hidden">
   <div class="rounded-2xl overflow-auto border-[1px] border-white">
     <table class="table-auto w-full text-left 2xl:text-lg text-sm">
       <thead class="text-white">

@@ -14,7 +14,7 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js"></script>
 
-  <script src="//code.tidio.co/vxiqlrt5ipq4shg4h60brissqd8hj15z.js" async></script>
+  <!-- <script src="//code.tidio.co/vxiqlrt5ipq4shg4h60brissqd8hj15z.js" async></script> -->
 
 <!-- intl-tel-input CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.19/build/css/intlTelInput.css" />

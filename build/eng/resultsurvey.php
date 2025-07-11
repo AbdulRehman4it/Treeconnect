@@ -461,8 +461,407 @@ $scores = [
   Chart.defaults.font.family = "Calibri";
 </script>
 
+<!-- Mobile-only card layout -->
+<?php if (isset($_SESSION['hr_score'])): ?>
+  <div class="md:hidden block space-y-4 text-white">
+    <?php
+    $score = $_SESSION['hr_score'];
+    $title = "Human Resources";
+
+    $entries = [
+      0 => [
+        "HR processes are not yet formalized. This pillar is a great opportunity for structuring.",
+        "TreeConnect can help you lay the first bricks of a simple HR foundation tailored to your structure.",
+        "Clarifies roles, ensures compliance, and lays the foundation for a stable team."
+      ],
+      1 => [
+        "HR processes are not yet formalized. This pillar is a great opportunity for structuring.",
+        "TreeConnect can help you lay the first bricks of a simple HR foundation tailored to your structure.",
+        "Clarifies roles, ensures compliance, and lays the foundation for a stable team."
+      ],
+      2 => [
+        "One or two HR aspects exist sporadically, but overall it's informal or scattered.",
+        "We can help identify urgent HR priorities and offer tools suited to small teams.",
+        "Brings peace of mind regarding basic obligations and prepares for new team members."
+      ],
+      3 => [
+        "Some HR elements exist (e.g., contracts or evaluations), but there is no global logic.",
+        "TreeConnect supports you in aligning your HR practices around a coherent and replicable process.",
+        "Promotes smooth management, even during turnover or growth."
+      ],
+      4 => [
+        "Structuring efforts are underway, but key areas like onboarding or follow-up lack consistency.",
+        "We help you formalize simple, repeatable processes (job descriptions, follow-ups, interview templates).",
+        "Improves team cohesion and supports daily engagement."
+      ],
+      5 => [
+        "The HR foundations are in place with several functional elements. Some optimizations are possible.",
+        "TreeConnect can provide lightweight, automated HR tools to centralize and save time.",
+        "Makes HR management smoother and reduces administrative errors."
+      ],
+      6 => [
+        "Your HR approach is mostly in place. Harmonization and partial digitalization could improve efficiency.",
+        "We support the transition to integrated tools for tracking, absences, or interviews.",
+        "Enhances transparency and professionalizes internal management."
+      ],
+      7 => [
+        "HR practices are established and visible. Some routines can still be systematized.",
+        "TreeConnect can help structure regular feedback or define clearer pay grids.",
+        "Promotes retention and team responsibility."
+      ],
+      8 => [
+        "HR management is well-mastered and fits your needs. Minor improvements could boost agility.",
+        "We offer strategic HR tracking tools (needs forecasting, talent tracking).",
+        "Increases projection ability and supports long-term growth."
+      ],
+      9 => [
+        "You have a solid, clear, and integrated HR system. Few adjustments are needed for excellence.",
+        "TreeConnect can enhance your efforts with advice on employer branding or company culture.",
+        "Strengthens your attractiveness and HR positioning."
+      ],
+      10 => [
+        "Your HR management is structured, smooth, and exemplary — a solid foundation for stability and growth.",
+        "TreeConnect can fuel your strategic HR thinking with benchmarks or advanced tools.",
+        "Puts you in a strong position to attract, engage, and grow the right profiles."
+      ]
+    ];
+
+    if (array_key_exists($score, $entries)):
+      $content = $entries[$score];
+    ?>
+    <div class="bg-[#3F6893] border border-white rounded-xl p-6 space-y-4">
+      <h3 class="text-xl font-semibold text-white"><?= $title ?></h3>
+      <p><strong>Analysis:</strong> <?= $content[0] ?></p>
+      <p><strong>Support:</strong> <?= $content[1] ?></p>
+      <p><strong>Impact:</strong> <?= $content[2] ?></p>
+    </div>
+    <?php else: ?>
+    <div class="bg-red-500 text-white p-4 rounded">Unrecognized score.</div>
+    <?php endif; ?>
+  </div>
+<?php endif; ?>
+
+<br>
+
+<?php if (isset($_SESSION['admin_score'])): ?>
+  <div class="md:hidden block space-y-4 text-white">
+    <?php
+    $score = $_SESSION['admin_score'];
+    $title = "Administration & Back-Office";
+
+    $entries = [
+      0 => [
+        "One or two admin tools are used occasionally, but everything remains informal or scattered.",
+        "We can help identify top priorities and tools tailored to small teams.",
+        "Brings peace of mind on basic tasks and prepares for onboarding."
+      ],
+      1 => [
+        "One or two admin tools are used occasionally, but everything remains informal or scattered.",
+        "We can help identify top priorities and tools tailored to small teams.",
+        "Brings peace of mind on basic tasks and prepares for onboarding."
+      ],
+      2 => [
+        "Some elements exist (e.g., invoices or quotes), but there’s no overall or centralized system.",
+        "TreeConnect helps align your admin practices into a coherent, repeatable process.",
+        "Promotes smooth management, even during changes or scaling."
+      ],
+      3 => [
+        "Some structuring efforts are underway, but key aspects like document tracking are irregular.",
+        "We help formalize repeatable processes (dashboards, procedures, templates).",
+        "Boosts team cohesion and supports daily efficiency."
+      ],
+      4 => [
+        "The basics are in place, with several functional elements. Some optimizations are possible.",
+        "TreeConnect can offer simple, automated tools to centralize and save time.",
+        "Makes admin smoother and reduces errors."
+      ],
+      5 => [
+        "Back-office setup is mostly done. Harmonization and digitalization could improve it.",
+        "We support the transition to integrated tools for documents, time, or contracts.",
+        "Improves transparency and professionalism in internal management."
+      ],
+      6 => [
+        "Admin practices are in place and visible. Some routines can be made more systematic.",
+        "TreeConnect can help you organize regular tracking tools or define an improvement plan.",
+        "Promotes accountability and streamlines collective management."
+      ],
+      7 => [
+        "Your back-office is structured and suits your needs. Minor improvements could improve agility.",
+        "We propose more strategic management tools (forecasting, load assessment, KPIs).",
+        "Improves planning and supports development."
+      ],
+      8 => [
+        "You have a solid, clear, and integrated management system. Few tweaks remain before excellence.",
+        "TreeConnect can support you with advice on optimization or management culture.",
+        "Highlights your maturity and boosts your positioning."
+      ],
+      9 => [
+        "Your management is structured, fluid, and effective — a strong base for growth and stability.",
+        "TreeConnect can enrich your strategy with benchmarks or advanced tools.",
+        "Enables foresight and evolution of your organization."
+      ],
+      10 => [
+        "Your back-office is exemplary — a model for your sector or partners.",
+        "We can help you implement excellence tools or share best practices.",
+        "Boosts your attractiveness and external credibility."
+      ]
+    ];
+
+    if (array_key_exists($score, $entries)):
+      $content = $entries[$score];
+    ?>
+    <div class="bg-[#3F6893] border border-white rounded-xl p-6 space-y-4">
+      <h3 class="text-xl font-semibold text-white"><?= $title ?></h3>
+      <p><strong>Analysis:</strong> <?= $content[0] ?></p>
+      <p><strong>Support:</strong> <?= $content[1] ?></p>
+      <p><strong>Impact:</strong> <?= $content[2] ?></p>
+    </div>
+    <?php else: ?>
+    <div class="bg-red-500 text-white p-4 rounded">Unrecognized score.</div>
+    <?php endif; ?>
+  </div>
+<?php endif; ?>
+<br>
+<?php if (isset($_SESSION['it_score'])): ?>
+  <div class="md:hidden block space-y-4 text-white">
+    <?php
+    $score = $_SESSION['it_score'];
+    $title = "IT & Cybersecurity";
+
+    $entries = [
+      0 => [
+        "One or two IT tools are used occasionally, but everything remains informal or scattered.",
+        "We can help identify priority areas to quickly structure your digital practices with tools suited for small teams.",
+        "Brings peace of mind on basic usage and prepares for onboarding."
+      ],
+      1 => [
+        "One or two IT tools are used occasionally, but everything remains informal or scattered.",
+        "We can help identify priority areas to quickly structure your digital practices with tools suited for small teams.",
+        "Brings peace of mind on basic usage and prepares for onboarding."
+      ],
+      2 => [
+        "Tools or software are in place but without a global logic or security plan.",
+        "TreeConnect helps you organize your digital practices and identify the main risks to address.",
+        "Promotes smooth management even with turnover or growth."
+      ],
+      3 => [
+        "Digital practices are underway, but key points like access control or backups are inconsistent.",
+        "We help formalize simple, repeatable practices (access levels, internal rules, password policies).",
+        "Improves team cohesion and limits service interruptions."
+      ],
+      4 => [
+        "The IT environment is present with several functional elements. Some optimizations are possible.",
+        "TreeConnect can offer simple, automated tools to centralize data and improve workflows.",
+        "Makes IT management smoother and reduces data errors or loss."
+      ],
+      5 => [
+        "Your digital environment is mostly in place. Harmonization or reminders could improve security.",
+        "We support formalizing good practices (internal charters, reminders, digital referents).",
+        "Increases transparency and reduces everyday risks."
+      ],
+      6 => [
+        "Digital usage is well defined with visible organization. Some practices can still be standardized.",
+        "TreeConnect can help structure alerts, backups, or emergency procedures.",
+        "Enhances resilience and secures data management."
+      ],
+      7 => [
+        "Your digital environment is structured and suits your needs. Minor improvements could boost agility.",
+        "We offer strategic digital tools (monitoring, supervision, recovery planning).",
+        "Boosts anticipation and minimizes incident impact."
+      ],
+      8 => [
+        "You have a strong, clear, and integrated digital setup. Only minor refinements are needed for excellence.",
+        "TreeConnect can assist with cybersecurity or compliance advice.",
+        "Enhances your professionalism and builds partner confidence."
+      ],
+      9 => [
+        "Your digital management is smooth and efficient. A solid foundation for growth and stability.",
+        "TreeConnect can support your strategic thinking with benchmarks or advanced tools.",
+        "Enables you to anticipate, adjust, and secure digital evolution."
+      ],
+      10 => [
+        "Your digital environment is exemplary and a benchmark in your sector or for your partners.",
+        "We can support you with excellence tools or cybersecurity awareness efforts.",
+        "Boosts your image and secures your external impact."
+      ]
+    ];
+
+    if (array_key_exists($score, $entries)):
+      $content = $entries[$score];
+    ?>
+    <div class="bg-[#3F6893] border border-white rounded-xl p-6 space-y-4">
+      <h3 class="text-xl font-semibold text-white"><?= $title ?></h3>
+      <p><strong>Analysis:</strong> <?= $content[0] ?></p>
+      <p><strong>Support:</strong> <?= $content[1] ?></p>
+      <p><strong>Impact:</strong> <?= $content[2] ?></p>
+    </div>
+    <?php else: ?>
+    <div class="bg-red-500 text-white p-4 rounded">Unrecognized score.</div>
+    <?php endif; ?>
+  </div>
+<?php endif; ?>
+<br>
+<?php if (isset($_SESSION['accounting_score'])): ?>
+  <div class="md:hidden block space-y-4 text-white">
+    <?php
+    $score = $_SESSION['accounting_score'];
+    $title = "Accounting & Finance";
+
+    $entries = [
+      0 => [
+        "Financial monitoring is very limited or nonexistent. It is a strategic area to strengthen.",
+        "TreeConnect can help set up the first financial indicators suited to your activity.",
+        "Lays a clear foundation to secure cash flow and anticipate deadlines."
+      ],
+      1 => [
+        "Financial monitoring is very limited or nonexistent. It is a strategic area to strengthen.",
+        "TreeConnect can help set up the first financial indicators suited to your activity.",
+        "Lays a clear foundation to secure cash flow and anticipate deadlines."
+      ],
+      2 => [
+        "Some monitoring tools are present (invoices, spreadsheets), but there is no clear view of financial health.",
+        "We help clarify your financial structure and build the foundation of simple management.",
+        "Encourages more proactive management and better internal communication."
+      ],
+      3 => [
+        "Accounting exists (often outsourced), but it isn’t linked to day-to-day management.",
+        "TreeConnect can build a custom dashboard tailored to your specific activity.",
+        "Helps steer the business more clearly and make informed decisions."
+      ],
+      4 => [
+        "Tracking tools are in place, but they’re not updated or analyzed regularly.",
+        "We help automate tracking (cash flow, expenses) and interpret key financial data.",
+        "Boosts responsiveness and financial visibility."
+      ],
+      5 => [
+        "The financial foundation is solid. Some decisions remain unclear or complex.",
+        "TreeConnect helps you make objective choices using simple, visual projections.",
+        "Facilitates budgeting decisions and funding requests."
+      ],
+      6 => [
+        "Financial management is mostly smooth but not widely shared or modeled.",
+        "We help you structure data (charts, ratios) to better communicate with stakeholders.",
+        "Builds team buy-in and strengthens your stance with partners."
+      ],
+      7 => [
+        "Structured financial management is in place with various analysis or projection tools.",
+        "TreeConnect can audit and enhance the reliability of your tools or support scaling.",
+        "Secures your operations and prepares for potential fundraising."
+      ],
+      8 => [
+        "Management is clear and consistent. Simplification or modeling could still help.",
+        "We support you in gaining autonomy and time via automation.",
+        "Frees up strategic time and improves financial control."
+      ],
+      9 => [
+        "Your financial tracking is clear, structured, and decision-oriented. Only minor visual tweaks remain.",
+        "TreeConnect can review your tools to improve clarity and alignment with your goals.",
+        "Strengthens strategy and highlights internal rigor."
+      ],
+      10 => [
+        "Your financial management is fluid, autonomous, and collaborative. It fully supports strategic goals.",
+        "We offer benchmarking or value tools to showcase your approach.",
+        "Elevates your vision and highlights entrepreneurial excellence."
+      ]
+    ];
+
+    if (array_key_exists($score, $entries)):
+      $content = $entries[$score];
+    ?>
+    <div class="bg-[#3F6893] border border-white rounded-xl p-6 space-y-4">
+      <h3 class="text-xl font-semibold"><?= $title ?></h3>
+      <p><strong>Analysis:</strong> <?= $content[0] ?></p>
+      <p><strong>Support:</strong> <?= $content[1] ?></p>
+      <p><strong>Impact:</strong> <?= $content[2] ?></p>
+    </div>
+    <?php else: ?>
+    <div class="bg-red-500 text-white p-4 rounded">Unrecognized score.</div>
+    <?php endif; ?>
+  </div>
+<?php endif; ?>
+<br>
+<?php if (isset($_SESSION['marketing_score'])): ?>
+  <div class="md:hidden block space-y-4 text-white">
+    <?php
+    $score = $_SESSION['marketing_score'];
+    $title = "Marketing & Communication";
+
+    $entries = [
+      0 => [
+        "The topic is barely addressed, with few visible or clear actions so far.",
+        "We help identify priority actions to clarify positioning and structure initial communications.",
+        "Lays the foundation for useful and accessible communication."
+      ],
+      1 => [
+        "The topic is barely addressed, with few visible or clear actions so far.",
+        "We help identify priority actions to clarify positioning and structure initial communications.",
+        "Lays the foundation for useful and accessible communication."
+      ],
+      2 => [
+        "Some materials exist, but the image is inconsistent or misaligned with the project.",
+        "TreeConnect helps define a common messaging and visual base with your stakeholders.",
+        "Improves understanding of the project and encourages buy-in."
+      ],
+      3 => [
+        "Messages are structured, but image and channels are not clearly defined.",
+        "We support the creation of a communication charter and suitable distribution strategy.",
+        "Reinforces coherence and impact of your actions."
+      ],
+      4 => [
+        "Coherent materials exist, but the distribution strategy or channels are limited.",
+        "TreeConnect can offer tools and one-off support to enhance or expand your strategy.",
+        "Improves visibility and influence."
+      ],
+      5 => [
+        "Your communication is clear, with a stable and recognized identity.",
+        "We help define an editorial line and document best practices in a toolkit.",
+        "Facilitates internal and external adoption."
+      ],
+      6 => [
+        "Communication is organized and monitored. Some content may need optimization.",
+        "We can enrich your tools with templates, models, or editorial support.",
+        "Saves time and sharpens message relevance."
+      ],
+      7 => [
+        "Your strategy is implemented and well deployed. The team is gaining autonomy.",
+        "TreeConnect can advise on formats or how to integrate content across platforms.",
+        "Enhances clarity, energy, and impact."
+      ],
+      8 => [
+        "Your strategy is structured and dynamic, with strong messaging.",
+        "We can support you during key moments (launches, campaigns, events) or help transfer know-how to the team.",
+        "Expands the reach and autonomy of your efforts."
+      ],
+      9 => [
+        "Your communication is impactful and well-amplified. It aligns with a growth logic.",
+        "TreeConnect can help you leverage outcomes and amplify momentum.",
+        "Helps your project shine with your audiences and partners."
+      ],
+      10 => [
+        "Your communication is inspiring and a reference in your field.",
+        "We can help capture your best practices or organize awareness events.",
+        "Boosts visibility of your excellence and inspires peers."
+      ]
+    ];
+
+    if (array_key_exists($score, $entries)):
+      $content = $entries[$score];
+    ?>
+    <div class="bg-[#3F6893] border border-white rounded-xl p-6 space-y-4">
+      <h3 class="text-xl font-semibold"><?= $title ?></h3>
+      <p><strong>Analysis:</strong> <?= $content[0] ?></p>
+      <p><strong>Support:</strong> <?= $content[1] ?></p>
+      <p><strong>Impact:</strong> <?= $content[2] ?></p>
+    </div>
+    <?php else: ?>
+    <div class="bg-red-500 text-white p-4 rounded">Unrecognized score.</div>
+    <?php endif; ?>
+  </div>
+<?php endif; ?>
+
+
     <!-- Table  -->
-    <div class="overflow-x-auto">
+    <div class="overflow-x-auto md:block hidden">
   <div class="rounded-2xl overflow-auto border-[1px] border-white">
     <table class="table-auto w-full text-left 2xl:text-lg text-sm">
       <thead class="text-white">

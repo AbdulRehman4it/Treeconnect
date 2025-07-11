@@ -14,7 +14,7 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js"></script>
 
-  <script src="//code.tidio.co/vxiqlrt5ipq4shg4h60brissqd8hj15z.js" async></script>
+  <!-- <script src="//code.tidio.co/vxiqlrt5ipq4shg4h60brissqd8hj15z.js" async></script> -->
 
 <!-- intl-tel-input CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.19/build/css/intlTelInput.css" />
@@ -55,13 +55,13 @@ if (session_status() === PHP_SESSION_NONE) {
 function getCompanyInfo() {
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $companyData = [
-            'companyName' => ['Nom de l’entreprise', $_POST['companyName'] ?? ''],
-            'industry' => ['Secteur d’activité principal', $_POST['industry'] ?? ''],
-            'employees' => ['Nombre de collaborateurs actifs (effectif total)', $_POST['employees'] ?? ''],
-            'founded' => ['Année de création', $_POST['founded'] ?? ''],
-            'location' => ['Localisation', $_POST['location'] ?? ''],
-            'contact' => ['Nom et fonction de la personne répondant à l’audit', $_POST['contact'] ?? ''],
-            'challenge' => ['Quel est aujourd’hui votre principal défi organisationnel ?', $_POST['challenge'] ?? ''],
+           'companyName' => ['Company Name', $_POST['companyName'] ?? ''],
+'industry' => ['Main Business Sector', $_POST['industry'] ?? ''],
+'employees' => ['Number of Active Employees (Total Workforce)', $_POST['employees'] ?? ''],
+'founded' => ['Year of Establishment', $_POST['founded'] ?? ''],
+'location' => ['Location', $_POST['location'] ?? ''],
+'contact' => ['Name and Position of the Person Responding to the Audit', $_POST['contact'] ?? ''],
+'challenge' => ['What is currently your main organizational challenge?', $_POST['challenge'] ?? ''],
         ];
 
         // Store in session
@@ -86,7 +86,7 @@ function getHrsurveyInfo() {
             $answers[$q] = [$response, $score];
         }
 
-        $_SESSION['hr_heading'] = 'Ressources Humaines';
+        $_SESSION['hr_heading'] = 'Human Resources';
         $_SESSION['hr_score'] = $total;
         $_SESSION['hr_answers'] = $answers;
     }
@@ -137,7 +137,7 @@ function getITSurveyInfo() {
             $answers[$q] = [$response, $score];
         }
 
-        $_SESSION['it_heading'] = 'Informatique & Cybersécurité';
+        $_SESSION['it_heading'] = 'IT & Cybersecurity';
         $_SESSION['it_score'] = $total;
         $_SESSION['it_answers'] = $answers;
     }
@@ -163,7 +163,7 @@ function getAccountingSurveyInfo() {
             $answers[$q] = [$response, $score];
         }
 
-        $_SESSION['accounting_heading'] = 'Gestion Financière & Comptabilité';
+        $_SESSION['accounting_heading'] = 'Financial Management & Accounting';
         $_SESSION['accounting_score'] = $total;
         $_SESSION['accounting_answers'] = $answers;
     }

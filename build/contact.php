@@ -26,21 +26,21 @@
                       </label> -->
 
                       <!-- Checkbox -->
-<label class="inline-flex items-center">
+<!-- <label class="inline-flex items-center">
   <input type="checkbox" id="robotCheck" class="form-checkbox checked:bg-transparent h-4 w-4 text-[#D3D3D3]">
   <span class="ml-5 text-white text-sm">Je ne suis pas un robot</span>
-</label>
+</label> -->
 
 <!-- Captcha Animation Box -->
-<div id="captchaBox" class="mt-5 hidden flex items-center gap-4">
+<!-- <div id="captchaBox" class="mt-5 hidden flex items-center gap-4"> -->
   <!-- Spinner -->
-  <div class="w-6 h-6 border-4 border-white border-t-transparent rounded-full animate-spin"></div>
+  <!-- <div class="w-6 h-6 border-4 border-white border-t-transparent rounded-full animate-spin"></div>
   <p class="text-white text-sm">Verifying...</p>
-</div>
+</div> -->
 
 <!-- Success Message -->
-<p id="verifiedMessage" class="hidden text-green-400 mt-4">✔ Ouf! Vous êtes bien humain</p>
-<br>
+<!-- <p id="verifiedMessage" class="hidden text-green-400 mt-4">✔ Ouf! Vous êtes bien humain</p>
+<br> -->
 <!-- Script -->
 <script>
 
@@ -64,6 +64,9 @@
     }
   });
 </script>
+<div class="mt-4" style="transform: scale(0.95); transform-origin: 0;">
+  <div class="g-recaptcha" data-sitekey="6Lfh2X8rAAAAAL-VrgrUkkY77YZXrYcPyMyLleVz"></div>
+</div>
  <input type="submit" name="submit" id="submit" class="mt-10 text-white py-3 px-10 border border-white hover:bg-white hover:text-[#304B68] rounded-full xl:text-lg text-base font-medium">
                   
                 </form>
@@ -179,5 +182,6 @@ experts, qui vous contactera prochainement pour faire le point.
     <script>
       AOS.init();
     </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 </html>
