@@ -34,7 +34,7 @@
     <form method="POST" action="./Administrationsurvey.php">
     <!-- Question 1 -->
     <div class="bg-[#3F6893] p-6 rounded-2xl shadow-2xl xl:mb-12 mb-6">
-      <h2 class="2xl:text-xl md:text-lg text-sm mb-6 text-white">1.	Avez-vous mis en place un processus clair pour le recrutement et l’intégration des nouveaux collaborateurs (fiche de poste, entretiens, accueil) ?</h2>
+      <h2 class="2xl:text-xl md:text-lg text-sm mb-6 text-white">1.	Avez-vous mis en place un processus clair pour le recrutement et l’intégration des nouveaux collaborateurs(fiche de poste, entretiens, accueil)?</h2>
       <div class="flex gap-10 items-center text-white">
         <label class="flex items-center gap-2"><input type="radio" name="aq1" value="Oui" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Oui</span></label>
         <label class="flex items-center gap-2"><input type="radio" name="aq1" value="Partiellement" class="md:w-5 md:h-5 w-4 h-4 accent-[#3F6893]"> <span>Partiellement</span></label>

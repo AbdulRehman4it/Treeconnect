@@ -554,10 +554,10 @@ try {
     $mail->SMTPSecure = "ssl";
     $mail->Port = 465;
 
-    $mail->setFrom('contact@treeconnect.ch', 'Results');
+    $mail->setFrom('contact@treeconnect.ch', 'Treeconnect');
     $userEmail = $_POST['user_email'] ?? 'fallback@example.com';
     $mail->addAddress('contact@treeconnect.ch', 'Client');
-    $mail->addAddress($userEmail, 'Client');
+    $mail->addAddress($userEmail, 'Treeconnect');
     $mail->isHTML(true);
     $mail->Subject = '📝 Results of Your Business Diagnosis';
     $mail->Body = $mailBody;
