@@ -64,9 +64,10 @@
     }
   });
 </script>
-<div class="mt-4" style="transform: scale(0.95); transform-origin: 0;">
+<div class="g-recaptcha" data-sitekey="6Lfa9X8rAAAAAEuyzvow9LOJ3qF29MbZCCTqFNaW"></div>
+<!-- <div class="mt-4" style="transform: scale(0.95); transform-origin: 0;">
   <div class="g-recaptcha" data-sitekey="6Lfh2X8rAAAAAL-VrgrUkkY77YZXrYcPyMyLleVz"></div>
-</div>
+</div> -->
  <input type="submit" name="submit" id="submit" class="mt-10 text-white py-3 px-10 border border-white hover:bg-white hover:text-[#304B68] rounded-full xl:text-lg text-base font-medium">
                   
                 </form>
