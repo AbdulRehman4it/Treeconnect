@@ -182,6 +182,13 @@ experts, qui vous contactera prochainement pour faire le point.
     <script>
       AOS.init();
     </script>
+    <script>
+grecaptcha.ready(function() {
+    grecaptcha.execute('6Lfh2X8rAAAAAL-VrgrUkkY77YZXrYcPyMyLleVz', {action: 'submit'}).then(function(token) {
+        document.getElementById('g-recaptcha-response').value = token;
+    });
+});
+</script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 </html>

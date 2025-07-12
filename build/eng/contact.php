@@ -176,7 +176,13 @@ who will contact you shortly to follow up.
     utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.19/build/js/utils.js"
   });
 </script>
-
+   <script>
+grecaptcha.ready(function() {
+    grecaptcha.execute('6Lfh2X8rAAAAAL-VrgrUkkY77YZXrYcPyMyLleVz', {action: 'submit'}).then(function(token) {
+        document.getElementById('g-recaptcha-response').value = token;
+    });
+});
+</script>
 
     <script src="https://kit.fontawesome.com/a2ada4947c.js" crossorigin="anonymous"></script>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
