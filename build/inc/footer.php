@@ -61,7 +61,7 @@
 </footer>
 
 <!-- Sticky Social Icons with Hover Labels -->
-<div class="fixed bottom-32 lg:right-9 right-5 z-20 flex flex-col items-center space-y-3">
+<div class="fixed bottom-2 lg:right-9 right-5 z-20 flex flex-col items-center space-y-3">
 
   <!-- WhatsApp -->
   <a href="https://api.whatsapp.com/send/?phone=%2B41782335317&text=Bonjour%2C+je+viens+de+visiter+le+site+TreeConnect+et+j%E2%80%99aimerais+en+savoir+plus.&type=phone_number&app_absent=0" target="_blank"
