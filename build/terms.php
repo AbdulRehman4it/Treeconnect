@@ -14,11 +14,11 @@
           <h1 class="2xl:text-4xl lg:text-3xl text-2xl text-white">1. Champ d’application des services
           </h1>
         </div>
-        <div class="w-full">
-          <p class="2xl:text-2xl xl:text-lg text-sm text-white pt-4 2xl:leading-10 xl:leading-7 leading-6" >TreeConnect Sàrl, société de conseil basée en Suisse, propose des prestations
+        <div class="w-full ">
+          <p class="2xl:text-2xl xl:text-lg text-sm text-white pt-4 2xl:leading-10 xl:leading-7 leading-6 text-justify md:text-left">TreeConnect Sàrl, société de conseil basée en Suisse, propose des prestations
             personnalisées pour accompagner les petites et moyennes entreprises (PME) dans
-            leurs besoins stratégiques et opérationnels. <br>
-            Nos domaines d’intervention couvrent notamment : <br>
+            leurs besoins stratégiques et opérationnels. <br><br class="block md:hidden">
+            Nos domaines d’intervention couvrent notamment : <br><br class="block md:hidden">
             - La planification d’entreprise et le soutien au lancement
             <br>
             - Les ressources humaines et la gestion des talents <br>
@@ -28,7 +28,7 @@
             - L’optimisation des processus comptables et financiers <br>
             - Le conseil en marketing et communication <br>
           </p>
-          <p class="pt-4 2xl:text-2xl xl:text-lg text-sm text-white 2xl:leading-10 xl:leading-7 leading-6">
+          <p class="pt-4 2xl:text-2xl xl:text-lg text-sm text-white 2xl:leading-10 xl:leading-7 leading-6 text-justify md:text-left">
             Ces services peuvent inclure du conseil stratégique, la mise en place opérationnelle, la
 structuration de processus, le pilotage de projets ou des solutions externalisées,
 adaptées aux objectifs et à la maturité de chaque client.
@@ -43,9 +43,9 @@ adaptées aux objectifs et à la maturité de chaque client.
           <h1 class="2xl:text-4xl lg:text-3xl text-2xl text-white">2. Modalités d’engagement</h1>
         </div>
         <div class="w-full">
-          <p class="2xl:text-2xl xl:text-lg text-sm text-white pt-4 2xl:leading-10 xl:leading-7 leading-6" >Chaque mission fait l’objet d’un contrat spécifique entre TreeConnect et le client,
+          <p class="2xl:text-2xl xl:text-lg text-sm text-white pt-4 2xl:leading-10 xl:leading-7 leading-6 text-justify md:text-left" >Chaque mission fait l’objet d’un contrat spécifique entre TreeConnect et le client,
             précisant le périmètre des prestations, les délais, les responsabilités, ainsi que les
-            honoraires applicables. <br>Les présentes conditions générales constituent une base de référence et sont
+            honoraires applicables. <br> <br class="block md:hidden">Les présentes conditions générales constituent une base de référence et sont
             complétées ou remplacées, le cas échéant, par les dispositions du contrat signé.
           </p>
         </div>
@@ -57,7 +57,7 @@ adaptées aux objectifs et à la maturité de chaque client.
           </h1>
         </div>
         <div class="w-full">
-          <p class="2xl:text-2xl xl:text-lg text-sm text-white pt-4 2xl:leading-10 xl:leading-7 leading-6" >TreeConnect est à la disposition de ses clients du lundi au vendredi, de 08h00 à 18h00
+          <p class="2xl:text-2xl xl:text-lg text-sm text-white pt-4 2xl:leading-10 xl:leading-7 leading-6 text-justify md:text-left" >TreeConnect est à la disposition de ses clients du lundi au vendredi, de 08h00 à 18h00
             (heure suisse), hors jours fériés.
             Les modalités de communication (e-mail, téléphone, outils sécurisés) sont définies
             dans le contrat établi avec chaque client. Nous nous engageons à répondre à toute
@@ -73,7 +73,7 @@ adaptées aux objectifs et à la maturité de chaque client.
           </h1>
         </div>
         <div class="w-full">
-          <p class="2xl:text-2xl xl:text-lg text-sm text-white pt-4 2xl:leading-10 xl:leading-7 leading-6" >Toutes les informations et données transmises par le client sont traitées avec la plus
+          <p class="2xl:text-2xl xl:text-lg text-sm text-white pt-4 2xl:leading-10 xl:leading-7 leading-6 text-justify md:text-left" >Toutes les informations et données transmises par le client sont traitées avec la plus
             stricte confidentialité et ne sont jamais communiquées à des tiers sans consentement
             écrit préalable, sauf obligation légale.
             TreeConnect respecte la <span class="font-bold">Loi fédérale sur la protection des données (nLPD)</span> et
@@ -90,7 +90,7 @@ adaptées aux objectifs et à la maturité de chaque client.
           <h1 class="2xl:text-4xl lg:text-3xl text-2xl text-white">5. Propriété intellectuelle</h1>
         </div>
         <div class="w-full">
-          <p class="2xl:text-2xl xl:text-lg text-sm text-white pt-4 2xl:leading-10 xl:leading-7 leading-6" >Sauf disposition contraire figurant dans un accord écrit, TreeConnect conserve la pleine
+          <p class="2xl:text-2xl xl:text-lg text-sm text-white pt-4 2xl:leading-10 xl:leading-7 leading-6 text-justify md:text-left" >Sauf disposition contraire figurant dans un accord écrit, TreeConnect conserve la pleine
             propriété de toutes les méthodologies, structures, modèles ou supports développés ou
             utilisés dans le cadre de ses prestations.
             Le client bénéficie d’un droit d’usage interne, non exclusif et non transférable, et
@@ -105,7 +105,7 @@ adaptées aux objectifs et à la maturité de chaque client.
           <h1 class="2xl:text-4xl lg:text-3xl text-2xl text-white">6. Responsabilité</h1>
         </div>
         <div class="w-full">
-          <p class="2xl:text-2xl xl:text-lg text-sm text-white pt-4 2xl:leading-10 xl:leading-7 leading-6" >TreeConnect fournit ses services de conseil en s’appuyant sur son expertise
+          <p class="2xl:text-2xl xl:text-lg text-sm text-white pt-4 2xl:leading-10 xl:leading-7 leading-6 text-justify md:text-left" >TreeConnect fournit ses services de conseil en s’appuyant sur son expertise
             professionnelle et en tenant compte du contexte spécifique de chaque client.
             Les recommandations fournies reposent sur les meilleures pratiques, mais le client
             demeure seul responsable de leurs décisions et de leur mise en œuvre.
@@ -122,7 +122,7 @@ adaptées aux objectifs et à la maturité de chaque client.
           <h1 class="2xl:text-4xl lg:text-3xl text-2xl text-white">7. Droit applicable et for juridique</h1>
         </div>
         <div class="w-full">
-          <p class="2xl:text-2xl xl:text-lg text-sm text-white pt-4 2xl:leading-10 xl:leading-7 leading-6" >Les présentes conditions générales, ainsi que tous les contrats conclus avec
+          <p class="2xl:text-2xl xl:text-lg text-sm text-white pt-4 2xl:leading-10 xl:leading-7 leading-6 text-justify md:text-left" >Les présentes conditions générales, ainsi que tous les contrats conclus avec
             TreeConnect, sont régis par le droit suisse.
             Tout litige relatif à la relation contractuelle relève de la compétence exclusive des
             tribunaux de Genève, sous réserve d’un recours au Tribunal fédéral.
@@ -137,18 +137,17 @@ adaptées aux objectifs et à la maturité de chaque client.
           <h1 class="2xl:text-4xl lg:text-3xl text-2xl text-white">8. Contact</h1>
         </div>
         <div class="w-full">
-          <p class="2xl:text-2xl xl:text-lg text-sm text-white pt-4 2xl:leading-10 xl:leading-7 leading-6" >TreeConnect Sàrl <br>
+          <p class="2xl:text-2xl xl:text-lg text-sm text-white pt-4 2xl:leading-10 xl:leading-7 leading-6 text-justify md:text-left " >TreeConnect Sàrl <br>
             Boulevard Georges-Favon 14, 1204 Genève<br>
             
-            <i class="fa-solid fa-envelope"></i>&nbsp;  Email: <a href="" class="hover:underline">contact@treeconnect.ch</a><br>
-       
+            <!-- <i class="fa-solid fa-envelope"></i>&nbsp;  Email: <a href="" class="hover:underline">contact@treeconnect.ch</a><br>
+        -->
             <i class="fa-solid fa-clock"></i>&nbsp;  Du lundi au vendredi, de 08h00 à 18h00 (CET)<br>
           </p>
          
         </div>
       </div>
   </section>
-6
 
 <!-- footer  -->
     <?php include_once './inc/footer.php';?>
