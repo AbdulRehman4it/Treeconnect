@@ -860,6 +860,170 @@ $scores = [
 <?php endif; ?>
 
 
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#f4f4f4" style="color: black !important;">
+    <tr>
+      <td align="center">
+        <table width="600" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" style="margin:20px auto; border-radius:8px; overflow:hidden;">
+          <!-- Header -->
+          <tr>
+            <td align="center" style="padding:30px 20px 10px 20px; background-color:#1f2e4d;">
+              <img src="./" alt="TreeConnect" width="150" height="50" style="display:block; margin-bottom:15px;">
+              <h1 style="margin:0; font-size:22px; color:#ffffff;">Résultats du Diagnostic de votre entreprise</h1>
+            </td>
+          </tr>
+
+          <!-- Données entreprise -->
+          <tr>
+            <td style="padding:30px 20px 10px 20px;">
+              <h2 style="font-size:18px; color:#1f2e4d; margin-bottom:10px;">Données de l’entreprise</h2>
+              <table width="100%" cellpadding="8" cellspacing="0" border="0" style="border-collapse:collapse;">
+                <tr style="background-color:#f4f6fa;">
+                  <td style="font-weight:bold; border:1px solid #ddd;">Nom de l’entreprise</td>
+                  <td style="border:1px solid #ddd;">mskdmnka</td>
+                </tr>
+                <tr>
+                  <td style="font-weight:bold; border:1px solid #ddd;">Secteur</td>
+                  <td style="border:1px solid #ddd;">Public sector or Non-profit organization</td>
+                </tr>
+                <tr style="background-color:#f4f6fa;">
+                  <td style="font-weight:bold; border:1px solid #ddd;">Employés</td>
+                  <td style="border:1px solid #ddd;">11 à 20</td>
+                </tr>
+                <tr>
+                  <td style="font-weight:bold; border:1px solid #ddd;">Année de création</td>
+                  <td style="border:1px solid #ddd;">1991</td>
+                </tr>
+                <tr style="background-color:#f4f6fa;">
+                  <td style="font-weight:bold; border:1px solid #ddd;">Localisation</td>
+                  <td style="border:1px solid #ddd;">nsdkankd</td>
+                </tr>
+                <tr>
+                  <td style="font-weight:bold; border:1px solid #ddd;">Personne répondante</td>
+                  <td style="border:1px solid #ddd;">hdsjhsjhdjsahbd</td>
+                </tr>
+                <tr style="background-color:#f4f6fa;">
+                  <td style="font-weight:bold; border:1px solid #ddd;">Défi organisationnel principal</td>
+                  <td style="border:1px solid #ddd;">nsajkndjsandja</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Résumé par domaine -->
+          <tr>
+            <td style="padding:30px 20px;">
+              <h2 style="font-size:18px; color:#1f2e4d; margin-bottom:20px;">Résumé par domaine</h2>
+
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding:15px; background-color:#f9fafc; border:1px solid #ddd; border-radius:8px; margin-bottom:15px;">
+                    <h3 style="margin:0 0 8px 0; font-size:16px; color:#1f2e4d;">Ressources Humaines</h3>
+                    <p style="margin:4px 0;"><strong>Analyse :</strong> Votre gestion RH est structurée, fluide et exemplaire.</p>
+                    <p style="margin:4px 0;"><strong>Accompagnement TreeConnect :</strong> Automatisation des processus RH et suivi clair.</p>
+                    <p style="margin:4px 0;"><strong>Impact :</strong> Gain de temps, meilleure rétention.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:15px; background-color:#ffffff; border:1px solid #ddd; border-radius:8px;">
+                    <h3 style="margin:0 0 8px 0; font-size:16px; color:#1f2e4d;">Administration & Back-Office</h3>
+                    <p style="margin:4px 0;"><strong>Analyse :</strong> Vos processus administratifs sont bien en place.</p>
+                    <p style="margin:4px 0;"><strong>Accompagnement TreeConnect :</strong> Centralisation des documents et simplification des démarches.</p>
+                    <p style="margin:4px 0;"><strong>Impact :</strong> Réduction des erreurs, meilleure visibilité.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:15px; background-color:#f9fafc; border:1px solid #ddd; border-radius:8px;">
+                    <h3 style="margin:0 0 8px 0; font-size:16px; color:#1f2e4d;">IT & Cybersécurité</h3>
+                    <p style="margin:4px 0;"><strong>Analyse :</strong> Vos systèmes IT sont robustes et bien protégés.</p>
+                    <p style="margin:4px 0;"><strong>Accompagnement TreeConnect :</strong> Audit de sécurité et accompagnement stratégique.</p>
+                    <p style="margin:4px 0;"><strong>Impact :</strong> Sécurité renforcée, moins d’interruptions.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:15px; background-color:#ffffff; border:1px solid #ddd; border-radius:8px;">
+                    <h3 style="margin:0 0 8px 0; font-size:16px; color:#1f2e4d;">Finance & Comptabilité</h3>
+                    <p style="margin:4px 0;"><strong>Analyse :</strong> Votre gestion financière est fiable et bien structurée.</p>
+                    <p style="margin:4px 0;"><strong>Accompagnement TreeConnect :</strong> Suivi budgétaire et reporting automatisé.</p>
+                    <p style="margin:4px 0;"><strong>Impact :</strong> Décisions éclairées, vision claire.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:15px; background-color:#f9fafc; border:1px solid #ddd; border-radius:8px;">
+                    <h3 style="margin:0 0 8px 0; font-size:16px; color:#1f2e4d;">Marketing & Communication</h3>
+                    <p style="margin:4px 0;"><strong>Analyse :</strong> Vos actions marketing sont cohérentes et performantes.</p>
+                    <p style="margin:4px 0;"><strong>Accompagnement TreeConnect :</strong> Planification stratégique et suivi des indicateurs clés.</p>
+                    <p style="margin:4px 0;"><strong>Impact :</strong> Visibilité accrue, croissance maîtrisée.</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Scores -->
+          <tr>
+            <td style="padding:30px 20px;">
+              <h2 style="font-size:18px; color:#1f2e4d; margin-bottom:10px;">Scores par domaine</h2>
+              <table width="100%" cellpadding="8" cellspacing="0" border="0" style="border-collapse:collapse;">
+                <tr style="background-color:#1f2e4d; color:#ffffff;">
+                  <th align="left" style="border:1px solid #ddd;">Domaine</th>
+                  <th align="left" style="border:1px solid #ddd;">Question</th>
+                  <th align="left" style="border:1px solid #ddd;">Réponse</th>
+                  <th align="left" style="border:1px solid #ddd;">Score</th>
+                </tr>
+                <tr style="background-color:#f9fafc;">
+                  <td style="border:1px solid #ddd;">Ressources Humaines</td>
+                  <td style="border:1px solid #ddd;">Toutes les questions</td>
+                  <td style="border:1px solid #ddd;">Oui</td>
+                  <td style="border:1px solid #ddd;">10/10</td>
+                </tr>
+                <tr>
+                  <td style="border:1px solid #ddd;">Administration & Back-Office</td>
+                  <td style="border:1px solid #ddd;">Toutes les questions</td>
+                  <td style="border:1px solid #ddd;">Oui</td>
+                  <td style="border:1px solid #ddd;">10/10</td>
+                </tr>
+                <tr style="background-color:#f9fafc;">
+                  <td style="border:1px solid #ddd;">IT & Cybersecurity</td>
+                  <td style="border:1px solid #ddd;">Toutes les questions</td>
+                  <td style="border:1px solid #ddd;">Oui</td>
+                  <td style="border:1px solid #ddd;">10/10</td>
+                </tr>
+                <tr>
+                  <td style="border:1px solid #ddd;">Financial Management & Accounting</td>
+                  <td style="border:1px solid #ddd;">Toutes les questions</td>
+                  <td style="border:1px solid #ddd;">Oui</td>
+                  <td style="border:1px solid #ddd;">10/10</td>
+                </tr>
+                <tr style="background-color:#f9fafc;">
+                  <td style="border:1px solid #ddd;">Marketing & Communication</td>
+                  <td style="border:1px solid #ddd;">Toutes les questions</td>
+                  <td style="border:1px solid #ddd;">Oui</td>
+                  <td style="border:1px solid #ddd;">10/10</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Call to action -->
+          <tr>
+            <td align="center" style="padding:30px 20px;">
+              <a href="mailto:contact@treeconnect.ch" style="background-color:#1f2e4d; color:#ffffff; text-decoration:none; padding:12px 25px; border-radius:5px; font-size:16px; display:inline-block;">Planifier un échange</a>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td align="center" style="font-size:12px; color:#999999; padding:20px;">
+              TreeConnect Sàrl · contact@treeconnect.ch · +41 78 233 53 17<br>
+              <em>Ce message est confidentiel et destiné uniquement à son destinataire. Si vous n’êtes pas le bon destinataire, merci de le supprimer.</em>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+
     <!-- Table  -->
     <div class="overflow-x-auto md:block hidden">
   <div class="rounded-2xl overflow-auto border-[1px] border-white">
