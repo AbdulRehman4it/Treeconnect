@@ -64,7 +64,7 @@
   </a>
 
   <!-- Clendy -->
-  <a href="https://calendly.com/treeconnect" target="_blank"
+  <a href="https://calendly.com/treeconnect?locale=en" target="_blank"
      class="group flex items-center bg-purple-600 hover:bg-purple-700 text-white rounded-full shadow-lg overflow-hidden transition-all duration-300 ease-in-out hover:scale-105">
     <span class="p-3">
       <!-- Clendy Icon (Placeholder Square) -->

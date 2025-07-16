@@ -31,463 +31,491 @@ use PHPMailer\PHPMailer\Exception;
 // ✅ Capture HTML email content
 ob_start();
 ?>
-
 <!-- HTML Email Starts -->
-<div style="font-family: 'Segoe UI', sans-serif; background-color: #f4f6fb; color: #333; padding: 40px; line-height: 1.6;">
-  <?php if (!empty($_SESSION['companyData'])): ?>
-    <h2 style="color: #003366; border-bottom: 2px solid #d1dbe8; padding-bottom: 8px; margin-bottom: 20px;">🗂 Form Submission Data (Company Info)</h2>
-    <table style="width: 100%; border-collapse: collapse; margin-bottom: 40px; font-size: 15px;">
-      <?php foreach ($_SESSION['companyData'] as [$label, $value]): ?>
-        <tr>
-          <td style="background-color: #e8eff7; border: 1px solid #d1dbe8; padding: 12px 16px; font-weight: bold; color: #003366;"><?= htmlspecialchars($label) ?></td>
-          <td style="border: 1px solid #d1dbe8; padding: 12px 16px; background-color: #ffffff;"><?= htmlspecialchars($value) ?></td>
-        </tr>
-      <?php endforeach; ?>
-    </table>
-  <?php endif; ?>
+<div style="font-family: 'Segoe UI', sans-serif; background-color: #3F6893; color: #333; padding: 40px; line-height: 1.6;">
 
-  <table style="width: 100%; border-collapse: collapse; font-size: 14px; color: #333; margin-bottom: 40px;">
-    <thead style="background-color: #e0e8f3; color: #003366;">
-      <tr>
-        <th style="border: 1px solid #d1dbe8; padding: 14px 24px;">Domain</th>
-        <th style="border: 1px solid #d1dbe8; padding: 14px 24px;">Structural Maturity Overview</th>
-        <th style="border: 1px solid #d1dbe8; padding: 14px 24px;">How TreeConnect can support</th>
-        <th style="border: 1px solid #d1dbe8; padding: 14px 24px;">Business Value</th>
-      </tr>
-    </thead>
-    <tbody style="background-color: #ffffff;">
-    <?php
+<!-- Header with Logo and Title -->
+<div style="background-color: #3F6893; border: 1px solid #d1dbe8; border-radius: 12px; padding: 24px 32px; text-align: center; margin-bottom: 40px;">
+  <div style="margin-bottom: 16px;">
+    <img src="https://www.treeconnect.ch/assets/img/logo3.png" alt="Logo" style="width: 140px; height: auto; max-width: 100%; display: block; margin: 0 auto;">
+  </div>
+  <a href="https://treeconnect.fr" target="_blank" style="display: inline-block; background-color: #ffffff; color: #003366; font-size: 14px; font-weight: 600; padding: 10px 24px; border-radius: 8px; text-decoration: none; border: 1px solid #ccc; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+    Contact TreeConnect
+  </a>
+</div>
+<?php if (!empty($_SESSION['companyData'])): ?>
+  <div style="background-color: white; border: 1px solid #d1dbe8; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); padding: 40px 24px; margin-bottom: 40px;">
+    <h2 style="color: #003366; font-size: 18px; font-weight: 600; border-bottom: 2px solid #d1dbe8; padding-bottom: 8px; margin-bottom: 24px;">
+      📊 Form Submission Data (Company Info)
+    </h2>
+
+    <?php foreach ($_SESSION['companyData'] as [$label, $value]): ?>
+      <div style="margin-bottom: 16px; padding: 16px; background-color: #f9fbff; border: 1px solid #e1eaf2; border-radius: 8px;">
+        <span style="display: block; color: #003366; font-weight: 600; margin-bottom: 6px;">
+          <?= htmlspecialchars($label) ?>
+        </span>
+        <span style="color: #4a4a4a;">
+          <?= htmlspecialchars($value) ?>
+        </span>
+      </div>
+    <?php endforeach; ?>
+  </div>
+<?php endif; ?>
+<!-- Pillar Cards (stacked vertically) -->
+<div id="scoreCards" style=" margin-bottom: 40px;">
+  <?php
+  function renderCard($title, $level, $support, $impact) {
+    echo "
+      <div style=\"
+        background-color: #ffffff;
+        border: 1px solid #d1dbe8;
+        border-radius: 12px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        padding: 24px;
+        margin-bottom: 32px;
+      \">
+        <h2 style=\"
+          font-size: 18px;
+          font-weight: 600;
+          color: #003366;
+          margin: 0 0 16px 0;
+        \">$title</h2>
+        <div style=\"
+          font-size: 14px;
+          line-height: 1.6;
+          color: #4a4a4a;
+        \">
+          <div style=\"
+            margin-bottom: 16px;
+            background-color: #f9fbff;
+            border: 1px solid #e1eaf2;
+            border-radius: 8px;
+            padding: 16px;
+          \">
+            <strong style=\"color: #003366;\">Maturity level analysis:</strong><br>$level
+          </div>
+          <div style=\"
+            margin-bottom: 16px;
+            background-color: #f9fbff;
+            border: 1px solid #e1eaf2;
+            border-radius: 8px;
+            padding: 16px;
+          \">
+            <strong style=\"color: #003366;\">Support possible by TreeConnect:</strong><br>$support
+          </div>
+          <div style=\"
+            background-color: #f9fbff;
+            border: 1px solid #e1eaf2;
+            border-radius: 8px;
+            padding: 16px;
+          \">
+            <strong style=\"color: #003366;\">Impact on your organization:</strong><br>$impact
+          </div>
+        </div>
+      </div>
+    ";
+  }
 if (isset($_SESSION['hr_score'])) {
-    echo "<tr>";
-    $commonStyle = "border: 1px solid white; padding: 12px 32px;";
-
     switch ($_SESSION['hr_score']) {
         case 0:
-            echo "<td style='$commonStyle'>Human Resources</td>";
-            echo "<td style='$commonStyle'>Les démarches RH ne sont pas encore formalisées à ce jour. Ce pilier représente une belle opportunité de structuration.</td>";
-            echo "<td style='$commonStyle'>TreeConnect peut vous aider à poser les premières briques d’un socle RH simple et adapté à votre structure.</td>";
-            echo "<td style='$commonStyle; border-right: 0;'>Clarifie les rôles, sécurise la conformité, et pose les bases pour une équipe stable.</td>";
-            break;
         case 1:
-            echo "<td style='$commonStyle'>Human Resources</td>";
-            echo "<td style='$commonStyle'>HR processes are not yet formalized. This pillar represents a good opportunity for structuring.</td>";
-            echo "<td style='$commonStyle'>TreeConnect can help you lay the groundwork for a simple, tailored HR foundation.</td>";
-            echo "<td style='$commonStyle; border-right: 0;'>Clarifies roles, ensures compliance, and builds the foundation for a stable team.</td>";
+            renderCard("Human Resources",
+                "HR processes are not yet formalized at this stage. This pillar represents a great opportunity for structuring.",
+                "TreeConnect can help you lay the first bricks of a simple HR foundation tailored to your structure.",
+                "Clarifies roles, ensures compliance, and lays the groundwork for a stable team.");
             break;
         case 2:
-            echo "<td style='$commonStyle'>Human Resources</td>";
-            echo "<td style='$commonStyle'>One or two HR elements are present on a case-by-case basis, but overall the approach remains informal or fragmented.</td>";
-            echo "<td style='$commonStyle'>We can work with you to identify and prioritize key HR areas and select tools adapted to small teams.</td>";
-            echo "<td style='$commonStyle; border-right: 0;'>Increases peace of mind on legal obligations and supports future team growth.</td>";
+            renderCard("Human Resources",
+                "One or two HR aspects are present sporadically, but overall it remains informal or scattered.",
+                "We can identify together the HR priorities to structure quickly, with tools adapted to small teams.",
+                "Provides peace of mind on basic obligations and prepares for the arrival of new team members.");
             break;
         case 3:
-            echo "<td style='$commonStyle'>Human Resources</td>";
-            echo "<td style='$commonStyle'>Some HR components exist (e.g., contracts or reviews), but there is no overall logic behind them yet.</td>";
-            echo "<td style='$commonStyle'>TreeConnect supports you in aligning your existing practices into a coherent, replicable HR process.</td>";
-            echo "<td style='$commonStyle; border-right: 0;'>Supports smooth HR management, even during transitions or rapid growth.</td>";
+            renderCard("Human Resources",
+                "Some HR elements exist (e.g., contracts or interviews), but without an overarching logic.",
+                "TreeConnect supports you in organizing your HR practices around a coherent and repeatable process.",
+                "Promotes smooth management, even in cases of turnover or growth.");
             break;
         case 4:
-            echo "<td style='$commonStyle'>Human Resources</td>";
-            echo "<td style='$commonStyle'>Structuring efforts have begun, but key aspects such as onboarding or performance reviews lack consistency.</td>";
-            echo "<td style='$commonStyle'>We assist you in formalizing easy-to-use, reproducible HR processes (job descriptions, feedback templates, onboarding flows).</td>";
-            echo "<td style='$commonStyle; border-right: 0;'>Enhances team cohesion and promotes daily engagement.</td>";
+            renderCard("Human Resources",
+                "Structuring efforts are underway, but key aspects like onboarding or follow-up lack regularity.",
+                "We help you formalize simple and repeatable processes (job descriptions, employee follow-up, interview templates).",
+                "Improves team cohesion and supports daily engagement.");
             break;
         case 5:
-            echo "<td style='$commonStyle'>Human Resources</td>";
-            echo "<td style='$commonStyle'>The HR foundation is in place with several working elements. Some areas can be optimized.</td>";
-            echo "<td style='$commonStyle'>TreeConnect offers lightweight, automated HR tools to help you centralize and save time.</td>";
-            echo "<td style='$commonStyle; border-right: 0;'>Streamlines HR operations and minimizes administrative errors.</td>";
+            renderCard("Human Resources",
+                "HR foundations are in place with several functional elements. Some optimizations are possible.",
+                "TreeConnect can offer you light and automated HR tools to centralize and save time.",
+                "Makes HR management smoother and reduces administrative errors.");
             break;
         case 6:
-            echo "<td style='$commonStyle'>Human Resources</td>";
-            echo "<td style='$commonStyle'>Your HR approach is generally implemented. Harmonization and partial digitalization could enhance efficiency.</td>";
-            echo "<td style='$commonStyle'>We guide you in transitioning to integrated tools for tracking time off, evaluations, and contracts.</td>";
-            echo "<td style='$commonStyle; border-right: 0;'>Improves transparency and professionalizes internal processes.</td>";
+            renderCard("Human Resources",
+                "Your HR approach is largely established. Partial harmonization and digitization could enhance its efficiency.",
+                "We support the transition to integrated tools for tracking, absences, or interviews.",
+                "Strengthens transparency and professionalizes internal management.");
             break;
         case 7:
-            echo "<td style='$commonStyle'>Human Resources</td>";
-            echo "<td style='$commonStyle'>HR practices are clearly defined and visible. A few rituals can still be systematized.</td>";
-            echo "<td style='$commonStyle'>TreeConnect helps you structure regular feedback and define transparent compensation guidelines.</td>";
-            echo "<td style='$commonStyle; border-right: 0;'>Encourages employee retention and accountability.</td>";
+            renderCard("Human Resources",
+                "HR practices are well established, with visible organization. Some rituals could still be systematized.",
+                "TreeConnect can help you structure regular feedback or define clearer compensation grids.",
+                "Fosters team retention and accountability.");
             break;
         case 8:
-            echo "<td style='$commonStyle'>Human Resources</td>";
-            echo "<td style='$commonStyle'>HR management is well under control and aligned with your needs. Minor improvements can enhance agility.</td>";
-            echo "<td style='$commonStyle'>We offer strategic HR management tools (talent tracking, workforce forecasting, etc.).</td>";
-            echo "<td style='$commonStyle; border-right: 0;'>Boosts foresight and supports long-term development.</td>";
+            renderCard("Human Resources",
+                "HR management is well controlled and suited to your needs. Minor improvements can increase agility.",
+                "We offer you more strategic HR management tools (needs forecasting, talent tracking).",
+                "Increases projection capacity and supports long-term development.");
             break;
         case 9:
-            echo "<td style='$commonStyle'>Human Resources</td>";
-            echo "<td style='$commonStyle'>You have a solid, well-integrated HR system. Only minor adjustments are needed to reach excellence.</td>";
-            echo "<td style='$commonStyle'>TreeConnect complements your existing setup with employer branding or culture development support.</td>";
-            echo "<td style='$commonStyle; border-right: 0;'>Strengthens your HR positioning and employer appeal.</td>";
+            renderCard("Human Resources",
+                "You have a solid, clear, and well-integrated HR system. Only a few adjustments remain to reach excellence.",
+                "TreeConnect can enhance your approach with advice on employer branding or company culture.",
+                "Highlights your attractiveness and strengthens your HR positioning.");
             break;
         case 10:
-            echo "<td style='$commonStyle'>Human Resources</td>";
-            echo "<td style='$commonStyle'>Your HR system is structured, smooth, and exemplary. It provides a strong foundation for stability and growth.</td>";
-            echo "<td style='$commonStyle'>TreeConnect can support your strategic HR reflection through benchmarks and advanced tools.</td>";
-            echo "<td style='$commonStyle; border-right: 0;'>Positions you to attract, engage, and grow the right talent.</td>";
+            renderCard("Human Resources",
+                "Your HR management is structured, smooth, and exemplary. It is a strong foundation for stability and growth.",
+                "TreeConnect can support your strategic HR thinking through benchmarks or advanced tools.",
+                "You are well positioned to attract, engage, and develop the right talent.");
             break;
         default:
-            echo "<td colspan='3' style='$commonStyle'>Score not recognized.</td>";
+            renderCard("Human Resources", "Unrecognized score.", "", "");
             break;
     }
-
-    echo "</tr>";
 }
-?>
 
-<?php
 if (isset($_SESSION['admin_score'])) {
-    echo "<tr>";
-    $baseStyle = "border: 1px solid white; padding: 8px 32px;";
-    $lastColStyle = "border-right: none; border: 1px solid white; padding: 8px 32px;";
     switch ($_SESSION['admin_score']) {
         case 0:
-            echo "<td style='$baseStyle'>Administration & Back-Office</td>";
-            echo "<td style='$baseStyle'>One or two administrative tools are used occasionally, but everything remains informal or scattered.</td>";
-            echo "<td style='$baseStyle'>We can identify structuring priorities together with tools tailored to small teams.</td>";
-            echo "<td style='$lastColStyle'>Gains peace of mind on basic obligations and prepares for the arrival of new employees.</td>";
+            renderCard("Administration & Back-Office",
+                "One or two administrative tools are used occasionally, but overall it remains informal or scattered.",
+                "We can work together to identify the priorities to structure with tools adapted to small teams.",
+                "Brings peace of mind on basic obligations and prepares for the arrival of new team members.");
             break;
         case 1:
-            echo "<td style='$baseStyle'>Administration & Back-Office</td>";
-            echo "<td style='$baseStyle'>Administrative processes are not yet formalized. This is an area that can be gradually structured.</td>";
-            echo "<td style='$baseStyle'>TreeConnect can help you map out key functions and establish the foundation for simple procedures.</td>";
-            echo "<td style='$lastColStyle'>Establishes a clear foundation and avoids critical oversights.</td>";
+            renderCard("Administration & Back-Office",
+                "Administrative processes are not yet formalized. This is an area that can be progressively structured.",
+                "TreeConnect can help you map key functions and lay the groundwork for simple procedures.",
+                "Establishes a clear foundation and avoids critical oversights.");
             break;
         case 2:
-            echo "<td style='$baseStyle'>Administration & Back-Office</td>";
-            echo "<td style='$baseStyle'>Some documents or tasks are tracked occasionally, but without a clear or shared method.</td>";
-            echo "<td style='$baseStyle'>We can offer templates tailored to your business to gradually structure your administrative flows.</td>";
-            echo "<td style='$lastColStyle'>Helps structure daily operations to save time and distribute responsibilities more effectively.</td>";
+            renderCard("Administration & Back-Office",
+                "Some documents or tasks are tracked occasionally, without a clear or shared method.",
+                "We can offer templates tailored to your activity to gradually structure your administrative flows.",
+                "Helps organize daily operations to save time and better distribute responsibilities.");
             break;
         case 3:
-            echo "<td style='$baseStyle'>Administration & Back-Office</td>";
-            echo "<td style='$baseStyle'>Certain processes exist, but they are handled in isolation, often by a single person.</td>";
-            echo "<td style='$baseStyle'>TreeConnect supports you in formalizing practices and ensuring task continuity even during staff absences.</td>";
-            echo "<td style='$lastColStyle'>Strengthens organizational resilience and reduces key-person dependencies.</td>";
+            renderCard("Administration & Back-Office",
+                "Some processes exist but are handled in isolation, often by just one person.",
+                "TreeConnect supports you in formalizing practices to ensure task continuity even in case of absence.",
+                "Strengthens organizational resilience and reduces reliance on key individuals.");
             break;
         case 4:
-            echo "<td style='$baseStyle'>Administration & Back-Office</td>";
-            echo "<td style='$baseStyle'>Basic organization is present but still relies more on habits than written procedures.</td>";
-            echo "<td style='$baseStyle'>We assist in translating your routines into simple procedures, with basic digital tooling.</td>";
-            echo "<td style='$lastColStyle'>Stabilizes administrative activity and eases the onboarding of new team members.</td>";
+            renderCard("Administration & Back-Office",
+                "A basic organization is in place but still relies more on habits than written procedures.",
+                "We help you formalize your routines into simple procedures, with basic digital tools.",
+                "Stabilizes administrative activity and makes it easier to onboard new team members.");
             break;
         case 5:
-            echo "<td style='$baseStyle'>Administration & Back-Office</td>";
-            echo "<td style='$baseStyle'>Structuring efforts have begun, but their application remains inconsistent.</td>";
-            echo "<td style='$baseStyle'>TreeConnect provides accessible tools to reinforce your practices and make them more consistent.</td>";
-            echo "<td style='$lastColStyle'>Improves consistency in tracking and ensures better traceability of information.</td>";
+            renderCard("Administration & Back-Office",
+                "Structuring efforts are underway, but their application remains inconsistent.",
+                "TreeConnect provides accessible tools to strengthen and harmonize your practices.",
+                "Improves tracking consistency and ensures better traceability of information.");
             break;
         case 6:
-            echo "<td style='$baseStyle'>Administration & Back-Office</td>";
-            echo "<td style='$baseStyle'>Several procedures are in place and followed, with some digital tools supporting them.</td>";
-            echo "<td style='$baseStyle'>We support the integration of simple tools to visualize, track, and automate certain tasks.</td>";
-            echo "<td style='$lastColStyle'>Saves time and reduces repetitive or manual tasks.</td>";
+            renderCard("Administration & Back-Office",
+                "Several procedures are in place and followed, with partially integrated digital tools.",
+                "We help you integrate simple tools to visualize, track, and automate certain tasks.",
+                "Saves time and reduces repetitive or manual tasks.");
             break;
         case 7:
-            echo "<td style='$baseStyle'>Administration & Back-Office</td>";
-            echo "<td style='$baseStyle'>Administrative organization is well defined but could benefit from better centralization or automation.</td>";
-            echo "<td style='$baseStyle'>TreeConnect helps centralize your information and create shared, up-to-date references.</td>";
-            echo "<td style='$lastColStyle'>Facilitates information sharing and minimizes internal friction.</td>";
+            renderCard("Administration & Back-Office",
+                "Administrative organization is well defined but could be better centralized or automated.",
+                "TreeConnect helps you centralize information and create up-to-date shared repositories.",
+                "Facilitates information sharing and reduces internal friction.");
             break;
         case 8:
-            echo "<td style='$baseStyle'>Administration & Back-Office</td>";
-            echo "<td style='$baseStyle'>Procedures are documented, tools are in place, and information is well shared.</td>";
-            echo "<td style='$baseStyle'>We assist in consolidating your digital tools and streamlining validation and archiving processes.</td>";
-            echo "<td style='$lastColStyle'>Streamlines collaboration and provides visibility over administrative progress.</td>";
+            renderCard("Administration & Back-Office",
+                "Procedures are documented, tools are in place, and information is well shared.",
+                "We help you consolidate your digital tools and streamline validation and archiving processes.",
+                "Improves collaboration and provides visibility into administrative progress.");
             break;
         case 9:
-            echo "<td style='$baseStyle'>Administration & Back-Office</td>";
-            echo "<td style='$baseStyle'>Administration is smooth, proactive, and not overly dependent on a single individual.</td>";
-            echo "<td style='$baseStyle'>TreeConnect helps you maintain this level of efficiency through team changes or growth.</td>";
-            echo "<td style='$lastColStyle'>Frees up the team to focus on higher value tasks.</td>";
+            renderCard("Administration & Back-Office",
+                "Administration is smooth, proactive, and not overly dependent on one person.",
+                "TreeConnect helps you maintain this level of efficiency during team changes or growth.",
+                "Frees up time to focus on higher-value tasks.");
             break;
         case 10:
-            echo "<td style='$baseStyle'>Administration & Back-Office</td>";
-            echo "<td style='$baseStyle'>Administrative organization is complete, clear, and secure. It directly supports overall performance.</td>";
-            echo "<td style='$baseStyle'>We enhance your current system and can suggest additions to automate low-value tasks.</td>";
-            echo "<td style='$lastColStyle'>Supports operational continuity and efficient business management.</td>";
+            renderCard("Administration & Back-Office",
+                "Administrative organization is complete, clear, and secure. It directly supports overall performance.",
+                "We highlight your current system and suggest ways to automate low-value tasks.",
+                "Supports operational continuity and effective business management.");
             break;
         default:
-            echo "<td colspan='4' style='$baseStyle'>Score not recognized.</td>";
+            renderCard("Administration & Back-Office", "Unrecognized score.", "", "");
             break;
     }
-    echo "</tr>";
 }
-?>
-<?php
+
 if (isset($_SESSION['it_score'])) {
-    echo "<tr>";
-    $baseStyle = "border: 1px solid white; padding: 8px 32px;";
-    $lastColStyle = "border-right: none; border: 1px solid white; padding: 8px 32px;";
-    
     switch ($_SESSION['it_score']) {
         case 0:
-            echo "<td style='$baseStyle'>IT & Cybersecurity</td>";
-            echo "<td style='$baseStyle'>One or two IT tools are used occasionally, but everything remains informal or scattered.</td>";
-            echo "<td style='$baseStyle'>We can identify digital priorities to quickly structure, using tools tailored to small teams.</td>";
-            echo "<td style='$lastColStyle'>Gains peace of mind for basic usage and prepares for the arrival of new employees.</td>";
+            renderCard("IT & Cybersecurity",
+                "One or two digital tools are used occasionally, but everything remains informal or scattered.",
+                "We can identify digital priorities to structure quickly, using tools adapted for small teams.",
+                "Provides peace of mind for basic usage and prepares for the arrival of new team members.");
             break;
         case 1:
-            echo "<td style='$baseStyle'>IT & Cybersecurity</td>";
-            echo "<td style='$baseStyle'>Digital tools are used occasionally, without real structure or security measures.</td>";
-            echo "<td style='$baseStyle'>TreeConnect can help you assess your IT setup and digital tools.</td>";
-            echo "<td style='$lastColStyle'>Lays a clear and reliable foundation for everyday digital usage.</td>";
+            renderCard("IT & Cybersecurity",
+                "Digital tools are used occasionally, without real structure or security measures.",
+                "TreeConnect can help you assess your IT setup and digital tools.",
+                "Lays a clear and reliable foundation for daily digital usage.");
             break;
         case 2:
-            echo "<td style='$baseStyle'>IT & Cybersecurity</td>";
-            echo "<td style='$baseStyle'>A basic IT environment exists but is poorly maintained or inconsistent.</td>";
-            echo "<td style='$baseStyle'>We assist in building a coherent and scalable digital environment.</td>";
-            echo "<td style='$lastColStyle'>Supports a more structured and secure work environment.</td>";
+            renderCard("IT & Cybersecurity",
+                "A basic IT environment exists but is poorly maintained or inconsistent.",
+                "We help you build a coherent and scalable digital environment.",
+                "Supports a more structured and secure working framework.");
             break;
         case 3:
-            echo "<td style='$baseStyle'>IT & Cybersecurity</td>";
-            echo "<td style='$baseStyle'>Digital practices are in place, but their reliability and coherence need improvement.</td>";
-            echo "<td style='$baseStyle'>TreeConnect offers simple solutions to secure, centralize, and evolve your digital system.</td>";
-            echo "<td style='$lastColStyle'>Reduces errors, information loss, and IT-related interruptions.</td>";
+            renderCard("IT & Cybersecurity",
+                "Digital practices are in place, but their reliability and consistency need to be strengthened.",
+                "TreeConnect offers simple solutions to secure, centralize, and evolve your digital system.",
+                "Reduces errors, information loss, and IT-related interruptions.");
             break;
         case 4:
-            echo "<td style='$baseStyle'>IT & Cybersecurity</td>";
-            echo "<td style='$baseStyle'>The IT infrastructure is functional but relies on habits or unintegrated tools.</td>";
-            echo "<td style='$baseStyle'>We help implement collaborative tools and shared usage policies.</td>";
-            echo "<td style='$lastColStyle'>Improves team efficiency and operational continuity.</td>";
+            renderCard("IT & Cybersecurity",
+                "The IT infrastructure is functional but relies on habits or non-integrated tools.",
+                "We help you implement collaborative tools and shared usage rules.",
+                "Improves team efficiency and operational continuity.");
             break;
         case 5:
-            echo "<td style='$baseStyle'>IT & Cybersecurity</td>";
-            echo "<td style='$baseStyle'>Digital tools and security practices are present, but their usage is inconsistent.</td>";
-            echo "<td style='$baseStyle'>TreeConnect can support you in selecting and deploying tools suited to your operations.</td>";
-            echo "<td style='$lastColStyle'>Limits cybersecurity risks and facilitates internal operations.</td>";
+            renderCard("IT & Cybersecurity",
+                "Digital tools and security practices are present, but their use remains irregular.",
+                "TreeConnect can assist you in choosing and deploying tools suited to your activities.",
+                "Limits cybersecurity risks and facilitates internal operations.");
             break;
         case 6:
-            echo "<td style='$baseStyle'>IT & Cybersecurity</td>";
-            echo "<td style='$baseStyle'>The IT environment is generally stable with some early consolidation and documentation.</td>";
-            echo "<td style='$baseStyle'>We strengthen your cybersecurity practices and internal technical documentation.</td>";
-            echo "<td style='$lastColStyle'>Enhances system stability and team proficiency with digital tools.</td>";
+            renderCard("IT & Cybersecurity",
+                "The IT environment is generally stable, with some structuring and documentation beginning.",
+                "We strengthen your cybersecurity practices and internal technical documentation.",
+                "Improves system stability and team ease with digital tools.");
             break;
         case 7:
-            echo "<td style='$baseStyle'>IT & Cybersecurity</td>";
-            echo "<td style='$baseStyle'>The IT setup is well structured and meets most daily needs.</td>";
-            echo "<td style='$baseStyle'>TreeConnect provides robust solutions to maintain a smooth and secure IT system.</td>";
-            echo "<td style='$lastColStyle'>Improves overall productivity and organizational security.</td>";
+            renderCard("IT & Cybersecurity",
+                "The IT environment is well structured and covers most daily needs.",
+                "TreeConnect offers robust solutions to maintain a smooth and secure system.",
+                "Improves overall productivity and organizational security.");
             break;
         case 8:
-            echo "<td style='$baseStyle'>IT & Cybersecurity</td>";
-            echo "<td style='$baseStyle'>Digital tools are coherent, secure, and suited to internal and client uses.</td>";
-            echo "<td style='$baseStyle'>We optimize your digital infrastructure to ensure scalability and resilience.</td>";
-            echo "<td style='$lastColStyle'>Enables growth and evolution without technical disruption.</td>";
+            renderCard("IT & Cybersecurity",
+                "Digital tools are coherent, secure, and adapted to both internal and external uses.",
+                "We optimize your digital infrastructure to ensure its scalability and resilience.",
+                "Enables growth and evolution without technical disruptions.");
             break;
         case 9:
-            echo "<td style='$baseStyle'>IT & Cybersecurity</td>";
-            echo "<td style='$baseStyle'>Your IT environment is secure and efficient, with regular monitoring practices.</td>";
-            echo "<td style='$baseStyle'>TreeConnect helps implement regular audits and advanced security policies.</td>";
-            echo "<td style='$lastColStyle'>Protects company data and reputation over the long term.</td>";
+            renderCard("IT & Cybersecurity",
+                "Your IT environment is secure and efficient, with regular monitoring practices.",
+                "TreeConnect helps you implement regular audits and advanced security policies.",
+                "Protects company data and long-term reputation.");
             break;
         case 10:
-            echo "<td style='$baseStyle'>IT & Cybersecurity</td>";
-            echo "<td style='$baseStyle'>Your IT system is reliable, forward-thinking, and supports both efficiency and innovation.</td>";
-            echo "<td style='$baseStyle'>We position your IT system as a driver of performance, reputation, and sustainable innovation.</td>";
-            echo "<td style='$lastColStyle'>Turns your digital system into a strategic advantage for the future.</td>";
+            renderCard("IT & Cybersecurity",
+                "Your IT system is reliable, future-oriented, and supports both efficiency and innovation.",
+                "We position your IT system as a lever for performance, reputation, and sustainable innovation.",
+                "Makes your digital environment a true strategic advantage for the future.");
             break;
         default:
-            echo "<td colspan='4' style='$baseStyle'>Score not recognized.</td>";
+            renderCard("IT & Cybersecurity", "Unrecognized score.", "", "");
             break;
     }
-    echo "</tr>";
 }
-?>
 
-<?php
 if (isset($_SESSION['accounting_score'])) {
-    echo "<tr>";
-    $baseStyle = "border: 1px solid white; padding: 8px 32px;";
-    $lastColStyle = "border-right: none; border: 1px solid white; padding: 8px 32px;";
-    
     switch ($_SESSION['accounting_score']) {
         case 0:
-            echo "<td style='$baseStyle'>Accounting & Finance</td>";
-            echo "<td style='$baseStyle'>Le suivi financier est très limité voire inexistant. Il constitue un axe stratégique à renforcer.</td>";
-            echo "<td style='$baseStyle'>TreeConnect peut vous accompagner pour mettre en place les premiers indicateurs de pilotage financier adaptés à votre activité.</td>";
-            echo "<td style='$lastColStyle'>Permet de poser un socle clair pour sécuriser la trésorerie et anticiper les échéances.</td>";
+            renderCard("Accounting & Finance",
+                "Financial tracking is very limited or even nonexistent. It is a strategic area to strengthen.",
+                "TreeConnect can support you in setting up the first financial management indicators adapted to your activity.",
+                "Establishes a clear foundation to secure cash flow and anticipate deadlines.");
             break;
         case 1:
-            echo "<td style='$baseStyle'>Accounting & Finance</td>";
-            echo "<td style='$baseStyle'>Financial monitoring is very limited or non-existent. It represents a key area for strategic development.</td>";
-            echo "<td style='$baseStyle'>TreeConnect can support you in setting up initial financial indicators tailored to your business.</td>";
-            echo "<td style='$lastColStyle'>Establishes a solid foundation to secure cash flow and anticipate deadlines.</td>";
+            renderCard("Accounting & Finance",
+                "Financial tracking is very limited or even nonexistent. It represents a strategic lever to develop.",
+                "TreeConnect can help you set up the first financial indicators tailored to your business.",
+                "Establishes a solid base to secure cash flow and anticipate deadlines.");
             break;
         case 2:
-            echo "<td style='$baseStyle'>Accounting & Finance</td>";
-            echo "<td style='$baseStyle'>Financial data is tracked occasionally, without a regular framework or defined indicators.</td>";
-            echo "<td style='$baseStyle'>We help structure your financial flows (invoicing, payments, reminders) and identify relevant KPIs.</td>";
-            echo "<td style='$lastColStyle'>Makes financial flows clearer and reduces late or missed payments.</td>";
+            renderCard("Accounting & Finance",
+                "Financial data is tracked occasionally, without a regular framework or defined indicators.",
+                "We help you structure your financial flows (invoicing, payments, reminders) and identify the right indicators.",
+                "Makes financial flows more readable and reduces late or missed payments.");
             break;
         case 3:
-            echo "<td style='$baseStyle'>Accounting & Finance</td>";
-            echo "<td style='$baseStyle'>Basic financial management exists but relies on manual tools or informal routines.</td>";
-            echo "<td style='$baseStyle'>TreeConnect offers simple and automated tools to ensure reliable tracking of cash flow and margins.</td>";
-            echo "<td style='$lastColStyle'>Ensures reliable financial data and improves decision-making.</td>";
+            renderCard("Accounting & Finance",
+                "Basic financial management exists, but it relies on manual tools or informal routines.",
+                "TreeConnect offers simple and automated tools to ensure reliable tracking of cash flow and margins.",
+                "Ensures reliable data and improves decision-making.");
             break;
         case 4:
-            echo "<td style='$baseStyle'>Accounting & Finance</td>";
-            echo "<td style='$baseStyle'>Financial documents are available, but their use and interpretation remain partial.</td>";
-            echo "<td style='$baseStyle'>We assist in building accessible financial dashboards that support decision-making.</td>";
-            echo "<td style='$lastColStyle'>Provides a concrete and structured view of available financial resources.</td>";
+            renderCard("Accounting & Finance",
+                "Financial documents are available, but their use and interpretation remain partial.",
+                "We help you build accessible financial dashboards to support decisions.",
+                "Provides a concrete and structured view of available financial resources.");
             break;
         case 5:
-            echo "<td style='$baseStyle'>Accounting & Finance</td>";
-            echo "<td style='$baseStyle'>Key indicators are tracked but not always updated or used for decision-making.</td>";
-            echo "<td style='$baseStyle'>TreeConnect can enhance your tracking practices with templates adapted to your industry.</td>";
-            echo "<td style='$lastColStyle'>Encourages regular and useful reading of economic performance.</td>";
+            renderCard("Accounting & Finance",
+                "Key indicators are tracked, but they are not always up to date or used for decision-making.",
+                "TreeConnect can strengthen your monitoring practices with models adapted to your sector.",
+                "Promotes a regular and useful understanding of economic performance.");
             break;
         case 6:
-            echo "<td style='$baseStyle'>Accounting & Finance</td>";
-            echo "<td style='$baseStyle'>Financial tracking is regular and based on simple dashboards or tools.</td>";
-            echo "<td style='$baseStyle'>We support the partial automation of financial processes using interconnected tools.</td>";
-            echo "<td style='$lastColStyle'>Saves time in the day-to-day financial management.</td>";
+            renderCard("Accounting & Finance",
+                "Financial tracking is regular and based on dashboards or simple tools.",
+                "We support you in partially automating financial processes with interconnected tools.",
+                "Saves time in daily financial management.");
             break;
         case 7:
-            echo "<td style='$baseStyle'>Accounting & Finance</td>";
-            echo "<td style='$baseStyle'>Cash flow and data are well organized and used to support decisions.</td>";
-            echo "<td style='$baseStyle'>TreeConnect helps connect your financial data to operational decision-making.</td>";
-            echo "<td style='$lastColStyle'>Improves projection capabilities and control over costs and revenue.</td>";
+            renderCard("Accounting & Finance",
+                "Cash flow and financial data are well organized and used to guide decisions.",
+                "TreeConnect helps you link your financial data to your operational decisions.",
+                "Improves forecasting capabilities and cost/revenue control.");
             break;
         case 8:
-            echo "<td style='$baseStyle'>Accounting & Finance</td>";
-            echo "<td style='$baseStyle'>Your financial management is structured, with a clear and updated overview of company finances.</td>";
-            echo "<td style='$baseStyle'>We facilitate the setup of forecasting and analysis tools to support your growth.</td>";
-            echo "<td style='$lastColStyle'>Helps anticipate critical periods or investment needs.</td>";
+            renderCard("Accounting & Finance",
+                "Your financial management is structured, with a clear and up-to-date view of the company’s situation.",
+                "We facilitate the implementation of forecasting and analysis tools to support your growth.",
+                "Helps anticipate critical periods or investment needs.");
             break;
         case 9:
-            echo "<td style='$baseStyle'>Accounting & Finance</td>";
-            echo "<td style='$baseStyle'>You proactively manage margins, cash flow, and investments with anticipation of financial challenges.</td>";
-            echo "<td style='$baseStyle'>TreeConnect offers strategic support to manage margins, investments, and financial risks.</td>";
-            echo "<td style='$lastColStyle'>Strengthens financial resilience and overall business strategy.</td>";
+            renderCard("Accounting & Finance",
+                "You actively manage your margins, cash flow, and investments, anticipating financial challenges.",
+                "TreeConnect supports your strategy for managing margins, investments, and financial risks.",
+                "Strengthens financial resilience and the company’s overall strategy.");
             break;
         case 10:
-            echo "<td style='$baseStyle'>Accounting & Finance</td>";
-            echo "<td style='$baseStyle'>Your financial steering is precise, strategic, and integrated into overall business governance.</td>";
-            echo "<td style='$baseStyle'>We help enhance your current financial steering system and contribute to its strategic evolution.</td>";
-            echo "<td style='$lastColStyle'>Turns financial management into a driver for control, optimization, and growth.</td>";
+            renderCard("Accounting & Finance",
+                "Your financial management is precise, strategic, and integrated into overall governance.",
+                "We help you strengthen your current system and contribute to its strategic development.",
+                "Turns financial management into a lever for control, optimization, and growth.");
             break;
         default:
-            echo "<td colspan='4' style='$baseStyle'>Score non reconnu.</td>";
+            renderCard("Accounting & Finance", "Unrecognized score.", "", "");
             break;
     }
-    echo "</tr>";
 }
-?>
-<?php
+
 if (isset($_SESSION['marketing_score'])) {
-    echo "<tr>";
-    $baseStyle = "border: 1px solid white; padding: 8px 32px;";
-    $lastColStyle = "border-right: none; border: 1px solid white; padding: 8px 32px;";
-    
     switch ($_SESSION['marketing_score']) {
         case 0:
-            echo "<td style='$baseStyle'>Marketing & Communication</td>";
-            echo "<td style='$baseStyle'>Le sujet est peu traité, avec peu d’actions lisibles ou visibles à ce jour.</td>";
-            echo "<td style='$baseStyle'>Nous aidons à identifier les actions prioritaires pour clarifier le positionnement et structurer les premières communications.</td>";
-            echo "<td style='$lastColStyle'>Pose les bases d’une communication utile et accessible.</td>";
+            renderCard("Marketing & Communication",
+                "The topic is barely addressed, with few visible or structured actions so far.",
+                "We help identify priority actions to clarify positioning and structure initial communications.",
+                "Lays the foundation for useful and accessible communication.");
             break;
         case 1:
-            echo "<td style='$baseStyle'>Marketing & Communication</td>";
-            echo "<td style='$baseStyle'>No structured communication strategy is currently in place.</td>";
-            echo "<td style='$baseStyle'>TreeConnect can help you lay the foundation of a visibility strategy tailored to your business.</td>";
-            echo "<td style='$lastColStyle'>Establishes the foundation for coherent and accessible visibility.</td>";
+            renderCard("Marketing & Communication",
+                "No structured communication strategy has been implemented yet.",
+                "TreeConnect can help you lay the foundation for a visibility strategy tailored to your business.",
+                "Establishes a consistent and accessible base for your visibility.");
             break;
         case 2:
-            echo "<td style='$baseStyle'>Marketing & Communication</td>";
-            echo "<td style='$baseStyle'>Some actions are taken occasionally, without a clear direction.</td>";
-            echo "<td style='$baseStyle'>We work with you to identify the right channels and key messages to structure.</td>";
-            echo "<td style='$lastColStyle'>Clarifies positioning and offer to target audiences.</td>";
+            renderCard("Marketing & Communication",
+                "Some actions are taken occasionally, without a clear direction.",
+                "We help you identify the right channels and key messages to structure.",
+                "Clarifies your positioning and offer for target audiences.");
             break;
         case 3:
-            echo "<td style='$baseStyle'>Marketing & Communication</td>";
-            echo "<td style='$baseStyle'>Some channels or materials are used, but without consistency or defined strategy.</td>";
-            echo "<td style='$baseStyle'>TreeConnect supports you in building a coherent identity and a basic communication routine.</td>";
-            echo "<td style='$lastColStyle'>Increases consistency in online and offline presence.</td>";
+            renderCard("Marketing & Communication",
+                "Some channels or media are used, but without consistency or defined strategy.",
+                "TreeConnect supports you in building a coherent identity and a basic communication routine.",
+                "Strengthens the coherence of your online and offline presence.");
             break;
         case 4:
-            echo "<td style='$baseStyle'>Marketing & Communication</td>";
-            echo "<td style='$baseStyle'>Basic elements are in place (logo, website, social media), but they are underutilized.</td>";
-            echo "<td style='$baseStyle'>We help enhance your existing assets and align them with a strategic approach.</td>";
-            echo "<td style='$lastColStyle'>Structures the brand image and improves company readability.</td>";
+            renderCard("Marketing & Communication",
+                "Basic elements are present (logo, website, social networks), but underutilized.",
+                "We help you enhance your existing materials and align them with a strategic approach.",
+                "Structures brand image and improves company clarity.");
             break;
         case 5:
-            echo "<td style='$baseStyle'>Marketing & Communication</td>";
-            echo "<td style='$baseStyle'>A strategy exists in the background, but it is not formalized or consistently followed.</td>";
-            echo "<td style='$baseStyle'>TreeConnect offers clear formalization of your marketing strategy and target audiences.</td>";
-            echo "<td style='$lastColStyle'>Helps focus communication efforts and measure returns.</td>";
+            renderCard("Marketing & Communication",
+                "A strategy exists in the background, but it is not formalized or regularly monitored.",
+                "TreeConnect provides a clear formalization of your marketing strategy and target audiences.",
+                "Allows you to focus communication efforts and measure their impact.");
             break;
         case 6:
-            echo "<td style='$baseStyle'>Marketing & Communication</td>";
-            echo "<td style='$baseStyle'>Communication is partially planned, with coherence still in development.</td>";
-            echo "<td style='$baseStyle'>We assist with implementing an editorial calendar and basic performance indicators.</td>";
-            echo "<td style='$lastColStyle'>Saves time and builds communication routines.</td>";
+            renderCard("Marketing & Communication",
+                "Communication is partially planned, with coherence still in development.",
+                "We help you implement an editorial calendar and simple performance indicators.",
+                "Saves time and builds communication habits.");
             break;
         case 7:
-            echo "<td style='$baseStyle'>Marketing & Communication</td>";
-            echo "<td style='$baseStyle'>The brand identity is clear and channels are used in an organized way.</td>";
-            echo "<td style='$baseStyle'>TreeConnect strengthens your content strategy and channel activation.</td>";
-            echo "<td style='$lastColStyle'>Improves message reach and brand consistency.</td>";
+            renderCard("Marketing & Communication",
+                "The brand identity is clear and channels are used in an organized way.",
+                "TreeConnect strengthens your content strategy and channel activation.",
+                "Improves message reach and brand consistency.");
             break;
         case 8:
-            echo "<td style='$baseStyle'>Marketing & Communication</td>";
-            echo "<td style='$baseStyle'>The communication strategy is clear and aligned with your goals and positioning.</td>";
-            echo "<td style='$baseStyle'>We refine your positioning and optimize your materials to increase impact.</td>";
-            echo "<td style='$lastColStyle'>Enhances the company’s credibility and appeal.</td>";
+            renderCard("Marketing & Communication",
+                "The communication strategy is clear and aligned with your goals and positioning.",
+                "We refine your positioning and optimize your materials to maximize impact.",
+                "Strengthens the company’s credibility and attractiveness.");
             break;
         case 9:
-            echo "<td style='$baseStyle'>Marketing & Communication</td>";
-            echo "<td style='$baseStyle'>Actions are consistent, tracked, and adjusted based on measured results.</td>";
-            echo "<td style='$baseStyle'>TreeConnect helps you manage your visibility with dashboards aligned to your objectives.</td>";
-            echo "<td style='$lastColStyle'>Aligns communication with commercial and HR priorities.</td>";
+            renderCard("Marketing & Communication",
+                "Actions are consistent, monitored, and adjusted based on measured results.",
+                "TreeConnect helps you manage visibility with dashboards tailored to your goals.",
+                "Aligns communication with commercial and HR priorities.");
             break;
         case 10:
-            echo "<td style='$baseStyle'>Marketing & Communication</td>";
-            echo "<td style='$baseStyle'>Your communication is professional, structured, and actively contributes to business growth.</td>";
-            echo "<td style='$baseStyle'>We turn your communication into a regular, measurable driver of performance and brand awareness.</td>";
-            echo "<td style='$lastColStyle'>Turns communication into a growth and differentiation engine.</td>";
+            renderCard("Marketing & Communication",
+                "Your communication is professional, structured, and actively contributes to business development.",
+                "We make your communication a regular, measurable lever for performance and awareness.",
+                "Turns communication into a driver of growth and differentiation.");
             break;
         default:
-            echo "<td colspan='4' style='$baseStyle'>Score non reconnu.</td>";
+            renderCard("Marketing & Communication", "Unrecognized score.", "", "");
             break;
     }
-    echo "</tr>";
 }
-?>
-      </tbody>
-    </table>
- 
 
- <?php
+?>
+</div>
+<!-- Pillar Score Breakdown Cards -->
+<div style="margin-top: 0; margin-bottom: 40px;">
+  <?php
   function renderBlockInline($headingKey, $scoreKey, $answersKey, $questionsMap, $icon) {
-      if (isset($_SESSION[$headingKey], $_SESSION[$scoreKey], $_SESSION[$answersKey])) {
-          echo "<h2 style='color:#003366; margin-top: 40px; border-bottom: 2px solid #d1dbe8; padding-bottom: 8px;'>$icon " . htmlspecialchars($_SESSION[$headingKey]) . "</h2>";
-          echo "<table style='width:100%; border-collapse:collapse; margin-bottom:20px; font-size: 14px;'>
-                  <thead>
-                    <tr style='background-color: #e8eff7; color: #003366;'>
-                      <th style='padding:12px; border:1px solid #d1dbe8;'>Question</th>
-                      <th style='padding:12px; border:1px solid #d1dbe8;'>Answer</th>
-                      <th style='padding:12px; border:1px solid #d1dbe8;'>Score</th>
-                    </tr>
-                  </thead>
-                  <tbody>";
-          foreach ($_SESSION[$answersKey] as $q => [$response, $score]) {
-              $question = $questionsMap[$q] ?? strtoupper($q);
-              echo "<tr>
-                      <td style='border:1px solid #d1dbe8; padding:12px; background-color:#f9fbff;'>" . htmlspecialchars($question) . "</td>
-                      <td style='border:1px solid #d1dbe8; padding:12px; background-color:#ffffff;'>" . htmlspecialchars($response) . "</td>
-                      <td style='border:1px solid #d1dbe8; padding:12px; background-color:#ffffff;'>$score</td>
-                    </tr>";
-          }
-          echo "</tbody></table>";
-          echo "<div style='font-weight: bold; margin-bottom: 40px; color: #003366;'>Total points: " . $_SESSION[$scoreKey] . " / 10</div>";
+    if (isset($_SESSION[$headingKey], $_SESSION[$scoreKey], $_SESSION[$answersKey])) {
+      echo "
+        <div style='background-color: #ffffff; border: 1px solid #d1dbe8; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); padding: 32px; margin-bottom: 40px;'>
+          <h2 style='color: #003366; font-size: 20px; font-weight: 700; border-bottom: 2px solid #d1dbe8; padding-bottom: 12px; margin-bottom: 24px;'>
+            <span style='display: inline-block; vertical-align: middle; width: 36px; height: 36px; line-height: 36px; border-radius: 50%; background-color: #e8eff7; color: #003366; font-weight: bold; text-align: center; margin-right: 8px;'>$icon</span>
+            " . htmlspecialchars($_SESSION[$headingKey]) . "
+          </h2>";
+
+      foreach ($_SESSION[$answersKey] as $q => [$response, $score]) {
+        $question = $questionsMap[$q] ?? strtoupper($q);
+        echo "
+          <div style='margin-bottom: 20px; background-color: #f9fbff; border: 1px solid #d1dbe8; border-radius: 10px; padding: 20px;'>
+            <div style='color: #003366; font-weight: 600; font-size: 15px; margin-bottom: 6px;'>" . htmlspecialchars($question) . "</div>
+            <div style='color: #4a4a4a; margin-bottom: 6px;'><strong>Réponse :</strong> " . htmlspecialchars($response) . "</div>
+            <div style='color: #6b7280; font-size: 13px;'>
+              <strong>Score :</strong>
+              <span style='display: inline-block; background-color: #003366; color: #ffffff; font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 9999px; margin-left: 4px;'>$score / 2</span>
+            </div>
+          </div>";
       }
+
+      echo "
+        <div style='color: #003366; font-weight: bold; font-size: 15px; padding-top: 12px; border-top: 1px solid #d1dbe8; text-align: right;'>
+          Total des points : " . $_SESSION[$scoreKey] . " / 10
+        </div>
+      </div>";
+    }
   }
 
-  // ✅ Question maps
+    // ✅ Question maps
   $questionsHR = [
     'aq1' => "Onboarding and Recruitment",
 'aq2' => "Objectives and Performance",
@@ -524,12 +552,26 @@ if (isset($_SESSION['marketing_score'])) {
 'cq5' => "Action Planning"
   ];
 
-  renderBlockInline('hr_heading', 'hr_score', 'hr_answers', $questionsHR, '👥');
-  renderBlockInline('admin_heading', 'admin_score', 'admin_answers', $questionsAdmin, '📁');
-  renderBlockInline('it_heading', 'it_score', 'it_answers', $questionsIT, '💻');
-  renderBlockInline('accounting_heading', 'accounting_score', 'accounting_answers', $questionsAccounting, '📊');
-  renderBlockInline('marketing_heading', 'marketing_score', 'marketing_answers', $questionsMarketing, '📣');
-  ?>
+    // Render each pillar section
+    renderBlockInline('hr_heading', 'hr_score', 'hr_answers', $questionsHR, '👥');
+    renderBlockInline('admin_heading', 'admin_score', 'admin_answers', $questionsAdmin, '📁');
+    renderBlockInline('it_heading', 'it_score', 'it_answers', $questionsIT, '💻');
+    renderBlockInline('accounting_heading', 'accounting_score', 'accounting_answers', $questionsAccounting, '📊');
+    renderBlockInline('marketing_heading', 'marketing_score', 'marketing_answers', $questionsMarketing, '📣');
+    ?>
+  </div>
+<!-- Footer -->
+<div style="background-color: #3F6893; padding: 40px 0; text-align: center; color: white; font-size: 14px; margin-top: 64px; border-top: 1px solid #d1dbe8;">
+  <p style="margin: 0 0 12px 0;">&copy; <?= date('Y') ?> TreeConnect. All rights reserved.</p>
+  <div style="margin-top: 12px;">
+    <a href="https://www.linkedin.com/company/treeconnect/" target="_blank" style="display: inline-block; margin: 0 10px;">
+      <img src="https://cdn-icons-png.flaticon.com/24/174/174857.png" alt="LinkedIn" style="width: 24px; height: 24px; vertical-align: middle;">
+    </a>
+    <a href="https://twitter.com/treeconnect" target="_blank" style="display: inline-block; margin: 0 10px;">
+      <img src="https://cdn-icons-png.flaticon.com/24/733/733579.png" alt="Twitter" style="width: 24px; height: 24px; vertical-align: middle;">
+    </a>
+  </div>
+</div>
 </div>
 <!-- HTML Email Ends -->
 
