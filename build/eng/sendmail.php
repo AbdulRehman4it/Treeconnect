@@ -39,14 +39,14 @@ ob_start();
   <div style="margin-bottom: 16px;">
     <img src="https://www.treeconnect.ch/assets/img/logo3.png" alt="Logo" style="width: 140px; height: auto; max-width: 100%; display: block; margin: 0 auto;">
   </div>
-  <a href="https://treeconnect.fr" target="_blank" style="display: inline-block; background-color: #ffffff; color: #003366; font-size: 14px; font-weight: 600; padding: 10px 24px; border-radius: 8px; text-decoration: none; border: 1px solid #ccc; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+  <a href="https://treeconnect.ch" target="_blank" style="display: inline-block; background-color: #ffffff; color: #003366; font-size: 14px; font-weight: 600; padding: 10px 24px; border-radius: 8px; text-decoration: none; border: 1px solid #ccc; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
     Contact TreeConnect
   </a>
 </div>
 <?php if (!empty($_SESSION['companyData'])): ?>
   <div style="background-color: white; border: 1px solid #d1dbe8; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); padding: 40px 24px; margin-bottom: 40px;">
     <h2 style="color: #003366; font-size: 18px; font-weight: 600; border-bottom: 2px solid #d1dbe8; padding-bottom: 8px; margin-bottom: 24px;">
-      📊 Form Submission Data (Company Info)
+      Form Submission Data (Company Info)
     </h2>
 
     <?php foreach ($_SESSION['companyData'] as [$label, $value]): ?>
@@ -553,23 +553,22 @@ if (isset($_SESSION['marketing_score'])) {
   ];
 
     // Render each pillar section
-    renderBlockInline('hr_heading', 'hr_score', 'hr_answers', $questionsHR, '👥');
-    renderBlockInline('admin_heading', 'admin_score', 'admin_answers', $questionsAdmin, '📁');
-    renderBlockInline('it_heading', 'it_score', 'it_answers', $questionsIT, '💻');
-    renderBlockInline('accounting_heading', 'accounting_score', 'accounting_answers', $questionsAccounting, '📊');
-    renderBlockInline('marketing_heading', 'marketing_score', 'marketing_answers', $questionsMarketing, '📣');
+    renderBlockInline('hr_heading', 'hr_score', 'hr_answers', $questionsHR, '');
+    renderBlockInline('admin_heading', 'admin_score', 'admin_answers', $questionsAdmin, '');
+    renderBlockInline('it_heading', 'it_score', 'it_answers', $questionsIT, '');
+    renderBlockInline('accounting_heading', 'accounting_score', 'accounting_answers', $questionsAccounting, '');
+    renderBlockInline('marketing_heading', 'marketing_score', 'marketing_answers', $questionsMarketing, '');
     ?>
   </div>
 <!-- Footer -->
 <div style="background-color: #3F6893; padding: 40px 0; text-align: center; color: white; font-size: 14px; margin-top: 64px; border-top: 1px solid #d1dbe8;">
   <p style="margin: 0 0 12px 0;">&copy; <?= date('Y') ?> TreeConnect. All rights reserved.</p>
+  <p style="margin: 0 0 12px 0;">This message is confidential and intended solely for its recipient. If you are not the intended recipient, please delete it.</p>
+  <p style="margin: 0 0 12px 0;color:white!important">TreeConnect Sàrl - contact@treeconnect.ch - ‪+41 78 233 53 17‬</p>
   <div style="margin-top: 12px;">
-    <a href="https://www.linkedin.com/company/treeconnect/" target="_blank" style="display: inline-block; margin: 0 10px;">
-      <img src="https://cdn-icons-png.flaticon.com/24/174/174857.png" alt="LinkedIn" style="width: 24px; height: 24px; vertical-align: middle;">
-    </a>
-    <a href="https://twitter.com/treeconnect" target="_blank" style="display: inline-block; margin: 0 10px;">
-      <img src="https://cdn-icons-png.flaticon.com/24/733/733579.png" alt="Twitter" style="width: 24px; height: 24px; vertical-align: middle;">
-    </a>
+   <a href="https://www.linkedin.com/company/treeconnect/ ">
+        <i class="fa-brands fa-linkedin text-white text-3xl pt-2"></i>
+      </a>
   </div>
 </div>
 </div>
@@ -591,8 +590,8 @@ try {
     $mail->isSMTP();
     $mail->Host = "smtp.gmail.com";
     $mail->SMTPAuth = true;
-    $mail->Username = "abdulrehman226721skp@gmail.com";
-    $mail->Password = "puhd yvrw nfth uzgp";  // Note: consider using env variable
+    $mail->Username = "treeconnectsarl@gmail.com";
+    $mail->Password = "badt nrpr rced uyed";    // Note: consider using env variable
     $mail->SMTPSecure = "ssl";
     $mail->Port = 465;
 

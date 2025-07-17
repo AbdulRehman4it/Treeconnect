@@ -40,14 +40,14 @@ ob_start();
   <div style="margin-bottom: 16px;">
     <img src="https://www.treeconnect.ch/assets/img/logo3.png" alt="Logo" style="width: 140px; height: auto; max-width: 100%; display: block; margin: 0 auto;">
   </div>
-  <a href="https://treeconnect.fr" target="_blank" style="display: inline-block; background-color: #ffffff; color: #003366; font-size: 14px; font-weight: 600; padding: 10px 24px; border-radius: 8px; text-decoration: none; border: 1px solid #ccc; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-    Contactez TreeConnect
+  <a href="https://treeconnect.ch" target="_blank" style="display: inline-block; background-color: #ffffff; color: #003366; font-size: 14px; font-weight: 600; padding: 10px 24px; border-radius: 8px; text-decoration: none; border: 1px solid #ccc; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+   Contactez-nous 
   </a>
 </div>
 <?php if (!empty($_SESSION['companyData'])): ?>
   <div style="background-color: white; border: 1px solid #d1dbe8; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); padding: 40px 24px; margin-bottom: 40px;">
     <h2 style="color: #003366; font-size: 18px; font-weight: 600; border-bottom: 2px solid #d1dbe8; padding-bottom: 8px; margin-bottom: 24px;">
-      📊 Données du formulaire (Company Info)
+      Données du formulaire (Company Info)
     </h2>
 
     <?php foreach ($_SESSION['companyData'] as [$label, $value]): ?>
@@ -495,7 +495,7 @@ if (isset($_SESSION['marketing_score'])) {
         echo "
           <div style='margin-bottom: 20px; background-color: #f9fbff; border: 1px solid #d1dbe8; border-radius: 10px; padding: 20px;'>
             <div style='color: #003366; font-weight: 600; font-size: 15px; margin-bottom: 6px;'>" . htmlspecialchars($question) . "</div>
-            <div style='color: #4a4a4a; margin-bottom: 6px;'><strong>Réponse :</strong> " . htmlspecialchars($response) . "</div>
+            <div style='color: #4a4a4a; margin-bottom: 6px;'><strong>Answer :</strong> " . htmlspecialchars($response) . "</div>
             <div style='color: #6b7280; font-size: 13px;'>
               <strong>Score :</strong>
               <span style='display: inline-block; background-color: #003366; color: #ffffff; font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 9999px; margin-left: 4px;'>$score / 2</span>
@@ -505,7 +505,7 @@ if (isset($_SESSION['marketing_score'])) {
 
       echo "
         <div style='color: #003366; font-weight: bold; font-size: 15px; padding-top: 12px; border-top: 1px solid #d1dbe8; text-align: right;'>
-          Total des points : " . $_SESSION[$scoreKey] . " / 10
+          Total Score : " . $_SESSION[$scoreKey] . " / 10
         </div>
       </div>";
     }
@@ -519,23 +519,22 @@ if (isset($_SESSION['marketing_score'])) {
     $questionsMarketing = [ 'cq1' => "Stratégie de communication ", 'cq2' => "Identité visuelle", 'cq3' => "Canaux de communication", 'cq4' => "Suivi des résultats ", 'cq5' => " Planification des actions" ];
 
     // Render each pillar section
-    renderBlockInline('hr_heading', 'hr_score', 'hr_answers', $questionsHR, '👥');
-    renderBlockInline('admin_heading', 'admin_score', 'admin_answers', $questionsAdmin, '📁');
-    renderBlockInline('it_heading', 'it_score', 'it_answers', $questionsIT, '💻');
-    renderBlockInline('accounting_heading', 'accounting_score', 'accounting_answers', $questionsAccounting, '📊');
-    renderBlockInline('marketing_heading', 'marketing_score', 'marketing_answers', $questionsMarketing, '📣');
+    renderBlockInline('hr_heading', 'hr_score', 'hr_answers', $questionsHR, '');
+    renderBlockInline('admin_heading', 'admin_score', 'admin_answers', $questionsAdmin, '');
+    renderBlockInline('it_heading', 'it_score', 'it_answers', $questionsIT, '');
+    renderBlockInline('accounting_heading', 'accounting_score', 'accounting_answers', $questionsAccounting, '');
+    renderBlockInline('marketing_heading', 'marketing_score', 'marketing_answers', $questionsMarketing, '');
     ?>
   </div>
 <!-- Footer -->
 <div style="background-color: #3F6893; padding: 40px 0; text-align: center; color: white; font-size: 14px; margin-top: 64px; border-top: 1px solid #d1dbe8;">
-  <p style="margin: 0 0 12px 0;">&copy; <?= date('Y') ?> TreeConnect. Tous droits réservés.</p>
+  <p style="margin: 0 0 12px 0;">&copy; <?= date('Y') ?> TreeConnect. All rights reserved.</p>
+  <p style="margin: 0 0 12px 0;">Ce message est confidentiel et destiné uniquement à son destinataire. Si vous n’êtes pas le bon destinataire, merci de le supprimer.</p>
+  <p style="margin: 0 0 12px 0;color:white!important">TreeConnect Sàrl - contact@treeconnect.ch - ‪+41 78 233 53 17‬</p>
   <div style="margin-top: 12px;">
-    <a href="https://linkedin.com/company/treeconnect" target="_blank" style="display: inline-block; margin: 0 10px;">
-      <img src="https://cdn-icons-png.flaticon.com/24/174/174857.png" alt="LinkedIn" style="width: 24px; height: 24px; vertical-align: middle;">
-    </a>
-    <a href="https://twitter.com/treeconnect" target="_blank" style="display: inline-block; margin: 0 10px;">
-      <img src="https://cdn-icons-png.flaticon.com/24/733/733579.png" alt="Twitter" style="width: 24px; height: 24px; vertical-align: middle;">
-    </a>
+   <a href="https://www.linkedin.com/company/treeconnect/ ">
+        <i class="fa-brands fa-linkedin text-white text-3xl pt-2"></i>
+      </a>
   </div>
 </div>
 </div>
@@ -557,8 +556,8 @@ try {
     $mail->isSMTP();
     $mail->Host = "smtp.gmail.com";
     $mail->SMTPAuth = true;
-    $mail->Username = "abdulrehman226721skp@gmail.com";
-    $mail->Password = "puhd yvrw nfth uzgp";  // Note: consider using env variable
+    $mail->Username = "treeconnectsarl@gmail.com";
+    $mail->Password = "badt nrpr rced uyed";  // Note: consider using env variable
     $mail->SMTPSecure = "ssl";
     $mail->Port = 465;
 
