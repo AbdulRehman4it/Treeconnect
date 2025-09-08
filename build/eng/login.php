@@ -6,7 +6,7 @@
             <div class=" lg:px-20 px-5 pb-10 lg:pt-0 flex lg:flex-row flex-col items-center md:gap-20 gap-10 ">
                 <div class="lg:w-1/2 w-full">
                     <h1 class="text-white md:text-5xl text-4xl">TreeConnect Portal</h1>
-                    <!-- <h2 class="font-medium text-white text-lg lg:pt-10 pt-5">Zero Judgment. Full Support.</h2> -->
+                    
                     <p class="text-white text-base pt-4 leading-7">Welcome to the TreeConnect platform. This is your central access point to all the essential tools, systems, and information that power your work, all in one place, designed for you.
  </p>
                 </div>

@@ -1,7 +1,6 @@
   <nav class="2xl:px-20 lg:px-10 px-5 2xl:pt-16 lg:pt-9 pt-5">
    
-    <!-- Animated Dots Layer -->
-<!-- <canvas id="dotsCanvas" class="absolute top-0 left-0 w-full h-full z-10 pointer-events-none"></canvas> -->
+  
 
   <!-- Navbar Container -->
   <div class="flex justify-between items-center bg-[#3F6893] px-8 py-5 rounded-[40px] ">
@@ -40,7 +39,7 @@
 
         <li><a href="./story.php" class="text-[#D3D3D3] xl:text-lg text-base hover:text-white">Our story</a></li>
         <li><a href="./contact.php" class="text-[#D3D3D3] xl:text-lg text-base hover:text-white ">Contact us</a></li>
-        <!-- <li><a href="./servey.php" class="text-[#D3D3D3] xl:text-lg text-base hover:text-white">Survey</a></li> -->
+        
       </ul>
     </div>
 
@@ -137,7 +136,7 @@
 
       <li><a href="./story.php" class="text-white text-base hover:text-white">Our story</a></li>
       <li><a href="./contact.php" class="text-white text-base hover:text-white ">Contact us</a></li>
-      <!-- <li><a href="./servey.php" class="text-white text-base hover:text-white">Survey</a></li> -->
+     
       <li><a href="./login.php"><button class="text-white">Login</button></a></li>
        <li class="flex justify-center space-x-4 mt-4">
         <a href="#" onclick="event.preventDefault(); setFlagMobile('../assets/img/united-kingdom.png', this.href)">

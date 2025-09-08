@@ -100,12 +100,7 @@ session_destroy();
             </p>
             </div>
 
-            <!-- <div>
-                <h1 class="2xl:text-3xl lg:text-xl text-lg text-white lg;pt-12 pt-8">Final Line:</h1>
-                 <p class="2xl:text-[26px] lg:text-base text-sm text-white pt-2 2xl:pt-5">
-       This audit is a clear and constructive starting point to identify strengths and development opportunities.
-            </p>
-            </div> -->
+           
         </div>
 
         <div class="text-center xl:pt-20 pt-10">
@@ -218,25 +213,6 @@ session_destroy();
     document.body.classList.remove('overflow-hidden'); // Re-enable background scroll
   }
 
-  // document.getElementById('companyForm').addEventListener('submit', function (e) {
-  //   e.preventDefault();
-
-  //   const companyName = document.getElementById('companyName').value;
-  //   const industry = document.getElementById('industry').value;
-  //   const employees = document.getElementById('employees').value;
-  //   const founded = document.getElementById('founded').value;
-  //   const location = document.getElementById('location').value;
-  //   const contact = document.getElementById('contact').value;
-
-  //   if (!companyName || !industry || !employees || !founded || !location || !contact) {
-  //     alert("Please fill in all required fields.");
-  //     return;
-  //   }
-
-  //   alert("Form submitted successfully!");
-  //   closePopup();
-  //   document.getElementById('companyForm').reset();
-  // });
 </script>
 
   <script src="https://kit.fontawesome.com/a2ada4947c.js" crossorigin="aNonnymous"></script>

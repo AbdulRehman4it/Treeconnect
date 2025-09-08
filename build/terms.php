@@ -140,8 +140,7 @@ adaptées aux objectifs et à la maturité de chaque client.
           <p class="2xl:text-2xl xl:text-lg text-sm text-white pt-4 2xl:leading-10 xl:leading-7 leading-6 text-justify md:text-left " >TreeConnect Sàrl <br>
             Boulevard Georges-Favon 14, 1204 Genève<br>
             
-            <!-- <i class="fa-solid fa-envelope"></i>&nbsp;  Email: <a href="" class="hover:underline">contact@treeconnect.ch</a><br>
-        -->
+         
             <i class="fa-solid fa-clock"></i>&nbsp;  Du lundi au vendredi, de 08h00 à 18h00 (CET)<br>
           </p>
          

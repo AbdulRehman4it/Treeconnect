@@ -1,22 +1,7 @@
 <?php include_once './inc/header.php';?>
 <body class="bg-[#304B68] overflow-x-hidden">
 <?php
-// if (session_status() === PHP_SESSION_NONE) {
-//     session_start();
-// }
 
-
-// $companyData = $_SESSION['companyData'] ?? [];
-// if (!empty($companyData)) {
-//     echo '<h2>Données du formulaire (Company Info):</h2>';
-//     echo '<ul style="font-family: sans-serif; line-height: 1.6;">';
-//     foreach ($companyData as $key => [$label, $value]) {
-//         echo "<li><strong>$label:</strong> " . htmlspecialchars($value) . "</li>";
-//     }
-//     echo '</ul>';
-// } else {
-//     echo '<p>Aucune donnée soumise.</p>';
-// }
 ?>
 
  <!-- Step 2 Modal -->

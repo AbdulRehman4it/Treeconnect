@@ -1,54 +1,7 @@
 <?php include_once './inc/header.php';?>
 <body class="bg-[#304B68] overflow-x-hidden">
 <?php
-// if (session_status() === PHP_SESSION_NONE) {
-//     session_start();
-// }
 
-
-// $companyData = $_SESSION['companyData'] ?? [];
-
-// if (!empty($companyData)) {
-//     echo '<h2>Données du formulaire (Company Info):</h2>';
-//     echo '<ul style="font-family: sans-serif; line-height: 1.6;">';
-//     foreach ($companyData as $key => [$label, $value]) {
-//         echo "<li><strong>$label:</strong> " . htmlspecialchars($value) . "</li>";
-//     }
-//     echo '</ul>';
-// } else {
-//     echo '<p>Aucune donnée soumise.</p>';
-// }
-
-// if (isset($_SESSION['hr_heading'], $_SESSION['hr_score'], $_SESSION['hr_answers'])) {
-//     echo "<h2>" . htmlspecialchars($_SESSION['hr_heading']) . "</h2><br>";
-
-//     foreach ($_SESSION['hr_answers'] as $q => [$response, $score]) {
-//         echo "Réponse à " . strtoupper($q) . ": " . htmlspecialchars($response) . " (Score: $score)<br>";
-//     }
-
-//     echo "<br><strong>Total des points: " . $_SESSION['hr_score'] . " / 10</strong><br><br>";
-// } else {
-//     echo "<p>Aucune réponse enregistrée pour Ressources Humaines.</p>";
-// }
-
-// if (isset($_SESSION['admin_heading'], $_SESSION['admin_score'], $_SESSION['admin_answers'])) {
-//     echo "<h2>" . htmlspecialchars($_SESSION['admin_heading']) . "</h2><br>";
-
-//     foreach ($_SESSION['admin_answers'] as $q => [$response, $score]) {
-//         echo "Réponse à " . strtoupper($q) . ": " . htmlspecialchars($response) . " (Score: $score)<br>";
-//     }
-
-//     echo "<br><strong>Total des points: " . $_SESSION['admin_score'] . " / 10</strong><br><br>";
-// }
-// if (isset($_SESSION['it_heading']) && isset($_SESSION['it_score']) && isset($_SESSION['it_answers'])) {
-//     echo "<h2>" . htmlspecialchars($_SESSION['it_heading']) . "</h2><br>";
-
-//     foreach ($_SESSION['it_answers'] as $q => [$response, $score]) {
-//         echo "Réponse à " . strtoupper($q) . ": " . htmlspecialchars($response) . " (Score: $score)<br>";
-//     }
-
-//     echo "<br><strong>Total des points: " . $_SESSION['it_score'] . " / 10</strong><br><br>";
-// }
 
 ?>
 

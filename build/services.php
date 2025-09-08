@@ -4,8 +4,8 @@
 
 <section class="2xl:px-28 lg:px-10 px-5 lg:pt-20 pt-10">
 
-  <!-- 🔥 Black Overlay -->
-  <!-- <div class="absolute inset-0 bg-black bg-opacity-30 z-0"></div> -->
+
+
 <div>
   <img src="./assets/img/planimg.png" class="rounded-2xl w-full md:block hidden" alt="">
   <img src="./assets/img/watt11.jpg" class="rounded-2xl w-full block md:hidden"  alt="">
@@ -86,18 +86,14 @@ réussir et vous démarquer dans un marché compétitif.
           <img src="./assets/img/watt1.jpg" class="rounded-2xl w-full md:hidden block" alt="">
         </div>
         <div class="bg-[#3F6893] xl:p-10 p-5 rounded-2xl items-center">
-            <!-- <div class="md:w-2/5 w-full" >
-                <img src="./assets/img/busi.png" alt="">
-            </div> -->
+          
             <div class=" w-full pt-4 md:pt-0">
                 <h1 class="text-white 2xl:text-4xl lg:text-3xl text-2xl" >Pourquoi c’est essentiel</h1>
                 <p class="2xl:text-[22px] xl:text-lg text-base text-white pt-2 2xl:leading-[44px] lg:leading-8 leading-7" >Lancer une entreprise demande du temps, de la précision et une parfaite connaissance du
                   contexte local.
                   Nous nous occupons des démarches complexes pour vous permettre de rester concentré sur ce
                   qui compte vraiment : concrétiser votre projet.</p>
-                <!-- <div class="2xl:pt-16 pt-8" >
-                    <button class="border border-white lg:text-lg text-base xl:px-10 xl:py-3 px-6 py-2 rounded-full text-white"> How It Works</button>
-                  </div> -->
+              
             </div>
         </div>
       </section>

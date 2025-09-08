@@ -88,7 +88,7 @@
                       main pour donner vie à votre projet</p>
 
                     <div class="pt-4">
-                      <!-- <img src="../build/assets/img/right-arrow.png" class="w-10" alt=""> -->
+                   
                       <i class="fa-solid fa-arrow-right text-white"></i> &nbsp; &nbsp;
                       <a href="services.html">
                       <button>En savoir plus</button>
@@ -115,7 +115,7 @@
                       fiable et parfaitement adaptée à votre organisation.</p>
 
                     <div class="pt-4">
-                      <!-- <img src="../build/assets/img/right-arrow.png" class="w-10" alt=""> -->
+                      
                       <i class="fa-solid fa-arrow-right text-white"></i> &nbsp; &nbsp;
                       <a href="services2.html">
                       <button>En savoir plus</button>
@@ -162,7 +162,7 @@
                       site web, dossiers partagés, outils collaboratifs et protection des données, le tout adapté à la taille
                       et à la réalité de votre entreprise.</p>
                     <div class="pt-4">
-                      <!-- <img src="../build/assets/img/right-arrow.png" class="w-10" alt=""> -->
+            
                       <i class="fa-solid fa-arrow-right text-white"></i> &nbsp; &nbsp;
                       <a href="services4.html">
                       <button>En savoir plus</button>
@@ -186,7 +186,7 @@
                 gestion clairs et adaptés pour guider vos décisions stratégiques.</p>
 
                <div class="pt-4">
-          <!-- <img src="../build/assets/img/right-arrow.png" class="w-10" alt=""> -->
+          
           <i class="fa-solid fa-arrow-right text-white"></i> &nbsp; &nbsp;
           <a href="services5.html">
           <button>En savoir plus</button>
@@ -213,7 +213,7 @@
             compris vidéo.</p>
 
           <div class="pt-4">
-            <!-- <img src="../build/assets/img/right-arrow.png" class="w-10" alt=""> -->
+    
             <i class="fa-solid fa-arrow-right text-white"></i> &nbsp; &nbsp;
             <a href="services6.html">
             <button>En savoir plus</button>
@@ -246,9 +246,7 @@
     <h1 class="2xl:text-[90px] xl:text-6xl md:text-5xl text-4xl text-white 2xl:leading-[100px] xl:leading-[80px] md:leading-[60px] text-center" >Prêt à faire grandir votre entreprise intelligemment ?</h1>
   </div>
   <div class="flex lg:flex-row flex-col justify-center items-center gap-5 2xl:pt-16 lg:pt-12 pt-6">
-    <!-- <div class="lg:w-1/3 w-full h-full flex justify-center">
-      <img src="../build/assets/img/grow1.png" alt="">
-    </div> -->
+
     <div class=" w-full bg-[#3F6893] rounded-xl  2xl:p-8 xl:p-6 lg:p-4 p-6">
       <div class="" >
         <h1 class="2xl:text-5xl lg:text-3xl text-2xl text-white">Transformer vos idées en impact</h1>
@@ -363,53 +361,6 @@
   }
 </script>
 
-<!-- doted animation navbar section  -->
-<!-- <script>
-  const canvas = document.getElementById('dotsCanvas');
-  const ctx = canvas.getContext('2d');
-  
-  let dots = [];
-  const numDots = 450; // number of dots
-  const maxSpeed = 0.9;
-  
-  function resizeCanvas() {
-    canvas.width = window.innerWidth;
-    canvas.height = document.querySelector('nav').offsetHeight;
-  }
-  resizeCanvas();
-  window.addEventListener('resize', resizeCanvas);
-  
-  for (let i = 0; i < numDots; i++) {
-    dots.push({
-      x: Math.random() * canvas.width,
-      y: Math.random() * canvas.height,
-      r: Math.random() * 2 + 1,
-      dx: (Math.random() - 0.5) * maxSpeed,
-      dy: (Math.random() - 0.5) * maxSpeed
-    });
-  }
-  
-  function drawDots() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = "rgba(255, 255, 255, 0.4)";
-    dots.forEach(dot => {
-      ctx.beginPath();
-      ctx.arc(dot.x, dot.y, dot.r, 0, Math.PI * 2);
-      ctx.fill();
-  
-      dot.x += dot.dx;
-      dot.y += dot.dy;
-  
-      // bounce back
-      if (dot.x < 0 || dot.x > canvas.width) dot.dx *= -1;
-      if (dot.y < 0 || dot.y > canvas.height) dot.dy *= -1;
-    });
-    requestAnimationFrame(drawDots);
-  }
-  
-  drawDots();
-  </script> -->
-  
 
    <!-- slider js -->
    <script>

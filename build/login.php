@@ -9,7 +9,7 @@
             <div class="lg:px-20 px-5 pb-10  lg:pt-0 flex lg:flex-row flex-col items-center md:gap-20 gap-10 ">
                 <div class="lg:w-1/2 w-full">
                     <h1 class="text-white md:text-5xl text-4xl">Portail TreeConnect</h1>
-                    <!-- <h2 class="font-medium text-white text-lg lg:pt-10 pt-5">Zero Judgment. Full Support.</h2> -->
+                  
                     <p class="text-white text-base pt-4 leading-7">Bienvenue sur la plateforme TreeConnect. Cet espace vous donne accès à l’ensemble des outils, logiciels et données essentiels à votre activité, réunis en un seul endroit, pensé pour vous.</p>
                 </div>
 

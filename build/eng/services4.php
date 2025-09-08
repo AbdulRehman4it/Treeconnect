@@ -3,8 +3,7 @@
   <?php include_once './inc/nav.php';?>
 <section class="2xl:px-28 lg:px-10 px-5 lg:pt-20 pt-10">
 
-  <!-- 🔥 Black Overlay -->
-  <!-- <div class="absolute inset-0 bg-black bg-opacity-40 z-0"></div> -->
+
 
   <div>
     <img src="../assets/img/itimg.png" class="rounded-2xl w-full md:block hidden" alt="">
@@ -81,9 +80,7 @@
             <div class="w-full pt-4 md:pt-0">
                 <h1 class="text-white 2xl:text-4xl lg:text-3xl text-2xl" >Why It Matters</h1>
                 <p class="2xl:text-[22px] xl:text-lg text-base text-white pt-2 2xl:leading-[44px] lg:leading-8 leading-7" >We set up and manage all your digital essentials. From emails to backups, safely and efficiently.</p>
-                <!-- <div class="2xl:pt-16 pt-8" >
-                    <button class="border border-white lg:text-lg text-base xl:px-10 xl:py-3 px-6 py-2 rounded-full text-white"> How It Works</button>
-                  </div> -->
+               
             </div>
         </div>
       </section>

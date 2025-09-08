@@ -4,8 +4,6 @@
 
 <section class="2xl:px-28 lg:px-10 px-5 lg:pt-20 pt-10" >
 
-  <!-- 🔥 Black Overlay -->
-  <!-- <div class="absolute inset-0 bg-black bg-opacity-30 z-0"></div> -->
 <div>
   <img src="../assets/img/humanimg.png" class="rounded-2xl w-full md:block hidden" alt="">
   <img src="../assets/img/watt22.jpg" class="rounded-2xl w-full block md:hidden" alt="">
@@ -37,13 +35,7 @@
       <!-- Human resources section  -->
 
       <section class="2xl:px-28 lg:px-10 px-5 2xl:pt-40 lg:pt-28 pt-14">
-        <!-- <div>
-          <img src="../assets/img/humanimg.png" class="w-full" alt="">
-        </div>
-        <div class="pt-10">
-            <h1 class="2xl:text-[70px] lg:text-5xl text-4xl text-white">Human Resources</h1>
-            <p class="2xl:text-[22px] xl:text-lg text-base text-white pt-5 2xl:leading-[44px] lg:leading-8 leading-7 " >From recruitment to employee management and everything in between, we provide a comprehensive HR solution that supports your business’s growth. Our digital tools streamline processes, ensure compliance, and enhance team engagement, allowing you to focus on scaling your business while we take care of your most valuable asset—your people.</p>
-        </div> -->
+     
 
 
         <div class="">
@@ -216,9 +208,6 @@
 
   <script src="https://kit.fontawesome.com/a2ada4947c.js" crossorigin="anonymous"></script>
 
-  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script> -->
+
 </body>
 </html>

@@ -79,7 +79,7 @@
                     <p class="xl:text-lg text-sm xl:mb-4 text-white">You bring the idea, we develop it with you and bring it to life from A to Z. From choosing the right structure and building the business plan to setting up tools and handling formalities. A complete turnkey support to get your project off the ground.</p>
 
                     <div class="pt-4">
-                      <!-- <img src="../assets/img/right-arrow.png" class="w-10" alt=""> -->
+                      
                       <i class="fa-solid fa-arrow-right text-white"></i> &nbsp; &nbsp;
                       <a href="services.html">
                       <button>Learn more</button>
@@ -104,7 +104,7 @@
                     <p class="xl:text-lg text-sm xl:mb-4 text-white">We handle your HR function using the latest tools and proven efficiency: recruitment, payroll, time tracking, contract terminations, and incident management. A clear, reliable approach tailored to your organization.</p>
 
                     <div class="pt-4">
-                      <!-- <img src="../assets/img/right-arrow.png" class="w-10" alt=""> -->
+                     
                       <i class="fa-solid fa-arrow-right text-white"></i> &nbsp; &nbsp;
                       <a href="services2.html">
                       <button>Learn more</button>
@@ -148,7 +148,7 @@
                    
                     <p class="xl:text-lg text-sm xl:mb-4 text-white">We create and secure your IT environment, including professional email addresses, website, shared folders, collaborative tools and data protection, all tailored to the size and needs of your business.</p>
                     <div class="pt-4">
-                      <!-- <img src="../assets/img/right-arrow.png" class="w-10" alt=""> -->
+                      
                       <i class="fa-solid fa-arrow-right text-white"></i> &nbsp; &nbsp;
                       <a href="services4.html">
                       <button>Learn more</button>
@@ -171,7 +171,7 @@
                <p class="xl:text-lg text-sm xl:mb-4 text-white">We take care of your accounting and give you clear visibility on your numbers and financial health.</p>
 
                <div class="pt-4">
-          <!-- <img src="../assets/img/right-arrow.png" class="w-10" alt=""> -->
+         
           <i class="fa-solid fa-arrow-right text-white"></i> &nbsp; &nbsp;
           <a href="services5.html">
           <button>Learn more</button>
@@ -194,7 +194,7 @@
           <p class="xl:text-lg text-sm xl:mb-4 text-white">We build your logo & brand identity, SEO, Google presence, social media marketing, video marketing.</p>
 
           <div class="pt-4">
-            <!-- <img src="../assets/img/right-arrow.png" class="w-10" alt=""> -->
+         
             <i class="fa-solid fa-arrow-right text-white"></i> &nbsp; &nbsp;
             <a href="services6.html">
             <button>Learn more</button>

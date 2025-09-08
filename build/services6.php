@@ -3,8 +3,7 @@
   <?php include_once './inc/nav.php';?>
 <section class="2xl:px-28 lg:px-10 px-5 lg:pt-20 pt-10">
 
-  <!-- 🔥 Black Overlay -->
-  <!-- <div class="absolute inset-0 bg-black bg-opacity-30 z-0"></div> -->
+
 <div>
   <img src="./assets/img/marketing.png" class="rounded-2xl w-full md:block hidden" alt="">
   <img src="./assets/img/watt66.jpg" class="rounded-2xl w-full block md:hidden h-[450px] md:h-0" alt="">

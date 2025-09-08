@@ -3,8 +3,8 @@
  <?php include_once './inc/nav.php';?>
 <section class="2xl:px-28 lg:px-10 px-5 lg:pt-20 pt-10">
 
-  <!-- 🔥 Black Overlay -->
-  <!-- <div class="absolute inset-0 bg-black bg-opacity-40 z-0"></div> -->
+
+
 <div>
   <img src="./assets/img/adminimg.png" class="rounded-2xl w-full md:block hidden" alt="">
   <img src="./assets/img/watt33.jpg" class="rounded-2xl w-full block md:hidden" alt="">
@@ -221,9 +221,6 @@ activité pendant que nous veillons à la fiabilité et à la discrétion de vot
 
   <script src="https://kit.fontawesome.com/a2ada4947c.js" crossorigin="anonymous"></script>
 
-  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script> -->
+
 </body>
 </html>

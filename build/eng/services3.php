@@ -5,8 +5,7 @@
 
 <section class="2xl:px-28 lg:px-10 px-5 lg:pt-20 pt-10">
 
-  <!-- 🔥 Black Overlay -->
-  <!-- <div class="absolute inset-0 bg-black bg-opacity-40 z-0"></div> -->
+
 <div>
   <img src="../assets/img/adminimg.png" class="rounded-2xl w-full md:block hidden" alt="">
   <img src="../assets/img/watt33.jpg" class="rounded-2xl w-full block md:hidden" alt="">
