@@ -1,7 +1,9 @@
 <?php include_once './inc/header.php';?>
 
 <body class="bg-[#304B68] overflow-x-hidden">
+
 <?php
+
 // if (session_status() === PHP_SESSION_NONE) {
 //     session_start();
 // }

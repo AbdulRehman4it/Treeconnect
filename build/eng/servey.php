@@ -1,4 +1,14 @@
 <?php include_once './inc/header.php';?>
+
+<?php
+session_unset();
+
+// OR (alternative way):
+// $_SESSION = [];
+
+// If you also want to destroy the session completely:
+session_destroy();
+?>
 <body class="bg-[#304B68] overflow-x-hidden">
     <?php include_once './inc/nav.php';?>
     <!-- Heading  -->
@@ -179,7 +189,7 @@
       </div>
       
       <div class="pb-2">
-       <label for="" class="text-sm xl:text-base font-Nonrmal">Contact person (name & role)</label>
+       <label for="" class="text-sm xl:text-base font-Nonrmal">Contact Email</label>
       <input type="text" id="contact" name="contact" placeholder="Example: Peter Martin – Director" class="w-full  border border-white p-3 mt-3 outline-Nonne focus:outline-Nonne rounded-2xl text-white bg-transparent placeholder-[#D3D3D3]" />
        </div>
 

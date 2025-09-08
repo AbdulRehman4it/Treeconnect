@@ -6,6 +6,62 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 
+if (
+    isset($_SESSION['marketing_heading']) &&
+    isset($_SESSION['marketing_score']) &&
+    isset($_SESSION['marketing_answers'])
+) {
+    $scriptURL = "https://script.google.com/macros/s/AKfycbx4S_WJlOsoeTcevFflebWQafwilg4mEg9tkGB5784_2DUPlvEnGawlcgLgUPx_6gq5/exec";
+
+     $questionsHR = [ 'aq1' => "Onboarding et Recrutement", 'aq2' => "Objectifs et Performance ", 'aq3' => "SIRH et Paie", 'aq4' => "Politique de Rémunération", 'aq5' => "Charte et référentiel RH" ];
+    $questionsAdmin = [ 'bq1' => "Modélisation des procédures", 'bq2' => "Automatisation des tâches ", 'bq3' => "Organisation documentaire centralisée", 'bq4' => "Suivi des échéances ", 'bq5' => "Continuité administrative" ];
+    $questionsIT = [ 'cq1' => " Infrastructure informatique ", 'cq2' => "Sauvegarde des données ", 'cq3' => "Outils collaboratifs ", 'cq4' => "Accompagnement et veille technologique ", 'cq5' => " Cybersécurité " ];
+    $questionsAccounting = [ 'dq1' => "Tableau de bord financier", 'dq2' => "Processus de facturation", 'dq3' => "Suivi des charges", 'dq4' => "Prévisions financières", 'dq5' => "Outils financiers digitaux" ];
+    $questionsMarketing = [ 'cq1' => "Stratégie de communication ", 'cq2' => "Identité visuelle", 'cq3' => "Canaux de communication", 'cq4' => "Suivi des résultats ", 'cq5' => " Planification des actions" ];
+
+    // Render each pillar section
+
+    // Collect all session + question map data
+    $data = [
+        "companyData"   => $_SESSION['companyData'] ?? [],
+        "hr_heading"    => $_SESSION['hr_heading'] ?? '',
+        "hr_score"      => $_SESSION['hr_score'] ?? '',
+        "hr_answers"    => $_SESSION['hr_answers'] ?? [],
+        "admin_heading" => $_SESSION['admin_heading'] ?? '',
+        "admin_score"   => $_SESSION['admin_score'] ?? '',
+        "admin_answers" => $_SESSION['admin_answers'] ?? [],
+        "it_heading"    => $_SESSION['it_heading'] ?? '',
+        "it_score"      => $_SESSION['it_score'] ?? '',
+        "it_answers"    => $_SESSION['it_answers'] ?? [],
+        "accounting_heading" => $_SESSION['accounting_heading'] ?? '',
+        "accounting_score"   => $_SESSION['accounting_score'] ?? '',
+        "accounting_answers" => $_SESSION['accounting_answers'] ?? [],
+        "marketing_heading"  => $_SESSION['marketing_heading'] ?? '',
+        "marketing_score"    => $_SESSION['marketing_score'] ?? '',
+        "marketing_answers"  => $_SESSION['marketing_answers'] ?? [],
+
+        // ✅ Attach question maps too
+        "questionsHR"        => $questionsHR,
+        "questionsAdmin"     => $questionsAdmin,
+        "questionsIT"        => $questionsIT,
+        "questionsAccounting"=> $questionsAccounting,
+        "questionsMarketing" => $questionsMarketing
+    ];
+
+    // Send JSON to Google Sheets
+    $ch = curl_init($scriptURL);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_POST, true);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
+    $response = curl_exec($ch);
+    curl_close($ch);
+
+    // (Optional) debug response
+    // echo $response;
+}
+
+
 // $companyData = $_SESSION['companyData'] ?? [];
 
 // if (!empty($companyData)) {

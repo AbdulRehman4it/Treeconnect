@@ -517,14 +517,14 @@ if (isset($_SESSION['marketing_score'])) {
 
     // ✅ Question maps
   $questionsHR = [
-    'aq1' => "Onboarding and Recruitment",
+'aq1' => "Onboarding and Recruitment",
 'aq2' => "Objectives and Performance",
 'aq3' => "HRIS and Payroll",
 'aq4' => "Compensation Policy",
 'aq5' => "HR Charter and Reference Framework"
   ];
   $questionsAdmin = [
-      'bq1' => "Procedure Modeling",
+'bq1' => "Procedure Modeling",
 'bq2' => "Task Automation",
 'bq3' => "Centralized Document Management",
 'bq4' => "Deadline Tracking",
